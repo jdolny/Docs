@@ -1,0 +1,45 @@
+site_name: Theopenem Documentation
+theme: material
+
+markdown_extensions:
+  - codehilite:
+      guess_lang: true
+  - toc:
+      permalink: true
+  - attr_list
+  - admonition
+  - abbr
+  - markdown_include.include:
+      base_path: docs
+
+
+nav:
+- 'Getting Started':
+  - 'Server Installation': 
+    - "Server Overview/Prereqs": getting-started/overview.md
+    - "Install IIS": getting-started/install-iis.md
+    - "Install Toems Web Applications": getting-started/install-webapps.md
+    - "Create Firewall Exceptions": getting-started/firewall-exceptions.md
+    - "Database Setup": 
+      - 'Overview': getting-started/database-overview.md
+      - 'Microsoft SQL Server': getting-started/database-sqlserver.md
+      - 'MariaDB / MySQL': getting-started/database-mariadb.md
+      - 'Database Firewall Exception': getting-started/database-firewall.md
+    - "Update Web.config": getting-started/update-web-config.md
+    - "Test The Web Applications": getting-started/test-apps.md
+    - "Create Storage Directory": getting-started/storage.md
+    - "Configure Theopenem": getting-started/configure.md
+    - "Install Certificates": getting-started/install-certificates.md
+    - "Web.config Revisited": getting-started/web-config-revisited.md
+    - "Create Scheduled Task": getting-started/scheduled-tasks.md
+    - "Finally": getting-started/finally.md
+  - 'Client Installation': 
+    - "Endpoint Provisioning Setup": getting-started/endpoint-provisioning-setup.md
+    - "Client Config Prereqs": getting-started/client-config-prereqs.md
+    - "Transform The Toec MSI": getting-started/transform-toec.md
+    - "Install Client Via Cmd / Powershell": getting-started/install-toec.md
+    - "Install Client Via Group Policy": getting-started/deploy-toec.md
+    
+- 'Tutorials':
+  - 'First Policy Tutorial': tutorials/first-policy.md
+extra_css: [style.css]
