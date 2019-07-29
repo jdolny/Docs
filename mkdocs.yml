@@ -9,9 +9,10 @@ markdown_extensions:
   - attr_list
   - admonition
   - abbr
+  - pymdownx.mark
+  - pymdownx.magiclink
   - markdown_include.include:
       base_path: docs
-
 
 nav:
 - 'Getting Started':
@@ -39,7 +40,8 @@ nav:
     - "Transform The Toec MSI": getting-started/transform-toec.md
     - "Install Client Via Cmd / Powershell": getting-started/install-toec.md
     - "Install Client Via Group Policy": getting-started/deploy-toec.md
-    
 - 'Tutorials':
   - 'First Policy Tutorial': tutorials/first-policy.md
+- 'Advanced Topics':
+  - 'Toec Arguments': advanced/toec-arguments.md
 extra_css: [style.css]

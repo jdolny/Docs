@@ -1,0 +1,932 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.2.0">
+    
+    
+      
+        <title>First Policy Tutorial - Theopenem Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.750b69bd.css">
+      
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../../style.css">
+    
+    
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#creating-your-first-policy" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="Theopenem Documentation" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Theopenem Documentation
+            </span>
+            <span class="md-header-nav__topic">
+              First Policy Tutorial
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="Theopenem Documentation" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Theopenem Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1">
+    
+    <label class="md-nav__link" for="nav-1">
+      Getting Started
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-1">
+        Getting Started
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-1" type="checkbox" id="nav-1-1">
+    
+    <label class="md-nav__link" for="nav-1-1">
+      Server Installation
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-1-1">
+        Server Installation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../getting-started/overview/" title="Server Overview/Prereqs" class="md-nav__link">
+      Server Overview/Prereqs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../getting-started/install-iis/" title="Install IIS" class="md-nav__link">
+      Install IIS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../getting-started/install-webapps/" title="Install Toems Web Applications" class="md-nav__link">
+      Install Toems Web Applications
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../getting-started/firewall-exceptions/" title="Create Firewall Exceptions" class="md-nav__link">
+      Create Firewall Exceptions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-1-5" type="checkbox" id="nav-1-1-5">
+    
+    <label class="md-nav__link" for="nav-1-1-5">
+      Database Setup
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-1-1-5">
+        Database Setup
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../getting-started/database-overview/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../getting-started/database-sqlserver/" title="Microsoft SQL Server" class="md-nav__link">
+      Microsoft SQL Server
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../getting-started/database-mariadb/" title="MariaDB / MySQL" class="md-nav__link">
+      MariaDB / MySQL
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../getting-started/database-firewall/" title="Database Firewall Exception" class="md-nav__link">
+      Database Firewall Exception
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../getting-started/update-web-config/" title="Update Web.config" class="md-nav__link">
+      Update Web.config
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../getting-started/test-apps/" title="Test The Web Applications" class="md-nav__link">
+      Test The Web Applications
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../getting-started/storage/" title="Create Storage Directory" class="md-nav__link">
+      Create Storage Directory
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../getting-started/configure/" title="Configure Theopenem" class="md-nav__link">
+      Configure Theopenem
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../getting-started/install-certificates/" title="Install Certificates" class="md-nav__link">
+      Install Certificates
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../getting-started/web-config-revisited/" title="Web.config Revisited" class="md-nav__link">
+      Web.config Revisited
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../getting-started/scheduled-tasks/" title="Create Scheduled Task" class="md-nav__link">
+      Create Scheduled Task
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../getting-started/finally/" title="Finally" class="md-nav__link">
+      Finally
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-2" type="checkbox" id="nav-1-2">
+    
+    <label class="md-nav__link" for="nav-1-2">
+      Client Installation
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-1-2">
+        Client Installation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../getting-started/endpoint-provisioning-setup/" title="Endpoint Provisioning Setup" class="md-nav__link">
+      Endpoint Provisioning Setup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../getting-started/client-config-prereqs/" title="Client Config Prereqs" class="md-nav__link">
+      Client Config Prereqs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../getting-started/transform-toec/" title="Transform The Toec MSI" class="md-nav__link">
+      Transform The Toec MSI
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../getting-started/install-toec/" title="Install Client Via Cmd / Powershell" class="md-nav__link">
+      Install Client Via Cmd / Powershell
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../getting-started/deploy-toec/" title="Install Client Via Group Policy" class="md-nav__link">
+      Install Client Via Group Policy
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      Tutorials
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Tutorials
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        First Policy Tutorial
+      </label>
+    
+    <a href="./" title="First Policy Tutorial" class="md-nav__link md-nav__link--active">
+      First Policy Tutorial
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-create-a-dynamic-group" title="1. Create A Dynamic Group" class="md-nav__link">
+    1. Create A Dynamic Group
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-create-an-inventory-policy" title="2. Create An Inventory Policy" class="md-nav__link">
+    2. Create An Inventory Policy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-create-a-tracking-policy" title="3. Create A Tracking Policy" class="md-nav__link">
+    3. Create A Tracking Policy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-apply-the-policies" title="4. Apply The Policies" class="md-nav__link">
+    4. Apply The Policies
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-deploy-a-software-application-in-msi-format" title="5. Deploy A Software Application In MSI Format" class="md-nav__link">
+    5. Deploy A Software Application In MSI Format
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-deploy-a-software-application-in-exe-format" title="6. Deploy A Software Application In Exe Format" class="md-nav__link">
+    6. Deploy A Software Application In Exe Format
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Advanced Topics
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Advanced Topics
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../advanced/toec-arguments/" title="Toec Arguments" class="md-nav__link">
+      Toec Arguments
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-create-a-dynamic-group" title="1. Create A Dynamic Group" class="md-nav__link">
+    1. Create A Dynamic Group
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-create-an-inventory-policy" title="2. Create An Inventory Policy" class="md-nav__link">
+    2. Create An Inventory Policy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-create-a-tracking-policy" title="3. Create A Tracking Policy" class="md-nav__link">
+    3. Create A Tracking Policy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-apply-the-policies" title="4. Apply The Policies" class="md-nav__link">
+    4. Apply The Policies
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-deploy-a-software-application-in-msi-format" title="5. Deploy A Software Application In MSI Format" class="md-nav__link">
+    5. Deploy A Software Application In MSI Format
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-deploy-a-software-application-in-exe-format" title="6. Deploy A Software Application In Exe Format" class="md-nav__link">
+    6. Deploy A Software Application In Exe Format
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="creating-your-first-policy">Creating Your First Policy<a class="headerlink" href="#creating-your-first-policy" title="Permanent link">&para;</a></h1>
+<p>This last section is not required, but will provide you with a brief introduction on how to run some policies on your endpoints.  By this point you should have at least 1 or 2 
+endpoints provisioned with Theopenem.  These can be seen from the Toems-UI from the Computers-&gt;Search Active page.  If you don’t see anything listed there yet, double 
+check the Computers-&gt;Approval Request page to make sure nothing is waiting for approval.</p>
+<h6 id="1-create-a-dynamic-group">1. Create A Dynamic Group<a class="headerlink" href="#1-create-a-dynamic-group" title="Permanent link">&para;</a></h6>
+<p>There a typically a few policies that you would want to run on all computers.  These policies may include inventory tracking, user login tracking, and application usage 
+tracking.  A dynamic group is a group that is always changing the group members based on criteria that is defined.  This first dynamic group will include all computers.</p>
+<ul>
+<li>Login to the Toems-UI</li>
+<li>Select <strong>Groups-&gt;New</strong></li>
+<li>Provide a <strong>name</strong> such as <mark>All Computers</mark></li>
+<li>Set the <strong>Group Type</strong> to <mark>Dynamic</mark></li>
+<li>Provide a nice <strong>description</strong>.</li>
+<li>Leave all other options to their defaults
+<a href="https://theopenem.com/wp-content/uploads/2019/01/policy-step01.jpg"><img alt="" src="https://theopenem.com/wp-content/uploads/2019/01/policy-step01.jpg" style="height:250px" /></a></li>
+<li>Click <strong>Actions</strong>, then <strong>Add Group</strong></li>
+<li>Select <strong>Dynamic Criteria</strong> from the <strong>Sub Navigation Menu</strong></li>
+<li>Change <strong>Table</strong> to <mark>Computer</mark>, the <strong>Field</strong> to <mark>computer_name</mark>, the <strong>Operator</strong> to <mark>like</mark> , and the <strong>Value</strong> to <mark>%</mark>, click <strong>Add</strong>
+<a href="https://theopenem.com/wp-content/uploads/2019/01/policy-step02.jpg"><img alt="" src="https://theopenem.com/wp-content/uploads/2019/01/policy-step02.jpg" style="height:100px" /></a></li>
+<li>Click <strong>Actions</strong>, then <strong>Test Query</strong>.  Should should see the list of all known computers.</li>
+<li>Click <strong>Actions</strong>, then <strong>Save Dynamic Criteria</strong></li>
+<li>Your first group is complete.  By default, Dynamic Groups update themselves every 3 hours.  Saving the Dynamic Criteria again will also trigger the update.</li>
+</ul>
+<hr />
+<h6 id="2-create-an-inventory-policy">2. Create An Inventory Policy<a class="headerlink" href="#2-create-an-inventory-policy" title="Permanent link">&para;</a></h6>
+<ul>
+<li>Select <strong>Policies-&gt;New</strong></li>
+<li>In the <strong>Name</strong> field, enter <mark>Collect Inventory</mark></li>
+<li>In the <strong>Description</strong> field, enter <mark>Collect inventory on a weekly basis</mark>.</li>
+<li>Change the <strong>Frequency</strong> to <mark>OncePerWeek</mark>.</li>
+<li>Scroll down to <strong>Collect Inventory</strong>, change the drop down to <mark>Before</mark></li>
+<li>Scroll down to <strong>Skip Server Logging Result</strong>, <mark>enable</mark> it.  We don’t really want a long history of inventory scans running every week clouding our logs.</li>
+<li>Click <strong>Actions</strong>, then <strong>Add Policy</strong></li>
+</ul>
+<hr />
+<h6 id="3-create-a-tracking-policy">3. Create A Tracking Policy<a class="headerlink" href="#3-create-a-tracking-policy" title="Permanent link">&para;</a></h6>
+<ul>
+<li>Select <strong>Policies-&gt;New</strong></li>
+<li>In the <strong>Name</strong> field, enter <mark>Track Users and Applications</mark></li>
+<li>In the <strong>Description</strong> field, enter <mark>Starts the user login and application tracker each time the computer starts</mark>.</li>
+<li>Change the <strong>Trigger</strong> to <mark>Startup</mark></li>
+<li>Leave the <strong>Frequency</strong> at <mark>Ongoing</mark></li>
+<li>Scroll down, <mark>Enable Login Tracker and Application Monitor</mark></li>
+<li>Skip the Server Logging Result once again.</li>
+<li>Click <strong>Actions</strong>, then <strong>Add Policy</strong>.</li>
+</ul>
+<hr />
+<h6 id="4-apply-the-policies">4. Apply The Policies<a class="headerlink" href="#4-apply-the-policies" title="Permanent link">&para;</a></h6>
+<p>In order for a Policy to take effect, it needs to be enabled and assigned to a group.</p>
+<ul>
+<li>Select <strong>Policies-&gt;Search</strong></li>
+<li>Click <strong>Activate</strong> on each of the 2 policies listed</li>
+<li>Select <strong>Groups-&gt;Search</strong></li>
+<li>Click <strong>View</strong> on the <strong>All Computers Group</strong></li>
+<li>Click <strong>Available Policies</strong> from the <strong>Sub Nav Menu</strong>.</li>
+<li><strong>Check the box</strong> for each of the Policies we just created.</li>
+<li>Click <strong>Actions</strong>, Add <strong>Selected Policies</strong>.</li>
+</ul>
+<p>That completes the inventory policies.  Every computer that provisions with Theopenem will now do a weekly inventory scan as well as monitor 
+application usage and user logins.  The inventory scan will run at the next check-in for you provisioned endpoints which is every 60 minutes by default.  The tracking 
+policy only runs at startup, you will need to either reboot those endpoints or restart the Toec service to test it.</p>
+<hr />
+<h6 id="5-deploy-a-software-application-in-msi-format">5. Deploy A Software Application In MSI Format<a class="headerlink" href="#5-deploy-a-software-application-in-msi-format" title="Permanent link">&para;</a></h6>
+<p>For this example, we will create a new static group, targeting specific computers and then deploy 7-Zip.</p>
+<ul>
+<li>Select <strong>Groups-&gt;New</strong></li>
+<li>Give the group a <strong>name</strong> such as <mark>Software Deployment Test Group</mark></li>
+<li>Leave the <strong>Group Type</strong> as <mark>Static</mark>.</li>
+<li>Click <strong>Actions</strong>, <strong>Add Group</strong></li>
+<li>Select <strong>Add Group Members</strong> from the <strong>Sub Nav Menu</strong>.</li>
+<li><strong>Check the box</strong> next to <strong>each computer</strong> to add to the group.</li>
+<li>Click <strong>Actions</strong>, <strong>Add Selected Computers</strong>.</li>
+<li>Select <strong>Modules</strong> from the <strong>Navigation Menu</strong>.</li>
+<li>Select <strong>Software Modules</strong>, Then <strong>New</strong></li>
+<li>Enter <mark>7-Zip 18.06</mark> for the <strong>Name</strong></li>
+<li>Click <strong>Actions</strong>, <strong>Add Module</strong></li>
+<li>Select <strong>Upload Files</strong> from the <strong>Sub Nav Menu</strong></li>
+<li><strong>Download 7-Zip</strong> from <a href="https://www.7-zip.org/a/7z1806-x64.msi">this link</a></li>
+<li><strong>Drop</strong> the downloaded MSI into the <strong>Drop Files Here box</strong>, Click <strong>Upload</strong></li>
+<li>Select <strong>Policies-&gt;New</strong> from the Navigation Menu</li>
+<li>Give the policy a <strong>name</strong> such as <mark>Install 7-Zip</mark></li>
+<li>Change the <strong>Frequency</strong> to <mark>OncePerComputer</mark></li>
+<li>Click <strong>Actions</strong>, <strong>Add Policy</strong></li>
+<li>Select <strong>Available Modules</strong> from the <strong>Sub Nav Menu</strong></li>
+<li><strong>Check the box</strong> for <strong>7-Zip 18.06</strong>, Click <strong>Actions</strong>, <strong>Add Selected To Policy</strong></li>
+<li>Click <strong>Actions</strong> then, <strong>Activate Policy</strong></li>
+<li>Assign the Policy to the Software Deployment Test Group</li>
+</ul>
+<p>The next time any of the computers in that group startup or check-in, 7-Zip will automatically be installed.</p>
+<hr />
+<h6 id="6-deploy-a-software-application-in-exe-format">6. Deploy A Software Application In Exe Format<a class="headerlink" href="#6-deploy-a-software-application-in-exe-format" title="Permanent link">&para;</a></h6>
+<p>An exe can be deployed as long as it support silent options.  This last example will silently deploy Firefox.  We’ll use a dynamic group to 
+find computers that do not have firefox installed.  Finally we’ll introduce a new concept called external downloads.</p>
+<ul>
+<li>Select <strong>Groups-&gt; New</strong> From the Navigation Menu</li>
+<li>For the <strong>name</strong>, enter <mark>Computers Missing Firefox</mark></li>
+<li>Change the <strong>Group Type</strong> to <mark>Dynamic</mark></li>
+<li>Click <strong>Actions</strong>, <strong>Add Group</strong></li>
+<li>Select <strong>Dynamic Criteria</strong> from the <strong>Sub Nav Menu</strong></li>
+<li>Change the <strong>And/Or</strong> dropdown to <mark>Not</mark>, the <strong>Table</strong> to <mark>Application</mark>, the <strong>Field</strong> to <mark>name</mark>, the <strong>Operator</strong> to <mark>like</mark>, and the <strong>Value</strong> to <mark>%firefox%</mark> ,click <strong>Add</strong><br />
+<a href="https://theopenem.com/wp-content/uploads/2019/01/policy-step03.jpg"><img alt="" src="https://theopenem.com/wp-content/uploads/2019/01/policy-step03.jpg" style="height:100px" /></a></li>
+<li>Click <strong>Actions</strong>, <strong>Save Dynamic Criteria</strong></li>
+<li>Select <strong>Modules-&gt;Command Modules-&gt;New</strong> from the <strong>Navigation menu</strong>.</li>
+<li>For the <strong>name</strong> enter, <mark>Firefox 64.0.2</mark></li>
+<li>Click <strong>Actions</strong>, <strong>Add Module</strong></li>
+<li>Select <strong>External Files</strong> from the <strong>Sub Nav menu</strong></li>
+<li>Fill in a <strong>File Name</strong>, such as <mark>Firefox.exe</mark>, it can be any name you like, it’s just a name for the downloaded file.</li>
+<li>Fill in the <strong>URL</strong> with <code>https://ftp.mozilla.org/pub/firefox/releases/64.0.2/win64/en-US/Firefox%20Setup%2064.0.2.exe</code></li>
+<li>Click <strong>Add</strong>, Click <strong>Actions</strong>, <strong>Download Files</strong></li>
+<li>Click <strong>General</strong> from the <strong>Sub Navigation Menu</strong></li>
+<li>Enter <mark>firefox.exe</mark> in the <strong>Command Field</strong></li>
+<li>Enter <mark>-ms</mark> in the <strong>Arguments Field</strong></li>
+<li>Click <strong>Actions</strong>, <strong>Update Module</strong></li>
+<li>Assign the module to a new Policy and assign that Policy to a Group</li>
+</ul>
+<p>With this Policy, anytime a computer is found without Firefox, it will automatically be deployed to that computer.</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../../getting-started/deploy-toec/" title="Install Client Via Group Policy" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Install Client Via Group Policy
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../../advanced/toec-arguments/" title="Toec Arguments" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Toec Arguments
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.39abc4af.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,803 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.2.0">
+    
+    
+      
+        <title>Endpoint Provisioning Setup - Theopenem Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.750b69bd.css">
+      
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../../style.css">
+    
+    
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#endpoint-provisioning-setup" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="Theopenem Documentation" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Theopenem Documentation
+            </span>
+            <span class="md-header-nav__topic">
+              Endpoint Provisioning Setup
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="Theopenem Documentation" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Theopenem Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1" checked>
+    
+    <label class="md-nav__link" for="nav-1">
+      Getting Started
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-1">
+        Getting Started
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-1" type="checkbox" id="nav-1-1">
+    
+    <label class="md-nav__link" for="nav-1-1">
+      Server Installation
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-1-1">
+        Server Installation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../overview/" title="Server Overview/Prereqs" class="md-nav__link">
+      Server Overview/Prereqs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../install-iis/" title="Install IIS" class="md-nav__link">
+      Install IIS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../install-webapps/" title="Install Toems Web Applications" class="md-nav__link">
+      Install Toems Web Applications
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../firewall-exceptions/" title="Create Firewall Exceptions" class="md-nav__link">
+      Create Firewall Exceptions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-1-5" type="checkbox" id="nav-1-1-5">
+    
+    <label class="md-nav__link" for="nav-1-1-5">
+      Database Setup
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-1-1-5">
+        Database Setup
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../database-overview/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../database-sqlserver/" title="Microsoft SQL Server" class="md-nav__link">
+      Microsoft SQL Server
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../database-mariadb/" title="MariaDB / MySQL" class="md-nav__link">
+      MariaDB / MySQL
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../database-firewall/" title="Database Firewall Exception" class="md-nav__link">
+      Database Firewall Exception
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../update-web-config/" title="Update Web.config" class="md-nav__link">
+      Update Web.config
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../test-apps/" title="Test The Web Applications" class="md-nav__link">
+      Test The Web Applications
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../storage/" title="Create Storage Directory" class="md-nav__link">
+      Create Storage Directory
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../configure/" title="Configure Theopenem" class="md-nav__link">
+      Configure Theopenem
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../install-certificates/" title="Install Certificates" class="md-nav__link">
+      Install Certificates
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../web-config-revisited/" title="Web.config Revisited" class="md-nav__link">
+      Web.config Revisited
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../scheduled-tasks/" title="Create Scheduled Task" class="md-nav__link">
+      Create Scheduled Task
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../finally/" title="Finally" class="md-nav__link">
+      Finally
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-2" type="checkbox" id="nav-1-2" checked>
+    
+    <label class="md-nav__link" for="nav-1-2">
+      Client Installation
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-1-2">
+        Client Installation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Endpoint Provisioning Setup
+      </label>
+    
+    <a href="./" title="Endpoint Provisioning Setup" class="md-nav__link md-nav__link--active">
+      Endpoint Provisioning Setup
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-active-directory-sync" title="1. Active Directory Sync" class="md-nav__link">
+    1. Active Directory Sync
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-provisioning-security" title="2. Provisioning Security" class="md-nav__link">
+    2. Provisioning Security
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../client-config-prereqs/" title="Client Config Prereqs" class="md-nav__link">
+      Client Config Prereqs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../transform-toec/" title="Transform The Toec MSI" class="md-nav__link">
+      Transform The Toec MSI
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../install-toec/" title="Install Client Via Cmd / Powershell" class="md-nav__link">
+      Install Client Via Cmd / Powershell
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../deploy-toec/" title="Install Client Via Group Policy" class="md-nav__link">
+      Install Client Via Group Policy
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Tutorials
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Tutorials
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/first-policy/" title="First Policy Tutorial" class="md-nav__link">
+      First Policy Tutorial
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Advanced Topics
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Advanced Topics
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../advanced/toec-arguments/" title="Toec Arguments" class="md-nav__link">
+      Toec Arguments
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-active-directory-sync" title="1. Active Directory Sync" class="md-nav__link">
+    1. Active Directory Sync
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-provisioning-security" title="2. Provisioning Security" class="md-nav__link">
+    2. Provisioning Security
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="endpoint-provisioning-setup">Endpoint Provisioning Setup<a class="headerlink" href="#endpoint-provisioning-setup" title="Permanent link">&para;</a></h1>
+<p>Provisioning is the process of allowing an endpoint to be managed by Theopenem.  This includes the exchange of certificates and encryption keys b/w the client and server.  This 
+process is automated when the Toec Agent is installed, but there are some settings on the Server that should be addressed to ensure a smooth provisioning process.</p>
+<h6 id="1-active-directory-sync">1. Active Directory Sync<a class="headerlink" href="#1-active-directory-sync" title="Permanent link">&para;</a></h6>
+<p>Syncing with Active Directory is highly recommended but not required.  It is a read only one way sync from AD to Theopenem.  It will sync in Computer names and 
+Organizational Unit names, servers are skipped.  The benefit of syncing in the Computers is to pre-provision them.  A pre-provisioned computer is added to Theopenem 
+but cannot yet be managed until provisioning from the client completes.  When a computer is pre-provisioned, it can be assigned to groups with policies already defined, 
+this way when an endpoint completes the provisioning process, it will automatically start running the necessary policies.  Syncing from AD also allows you to assign 
+policies to your existing OU's, as another method of targeting groups of computers.  If you skipped over the LDAP setup during the server installation it's recommended 
+to configure it now.</p>
+<ul>
+<li>Login to the Toems-UI, select Admin Settings-&gt;Security</li>
+<li>Enable the LDAP Integration if not already enabled</li>
+<li>Click Actions, Update Security Settings</li>
+<li>Select Admin Settings-&gt;LDAP</li>
+<li>Fill out the LDAP form, use the built-in help menu in the top right for more info on the fields</li>
+<li>Click Actions, Update LDAP Settings</li>
+<li>Click Actions, Test AD Bind, to verify the connection was successful</li>
+<li>Select Admin Settings-&gt;Task Scheduler</li>
+<li>Find the LDAP Sync row and click Run Now.  There is no visual confirmation when using the Run Now button.  By default this task will run every night at 1:00AM.<br />
+Give the process 5-10 minutes to run, you can navigate away from the page.</li>
+<li>Select Computers-&gt;Search All.  It should show all of the synchronized computers with a Provision Status of PreProvisioned.</li>
+<li>Select Groups-&gt;Active Directory OU Browser.  You should see your Domain Directory Tree.</li>
+</ul>
+<hr />
+<div class="admonition success">
+<p class="admonition-title">This Concludes Active Directory Sync. Check this off of your Installation checklist now.</p>
+</div>
+<hr />
+<h6 id="2-provisioning-security">2. Provisioning Security<a class="headerlink" href="#2-provisioning-security" title="Permanent link">&para;</a></h6>
+<p>There are a few security measures in place to regulate endpoint provisioning.  They are currently all on by default, but you may disable them.  The 
+following options are available in Admin Settings-&gt;Security.</p>
+<ul>
+<li><strong>Preprovision Required</strong> – When this option is enabled, a computer will not be allowed to provision unless it has already been pre-provisioned.  If you are syncing from Active 
+Directory, computers have already met this requirement when they were synced.  If you are not syncing from AD, pre-provisions may be manually added from Computers-&gt;Create Pre-Provision.</li>
+<li><strong>New Computer Provision Approval Required</strong> – When this option is enabled, a Theopenem user must manually approve computers before they will be allowed to provision.  This 
+setting does not apply to pre-provisioned computers since they have already been approved.  Provision approval requests will be displayed in Computers-&gt;Approval Requests when a 
+new computer tries to provision for the first time.  This is where the user can approve or deny the request.  A report is emailed twice per day when endpoints are waiting for approval.</li>
+<li><strong>Preprovision Approval Required</strong> – This setting is a combination of the previous two settings.  When this is enabled, a user must manually approve and endpoint’s provision request 
+even if it has already been pre-provisioned.  The request are still approved from Computers-&gt;Approval Requests, and a report is still sent twice per day.</li>
+</ul>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../finally/" title="Finally" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Finally
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../client-config-prereqs/" title="Client Config Prereqs" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Client Config Prereqs
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.39abc4af.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+  </body>
+</html>

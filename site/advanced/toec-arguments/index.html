@@ -1,0 +1,823 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.2.0">
+    
+    
+      
+        <title>Toec Arguments - Theopenem Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.750b69bd.css">
+      
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../../style.css">
+    
+    
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#toec-advanced-options" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="Theopenem Documentation" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Theopenem Documentation
+            </span>
+            <span class="md-header-nav__topic">
+              Toec Arguments
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="Theopenem Documentation" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Theopenem Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1">
+    
+    <label class="md-nav__link" for="nav-1">
+      Getting Started
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-1">
+        Getting Started
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-1" type="checkbox" id="nav-1-1">
+    
+    <label class="md-nav__link" for="nav-1-1">
+      Server Installation
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-1-1">
+        Server Installation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../getting-started/overview/" title="Server Overview/Prereqs" class="md-nav__link">
+      Server Overview/Prereqs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../getting-started/install-iis/" title="Install IIS" class="md-nav__link">
+      Install IIS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../getting-started/install-webapps/" title="Install Toems Web Applications" class="md-nav__link">
+      Install Toems Web Applications
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../getting-started/firewall-exceptions/" title="Create Firewall Exceptions" class="md-nav__link">
+      Create Firewall Exceptions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-1-5" type="checkbox" id="nav-1-1-5">
+    
+    <label class="md-nav__link" for="nav-1-1-5">
+      Database Setup
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-1-1-5">
+        Database Setup
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../getting-started/database-overview/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../getting-started/database-sqlserver/" title="Microsoft SQL Server" class="md-nav__link">
+      Microsoft SQL Server
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../getting-started/database-mariadb/" title="MariaDB / MySQL" class="md-nav__link">
+      MariaDB / MySQL
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../getting-started/database-firewall/" title="Database Firewall Exception" class="md-nav__link">
+      Database Firewall Exception
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../getting-started/update-web-config/" title="Update Web.config" class="md-nav__link">
+      Update Web.config
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../getting-started/test-apps/" title="Test The Web Applications" class="md-nav__link">
+      Test The Web Applications
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../getting-started/storage/" title="Create Storage Directory" class="md-nav__link">
+      Create Storage Directory
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../getting-started/configure/" title="Configure Theopenem" class="md-nav__link">
+      Configure Theopenem
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../getting-started/install-certificates/" title="Install Certificates" class="md-nav__link">
+      Install Certificates
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../getting-started/web-config-revisited/" title="Web.config Revisited" class="md-nav__link">
+      Web.config Revisited
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../getting-started/scheduled-tasks/" title="Create Scheduled Task" class="md-nav__link">
+      Create Scheduled Task
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../getting-started/finally/" title="Finally" class="md-nav__link">
+      Finally
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-2" type="checkbox" id="nav-1-2">
+    
+    <label class="md-nav__link" for="nav-1-2">
+      Client Installation
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-1-2">
+        Client Installation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../getting-started/endpoint-provisioning-setup/" title="Endpoint Provisioning Setup" class="md-nav__link">
+      Endpoint Provisioning Setup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../getting-started/client-config-prereqs/" title="Client Config Prereqs" class="md-nav__link">
+      Client Config Prereqs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../getting-started/transform-toec/" title="Transform The Toec MSI" class="md-nav__link">
+      Transform The Toec MSI
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../getting-started/install-toec/" title="Install Client Via Cmd / Powershell" class="md-nav__link">
+      Install Client Via Cmd / Powershell
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../getting-started/deploy-toec/" title="Install Client Via Group Policy" class="md-nav__link">
+      Install Client Via Group Policy
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Tutorials
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Tutorials
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/first-policy/" title="First Policy Tutorial" class="md-nav__link">
+      First Policy Tutorial
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Advanced Topics
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Advanced Topics
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Toec Arguments
+      </label>
+    
+    <a href="./" title="Toec Arguments" class="md-nav__link md-nav__link--active">
+      Toec Arguments
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-advanced-installation-arguments" title="1. Advanced Installation Arguments" class="md-nav__link">
+    1. Advanced Installation Arguments
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-command-line-options" title="2. Command Line Options" class="md-nav__link">
+    2. Command Line Options
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-advanced-installation-arguments" title="1. Advanced Installation Arguments" class="md-nav__link">
+    1. Advanced Installation Arguments
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-command-line-options" title="2. Command Line Options" class="md-nav__link">
+    2. Command Line Options
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="toec-advanced-options">Toec Advanced Options<a class="headerlink" href="#toec-advanced-options" title="Permanent link">&para;</a></h1>
+<h6 id="1-advanced-installation-arguments">1. Advanced Installation Arguments<a class="headerlink" href="#1-advanced-installation-arguments" title="Permanent link">&para;</a></h6>
+<p>There are a few extra arguments that can be passed in during the installation of Toec, or embedded into the MST file.  Reinstalling 
+the MSI with any of these options will also overwrite the current value without changing anything that is not specified.</p>
+<ul>
+<li><code>LOG_LEVEL</code> – The default logging level of Toec is <strong>INFO</strong>.  To get more information, <strong>DEBUG</strong> can used. T o get less information, <strong>ERROR</strong> can be used.<br />
+<br></li>
+<li><code>REMOTE_API_PORT</code> – Specifies the port that Toec will listen on for push requests from Toems.  <strong>The default value is 3913</strong>.  Push requests are not required for 
+Theopenem to function, but it does provide the following capabilities from the computer actions menu,  Current Users and Status.  Previously this port was used for all push
+communications, but now with the move to web sockets, only the previously mentioned commands use it.  Eventually it will be removed completely and solely rely on web sockets.<br />
+<br></li>
+<li><code>LOCAL_API_PORT</code> – Toec also listens on port <strong>1415</strong> by default for local requests only.  The Toec-UI application for user logins cannot talk directly to Toems, it instead 
+uses the Toec Service on port 1415 as an intermediary for this.<br />
+<br></li>
+<li><code>USER_PORT_RANGE</code> – The Toec-UI application loads at startup for each user that logs into the endpoint.  Each Toec-UI will receive a corresponding port to 
+communicate with that instance.  The <strong>default range is 9000-10000</strong>.<br />
+<br></li>
+<li><code>REMOTE_ADDRESSES</code> – When Toec is installed, it automatically creates a firewall exception for port 3913 to allow inbound requests.  By default this exception 
+is allowed for any ip address.  If you want to limit the IP’s that the exception is for, they can be specified in a comma separated list here.  Such as 192.168.1.10,192.168.1.11.  Be 
+careful with this setting, if you input the wrong ip’s, your Toems IP changes, or you add an additional Toems Server, you may not be able to communicate with your endpoints until 
+you update the exception.<br />
+<br></li>
+<li><code>SKIP_FIREWALL</code> – When Toec is installed, it automatically creates a firewall exception for port 3913 to allow inbound requests.  If this argument is set to true, 
+the exception will not be created.<br />
+<br></li>
+<li><code>RESET_DB</code> – Used when reinstalling Toec.  By default, the existing database is still used when Toec is reinstalled.  Setting this value to true will clear the client 
+database, treating the installation as if it were new.  This would cause the endpoint to provision again.</li>
+</ul>
+<hr />
+<h6 id="2-command-line-options">2. Command Line Options<a class="headerlink" href="#2-command-line-options" title="Permanent link">&para;</a></h6>
+<p>After Toec is installed, it can also be run from the command line to change options or help in debugging.  When using any of these commands, they must be run from an 
+elevated cmd prompt and the service should be stopped.  Toec.exe is located in c:\program files\toec.  <strong>The commands are case sensitive</strong>.
+<br><br></p>
+<div class="codehilite"><pre><span></span>Toec.exe --console
+</pre></div>
+
+
+<p>Starts Toec is console mode, displaying helpful debug info in the window.</p>
+<p><br></p>
+<div class="codehilite"><pre><span></span>Toec.exe --version
+</pre></div>
+
+
+<p>Displays the current Toec version</p>
+<p><br></p>
+<div class="codehilite"><pre><span></span>Toec.exe --logLevel [INFO|DEBUG|ERROR]
+</pre></div>
+
+
+<p>Updates the log level</p>
+<p><br></p>
+<div class="codehilite"><pre><span></span>Toec.exe --resetFull
+</pre></div>
+
+
+<p>This resets Toec back to a new installation state, deleting all settings, certificates, installationId, and history.  This would cause the endpoint to 
+provision again.  If you are having trouble with the endpoint, try the partial before the full reset.  A full reset may result in the loss of an existing relationship 
+b/w the client and server.</p>
+<p><br></p>
+<div class="codehilite"><pre><span></span>Toec.exe --resetPartial
+</pre></div>
+
+
+<p>This performs a partial reset on Toec.  History and installationId are not removed, everything else is reset.  This will also cause the endpoint to provision 
+again.</p>
+<p><br></p>
+<div class="codehilite"><pre><span></span>Toec.exe --resetKey [SERVER_KEY] [CA_THUMBPRINT]
+</pre></div>
+
+
+<p>Changes the server key and ca thumbprint for the endpoint.</p>
+<p><br></p>
+<div class="codehilite"><pre><span></span>Toec.exe --comServers [COM_SERVERS]
+</pre></div>
+
+
+<p>Updates the com servers for the endpoint.</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../../tutorials/first-policy/" title="First Policy Tutorial" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                First Policy Tutorial
+              </span>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.39abc4af.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+  </body>
+</html>
