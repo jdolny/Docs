@@ -2,20 +2,28 @@
 This server installation guide will provide a complete walk through for the setup of Theopenem server (Toems) components.  These components include the **Toems-UI**, the **Toems-API**, 
 the **Toec-API**, and **database**.
   The installation of the endpoint agent (Toec) will be covered in the Client Installation Tutorial.  If you have not yet read the [Welcome Introduction](/), please read it before 
-  continuing, also before starting this guide, ensure you have downloaded the **Installation Checklist** and **Server Topology documents**.  Fill out the documents as you move forward through 
-  the guide.
-
-!!! info "Installation Documents Downloads"
-	[Installation Checklist](https://theopenem.com/wp-content/uploads/2019/01/Theopenem-Checklist.docx)  
-	[Server Topology](https://theopenem.com/wp-content/uploads/2019/01/Theopenem-Server-Topology.docx)
+  continuing. 
 	
-This guide is fairly lengthy and may seem wordy for anyone with Web application / database experience.  As you may have noticed, there is no automated installer for Toems.  This 
-forces you to learn some of the fundamental concepts of Theopenem and will enhance your troubleshooting capabilities.  An experienced Theopenem user can setup everything 
-up in about 20 minutes.  If this is your first time installing Theopenem, allow yourself 2-3 hours to complete this guide.
+The installation process is mostly automated with the MSI.  The entire process should take about 20 minutes for you to complete.
 
 ## Prerequisites
 - Install .NET 4.6 **(Only required if your server version is Server 2012R2.  Newer server versions already have a greater version of .NET installed)**.  
 .NET 4.6.2 can be [downloaded here](https://dotnet.microsoft.com/download/thank-you/net462).  If you wish to install a newer version of .NET greater than 4.6, that is fine also.
-- Optionally download and install [Notepad++](https://notepad-plus-plus.org/download/v7.6.2.html).  Though not required, it will prove helpful when modifying the appropriate config files in the upcoming sections.
+- Assign your server a static ip address
 
-!!! success "This Concludes the Prerequisites. Check this off of your Installation checklist now"
+## Topology
+Theopenem is a fully redundant and scalable application.  Basic users can simply install everything on a single server.  If you are more advanced or want more control over your system, you could do something like the example below.  There is no limit to the number of servers you can use.
+
+- **Application Server 1** - This application server runs all 3 required web applications.
+- **Application Server 2** - This application server runs all 3 required web applications.
+- **Database Server** - Runs the backend database that both the Toems-API and Toec-API communicate with.
+- **File Share** - When more than one Toec-API or Toems-API server is installed, data replication must occur b/w the servers.  An SMB file share is used for this purpose.  The Toec agent does not communicate with this server.  You can use any existing File Server for this purpose.  If only a single Toec-API and Toems-API are used in your topology, the File Share is not needed.
+- **DMZ Toec-API (Optional)** - A Toec-API server can be setup in your DMZ to allow management of endpoints when they are offsite.  This server should only run the Toec-API, you should never allow Toems-API or Toems-UI access from the outside.
+ 
+!!! info "Each application server should be dedicated to Theopenem and not shared with other web applications or services.  The database server and file share can be on shared resources."
+ 
+In the model outlined above, it gives you load balancing as well as failover capabilities.  You can take down either Application Server for maintenance with no effect on your endpoints.  When using multiple Toems-API and Toems-UI servers, you can load balance the requests through DNS or a Load Balancing Appliance.  
+!!! danger "The Toec-API should never go through a load balancer.  Load balancing and failover of the Toec-API is built into the Toec agent.  Running the Toec-API through a load balancer could lead to authentication failures."
+The diagram below shows the traffic flow among these services.
+
+[![](https://theopenem.com/wp-content/uploads/2018/11/Recommended-Install.jpg)](https://theopenem.com/wp-content/uploads/2018/11/Recommended-Install.jpg)

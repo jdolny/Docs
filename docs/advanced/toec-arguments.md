@@ -67,6 +67,11 @@ Changes the server key and ca thumbprint for the endpoint.
 
 <br>
 
+	Toec.exe --prepareImage [SERVER_KEY] [CA_THUMBPRINT]
+If you want to install Toec before capturing an image of the computer.  You must run this prior to the last shutdown of the computer.  Failure to run this will cause each client's installation id to be the same, preventing Toec from working properly.
+
+<br>
+
 	Toec.exe --comServers [COM_SERVERS]
 Updates the com servers for the endpoint.
 

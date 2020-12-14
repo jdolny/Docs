@@ -1,10 +1,19 @@
 # Configure Theopenem
-!!! info "The following steps are all done after logging into any Toems-UI, these steps are only completed on a single server."
+
+!!! danger "Each step below must be completed and in this order unless "optional" is specified next to it."
 
 The Toems-UI has built-in help for most of the pages.  If you need additional clarification on something on one of the pages, click the Orange Info Button in the top right corner.  
 [![](https://theopenem.com/wp-content/uploads/2018/11/orangeI.jpg)](https://theopenem.com/wp-content/uploads/2018/11/orangeI.jpg)
 
-###### 1. Change Admin Password
+###### 1. Login To Toems
+
+* Toems should be accessible from any device on your network by entering the server's ip in your web browser.
+* **Ex: http://192.168.56.100**
+* The default admin username and password is **toemsadmin** for both fields.
+
+---
+
+###### 2. Change Admin Password (This must be done first or some functions of Theopenem will not work.)
 
 * Select Users from the Navigation Menu
 * Select View on toemsadmin
@@ -12,15 +21,6 @@ The Toems-UI has built-in help for most of the pages.  If you need additional cl
 * Select Actions then Update User
 * Click Logout from the Navigation Menu
 * Log in with the new password
-
----
-
-###### 2. Set Provision Key
-
-* Select Admin Settings from the Navigation menu
-* Select Security from the Sub Navigation menu
-* Click Actions, Click Generate Provision Key
-* Click Actions, Click Update Security Settings
 
 ---
 
@@ -33,31 +33,67 @@ The Toems-UI has built-in help for most of the pages.  If you need additional cl
 
 ---
 
-###### 4. Set The Default Com Server Cluster
+###### 4. Set the Storage Location
+
+* Select Admin Settings from the Navigation Menu
+* Select Storage Location from the Sub Navigation Menu
+* Set the Storage Type to Local
+* Enter the local storage path that you specified during the installation of Theopenem.
+* Click Actions, click Update Storage Settings
+
+---
+
+###### 5. Create A Com Server
 
 * Select Admin Settings from the Navigation menu
 * Select Client Com Servers from the Sub Navigation menu
 * Select Add Com Server from the Sub Navigation menu
 * Give the com server a name, every Toec-API application is considered a com server, the name should be something that identifies the server it’s on, such as theopenem-01_com1
-* The URL is the URL for the Toec-API on this server, using it’s FQDN, such as, ```http://theopenem-01.theopenem.com:8888/``` 
-
-!!! tip "If you have been filling out the Server Topology Worksheet this would be the Server FQDN of Application Server 1 plus the port of the Toec-API role."
-
+* The URL is the URL for the Toec-API on this server, using it’s ip address, followed by port 8888 such as, ```http://192.168.56.100:8888/```
+* The Local Storage Path should already be populated.
 * Click Actions, click Add Server
+* You should now see a new set of options in the sub menu, select Imaging Settings
+* Enter the ip address of this server in the upload interface address, should be the same ip you used in the url
+* Select Actions, then Update Server
+* Select multicast settings, enter the same ip in the interface ip address
+* Select Actions, then Update Server
+* Select tftp settings, enter the same ip in the interface ip address
+* Select Actions, then Update Server
 
-!!! tip "If you are using more than 1 Toec-API, repeat the steps above to add all additional Com Servers"
+---
+
+###### 6. Set The Default Com Server Cluster
 
 * Select Admin Settings from the Navigation menu
 * Select Client Com Servers from the Sub Navigation menu
 * Select Add Com Server Cluster
-* Give the cluster a name
+* Give the cluster a name, such as Central
 * Enable the Default Cluster Option
-* Check the box next to each Com Server you Added leaving the Role set to Active
+* Check the box next to your Com Server you created earlier, leaving all other options to default values
 * Click Actions, click Add Cluster
 
 ---
 
-###### 5. Setup SMTP Server
+###### 7. Set Provision Key And Imaging Token
+
+* Select Admin Settings from the Navigation menu
+* Select Security from the Sub Navigation menu
+* Click Actions, Click Generate Provision Key
+* Click Actions, Click Generate Imaging Token
+* Click Actions, Click Update Security Settings
+
+---
+
+###### 8. Generate Certificates
+
+* Select Admin Settings from the Navigation Menu
+* Select Certificates from the Sub Navigation Menu
+* Click Actions, click Generate Certificates
+
+---
+
+
+###### 9. Setup SMTP Server (Optional, but recommended)
 
 * Select E-mail from the Sub Navigation menu
 * Enable the Mail Enabled option
@@ -66,7 +102,7 @@ The Toems-UI has built-in help for most of the pages.  If you need additional cl
 
 ---
 
-###### 6. LDAP Setup
+###### 6. LDAP Setup (Optional, but recommended)
 
 * Select Admin Settings from the Navigation menu
 * Select Security from Sub Navigation menu
@@ -79,45 +115,3 @@ The Toems-UI has built-in help for most of the pages.  If you need additional cl
 * Click Actions, Test AD Bind, to verify settings are correct
 
 ---
-
-###### 7. Set the Storage Location
-
-> If you are using a single Theopenem server with Toec-API and Toems-API installed on the same server:
-
-* Select Admin Settings from the Navigation Menu
-* Select Storage Location from the Sub Navigation Menu
-* Set the Storage Type to Local
-* Enter the local storage path that you created back in the Create Storage Directory Docs
-
-!!! tip "If you have been filling out the Server Topology Worksheet this would be the Local Storage Path of Application Server 1."
-
-* Click Actions, click Update Storage Settings
-
-<br>
-
-> If you are using multiple Theopenem servers with Toec-API and Toems-API installed on more than 1 server.
-
-* You must first setup a file share on a remote server.  This must be an SMB share and can be on any device that supports SMB.  A user must be setup on that share with Read / Write privileges.  This share cannot be on any Theopenem server.
-* Select Admin Settings from the Navigation Menu
-* Select Storage Location from the Sub Navigation Menu
-* Set the Storage Type to SMB
-* Enter the Storage Path in UNC format, such as, \\\myfileserver\theopenem_share
-* Enter the Username for the user that is used to connect to the share
-* Enter the Password for the user that is used to connect to the share
-* Enter the Domain for the user that is used to connect to the share, if applicable
-* Click Actions, click Update Storage Settings
-
-
-!!! success "Continue filling in the Server Topology Worksheet, fill in all file share information now"
-
----
-
-###### 8. Generate Certificates
-
-* Select Admin Settings from the Navigation Menu
-* Select Certificates from the Sub Navigation Menu
-* Click Actions, click Generate Certificates
-
----
-
-!!! success "This concludes Configure Theopenem.  Check this off of your Installation checklist now."

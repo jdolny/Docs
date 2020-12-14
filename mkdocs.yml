@@ -16,32 +16,20 @@ markdown_extensions:
 
 nav:
 - 'Getting Started':
-  - 'Server Installation': 
+  - 'Server Installation (Toems)': 
     - "Server Overview/Prereqs": getting-started/overview.md
-    - "Install IIS": getting-started/install-iis.md
     - "Install Toems Web Applications": getting-started/install-webapps.md
-    - "Create Firewall Exceptions": getting-started/firewall-exceptions.md
-    - "Database Setup": 
-      - 'Overview': getting-started/database-overview.md
-      - 'Microsoft SQL Server': getting-started/database-sqlserver.md
-      - 'MariaDB / MySQL': getting-started/database-mariadb.md
-      - 'Database Firewall Exception': getting-started/database-firewall.md
+    - "Configure Theopenem": getting-started/configure.md  
     - "Update Web.config": getting-started/update-web-config.md
-    - "Test The Web Applications": getting-started/test-apps.md
-    - "Create Storage Directory": getting-started/storage.md
-    - "Configure Theopenem": getting-started/configure.md
+    - "Test Toec-API": getting-started/test-apps.md
     - "Install Certificates": getting-started/install-certificates.md
-    - "Web.config Revisited": getting-started/web-config-revisited.md
-    - "Create Scheduled Task": getting-started/scheduled-tasks.md
-    - "Finally": getting-started/finally.md
-  - 'Client Installation': 
+  - 'Client Installation (Toec)': 
     - "Endpoint Provisioning Setup": getting-started/endpoint-provisioning-setup.md
-    - "Client Config Prereqs": getting-started/client-config-prereqs.md
-    - "Transform The Toec MSI": getting-started/transform-toec.md
-    - "Install Client Via Cmd / Powershell": getting-started/install-toec.md
-    - "Install Client Via Group Policy": getting-started/deploy-toec.md
+    - "Generate Toec Installer": getting-started/generate-toec-installer.md
+    - "Install Toec": getting-started/install-toec.md
 - 'Tutorials':
   - 'First Policy Tutorial': tutorials/first-policy.md
+  - "Install Toec Via Group Policy": tutorials/deploy-toec.md
 - 'Advanced Topics':
   - 'Toec Arguments': advanced/toec-arguments.md
 extra_css: [style.css]

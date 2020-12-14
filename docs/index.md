@@ -1,5 +1,5 @@
 # Welcome
-Welcome to The Open Endpoint Manager, a solution that provides a full suite of Windows management capabilities as well as computer inventory, custom asset management, 
+Welcome to The Open Endpoint Manager, a solution that provides a full suite of Windows management capabilities as well as computer imaging, computer inventory, custom asset management, 
 and reporting.  Theopenem is an on-premises solution, all servers and data remain within your organization.  In terms of features and capabilities, it resembles products 
 such as SCCM, PDQ, Desktop Central, KACE, and the list goes on.  For a full list of features, check out https://theopenem.com/features.
 
@@ -20,16 +20,19 @@ server in another 60 minutes to see if any new policies have been added.  There
 ## Server Requirements (Toems)
 ### Hardware
 - **CPU** requirements align with the requirements of the OS
-- **Solid State Disks** are recommended by not required, storage capacity should align with the OS requirements plus enough to store the applications that will be deployed.
+- **Solid State Disks** are recommended by not required, storage capacity should align with the OS requirements plus enough to store the applications and images that will be deployed.
 - **Memory** is the most difficult requirement to assess.  It depends on many factors, such as how many Servers will be used to distribute the load, if the database is local or remote, the amount of endpoints within the organization, and the number of policies defined in Theopenem.  8GB is typically enough with 16GB (possibly more) of memory being the recommended number.
 
 
 ### Software
 The following operating systems are supported: 
 
+- **Windows 10 Pro - See below for limitation**
 - **Server 2012R2**
 - **Server 2016**
 - **Server 2019**
+
+!!! danger "Windows 10 only supports 20 concurrent TCP/IP connections.  It is not recommened to use Windows 10 for medium / large organizations."
 
 !!! info "Note"
 	Toems requires a 64-bit Windows Server OS with .NET Framework 4.6 or newer installed.
@@ -44,8 +47,6 @@ Theopenem supports the following databases:
 If you have an existing database cluster with any of the above mentioned applications, you can use it.  Otherwise, you can create a new server, 
 either on your Application Server or a separate server.  The database server should have a minimum of 8 GB ram.
 
-!!! info "A database that's run on a server that is separate from Theopenem is recommended"
-
 !!! danger "SQL Express is not supported."
  
 ## Client Requirements (Toec)
@@ -57,6 +58,16 @@ Supported OS's include:
 
 Toec can be installed on both 32-bit and 64-bit architectures.  Like Toems, it also requires .NET framework 4.6 or newer be installed on the OS.
 There are no specific CPU, Hard Drive, or Memory requirements.
+
+## Client Imaging Requirements
+When deploying / uploading computer images.  The following OS's can be captured / deployed.
+
+- **Windows XP**
+- **Windows Vista**
+- **Windows 7**
+- **Windows 8/8.1**
+- **Windows 10**
+- **Various Linux Distros**
  
 ## Bandwidth Requirements / Network Impact
 Determining the impact on your network also varies depending on your individual Theopenem setup.  Factors such as the number of endpoints, how often the endpoints check-in, the number of Servers, and the number of polices and modules defined in Theopenem all contribute to the impact on the network.  The following example demonstrates the data utilized from a single endpoint.
@@ -78,19 +89,3 @@ It may be necessary to whitelist the installer MSI for the Toec agent or even th
 ## Security
 Theopenem was designed with security in mind.  While no product is invulnerable to attackers, it was designed using various implementations of industry standards such as OAuth 2.0, HMAC authentication, Certificate authentication and encryption.  The Server is comprised of 3 separate Web Applications allowing you control over which components should be accessible to what users.  For example, the management of Theopenem is contained within the Toems-UI and Toems-API.  These two applications can be firewalled off to only users that need access to the system.  The endpoints only ever need to communicate with the Toec-API.  Authentication to the Toems-API is achieved through OAuth 2.0 bearer tokens which are only valid for 1 hour, in addition, users are locked out for 15 minutes after too many failed login attempts, mitigating brute force attacks.  The body of all communications b/w the client and server are encrypted using a combination of device certificates and encryption keys.  If SSL is setup on the Web Servers, the headers will also be encrypted, as well as the body for a second time.  Commands from the server to each endpoint are signed using a CA-Intermediate-Device Certificate chain ensuring the client will only run commands originating from your servers.
  
-## Recommended Topology
-The recommended server topology involves the use of 5 servers.  It's just a recommendation, you can run everything off a single server if you must, or anything in between.
-
-- **Application Server 1** - This application server runs all 3 required web applications.
-- **Application Server 2** - This application server runs all 3 required web applications.
-- **Database Server** - Runs the backend database that both the Toems-API and Toec-API communicate with.
-- **File Share** - When more than one Toec-API or Toems-API server is installed, data replication must occur b/w the servers.  An SMB file share is used for this purpose.  The Toec agent does not communicate with this server.  You can use any existing File Server for this purpose.  If only a single Toec-API and Toems-API are used in your topology, the File Share is not needed.
-- **DMZ Toec-API (Optional)** - A Toec-API server can be setup in your DMZ to allow management of endpoints when they are offsite.  This server should only run the Toec-API, you should never allow Toems-API or Toems-UI access from the outside.
- 
-!!! info "Each application server should be dedicated to Theopenem and not shared with other web applications or services.  The database server and file share can be on shared resources."
- 
-In the model outlined above, it gives you load balancing as well as failover capabilities.  You can take down either Application Server for maintenance with no effect on your endpoints.  When using multiple Toems-API and Toems-UI servers, you can load balance the requests through DNS or a Load Balancing Appliance.  
-!!! danger "The Toec-API should never go through a load balancer.  Load balancing and failover of the Toec-API is built into the Toec agent.  Running the Toec-API through a load balancer could lead to authentication failures."
-The diagram below shows the traffic flow among these services.
-
-[![](https://theopenem.com/wp-content/uploads/2018/11/Recommended-Install.jpg)](https://theopenem.com/wp-content/uploads/2018/11/Recommended-Install.jpg)

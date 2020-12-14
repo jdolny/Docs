@@ -27,6 +27,5 @@ on each Theopenem server.
 * Perform the previous 3 steps on the toems-intermediate certificate, this time when selecting the location to store the cert, select Intermediate Certification Authorities
 [![](https://theopenem.com/wp-content/uploads/2018/11/certs-05.jpg)](https://theopenem.com/wp-content/uploads/2018/11/certs-05.jpg)
 
-!!! info "Remember to copy the 2 certificates to any other servers running the Toec-API and complete section 2 on each other server"
 
-!!! success "This concludes Install Certificates.  Check this off of your Installation checklist now."
+!!! success "This completes the installation of Toems, or the server components.  Up next we will begin to address the client installation or Toec."

@@ -26,9 +26,6 @@ Give the process 5-10 minutes to run, you can navigate away from the page.
 
 ---
 
-!!! success "This Concludes Active Directory Sync. Check this off of your Installation checklist now."
-
----
 
 ###### 2. Provisioning Security
 There are a few security measures in place to regulate endpoint provisioning.  They are currently all on by default, but you may disable them.  The 
