@@ -55,6 +55,7 @@ Supported OS's include:
 - **Windows 7**
 - **Windows 8/8.1**
 - **Windows 10**
+- **Windows Server 2012 - 2019**
 
 Toec can be installed on both 32-bit and 64-bit architectures.  Like Toems, it also requires .NET framework 4.6 or newer be installed on the OS.
 There are no specific CPU, Hard Drive, or Memory requirements.

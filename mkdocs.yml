@@ -30,6 +30,9 @@ nav:
 - 'Tutorials':
   - 'First Policy Tutorial': tutorials/first-policy.md
   - "Install Toec Via Group Policy": tutorials/deploy-toec.md
-- 'Advanced Topics':
-  - 'Toec Arguments': advanced/toec-arguments.md
+  - 'Toec Arguments': tutorials/toec-arguments.md
+  - 'Update Procedure': tutorials/updates.md
+  - 'How To Build The WIE': tutorials/wie.md
+  - 'Logs': tutorials/logs.md
+  
 extra_css: [style.css]
