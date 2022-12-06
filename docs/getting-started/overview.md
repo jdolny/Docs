@@ -7,8 +7,9 @@ the **Toec-API**, and **database**.
 The installation process is mostly automated with the MSI.  The entire process should take about 20 minutes for you to complete.
 
 ## Prerequisites
-- Install .NET 4.6 **(Only required if your server version is Server 2012R2.  Newer server versions already have a greater version of .NET installed)**.  
-.NET 4.6.2 can be [downloaded here](https://dotnet.microsoft.com/download/thank-you/net462).  If you wish to install a newer version of .NET greater than 4.6, that is fine also.
+- Install .NET 4.8.  
+.NET 4.8 can be [downloaded here](https://dotnet.microsoft.com/download/thank-you/net48).  .NET 4.8.1 is also compatible.  .NET 5.0 and greater are not compatible.  They are fine if they are installed, 
+but they will not serve as a substitute for .NET 4.8.x.
 - Assign your server a static ip address
 
 ## Topology

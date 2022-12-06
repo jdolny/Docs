@@ -14,7 +14,14 @@ Updates for Theopenem are handled by the Update Installer for each released upda
 * After you have logged in, select **Admin Settings->Toec->Actions->Prepare Toec Updates**.  Toec agents will not update until this step is performed which is helpful if you want to manually install the latest client
 on a few test machines before you update them all
 * If you are using multiple com servers, you will need to replicate storage before Toec will update
+* See below for specific updates steps required for your version
 * Your update is now complete
+
+## 1.5.0 Update Additional Steps
+* Install .NET 4.8 (Previous versions required .NET 4.6.  The requirement is now .NET 4.8.  It can be [downloaded here](https://dotnet.microsoft.com/download/thank-you/net48).  .NET 4.8.1 is also compatible.  .NET 5.0 and greater are not compatible.  They are fine if they are installed, 
+but they will not serve as a substitute for .NET 4.8.x.
+* If using the WIE, you must recreate your WIE using wie_builder v2.0.2
+* If using the LIE as USB a device, you must recreate the LIE.  If you are PXE booting the LIE, no changes are needed.
 
 
 

@@ -28,26 +28,26 @@ server in another 60 minutes to see if any new policies have been added.  There
 The following operating systems are supported: 
 
 - **Windows 10 Pro - See below for limitation**
+- **Windows 11 Pro - See below for limitation**
 - **Server 2012R2**
 - **Server 2016**
 - **Server 2019**
+- **Server 2022**
 
-!!! danger "Windows 10 only supports 20 concurrent TCP/IP connections.  It is not recommened to use Windows 10 for medium / large organizations."
+!!! danger "Windows 10,11 only supports 20 concurrent TCP/IP connections.  It is not recommened to use Windows 10,11 for medium / large organizations."
 
 !!! info "Note"
-	Toems requires a 64-bit Windows Server OS with .NET Framework 4.6 or newer installed.
+	Toems requires a 64-bit Windows Server OS with .NET Framework 4.8 or newer installed.
 
 ## Database Requirements
 Theopenem supports the following databases:
 
 - MariaDB 10.2 or greater
 - MySQL 5.7 or greater
-- Microsoft SQL Server 2012 or greater
 
 If you have an existing database cluster with any of the above mentioned applications, you can use it.  Otherwise, you can create a new server, 
 either on your Application Server or a separate server.  The database server should have a minimum of 8 GB ram.
 
-!!! danger "SQL Express is not supported."
  
 ## Client Requirements (Toec)
 Supported OS's include:
@@ -55,9 +55,10 @@ Supported OS's include:
 - **Windows 7**
 - **Windows 8/8.1**
 - **Windows 10**
-- **Windows Server 2012 - 2019**
+- **Windows 11**
+- **Windows Server 2012 - 2022**
 
-Toec can be installed on both 32-bit and 64-bit architectures.  Like Toems, it also requires .NET framework 4.6 or newer be installed on the OS.
+Toec can be installed on both 32-bit and 64-bit architectures.  It requires .NET framework 4.6 or newer be installed on the OS.
 There are no specific CPU, Hard Drive, or Memory requirements.
 
 ## Client Imaging Requirements
@@ -68,6 +69,7 @@ When deploying / uploading computer images.  The following OS's can be captured 
 - **Windows 7**
 - **Windows 8/8.1**
 - **Windows 10**
+- **Windows 11**
 - **Various Linux Distros**
  
 ## Bandwidth Requirements / Network Impact

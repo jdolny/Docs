@@ -1,5 +1,5 @@
 site_name: Theopenem Documentation
-theme: material
+theme: readthedocs
 
 markdown_extensions:
   - codehilite:
@@ -15,6 +15,7 @@ markdown_extensions:
       base_path: docs
 
 nav:
+- 'Welcome': index.md
 - 'Getting Started':
   - 'Server Installation (Toems)': 
     - "Server Overview/Prereqs": getting-started/overview.md
