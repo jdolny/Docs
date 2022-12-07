@@ -91,4 +91,20 @@ It may be necessary to whitelist the installer MSI for the Toec agent or even th
  
 ## Security
 Theopenem was designed with security in mind.  While no product is invulnerable to attackers, it was designed using various implementations of industry standards such as OAuth 2.0, HMAC authentication, Certificate authentication and encryption.  The Server is comprised of 3 separate Web Applications allowing you control over which components should be accessible to what users.  For example, the management of Theopenem is contained within the Toems-UI and Toems-API.  These two applications can be firewalled off to only users that need access to the system.  The endpoints only ever need to communicate with the Toec-API.  Authentication to the Toems-API is achieved through OAuth 2.0 bearer tokens which are only valid for 1 hour, in addition, users are locked out for 15 minutes after too many failed login attempts, mitigating brute force attacks.  The body of all communications b/w the client and server are encrypted using a combination of device certificates and encryption keys.  If SSL is setup on the Web Servers, the headers will also be encrypted, as well as the body for a second time.  Commands from the server to each endpoint are signed using a CA-Intermediate-Device Certificate chain ensuring the client will only run commands originating from your servers.
+
+## Topology
+Theopenem is a fully redundant and scalable application.  Basic users can simply install everything on a single server.  If you are more advanced or want more control over your system, you could do something like the example below.  There is no limit to the number of servers you can use.
+
+- **Application Server 1** - This application server runs all 3 required web applications.
+- **Application Server 2** - This application server runs all 3 required web applications.
+- **Database Server** - Runs the backend database that both the Toems-API and Toec-API communicate with.
+- **File Share** - When more than one Toec-API or Toems-API server is installed, data replication must occur b/w the servers.  An SMB file share is used for this purpose.  The Toec agent does not communicate with this server.  You can use any existing File Server for this purpose.  If only a single Toec-API and Toems-API are used in your topology, the File Share is not needed.
+- **DMZ Toec-API** - A Toec-API server can be setup in your DMZ to allow management of endpoints when they are offsite.  This server should only run the Toec-API, you should never allow Toems-API or Toems-UI access from the outside.
  
+!!! info "Each application server should be dedicated to Theopenem and not shared with other web applications or services.  The database server and file share can be on shared resources."
+ 
+In the model outlined above, it gives you load balancing as well as failover capabilities.  You can take down either Application Server for maintenance with no effect on your endpoints. 
+!!! danger "The Toec-API should never go through a load balancer.  Load balancing and failover of the Toec-API is built into the Toec agent.  Running the Toec-API through a load balancer could lead to authentication failures."
+The diagram below shows the traffic flow among these services.
+
+[![](https://theopenem.com/wp-content/uploads/2018/11/Recommended-Install.jpg)](https://theopenem.com/wp-content/uploads/2018/11/Recommended-Install.jpg)
