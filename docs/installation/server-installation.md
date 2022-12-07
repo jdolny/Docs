@@ -14,21 +14,21 @@ but they will not serve as a substitute for .NET 4.8.x.
 
 ## Install Toems Web Applications
 
-#### 1. Download the latest version of Theopenem from https://theopenem.com/downloads
+#### 1. Download the latest version of Theopenem from [https://theopenem.com/downloads](https://theopenem.com/downloads)
 
 #### 2. Run the installer
 Most users should leave all of the default options selected during installation.  When asked for a local storage path, remember the location as you will need to enter that information in the web interface after installation.
 
 #### 3. The Web Applications should now be installed.
 
-# Configure Theopenem
+## Configure Theopenem
 
 !> "Each step below must be completed and in this order unless "optional" is specified next to it.
 
 The Toems-UI has built-in help for most of the pages.  If you need additional clarification on something on one of the pages, click the Orange Info Button in the top right corner.  
 [![](https://theopenem.com/wp-content/uploads/2018/11/orangeI.jpg)](https://theopenem.com/wp-content/uploads/2018/11/orangeI.jpg)
 
-###### 1. Login To Toems
+#### 1. Login To Toems
 
 * Toems should be accessible from any device on your network by entering the server's ip in your web browser.
 * **Ex: http://192.168.56.100**
@@ -36,7 +36,7 @@ The Toems-UI has built-in help for most of the pages.  If you need additional cl
 
 ---
 
-###### 2. Change Admin Password (This must be done first or some functions of Theopenem will not work.)
+#### 2. Change Admin Password (This must be done first or some functions of Theopenem will not work.)
 
 * Select Users from the Navigation Menu
 * Select View on toemsadmin
@@ -47,7 +47,7 @@ The Toems-UI has built-in help for most of the pages.  If you need additional cl
 
 ---
 
-###### 3. Set Organization Name
+#### 3. Set Organization Name
 
 * Select Admin Settings from the Navigation menu
 * Select Server from the Sub Navigation menu
@@ -56,7 +56,7 @@ The Toems-UI has built-in help for most of the pages.  If you need additional cl
 
 ---
 
-###### 4. Set the Storage Location
+#### 4. Set the Storage Location
 
 * Select Admin Settings from the Navigation Menu
 * Select Storage Location from the Sub Navigation Menu
@@ -66,7 +66,7 @@ The Toems-UI has built-in help for most of the pages.  If you need additional cl
 
 ---
 
-###### 5. Create A Com Server
+#### 5. Create A Com Server
 
 * Select Admin Settings from the Navigation menu
 * Select Client Com Servers from the Sub Navigation menu
@@ -85,7 +85,7 @@ The Toems-UI has built-in help for most of the pages.  If you need additional cl
 
 ---
 
-###### 6. Set The Default Com Server Cluster
+#### 6. Set The Default Com Server Cluster
 
 * Select Admin Settings from the Navigation menu
 * Select Client Com Servers from the Sub Navigation menu
@@ -97,7 +97,7 @@ The Toems-UI has built-in help for most of the pages.  If you need additional cl
 
 ---
 
-###### 7. Set Provision Key And Imaging Token
+#### 7. Set Provision Key And Imaging Token
 
 * Select Admin Settings from the Navigation menu
 * Select Security from the Sub Navigation menu
@@ -107,7 +107,7 @@ The Toems-UI has built-in help for most of the pages.  If you need additional cl
 
 ---
 
-###### 8. Generate Certificates
+#### 8. Generate Certificates
 
 * Select Admin Settings from the Navigation Menu
 * Select Certificates from the Sub Navigation Menu
@@ -116,7 +116,7 @@ The Toems-UI has built-in help for most of the pages.  If you need additional cl
 ---
 
 
-###### 9. Setup SMTP Server (Optional, but recommended)
+#### 9. Setup SMTP Server (Optional, but recommended)
 
 * Select E-mail from the Sub Navigation menu
 * Enable the Mail Enabled option
@@ -125,7 +125,7 @@ The Toems-UI has built-in help for most of the pages.  If you need additional cl
 
 ---
 
-###### 6. LDAP Setup (Optional, but recommended)
+#### 6. LDAP Setup (Optional, but recommended)
 
 * Select Admin Settings from the Navigation menu
 * Select Security from Sub Navigation menu
@@ -140,9 +140,9 @@ The Toems-UI has built-in help for most of the pages.  If you need additional cl
 ---
 
 
-# Update Theopenem Web.config Files
+## Update Theopenem Web.config Files
 
-###### 1.  Update Toems-UI Web.config
+#### 1.  Update Toems-UI Web.config
 * In Windows File Explorer, navigate to C:\Program Files\Theopenem\Toems-UI
 * Right click on **Web.config**, select **Edit With Notepad++**
 * Scroll to the bottom of the file to find the **<appSettings\>** section
@@ -163,7 +163,7 @@ A completed Toems-UI web.config file should look something like this.
 [![](https://theopenem.com/wp-content/uploads/2020/12/toems-ui_config.png)](https://theopenem.com/wp-content/uploads/2020/12/toems-ui_config.png)
 ---
 
-###### 2.  Update Toems-API Web.config
+#### 2.  Update Toems-API Web.config
 
 * In Windows File Explorer, navigate to C:\Program Files\Theopenem\Toems-API
 * Right click on **Web.config**, select **Edit With Notepad++**
@@ -178,7 +178,7 @@ A completed Toems-API web.config file should look something like this.
 [![](https://theopenem.com/wp-content/uploads/2020/12/toems-api_config.png)](https://theopenem.com/wp-content/uploads/2020/12/toems-api_config.png)
 ---
 
-###### 3.  Update Toec-API Web.config
+#### 3.  Update Toec-API Web.config
 * In Windows File Explorer, navigate to C:\Program Files\Theopenem\Toec-API
 * Right click on **Web.config**, select **Edit With Notepad++**
 * Scroll to the bottom and find the line that says <!--Copy Connection String from Application Server(Toems-API Web.confg) Below This Line-->
@@ -198,10 +198,10 @@ A completed Toems-API web.config file should look something like this.
 [![](https://theopenem.com/wp-content/uploads/2020/12/toec-api_config.png)](https://theopenem.com/wp-content/uploads/2020/12/toec-api_config.png)
 
 
-# Test Toec-API
+## Test Toec-API
 Now is a good time to test the Toec-API to see if the com server and web.config file are correct.
 
-###### 1.  Test Toec-API (Client connections)
+#### 1.  Test Toec-API (Client connections)
 * Open a web browser
 * Navigate to http://server-ip:8888/Provision/VerifyDb replacing server-ip with your actual ip.  Ex: **http://192.168.56.100:8888/Provision/VerifyDb**
 * The page should respond with the number 60
@@ -210,11 +210,11 @@ Now is a good time to test the Toec-API to see if the com server and web.config 
 ---
 
 
-# Install Certificates
+## Install Certificates
 The certificates are used for identification, encryption, and signing with your endpoints.  The CA and intermediate need to be imported into the Windows Certificate Store
 on each Theopenem server.
 
-###### 1. Export Certificates from Toems-UI
+#### 1. Export Certificates from Toems-UI
 * Login to the Toems-UI from the server itself, do not do this remotely, these certificates are being installed on the Application Server itself, not an end user’s PC.
 * Select Admin Settings from the Navigation Menu
 * Select Certificates from the Sub Navigation Menu
@@ -229,7 +229,7 @@ on each Theopenem server.
 
 ---
 
-###### 2. Install Certificates in the Local Certificate Store
+#### 2. Install Certificates in the Local Certificate Store
 * Double click on the toems-ca file, select Install Certificate
 [![](https://theopenem.com/wp-content/uploads/2018/11/certs-02.jpg)](https://theopenem.com/wp-content/uploads/2018/11/certs-02.jpg)
 * Select Local Machine, click Next
