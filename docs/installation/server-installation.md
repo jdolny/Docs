@@ -161,7 +161,6 @@ connect directly to the Toems-API, skipping the Toems-UI application.  If you ar
 
 A completed Toems-UI web.config file should look something like this.
 
-
 [![](https://theopenem.com/wp-content/uploads/2020/12/toems-ui_config.png)](https://theopenem.com/wp-content/uploads/2020/12/toems-ui_config.png)
 ---
 
@@ -177,7 +176,6 @@ A completed Toems-UI web.config file should look something like this.
 * Save the file, but leave it open
 
 A completed Toems-API web.config file should look something like this.
-
 
 [![](https://theopenem.com/wp-content/uploads/2020/12/toems-api_config.png)](https://theopenem.com/wp-content/uploads/2020/12/toems-api_config.png)
 ---
@@ -199,7 +197,6 @@ A completed Toems-API web.config file should look something like this.
 * Save and close Notepad++
 
 A completed Toems-API web.config file should look something like this.
-
 
 [![](https://theopenem.com/wp-content/uploads/2020/12/toec-api_config.png)](https://theopenem.com/wp-content/uploads/2020/12/toec-api_config.png)
 
