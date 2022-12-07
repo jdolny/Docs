@@ -8,6 +8,7 @@ The installation process is mostly automated with the MSI.  The entire process s
 
 ## Prerequisites
 - Install .NET 4.8
+
 ?> .NET 4.8 can be [downloaded here](https://dotnet.microsoft.com/download/thank-you/net48).  .NET 4.8.1 is also compatible.  .NET 5.0 and greater are not compatible.  They are fine if they are installed, but they will not serve as a substitute for .NET 4.8.x.
 - Assign your server a static ip address
 
@@ -22,7 +23,7 @@ Most users should leave all of the default options selected during installation.
 
 ## Configure Theopenem
 
-!> "Each step below must be completed and in this order unless "optional" is specified next to it.
+!> Each step below must be completed and in this order unless "optional" is specified next to it.
 
 The Toems-UI has built-in help for most of the pages.  If you need additional clarification on something on one of the pages, click the Orange Info Button in the top right corner.  
 [![](https://theopenem.com/wp-content/uploads/2018/11/orangeI.jpg)](https://theopenem.com/wp-content/uploads/2018/11/orangeI.jpg)
