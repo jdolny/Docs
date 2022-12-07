@@ -6,20 +6,20 @@ the **Toec-API**, and **database**.
 	
 The installation process is mostly automated with the MSI.  The entire process should take about 20 minutes for you to complete.
 
-# Prerequisites
+## Prerequisites
 - Install .NET 4.8.  
 .NET 4.8 can be [downloaded here](https://dotnet.microsoft.com/download/thank-you/net48).  .NET 4.8.1 is also compatible.  .NET 5.0 and greater are not compatible.  They are fine if they are installed, 
 but they will not serve as a substitute for .NET 4.8.x.
 - Assign your server a static ip address
 
-# Install Toems Web Applications
+## Install Toems Web Applications
 
-###### 1. Download the latest version of Theopenem from https://theopenem.com/downloads
+#### 1. Download the latest version of Theopenem from https://theopenem.com/downloads
 
-###### 2. Run the installer
+#### 2. Run the installer
 Most users should leave all of the default options selected during installation.  When asked for a local storage path, remember the location as you will need to enter that information in the web interface after installation.
 
-###### 3. The Web Applications should now be installed.
+#### 3. The Web Applications should now be installed.
 
 # Configure Theopenem
 
