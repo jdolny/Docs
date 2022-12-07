@@ -153,7 +153,7 @@ the same server the value should always be ```http://localhost:8080```.  This va
 * Change the value for **UploadApiUrl** to include your server's ip address.  Replace the letters "fqdn" with the ip or the actual FQDN.  Example ```http://toems-01.theopenem.com:8080/``` or ```http://192.168.56.100:8080```.
 
 
-> The **UploadApiUrl** value is strictly used for uploading files to Theopenem through the UI.  Typically when browsing the UI, your browser connects to the 
+?> The **UploadApiUrl** value is strictly used for uploading files to Theopenem through the UI.  Typically when browsing the UI, your browser connects to the 
 Toems-UI application and the Toems-UI connects to the Toems-API, with the exception of uploading files.  When uploading a file through the Toems-UI, your browser will 
 connect directly to the Toems-API, skipping the Toems-UI application.  If you are having issues uploading files, it is most likely because this value is incorrect.
 
