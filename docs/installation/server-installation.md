@@ -1,6 +1,6 @@
 # Server Installation
 This server installation guide will provide a complete walk through for the setup of Theopenem server (Toems) components.  These components include the **Toems-UI**, the **Toems-API**, 
-the **Toec-API**, and **database**.
+the **Toec-API**, and **database**.  Video tutorials are also available from the nav menu if you prefer that style of instruction.
   The installation of the endpoint agent (Toec) will be covered in the Client Installation Tutorial.  If you have not yet read the [Welcome Introduction](/), please read it before 
   continuing. 
 
@@ -15,12 +15,12 @@ The installation process is mostly automated with the MSI.  The entire process s
 
 ## Install Toems Web Applications
 
-#### 1. Download the latest version of Theopenem from  [https://theopenem.com/downloads](https://theopenem.com/downloads)
+#### 1. Download the latest version of Theopenem from[ https://theopenem.com/downloads](https://theopenem.com/downloads)
 
 #### 2. Run the installer
 Most users should leave all of the default options selected during installation.  When asked for a local storage path, remember the location as you will need to enter that information in the web interface after installation.
 
-#### 3. The Web Applications should now be installed.
+#### 3. The Web Applications are now installed.
 
 ## Configure Theopenem
 
@@ -28,12 +28,12 @@ Most users should leave all of the default options selected during installation.
 
 #### 1. Login To Toems
 
-* Toems should be accessible from any device on your network by entering the server's ip or fqdn in your web browser.
-* **Ex: http://192.168.56.100**
+* Toems should be accessible from any device on your network by entering the server's ip or FQDN in your web browser.
+* **Ex: http://192.168.56.100** or **http://myserver.mydomain**
 
-?> **Default Username: toemsadmin**
+?> Default Username: **toemsadmin**
 
-?> **Default Password: toemsadmin**
+?> Default Password: **toemsadmin**
 
 ---
 
@@ -44,7 +44,7 @@ Most users should leave all of the default options selected during installation.
 * ***Update*** the ***User Password*** and ***Confirm Password*** fields
 * Select ***Actions*** then ***Update User***
 * Click ***Logout*** from the Navigation Menu
-* Log in with the new password
+* ***Log in*** with the new password
 
 ---
 
@@ -151,8 +151,8 @@ Most users should leave all of the default options selected during installation.
 connected to.
 * Leave the value for **ApplicationApiUrl** alone.  This value is always relative to your Toems-UI server.  If you installed the Toems-API and Toems-UI on 
 the same server the value should always be ```http://localhost:8080```.  This value tells the Toems-UI(frontend) where to find the Toems-API(backend).
-* Change the value for **UploadApiUrl** to include your server's ip address or FQDN.  Replace the letters "fqdn" with the ip or the actual FQDN.  
-***Ex:*** ```http://toems-01.theopenem.com:8080/``` or ```http://192.168.56.100:8080```.
+* Change the value for **UploadApiUrl** to include your server's ip address or FQDN.  Replace the letters "fqdn" with the ip or the FQDN.
+**Ex:** ```http://toems-01.theopenem.com:8080/``` or ```http://192.168.56.100:8080```.
 
 
 ?> The **UploadApiUrl** value is strictly used for uploading files to Theopenem through the UI.  Typically when browsing the UI, your browser connects to the 
@@ -185,10 +185,10 @@ connect directly to the Toems-API, skipping the Toems-UI application.  If you ar
 * Right click on **Web.config**, select **Edit With Notepad++**
 * Scroll to the bottom and find the line that says ```<!--Copy Connection String from Application Server(Toems-API Web.confg) Below This Line-->```
 * Paste the connection string that you copied from the Toems-API web.config right below that line
-* Go back to the Toems-API Web.config file(It should still be open in Notepad++) 
+* Go back to the ***Toems-API Web.config*** file(It should still be open in Notepad++) 
 * Scroll to the bottom and find the line that begins with  ***<add key="DbEncryptionKey"***
-* Copy the value of the DbEncryption Key and paste it in the Toec-UI web.config file, updating the ***"updatethisvalue"*** with the new value.
-* Keep Notepad++ open.  Log back into Theopenem web.  
+* ***Copy*** the value of the ***DbEncryptionKey*** and paste it in the *Toec-API web.config file, updating the ***"updatethisvalue"*** with the new value.
+* Keep Notepad++ open.  Log back into Theopenem Web UI.  
 * Select ***Admin Settings***.  Select ***Client Com Servers***.
 * Click ***View*** on the ***Com Server you created earlier***.
 * Copy the ***unique id*** to your clipboard.
@@ -207,7 +207,7 @@ Now is a good time to test the Toec-API to see if the com server and web.config 
 * Open a web browser
 * Navigate to http://server-ip:8888/Provision/VerifyDb replacing server-ip with your actual ip or FQDN.  Ex: **http://192.168.56.100:8888/Provision/VerifyDb**
 * The page should respond with the number 60
-* If this step was successful the Toec-API is running and can access the database
+* If this step was successful the Toec-API is running and can access the database.  If not, verify your web.config file looks correct.
 
 ---
 
@@ -233,17 +233,19 @@ on each Theopenem server.
 ---
 
 #### 2. Install Certificates in the Local Certificate Store
-* Double click on the toems-ca file, select Install Certificate
+* ***Double click*** on the ***toems-ca file***, select ***Install Certificate***
 
 [![](https://theopenem.com/wp-content/uploads/2018/11/certs-02.jpg)](https://theopenem.com/wp-content/uploads/2018/11/certs-02.jpg)
-* Select Local Machine, click Next
+
+* Select ***Local Machine***, click ***Next***
 
 [![](https://theopenem.com/wp-content/uploads/2018/11/certs-03.jpg)](https://theopenem.com/wp-content/uploads/2018/11/certs-03.jpg)
-* Select Place all certificates in the following store, click Browse, select Trusted Root Certificate Authorities, click OK, then Next, then Finish
+
+* Select ***Place all certificates in the following store***, click ***Browse***, select ***Trusted Root Certificate Authorities***, click ***OK***, then ***Next***, then ***Finish***
 
 [![](https://theopenem.com/wp-content/uploads/2018/11/certs-04.jpg)](https://theopenem.com/wp-content/uploads/2018/11/certs-04.jpg)
 
-* Perform the previous 3 steps on the toems-intermediate certificate, this time when selecting the location to store the cert, select Intermediate Certification Authorities
+* Perform the previous 3 steps on the ***toems-intermediate certificate***, this time when selecting the location to store the cert, select ***Intermediate Certification Authorities***
 
 [![](https://theopenem.com/wp-content/uploads/2018/11/certs-05.jpg)](https://theopenem.com/wp-content/uploads/2018/11/certs-05.jpg)
 
