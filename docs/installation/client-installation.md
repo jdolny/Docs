@@ -11,25 +11,25 @@ this way when an endpoint completes the provisioning process, it will automatica
 policies to your existing OU's, as another method of targeting groups of computers.  If you skipped over the LDAP setup during the server installation it's recommended 
 to configure it now.
 
-* Login to the Toems-UI, select Admin Settings->Security
-* Enable the LDAP Integration if not already enabled
-* Click Actions, Update Security Settings
-* Select Admin Settings->LDAP
-* Fill out the LDAP form, use the built-in help menu in the top right for more info on the fields
-* Click Actions, Update LDAP Settings
-* Click Actions, Test AD Bind, to verify the connection was successful
-* Select Admin Settings->Task Scheduler
-* Find the LDAP Sync row and click Run Now.  There is no visual confirmation when using the Run Now button.  By default this task will run every night at 1:00AM.  
+* Login to the ***Toems-UI***, select ***Admin Settings->Security***
+* ***Enable*** the ***LDAP Integration*** if not already enabled
+* Click ***Actions***, ***Update Security Settings***
+* Select ***Admin Settings->LDAP***
+* Fill out the ***LDAP form***, use the built-in help menu in the top right for more info on the fields
+* Click ***Actions***, ***Update LDAP Settings***
+* Click ***Actions***, ***Test AD Bind***, to verify the connection was successful
+* Select ***Admin Settings->Task Scheduler***
+* Find the ***LDAP Sync*** row and click ***Run Now***.  There is no visual confirmation when using the Run Now button.  By default this task will run every night at 1:00AM.  
 Give the process 5-10 minutes to run, you can navigate away from the page.
-* Select Computers->Search All.  It should show all of the synchronized computers with a Provision Status of PreProvisioned.
-* Select Groups->Active Directory OU Browser.  You should see your Domain Directory Tree.
+* Select ***Computers->Search All***.  It should show all of the synchronized computers with a Provision Status of PreProvisioned.
+* Select ***Groups->Active Directory OU Browser***.  You should see your Domain Directory Tree.
 
 ---
 
 
 ## Provisioning Security
 There are a few security measures in place to regulate endpoint provisioning.  They are currently all on by default, but you may disable them.  The 
-following options are available in Admin Settings->Security.
+following options are available in ***Admin Settings->Security***.
 
 
 * **Preprovision Required** – When this option is enabled, a computer will not be allowed to provision unless it has already been pre-provisioned.  If you are syncing from Active 
@@ -45,20 +45,20 @@ even if it has already been pre-provisioned.  The request are still approved fro
 ## Generate Toec Installer
 The last component that is needed to manage your endpoints, is the client agent, or Toec.  It must be installed on each endpoint you want to manage, but first we need to create it.
 
-#### 1. Create Toec MSI
-* Login to the Toems web interface
-* Select Admin Settings from the Navigation menu
-* Select Toec from the Sub Navigation menu
-* Click the Actions button
-* Select Export Client Msi 64-bit
-* When prompted, save the file somewhere
-* Click the Actions button
-* Select Export Client Msi 32-bit
-* When prompted, save the file somewhere
+* Login to the ***Toems web interface***
+* Select ***Admin Settings*** from the Navigation menu
+* Select ***Toec*** from the Sub Navigation menu
+* Click the ***Actions*** button
+* Select ***Export Client Msi 64-bit***
+* When prompted, ***save the file somewhere***
+* Click the ***Actions*** button
+* Select ***Export Client Msi 32-bit***
+* When prompted, ***save the file somewhere***
 
 ---
 
-You now have the Toec installers for both 32 and 64 bit OS's.  These installers are specific to your environment.  They have your certificates, com servers, and provision keys embedded into them.
+?> You now have the Toec installers for both 32 and 64 bit OS's.  These installers are specific to your environment.  They have your certificates, com servers, and provision keys embedded into them.
+!> If you change your certificates or provision key, you will need to generate new Toec installers.
 
 ---
 
@@ -68,6 +68,6 @@ Now that the Toec MSI has been created, we can begin installing it to some test 
 To install silently just pass the /q flag.
 &nbsp;	
 
-	Toec-1.2.0-x64.msi /q
+	Toec-1.5.0-x64.msi /q
 
 !> If you are installing silently via cmd / powershell, the window must be elevated.  It will not prompt you for credentials. 
