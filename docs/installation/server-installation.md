@@ -39,21 +39,21 @@ Most users should leave all of the default options selected during installation.
 
 #### 2. Change Admin Password (This must be done first or some functions of Theopenem will not work.)
 
-* Select Users from the Navigation Menu
-* Select View on toemsadmin
-* Update the User Password and Confirm Password fields
-* Select Actions then Update User
-* Click Logout from the Navigation Menu
+* Select **Users** from the Navigation Menu
+* Select **View** on **toemsadmin**
+* **Update** the **User Password** and **Confirm Password** fields
+* Select **Actions** then **Update User**
+* Click **Logout** from the Navigation Menu
 * Log in with the new password
 
 ---
 
 #### 3. Set Organization Name
 
-* Select Admin Settings from the Navigation menu
-* Select Server from the Sub Navigation menu
-* Fill in the name of your organization in the Organization field
-* Click Actions, click Update Server Settings
+* Select **Admin Settings** from the Navigation menu
+* Select **Server** from the Sub Navigation menu
+* Fill in the name of your **organization** in the Organization field
+* Click **Actions**, click **Update Server Settings**
 
 ---
 
