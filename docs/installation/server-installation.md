@@ -40,103 +40,103 @@ Most users should leave all of the default options selected during installation.
 #### 2. Change Admin Password (This must be done first or some functions of Theopenem will not work.)
 
 * Select ***Users*** from the Navigation Menu
-* Select <mark>View</mark> on **toemsadmin**
-* **Update** the **User Password** and **Confirm Password** fields
-* Select **Actions** then **Update User**
-* Click **Logout** from the Navigation Menu
+* Select ***View*** on ***toemsadmin***
+* ***Update*** the ***User Password*** and ***Confirm Password*** fields
+* Select ***Actions*** then ***Update User***
+* Click ***Logout*** from the Navigation Menu
 * Log in with the new password
 
 ---
 
 #### 3. Set Organization Name
 
-* Select **Admin Settings** from the Navigation menu
-* Select **Server** from the Sub Navigation menu
-* Fill in the name of your **organization** in the Organization field
-* Click **Actions**, click **Update Server Settings**
+* Select ***Admin Settings*** from the Navigation menu
+* Select ***Server*** from the Sub Navigation menu
+* Fill in the name of your ***organization*** in the Organization field
+* Click ***Actions*** click **Update Server Settings**
 
 ---
 
 #### 4. Set the Storage Location
 
-* Select Admin Settings from the Navigation Menu
-* Select Storage Location from the Sub Navigation Menu
-* Set the Storage Type to Local
-* Enter the local storage path that you specified during the installation of Theopenem.
-* Click Actions, click Update Storage Settings
+* Select ***Admin Settings*** from the Navigation Menu
+* Select ***Storage Location*** from the Sub Navigation Menu
+* Set the ***Storage Type*** to ***Local***
+* Enter the ***local storage path that you specified during the installation of Theopenem***.
+* Click ***Actions***, click ***Update Storage Settings***
 
 ---
 
 #### 5. Create A Com Server
 
-* Select Admin Settings from the Navigation menu
-* Select Client Com Servers from the Sub Navigation menu
-* Select Add Com Server from the Sub Navigation menu
-* Give the com server a name, every Toec-API application is considered a com server, the name should be something that identifies the server it's on, such as theopenem-01_com1
+* Select ***Admin Settings*** from the Navigation menu
+* Select ***Client Com Servers*** from the Sub Navigation menu
+* Select ***Add Com Server*** from the Sub Navigation menu
+* Give the com server a ***name***, every Toec-API application is considered a com server, the name should be something that identifies the server it's on, such as theopenem-01_com1
 * The URL is the URL for the Toec-API on this server, using it's ip address or fqdn, followed by port 8888 such as, ```http://192.168.56.100:8888/```
 * The Local Storage Path should already be populated.
-* Click Actions, click Add Server
-* You should now see a new set of options in the sub menu, select Imaging Settings
-* Enter the ip address of this server in the upload interface address, should be the same ip you used in the url
-* Select Actions, then Update Server
-* Select multicast settings, enter the same ip in the interface ip address
-* Select Actions, then Update Server
-* Select tftp settings, enter the same ip in the interface ip address
-* Select Actions, then Update Server
+* Click ***Actions***, click ***Add Server***
+* You should now see a new set of options in the sub menu, select ***Imaging Settings***
+* Enter the ***ip address*** of this server in the ***upload interface address***, should be the same ip you used in the url
+* Select ***Actions***, then ***Update Server***
+* Select ***multicast settings***, enter the same ip in the ***interface ip address***
+* Select ***Actions***, then ***Update Server***
+* Select ***tftp settings***, enter the same ip in the ***interface ip address***
+* Select ***Actions, then Update Server***
 
 ---
 
 #### 6. Set The Default Com Server Cluster
 
-* Select Admin Settings from the Navigation menu
-* Select Client Com Servers from the Sub Navigation menu
-* Select Add Com Server Cluster
-* Give the cluster a name, such as Central
-* Enable the Default Cluster Option
-* Check the box next to your Com Server you created earlier, leaving all other options to default values
-* Click Actions, click Add Cluster
+* Select ***Admin Settings*** from the Navigation menu
+* Select ***Client Com Servers*** from the Sub Navigation menu
+* Select ***Add Com Server Cluster***
+* Give the cluster a ***name***, such as Central
+* Enable the ***Default Cluster Option***
+* ***Check the box next to your Com Server*** you created earlier, leaving all other options to default values
+* Click ***Actions***, click ***Add Cluster***
 
 ---
 
 #### 7. Set Provision Key And Imaging Token
 
-* Select Admin Settings from the Navigation menu
-* Select Security from the Sub Navigation menu
-* Click Actions, Click Generate Provision Key
-* Click Actions, Click Generate Imaging Token
-* Click Actions, Click Update Security Settings
+* Select ***Admin Settings*** from the Navigation menu
+* Select ***Security*** from the Sub Navigation menu
+* Click ***Actions***, Click ***Generate Provision Key***
+* Click ***Actions***, Click ***Generate Imaging Token***
+* Click ***Actions***, Click ***Update Security Settings***
 
 ---
 
 #### 8. Generate Certificates
 
-* Select Admin Settings from the Navigation Menu
-* Select Certificates from the Sub Navigation Menu
-* Click Actions, click Generate Certificates
+* Select ***Admin Settings*** from the Navigation Menu
+* Select ***Certificates*** from the Sub Navigation Menu
+* Click ***Actions***, click ***Generate Certificates***
 
 ---
 
 
 #### 9. Setup SMTP Server (Optional, but recommended)
 
-* Select E-mail from the Sub Navigation menu
-* Enable the Mail Enabled option
-* Fill out the form with you SMTP server settings
-* Click Actions, click Update E-mail Settings
+* Select ***E-mail*** from the Sub Navigation menu
+* ***Enable*** the Mail Enabled option
+* Fill out the form with you ***SMTP server settings***
+* Click ***Actions***, click ***Update E-mail Settings***
 
 ---
 
 #### 6. LDAP Setup (Optional, but recommended)
 
-* Select Admin Settings from the Navigation menu
-* Select Security from Sub Navigation menu
-* Enable LDAP Integration
-* Click Actions, click Update Security Settings
-* Select Admin Settings from the Navigation menu
-* Select LDAP from the Sub Navigation menu
-* Fill in the form with your LDAP specifications
-* Click Actions, click Update LDAP settings
-* Click Actions, Test AD Bind, to verify settings are correct
+* Select ***Admin Settings*** from the Navigation menu
+* Select ***Security*** from Sub Navigation menu
+* ***Enable LDAP Integration***
+* Click ***Actions***, click ***Update Security Settings***
+* Select ***Admin Settings*** from the Navigation menu
+* Select ***LDAP*** from the Sub Navigation menu
+* ***Fill in the form*** with your LDAP specifications
+* Click ***Actions***, click ***Update LDAP settings***
+* Click ***Actions***, ***Test AD Bind***, to verify settings are correct
 
 ---
 
@@ -144,7 +144,7 @@ Most users should leave all of the default options selected during installation.
 ## Update Theopenem Web.config Files
 
 #### 1.  Update Toems-UI Web.config
-* In Windows File Explorer, navigate to C:\Program Files\Theopenem\Toems-UI
+* In ***Windows File Explorer***, navigate to ```C:\Program Files\Theopenem\Toems-UI``
 * Right click on **Web.config**, select **Edit With Notepad++**
 * Scroll to the bottom of the file to find the **<appSettings\>** section
 * Change the value for **ServerName** to anything you want to identify this server.  When multiple servers are used, this is displayed in the UI to show which server you are 
@@ -166,7 +166,7 @@ A completed Toems-UI web.config file should look something like this.
 
 #### 2.  Update Toems-API Web.config
 
-* In Windows File Explorer, navigate to C:\Program Files\Theopenem\Toems-API
+* In ***Windows File Explorer***, navigate to ```C:\Program Files\Theopenem\Toems-API```
 * Right click on **Web.config**, select **Edit With Notepad++**
 * Scroll to the bottom of the file to find the **<appSettings\>** section
 * Change the value for **AllowCAGen** to **false**
@@ -180,7 +180,7 @@ A completed Toems-API web.config file should look something like this.
 ---
 
 #### 3.  Update Toec-API Web.config
-* In Windows File Explorer, navigate to C:\Program Files\Theopenem\Toec-API
+* In ***Windows File Explorer***, navigate to ```C:\Program Files\Theopenem\Toec-API```
 * Right click on **Web.config**, select **Edit With Notepad++**
 * Scroll to the bottom and find the line that says <!--Copy Connection String from Application Server(Toems-API Web.confg) Below This Line-->
 * Paste the connection string that you copied from the Toems-API web.config right below that line
