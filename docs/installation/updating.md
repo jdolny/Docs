@@ -18,7 +18,7 @@ Updates for Theopenem are handled by the Update Installer for each released upda
 
 * If using the WIE, you must recreate your WIE using wie_builder v2.0.2
 * If using the LIE as a USB device, you must recreate the LIE.  If you are PXE booting the LIE, no changes are needed.
-* After you have logged in, select **Admin Settings->Toec->Actions->Prepare Toec Updates**.  
+* After you have logged in, select **Admin Settings->Toec->Actions->Prepare Toec Updates**.
 ?> Toec agents will not update until this step is performed which is helpful if you want to manually install the latest client on a few test machines before you update them all
 * If you are using multiple com servers or imaging via SMB, you will need to replicate storage before Toec will update
 
