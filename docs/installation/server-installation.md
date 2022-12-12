@@ -39,8 +39,8 @@ Most users should leave all of the default options selected during installation.
 
 #### 2. Change Admin Password (This must be done first or some functions of Theopenem will not work.)
 
-* Select **Users** from the Navigation Menu
-* Select **View** on **toemsadmin**
+* Select ***Users*** from the Navigation Menu
+* Select <mark>View</mark> on **toemsadmin**
 * **Update** the **User Password** and **Confirm Password** fields
 * Select **Actions** then **Update User**
 * Click **Logout** from the Navigation Menu
