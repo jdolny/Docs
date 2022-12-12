@@ -24,4 +24,6 @@ but they will not serve as a substitute for .NET 4.8.x.
 * If using the LIE as USB a device, you must recreate the LIE.  If you are PXE booting the LIE, no changes are needed.
 
 
-
+## 1.5.2 Update Additional Steps
+* If you are updating from a version prior to 1.5.0, follow the steps for a 1.5.0 upgrade above
+* If you are updating from 1.5.0, no additional steps are required.

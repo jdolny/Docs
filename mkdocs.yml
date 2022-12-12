@@ -29,6 +29,7 @@ nav:
     - "Generate Toec Installer": getting-started/generate-toec-installer.md
     - "Install Toec": getting-started/install-toec.md
 - 'Tutorials':
+  - 'Video Tutorials': https://www.youtube.com/user/coverthisone/videos
   - 'First Policy Tutorial': tutorials/first-policy.md
   - "Install Toec Via Group Policy": tutorials/deploy-toec.md
   - 'Toec Arguments': tutorials/toec-arguments.md

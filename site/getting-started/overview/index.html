@@ -42,7 +42,7 @@
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../..">Welcome</a>
+                <li class="toctree-l1"><a class="" href="../../index.md">Welcome</a>
                 </li>
               </ul>
               <p class="caption"><span class="caption-text">Getting Started</span></p>
@@ -52,8 +52,6 @@
                 <li class="toctree-l2 current"><a class="reference internal current" href="./">Server Overview/Prereqs</a>
     <ul class="current">
     <li class="toctree-l3"><a class="reference internal" href="#prerequisites">Prerequisites</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#topology">Topology</a>
     </li>
     </ul>
                 </li>
@@ -82,6 +80,8 @@
               </ul>
               <p class="caption"><span class="caption-text">Tutorials</span></p>
               <ul>
+                  <li class="toctree-l1"><a class="" href="https://www.youtube.com/user/coverthisone/videos">Video Tutorials</a>
+                  </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../tutorials/first-policy/">First Policy Tutorial</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../tutorials/deploy-toec/">Install Toec Via Group Policy</a>
@@ -133,29 +133,10 @@ the <strong>Toec-API</strong>, and <strong>database</strong>.
 but they will not serve as a substitute for .NET 4.8.x.</li>
 <li>Assign your server a static ip address</li>
 </ul>
-<h2 id="topology">Topology<a class="headerlink" href="#topology" title="Permanent link">&para;</a></h2>
-<p>Theopenem is a fully redundant and scalable application.  Basic users can simply install everything on a single server.  If you are more advanced or want more control over your system, you could do something like the example below.  There is no limit to the number of servers you can use.</p>
-<ul>
-<li><strong>Application Server 1</strong> - This application server runs all 3 required web applications.</li>
-<li><strong>Application Server 2</strong> - This application server runs all 3 required web applications.</li>
-<li><strong>Database Server</strong> - Runs the backend database that both the Toems-API and Toec-API communicate with.</li>
-<li><strong>File Share</strong> - When more than one Toec-API or Toems-API server is installed, data replication must occur b/w the servers.  An SMB file share is used for this purpose.  The Toec agent does not communicate with this server.  You can use any existing File Server for this purpose.  If only a single Toec-API and Toems-API are used in your topology, the File Share is not needed.</li>
-<li><strong>DMZ Toec-API (Optional)</strong> - A Toec-API server can be setup in your DMZ to allow management of endpoints when they are offsite.  This server should only run the Toec-API, you should never allow Toems-API or Toems-UI access from the outside.</li>
-</ul>
-<div class="admonition info">
-<p class="admonition-title">Each application server should be dedicated to Theopenem and not shared with other web applications or services.  The database server and file share can be on shared resources.</p>
-</div>
-<p>In the model outlined above, it gives you load balancing as well as failover capabilities.  You can take down either Application Server for maintenance with no effect on your endpoints.  When using multiple Toems-API and Toems-UI servers, you can load balance the requests through DNS or a Load Balancing Appliance.  </p>
-<div class="admonition danger">
-<p class="admonition-title">The Toec-API should never go through a load balancer.  Load balancing and failover of the Toec-API is built into the Toec agent.  Running the Toec-API through a load balancer could lead to authentication failures.</p>
-</div>
-<p>The diagram below shows the traffic flow among these services.</p>
-<p><a href="https://theopenem.com/wp-content/uploads/2018/11/Recommended-Install.jpg"><img alt="" src="https://theopenem.com/wp-content/uploads/2018/11/Recommended-Install.jpg" /></a></p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../.." class="btn btn-neutral float-left" title="Welcome"><span class="icon icon-circle-arrow-left"></span> Previous</a>
         <a href="../install-webapps/" class="btn btn-neutral float-right" title="Install Toems Web Applications">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
@@ -178,8 +159,6 @@ but they will not serve as a substitute for .NET 4.8.x.</li>
   <div class="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     
-    
-      <span><a href="../.." style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
       <span><a href="../install-webapps/" style="color: #fcfcfc">Next &raquo;</a></span>

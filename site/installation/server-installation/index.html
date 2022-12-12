@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Server Installation - Theopenem Documentation</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="../../style.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Server Installation";
+        var mkdocs_page_input_path = "installation\\server-installation.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Theopenem Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="" href="../../index.md">Welcome</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Server Installation (Toems)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../getting-started/overview/">Server Overview/Prereqs</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../getting-started/install-webapps/">Install Toems Web Applications</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../getting-started/configure/">Configure Theopenem</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../getting-started/update-web-config/">Update Web.config</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../getting-started/test-apps/">Test Toec-API</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../getting-started/install-certificates/">Install Certificates</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Client Installation (Toec)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../getting-started/endpoint-provisioning-setup/">Endpoint Provisioning Setup</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../getting-started/generate-toec-installer/">Generate Toec Installer</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../getting-started/install-toec/">Install Toec</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Tutorials</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="" href="https://www.youtube.com/user/coverthisone/videos">Video Tutorials</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../tutorials/first-policy/">First Policy Tutorial</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../tutorials/deploy-toec/">Install Toec Via Group Policy</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../tutorials/toec-arguments/">Toec Arguments</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../tutorials/updates/">Update Procedure</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../tutorials/wie/">How To Build The WIE</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../tutorials/logs/">Logs</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Theopenem Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+      <li>Server Installation</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="server-installation">Server Installation<a class="headerlink" href="#server-installation" title="Permanent link">&para;</a></h1>
+<p>This server installation guide will provide a complete walk through for the setup of Theopenem server (Toems) components.  These components include the <strong>Toems-UI</strong>, the <strong>Toems-API</strong>, 
+the <strong>Toec-API</strong>, and <strong>database</strong>.
+  The installation of the endpoint agent (Toec) will be covered in the Client Installation Tutorial.  If you have not yet read the <a href="/">Welcome Introduction</a>, please read it before 
+  continuing. </p>
+<p>The installation process is mostly automated with the MSI.  The entire process should take about 20 minutes for you to complete.</p>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Install .NET 4.8</li>
+</ul>
+<p>?&gt; .NET 4.8 can be <a href="https://dotnet.microsoft.com/download/thank-you/net48">downloaded here</a>.  .NET 4.8.1 is also compatible.  .NET 5.0 and greater are not compatible.  They are fine if they are installed, but they will not serve as a substitute for .NET 4.8.x.
+- Assign your server a static ip address</p>
+<h2 id="install-toems-web-applications">Install Toems Web Applications<a class="headerlink" href="#install-toems-web-applications" title="Permanent link">&para;</a></h2>
+<h4 id="1-download-the-latest-version-of-theopenem-from-httpstheopenemcomdownloads">1. Download the latest version of Theopenem from <a href="https://theopenem.com/downloads"> https://theopenem.com/downloads</a><a class="headerlink" href="#1-download-the-latest-version-of-theopenem-from-httpstheopenemcomdownloads" title="Permanent link">&para;</a></h4>
+<h4 id="2-run-the-installer">2. Run the installer<a class="headerlink" href="#2-run-the-installer" title="Permanent link">&para;</a></h4>
+<p>Most users should leave all of the default options selected during installation.  When asked for a local storage path, remember the location as you will need to enter that information in the web interface after installation.</p>
+<h4 id="3-the-web-applications-should-now-be-installed">3. The Web Applications should now be installed.<a class="headerlink" href="#3-the-web-applications-should-now-be-installed" title="Permanent link">&para;</a></h4>
+<h2 id="configure-theopenem">Configure Theopenem<a class="headerlink" href="#configure-theopenem" title="Permanent link">&para;</a></h2>
+<p>!&gt; Each step below must be completed and in this order unless "optional" is specified next to it.</p>
+<p>The Toems-UI has built-in help for most of the pages.  If you need additional clarification on something on one of the pages, click the Orange Info Button in the top right corner.<br />
+<a href="https://theopenem.com/wp-content/uploads/2018/11/orangeI.jpg"><img alt="" src="https://theopenem.com/wp-content/uploads/2018/11/orangeI.jpg" /></a></p>
+<h4 id="1-login-to-toems">1. Login To Toems<a class="headerlink" href="#1-login-to-toems" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Toems should be accessible from any device on your network by entering the server's ip in your web browser.</li>
+<li><strong>Ex: <a href="http://192.168.56.100">http://192.168.56.100</a></strong></li>
+<li>The default admin username and password is <strong>toemsadmin</strong> for both fields.</li>
+</ul>
+<hr />
+<h4 id="2-change-admin-password-this-must-be-done-first-or-some-functions-of-theopenem-will-not-work">2. Change Admin Password (This must be done first or some functions of Theopenem will not work.)<a class="headerlink" href="#2-change-admin-password-this-must-be-done-first-or-some-functions-of-theopenem-will-not-work" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Select Users from the Navigation Menu</li>
+<li>Select View on toemsadmin</li>
+<li>Update the User Password and Confirm Password fields</li>
+<li>Select Actions then Update User</li>
+<li>Click Logout from the Navigation Menu</li>
+<li>Log in with the new password</li>
+</ul>
+<hr />
+<h4 id="3-set-organization-name">3. Set Organization Name<a class="headerlink" href="#3-set-organization-name" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Select Admin Settings from the Navigation menu</li>
+<li>Select Server from the Sub Navigation menu</li>
+<li>Fill in the name of your organization in the Organization field</li>
+<li>Click Actions, click Update Server Settings</li>
+</ul>
+<hr />
+<h4 id="4-set-the-storage-location">4. Set the Storage Location<a class="headerlink" href="#4-set-the-storage-location" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Select Admin Settings from the Navigation Menu</li>
+<li>Select Storage Location from the Sub Navigation Menu</li>
+<li>Set the Storage Type to Local</li>
+<li>Enter the local storage path that you specified during the installation of Theopenem.</li>
+<li>Click Actions, click Update Storage Settings</li>
+</ul>
+<hr />
+<h4 id="5-create-a-com-server">5. Create A Com Server<a class="headerlink" href="#5-create-a-com-server" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Select Admin Settings from the Navigation menu</li>
+<li>Select Client Com Servers from the Sub Navigation menu</li>
+<li>Select Add Com Server from the Sub Navigation menu</li>
+<li>Give the com server a name, every Toec-API application is considered a com server, the name should be something that identifies the server it’s on, such as theopenem-01_com1</li>
+<li>The URL is the URL for the Toec-API on this server, using it’s ip address, followed by port 8888 such as, <code>http://192.168.56.100:8888/</code></li>
+<li>The Local Storage Path should already be populated.</li>
+<li>Click Actions, click Add Server</li>
+<li>You should now see a new set of options in the sub menu, select Imaging Settings</li>
+<li>Enter the ip address of this server in the upload interface address, should be the same ip you used in the url</li>
+<li>Select Actions, then Update Server</li>
+<li>Select multicast settings, enter the same ip in the interface ip address</li>
+<li>Select Actions, then Update Server</li>
+<li>Select tftp settings, enter the same ip in the interface ip address</li>
+<li>Select Actions, then Update Server</li>
+</ul>
+<hr />
+<h4 id="6-set-the-default-com-server-cluster">6. Set The Default Com Server Cluster<a class="headerlink" href="#6-set-the-default-com-server-cluster" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Select Admin Settings from the Navigation menu</li>
+<li>Select Client Com Servers from the Sub Navigation menu</li>
+<li>Select Add Com Server Cluster</li>
+<li>Give the cluster a name, such as Central</li>
+<li>Enable the Default Cluster Option</li>
+<li>Check the box next to your Com Server you created earlier, leaving all other options to default values</li>
+<li>Click Actions, click Add Cluster</li>
+</ul>
+<hr />
+<h4 id="7-set-provision-key-and-imaging-token">7. Set Provision Key And Imaging Token<a class="headerlink" href="#7-set-provision-key-and-imaging-token" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Select Admin Settings from the Navigation menu</li>
+<li>Select Security from the Sub Navigation menu</li>
+<li>Click Actions, Click Generate Provision Key</li>
+<li>Click Actions, Click Generate Imaging Token</li>
+<li>Click Actions, Click Update Security Settings</li>
+</ul>
+<hr />
+<h4 id="8-generate-certificates">8. Generate Certificates<a class="headerlink" href="#8-generate-certificates" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Select Admin Settings from the Navigation Menu</li>
+<li>Select Certificates from the Sub Navigation Menu</li>
+<li>Click Actions, click Generate Certificates</li>
+</ul>
+<hr />
+<h4 id="9-setup-smtp-server-optional-but-recommended">9. Setup SMTP Server (Optional, but recommended)<a class="headerlink" href="#9-setup-smtp-server-optional-but-recommended" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Select E-mail from the Sub Navigation menu</li>
+<li>Enable the Mail Enabled option</li>
+<li>Fill out the form with you SMTP server settings</li>
+<li>Click Actions, click Update E-mail Settings</li>
+</ul>
+<hr />
+<h4 id="6-ldap-setup-optional-but-recommended">6. LDAP Setup (Optional, but recommended)<a class="headerlink" href="#6-ldap-setup-optional-but-recommended" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Select Admin Settings from the Navigation menu</li>
+<li>Select Security from Sub Navigation menu</li>
+<li>Enable LDAP Integration</li>
+<li>Click Actions, click Update Security Settings</li>
+<li>Select Admin Settings from the Navigation menu</li>
+<li>Select LDAP from the Sub Navigation menu</li>
+<li>Fill in the form with your LDAP specifications</li>
+<li>Click Actions, click Update LDAP settings</li>
+<li>Click Actions, Test AD Bind, to verify settings are correct</li>
+</ul>
+<hr />
+<h2 id="update-theopenem-webconfig-files">Update Theopenem Web.config Files<a class="headerlink" href="#update-theopenem-webconfig-files" title="Permanent link">&para;</a></h2>
+<h4 id="1-update-toems-ui-webconfig">1.  Update Toems-UI Web.config<a class="headerlink" href="#1-update-toems-ui-webconfig" title="Permanent link">&para;</a></h4>
+<ul>
+<li>In Windows File Explorer, navigate to C:\Program Files\Theopenem\Toems-UI</li>
+<li>Right click on <strong>Web.config</strong>, select <strong>Edit With Notepad++</strong></li>
+<li>Scroll to the bottom of the file to find the <strong>&lt;appSettings></strong> section</li>
+<li>Change the value for <strong>ServerName</strong> to anything you want to identify this server.  When multiple servers are used, this is displayed in the UI to show which server you are 
+connected to.</li>
+<li>Leave the value for <strong>ApplicationApiUrl</strong> alone.  This value is always relative to your Toems-UI server.  If you installed the Toems-API and Toems-UI on 
+the same server the value should always be <code>http://localhost:8080</code>.  This value tells the Toems-UI(frontend) where to find the Toems-API(backend).</li>
+<li>Change the value for <strong>UploadApiUrl</strong> to include your server's ip address.  Replace the letters "fqdn" with the ip or the actual FQDN.  Example <code>http://toems-01.theopenem.com:8080/</code> or <code>http://192.168.56.100:8080</code>.</li>
+</ul>
+<p>?&gt; The <strong>UploadApiUrl</strong> value is strictly used for uploading files to Theopenem through the UI.  Typically when browsing the UI, your browser connects to the 
+Toems-UI application and the Toems-UI connects to the Toems-API, with the exception of uploading files.  When uploading a file through the Toems-UI, your browser will 
+connect directly to the Toems-API, skipping the Toems-UI application.  If you are having issues uploading files, it is most likely because this value is incorrect.</p>
+<ul>
+<li>Save and close the file</li>
+</ul>
+<p>A completed Toems-UI web.config file should look something like this.
+<a href="https://theopenem.com/wp-content/uploads/2020/12/toems-ui_config.png"><img alt="" src="https://theopenem.com/wp-content/uploads/2020/12/toems-ui_config.png" /></a></p>
+<hr />
+<h4 id="2-update-toems-api-webconfig">2.  Update Toems-API Web.config<a class="headerlink" href="#2-update-toems-api-webconfig" title="Permanent link">&para;</a></h4>
+<ul>
+<li>In Windows File Explorer, navigate to C:\Program Files\Theopenem\Toems-API</li>
+<li>Right click on <strong>Web.config</strong>, select <strong>Edit With Notepad++</strong></li>
+<li>Scroll to the bottom of the file to find the <strong>&lt;appSettings></strong> section</li>
+<li>Change the value for <strong>AllowCAGen</strong> to <strong>false</strong></li>
+<li>Change the value for <strong>AllowProvisionKeygen</strong> to <strong>false</strong></li>
+<li>Find the line that begins with &lt;add name="toems" connectionString=</li>
+<li>Copy that entire line to your clipboard</li>
+<li>Save the file, but leave it open</li>
+</ul>
+<p>A completed Toems-API web.config file should look something like this.
+<a href="https://theopenem.com/wp-content/uploads/2020/12/toems-api_config.png"><img alt="" src="https://theopenem.com/wp-content/uploads/2020/12/toems-api_config.png" /></a></p>
+<hr />
+<h4 id="3-update-toec-api-webconfig">3.  Update Toec-API Web.config<a class="headerlink" href="#3-update-toec-api-webconfig" title="Permanent link">&para;</a></h4>
+<ul>
+<li>In Windows File Explorer, navigate to C:\Program Files\Theopenem\Toec-API</li>
+<li>Right click on <strong>Web.config</strong>, select <strong>Edit With Notepad++</strong></li>
+<li>Scroll to the bottom and find the line that says <!--Copy Connection String from Application Server(Toems-API Web.confg) Below This Line--></li>
+<li>Paste the connection string that you copied from the Toems-API web.config right below that line</li>
+<li>Go back to the Toems-API Web.config file(It should still be open in Notepad++) </li>
+<li>Scroll to the bottom and find the line that begins with  &lt;add key="DbEncryptionKey"</li>
+<li>Copy the value of the DbEncryption Key and paste it in the Toec-UI web.config file, updating the "updatethisvalue" with the new value.</li>
+<li>Keep Notepad++ open.  Log back into Theopenem web.  </li>
+<li>Select Admin Settings.  Select Client Com Servers.</li>
+<li>Click View on the Com Server you created earlier.</li>
+<li>Copy the unique id to your clipboard.</li>
+<li>Go back to Notepad++ and view the Toec-API web.config file.</li>
+<li>Find the line  &lt;add key="ComServerUniqueId" and update the "updatethisvalue" to match the unique id you copied from the Com Server</li>
+<li>Save and close Notepad++</li>
+</ul>
+<p>A completed Toems-API web.config file should look something like this.
+<a href="https://theopenem.com/wp-content/uploads/2020/12/toec-api_config.png"><img alt="" src="https://theopenem.com/wp-content/uploads/2020/12/toec-api_config.png" /></a></p>
+<h2 id="test-toec-api">Test Toec-API<a class="headerlink" href="#test-toec-api" title="Permanent link">&para;</a></h2>
+<p>Now is a good time to test the Toec-API to see if the com server and web.config file are correct.</p>
+<h4 id="1-test-toec-api-client-connections">1.  Test Toec-API (Client connections)<a class="headerlink" href="#1-test-toec-api-client-connections" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Open a web browser</li>
+<li>Navigate to <a href="http://server-ip:8888/Provision/VerifyDb">http://server-ip:8888/Provision/VerifyDb</a> replacing server-ip with your actual ip.  Ex: <strong><a href="http://192.168.56.100:8888/Provision/VerifyDb">http://192.168.56.100:8888/Provision/VerifyDb</a></strong></li>
+<li>The page should respond with the number 60</li>
+<li>If this step was successful the Toec-API is running and can access the database</li>
+</ul>
+<hr />
+<h2 id="install-certificates">Install Certificates<a class="headerlink" href="#install-certificates" title="Permanent link">&para;</a></h2>
+<p>The certificates are used for identification, encryption, and signing with your endpoints.  The CA and intermediate need to be imported into the Windows Certificate Store
+on each Theopenem server.</p>
+<h4 id="1-export-certificates-from-toems-ui">1. Export Certificates from Toems-UI<a class="headerlink" href="#1-export-certificates-from-toems-ui" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Login to the Toems-UI from the server itself, do not do this remotely, these certificates are being installed on the Application Server itself, not an end user’s PC.</li>
+<li>Select Admin Settings from the Navigation Menu</li>
+<li>Select Certificates from the Sub Navigation Menu</li>
+<li>Find the certificate with the Type Authority and click Export</li>
+<li>Save the File when prompted</li>
+<li>Locate the file that was just downloaded and rename it to toems-ca</li>
+<li>Find the certificate with the Type Intermediate and click Export</li>
+<li>Save the File when prompted</li>
+<li>Locate the file that was just downloaded and rename it to toems-intermediate</li>
+<li>You should now have the 2 certificates saved on the local server
+<a href="https://theopenem.com/wp-content/uploads/2018/11/certs-01.jpg"><img alt="" src="https://theopenem.com/wp-content/uploads/2018/11/certs-01.jpg" /></a></li>
+</ul>
+<hr />
+<h4 id="2-install-certificates-in-the-local-certificate-store">2. Install Certificates in the Local Certificate Store<a class="headerlink" href="#2-install-certificates-in-the-local-certificate-store" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Double click on the toems-ca file, select Install Certificate
+<a href="https://theopenem.com/wp-content/uploads/2018/11/certs-02.jpg"><img alt="" src="https://theopenem.com/wp-content/uploads/2018/11/certs-02.jpg" /></a></li>
+<li>Select Local Machine, click Next
+<a href="https://theopenem.com/wp-content/uploads/2018/11/certs-03.jpg"><img alt="" src="https://theopenem.com/wp-content/uploads/2018/11/certs-03.jpg" /></a></li>
+<li>Select Place all certificates in the following store, click Browse, select Trusted Root Certificate Authorities, click OK, then Next, then Finish
+<a href="https://theopenem.com/wp-content/uploads/2018/11/certs-04.jpg"><img alt="" src="https://theopenem.com/wp-content/uploads/2018/11/certs-04.jpg" /></a></li>
+<li>Perform the previous 3 steps on the toems-intermediate certificate, this time when selecting the location to store the cert, select Intermediate Certification Authorities
+<a href="https://theopenem.com/wp-content/uploads/2018/11/certs-05.jpg"><img alt="" src="https://theopenem.com/wp-content/uploads/2018/11/certs-05.jpg" /></a></li>
+</ul>
+<p>?&gt; "This completes the installation of Toems, or the server components.  Up next we will begin to address the client installation or Toec."</p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
