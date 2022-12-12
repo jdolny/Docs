@@ -13,14 +13,13 @@ Updates for Theopenem are handled by the Update Installer for each released upda
 * Login to Theopenem
 * You will be prompted to ***update the database***, click ***Update***
 
-## Additional Steps
-* If you are updating from 1.5.0, no additional steps are required.  Your update is complete.
+## 1.5.2 Additional Steps
+?> If you are updating from 1.5.0, no additional steps are required.  Your update is complete.  Otherwise, continue below.
 
-* If you are updating from a version prior to 1.5.0, the following steps also need completed.
 * If using the WIE, you must recreate your WIE using wie_builder v2.0.2
 * If using the LIE as a USB device, you must recreate the LIE.  If you are PXE booting the LIE, no changes are needed.
-* After you have logged in, select **Admin Settings->Toec->Actions->Prepare Toec Updates**.  Toec agents will not update until this step is performed which is helpful if you want to manually install the latest client
-on a few test machines before you update them all
+* After you have logged in, select **Admin Settings->Toec->Actions->Prepare Toec Updates**.  
+?> Toec agents will not update until this step is performed which is helpful if you want to manually install the latest client on a few test machines before you update them all
 * If you are using multiple com servers or imaging via SMB, you will need to replicate storage before Toec will update
 
 
