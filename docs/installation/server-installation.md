@@ -3,18 +3,19 @@ This server installation guide will provide a complete walk through for the setu
 the **Toec-API**, and **database**.
   The installation of the endpoint agent (Toec) will be covered in the Client Installation Tutorial.  If you have not yet read the [Welcome Introduction](/), please read it before 
   continuing. 
-	
+
 The installation process is mostly automated with the MSI.  The entire process should take about 20 minutes for you to complete.
 
 ## Prerequisites
 - Install .NET 4.8
-
-?> .NET 4.8 can be [downloaded here](https://dotnet.microsoft.com/download/thank-you/net48).  .NET 4.8.1 is also compatible.  .NET 5.0 and greater are not compatible.  They are fine if they are installed, but they will not serve as a substitute for .NET 4.8.x.
 - Assign your server a static ip address
+
+?> .NET 4.8 can be [downloaded here](https://dotnet.microsoft.com/download/thank-you/net48).  
+.NET 4.8.1 is also compatible.  .NET 5.0 and greater are not compatible.  They are fine if they are installed, but they will not serve as a substitute for .NET 4.8.x.
 
 ## Install Toems Web Applications
 
-#### 1. Download the latest version of Theopenem from [ https://theopenem.com/downloads](https://theopenem.com/downloads)
+#### 1. Download the latest version of Theopenem from  [https://theopenem.com/downloads](https://theopenem.com/downloads)
 
 #### 2. Run the installer
 Most users should leave all of the default options selected during installation.  When asked for a local storage path, remember the location as you will need to enter that information in the web interface after installation.
@@ -25,14 +26,14 @@ Most users should leave all of the default options selected during installation.
 
 !> Each step below must be completed and in this order unless "optional" is specified next to it.
 
-The Toems-UI has built-in help for most of the pages.  If you need additional clarification on something on one of the pages, click the Orange Info Button in the top right corner.  
-[![](https://theopenem.com/wp-content/uploads/2018/11/orangeI.jpg)](https://theopenem.com/wp-content/uploads/2018/11/orangeI.jpg)
-
 #### 1. Login To Toems
 
-* Toems should be accessible from any device on your network by entering the server's ip in your web browser.
+* Toems should be accessible from any device on your network by entering the server's ip or fqdn in your web browser.
 * **Ex: http://192.168.56.100**
-* The default admin username and password is **toemsadmin** for both fields.
+
+?> **Default Username: toemsadmin**
+
+?> **Default Password: toemsadmin**
 
 ---
 
@@ -71,8 +72,8 @@ The Toems-UI has built-in help for most of the pages.  If you need additional cl
 * Select Admin Settings from the Navigation menu
 * Select Client Com Servers from the Sub Navigation menu
 * Select Add Com Server from the Sub Navigation menu
-* Give the com server a name, every Toec-API application is considered a com server, the name should be something that identifies the server it’s on, such as theopenem-01_com1
-* The URL is the URL for the Toec-API on this server, using it’s ip address, followed by port 8888 such as, ```http://192.168.56.100:8888/```
+* Give the com server a name, every Toec-API application is considered a com server, the name should be something that identifies the server it's on, such as theopenem-01_com1
+* The URL is the URL for the Toec-API on this server, using it's ip address or fqdn, followed by port 8888 such as, ```http://192.168.56.100:8888/```
 * The Local Storage Path should already be populated.
 * Click Actions, click Add Server
 * You should now see a new set of options in the sub menu, select Imaging Settings
@@ -215,7 +216,7 @@ The certificates are used for identification, encryption, and signing with your 
 on each Theopenem server.
 
 #### 1. Export Certificates from Toems-UI
-* Login to the Toems-UI from the server itself, do not do this remotely, these certificates are being installed on the Application Server itself, not an end user’s PC.
+* Login to the Toems-UI from the server itself, do not do this remotely, these certificates are being installed on the Application Server itself, not an end user's PC.
 * Select Admin Settings from the Navigation Menu
 * Select Certificates from the Sub Navigation Menu
 * Find the certificate with the Type Authority and click Export
@@ -225,22 +226,29 @@ on each Theopenem server.
 * Save the File when prompted
 * Locate the file that was just downloaded and rename it to toems-intermediate
 * You should now have the 2 certificates saved on the local server
+
 [![](https://theopenem.com/wp-content/uploads/2018/11/certs-01.jpg)](https://theopenem.com/wp-content/uploads/2018/11/certs-01.jpg)
 
 ---
 
 #### 2. Install Certificates in the Local Certificate Store
 * Double click on the toems-ca file, select Install Certificate
+
 [![](https://theopenem.com/wp-content/uploads/2018/11/certs-02.jpg)](https://theopenem.com/wp-content/uploads/2018/11/certs-02.jpg)
 * Select Local Machine, click Next
+
 [![](https://theopenem.com/wp-content/uploads/2018/11/certs-03.jpg)](https://theopenem.com/wp-content/uploads/2018/11/certs-03.jpg)
 * Select Place all certificates in the following store, click Browse, select Trusted Root Certificate Authorities, click OK, then Next, then Finish
+
 [![](https://theopenem.com/wp-content/uploads/2018/11/certs-04.jpg)](https://theopenem.com/wp-content/uploads/2018/11/certs-04.jpg)
+
 * Perform the previous 3 steps on the toems-intermediate certificate, this time when selecting the location to store the cert, select Intermediate Certification Authorities
+
 [![](https://theopenem.com/wp-content/uploads/2018/11/certs-05.jpg)](https://theopenem.com/wp-content/uploads/2018/11/certs-05.jpg)
 
 
 ?> "This completes the installation of Toems, or the server components.  Up next we will begin to address the client installation or Toec."
+
 
 
 
