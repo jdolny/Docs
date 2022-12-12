@@ -1,4 +1,4 @@
-# Server Installation
+# Server Installation (Toems)
 This server installation guide will provide a complete walk through for the setup of Theopenem server (Toems) components.  These components include the **Toems-UI**, the **Toems-API**, 
 the **Toec-API**, and **database**.  Video tutorials are also available from the nav menu if you prefer that style of instruction.
   The installation of the endpoint agent (Toec) will be covered in the Client Installation Tutorial.  If you have not yet read the [Welcome Introduction](/), please read it before 
@@ -237,15 +237,21 @@ on each Theopenem server.
 
 [![](https://theopenem.com/wp-content/uploads/2018/11/certs-02.jpg)](https://theopenem.com/wp-content/uploads/2018/11/certs-02.jpg)
 
+
 * Select ***Local Machine***, click ***Next***
+
 
 [![](https://theopenem.com/wp-content/uploads/2018/11/certs-03.jpg)](https://theopenem.com/wp-content/uploads/2018/11/certs-03.jpg)
 
+
 * Select ***Place all certificates in the following store***, click ***Browse***, select ***Trusted Root Certificate Authorities***, click ***OK***, then ***Next***, then ***Finish***
+
 
 [![](https://theopenem.com/wp-content/uploads/2018/11/certs-04.jpg)](https://theopenem.com/wp-content/uploads/2018/11/certs-04.jpg)
 
+
 * Perform the previous 3 steps on the ***toems-intermediate certificate***, this time when selecting the location to store the cert, select ***Intermediate Certification Authorities***
+
 
 [![](https://theopenem.com/wp-content/uploads/2018/11/certs-05.jpg)](https://theopenem.com/wp-content/uploads/2018/11/certs-05.jpg)
 
