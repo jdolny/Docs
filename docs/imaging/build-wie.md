@@ -1,8 +1,8 @@
-# Building the Windows Imaging Environment
+# Build the Windows Imaging Environment
 
 Unlike the Linux Imaging Environment, the WinPE imaging environment is not distributed with Theopenem due to licensing reasons. You will need to build it yourself. 
-I have created an automated tool to do this for you. The WinPE Imaging Environment must be created on a Windows 10 computer. Only WinPE 10 and newer will be supported, 
-however the WinPE Imaging Environment supports imaging client computers with Win7, Win8, or Win10.
+I have created an automated tool to do this for you. The WinPE Imaging Environment must be created on a Windows 10/11 computer. Only WinPE 10 and newer will be supported.  However, the WinPE Imaging Environment supports imaging client 
+computers with Win7, Win8, Win10, or Win11.
 
 * Begin by installing the [Windows ADK](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit){:target="_blank"}.  On that page click the link that says **Download the Windows ADK for Windows 10, version xxxx**
 
@@ -17,7 +17,7 @@ however the WinPE Imaging Environment supports imaging client computers with Win
 
 * Login to the Toems-UI and select **Admin Settings->Client Com Servers**.  Copy the URL for the com server this WIE will connect to.
 
-!!! info "The WIE does not have the ability to dynamically select a com server like the LIE does.  It will only connect to the server that's been copied from the previous step"
+?>The WIE does not have the ability to dynamically select a com server like the LIE does.  It will only connect to the server that's been copied from the previous step
 
 * In the package that was unzipped, **right click** on **ToemsPE-Build.cmd** and select **edit**
 
