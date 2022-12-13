@@ -71,3 +71,72 @@ To install silently just pass the /q flag.
 	Toec-1.5.0-x64.msi /q
 
 !> If you are installing silently via cmd / powershell, the window must be elevated.  It will not prompt you for credentials. 
+
+---
+
+## Additional Toec Options
+
+#### 1. Advanced Installation Arguments
+There are a few extra arguments that can be passed in during the installation of Toec, or embedded into the MST file.  Reinstalling 
+the MSI with any of these options will also overwrite the current value without changing anything that is not specified.
+
+* ```LOG_LEVEL``` – The default logging level of Toec is **INFO**.  To get more information, **DEBUG** can used. To get less information, **ERROR** can be used.  
+<br>
+* ```LOCAL_API_PORT``` – Toec listens on port **1415** by default for local requests only.  The Toec-UI application for user logins cannot talk directly to Toems, it instead 
+uses the Toec Service on port 1415 as an intermediary for this.  
+<br>
+* ```USER_PORT_RANGE``` – The Toec-UI application loads at startup for each user that logs into the endpoint.  Each Toec-UI will receive a corresponding port to 
+communicate with that instance.  The **default range is 9000-10000**.  
+<br>
+* ```RESET_DB``` – Used when reinstalling Toec.  By default, the existing database is still used when Toec is reinstalled.  Setting this value to true will clear the client 
+database, treating the installation as if it were new.  This would cause the endpoint to provision again.
+
+---
+
+###### 2. Command Line Options
+After Toec is installed, it can also be run from the command line to change options or help in debugging.  When using any of these commands, they must be run from an 
+elevated cmd prompt and the service should be stopped.  Toec.exe is located in c:\program files\toec.
+<br><br>
+
+	Toec.exe --console
+Starts Toec is console mode, displaying helpful debug info in the window.
+
+<br>
+
+	Toec.exe --version
+Displays the current Toec version
+
+<br>
+
+	Toec.exe --logLevel [INFO|DEBUG|ERROR]
+Updates the log level
+
+<br>
+
+	Toec.exe --resetFull
+This resets Toec back to a new installation state, deleting all settings, certificates, installationId, and history.  This would cause the endpoint to 
+provision again.  If you are having trouble with the endpoint, try the partial before the full reset.  A full reset may result in the loss of an existing relationship 
+b/w the client and server.
+
+<br>
+
+	Toec.exe --resetPartial
+This performs a partial reset on Toec.  History and installationId are not removed, everything else is reset.  This will also cause the endpoint to provision 
+again.
+
+<br>
+
+	Toec.exe --resetKey [SERVER_KEY] [CA_THUMBPRINT]
+Changes the server key and ca thumbprint for the endpoint.
+
+<br>
+
+	Toec.exe --prepareImage
+If you want to install Toec before capturing an image of the computer.  You must run this prior to the last shutdown of the computer.  Failure to run this will cause each client's installation id to be the same, preventing Toec from working properly.
+
+<br>
+
+	Toec.exe --comServers [COM_SERVERS]
+Updates the com servers for the endpoint with a comma seperated list of servers.
+
+
