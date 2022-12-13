@@ -93,7 +93,7 @@ database, treating the installation as if it were new.  This would cause the end
 
 ---
 
-###### 2. Command Line Options
+#### 2. Command Line Options
 After Toec is installed, it can also be run from the command line to change options or help in debugging.  When using any of these commands, they must be run from an 
 elevated cmd prompt and the service should be stopped.  Toec.exe is located in c:\program files\toec.
 <br><br>
