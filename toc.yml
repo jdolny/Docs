@@ -1,5 +1,11 @@
+- name: Welcome
 - name: Introduction
   href: introduction/theopenem-overview.md
+- name: Changelog / Version History
+  href: changelog/version-history.md
+- name: Roadmap
+  href: roadmap/roadmap.md
+- name: Getting Started
 - name: Installation
   items: 
   - name: Server Installation
@@ -8,8 +14,6 @@
     href: installation/server-configuration.md
   - name: Com Server Configuration
     href: installation/com-server-configuration.md
-  - name: Updates
-    href: installation/updating.md
 - name: Endpoint Management
   items:
   - name: Endpoint Management Overview
@@ -42,10 +46,9 @@
     href: imaging/create-image.md
   - name: Upload / Deploy Image
     href: imaging/upload-deploy-image.md
+- name: User Interface
 - name: Web UI
   items:
-  - name: Web UI Overview
-    href: ui/overview.md
   - name: Dashboard
     href: ui/dashboard.md
   - name: Modules
@@ -154,6 +157,11 @@
       href: ui/settings/toec.md
     - name: WOL Relays 
       href: ui/settings/wolrelays.md
+- name: Additional Tutorials
+- name: Updating Theopenem
+  href: tutorials/updating.md
+- name: Using SMB Imaging
+  href: tutorials/smbimaging.md
 - name: Remote Access Setup
   href: remoteaccess/remote-access.md
 - name: Multiple Com Servers
@@ -172,8 +180,5 @@
     href: troubleshooting/logs.md
   - name: Debugging
     href: troubleshooting/debugging.md
-- name: Changelog / Version History
-  href: changelog/version-history.md
-- name: Roadmap
-  href: roadmap/roadmap.md
+
 

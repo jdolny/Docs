@@ -4,3 +4,8 @@
 
 h1,h2 { color: #564889; }
 h4 { color: #ed901e; padding-top:5px; text-indent:5px; }
+.toc span.name-only {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-left: -10px;
+}
