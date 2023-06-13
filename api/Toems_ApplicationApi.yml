@@ -1,0 +1,72 @@
+### YamlMime:ManagedReference
+items:
+- uid: Toems_ApplicationApi
+  commentId: N:Toems_ApplicationApi
+  id: Toems_ApplicationApi
+  children:
+  - Toems_ApplicationApi.ApplicationStrings
+  - Toems_ApplicationApi.CustomAuthenticationTokenProvider
+  - Toems_ApplicationApi.SimpleAuthorizationServerProvider
+  - Toems_ApplicationApi.Startup
+  - Toems_ApplicationApi.SwaggerConfig
+  - Toems_ApplicationApi.WebApiApplication
+  - Toems_ApplicationApi.WebApiConfig
+  langs:
+  - csharp
+  - vb
+  name: Toems_ApplicationApi
+  nameWithType: Toems_ApplicationApi
+  fullName: Toems_ApplicationApi
+  type: Namespace
+  assemblies:
+  - Toems-ApplicationApi
+references:
+- uid: Toems_ApplicationApi.ApplicationStrings
+  commentId: T:Toems_ApplicationApi.ApplicationStrings
+  isExternal: true
+  href: Toems_ApplicationApi.ApplicationStrings.html
+  name: ApplicationStrings
+  nameWithType: ApplicationStrings
+  fullName: Toems_ApplicationApi.ApplicationStrings
+- uid: Toems_ApplicationApi.SwaggerConfig
+  commentId: T:Toems_ApplicationApi.SwaggerConfig
+  isExternal: true
+  href: Toems_ApplicationApi.SwaggerConfig.html
+  name: SwaggerConfig
+  nameWithType: SwaggerConfig
+  fullName: Toems_ApplicationApi.SwaggerConfig
+- uid: Toems_ApplicationApi.WebApiConfig
+  commentId: T:Toems_ApplicationApi.WebApiConfig
+  isExternal: true
+  href: Toems_ApplicationApi.WebApiConfig.html
+  name: WebApiConfig
+  nameWithType: WebApiConfig
+  fullName: Toems_ApplicationApi.WebApiConfig
+- uid: Toems_ApplicationApi.WebApiApplication
+  commentId: T:Toems_ApplicationApi.WebApiApplication
+  isExternal: true
+  href: Toems_ApplicationApi.WebApiApplication.html
+  name: WebApiApplication
+  nameWithType: WebApiApplication
+  fullName: Toems_ApplicationApi.WebApiApplication
+- uid: Toems_ApplicationApi.CustomAuthenticationTokenProvider
+  commentId: T:Toems_ApplicationApi.CustomAuthenticationTokenProvider
+  isExternal: true
+  href: Toems_ApplicationApi.CustomAuthenticationTokenProvider.html
+  name: CustomAuthenticationTokenProvider
+  nameWithType: CustomAuthenticationTokenProvider
+  fullName: Toems_ApplicationApi.CustomAuthenticationTokenProvider
+- uid: Toems_ApplicationApi.SimpleAuthorizationServerProvider
+  commentId: T:Toems_ApplicationApi.SimpleAuthorizationServerProvider
+  isExternal: true
+  href: Toems_ApplicationApi.SimpleAuthorizationServerProvider.html
+  name: SimpleAuthorizationServerProvider
+  nameWithType: SimpleAuthorizationServerProvider
+  fullName: Toems_ApplicationApi.SimpleAuthorizationServerProvider
+- uid: Toems_ApplicationApi.Startup
+  commentId: T:Toems_ApplicationApi.Startup
+  isExternal: true
+  href: Toems_ApplicationApi.Startup.html
+  name: Startup
+  nameWithType: Startup
+  fullName: Toems_ApplicationApi.Startup

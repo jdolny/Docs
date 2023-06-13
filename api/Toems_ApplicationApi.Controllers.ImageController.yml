@@ -1,0 +1,1255 @@
+### YamlMime:ManagedReference
+items:
+- uid: Toems_ApplicationApi.Controllers.ImageController
+  commentId: T:Toems_ApplicationApi.Controllers.ImageController
+  id: ImageController
+  parent: Toems_ApplicationApi.Controllers
+  children:
+  - Toems_ApplicationApi.Controllers.ImageController.#ctor
+  - Toems_ApplicationApi.Controllers.ImageController.Delete(System.Int32)
+  - Toems_ApplicationApi.Controllers.ImageController.Get
+  - Toems_ApplicationApi.Controllers.ImageController.Get(System.Int32)
+  - Toems_ApplicationApi.Controllers.ImageController.GetCount
+  - Toems_ApplicationApi.Controllers.ImageController.GetImageAuditLogs(System.Int32,System.Int32)
+  - Toems_ApplicationApi.Controllers.ImageController.GetImageCategories(System.Int32)
+  - Toems_ApplicationApi.Controllers.ImageController.GetImageProfiles(System.Int32)
+  - Toems_ApplicationApi.Controllers.ImageController.GetImageReplicationComServers(System.Int32)
+  - Toems_ApplicationApi.Controllers.ImageController.GetImageSizeOnServer(System.String,System.String)
+  - Toems_ApplicationApi.Controllers.ImageController.GetPartitionFileInfo(System.Int32,System.String,System.String)
+  - Toems_ApplicationApi.Controllers.ImageController.GetReplicationStatus(System.Int32)
+  - Toems_ApplicationApi.Controllers.ImageController.Post(Toems_Common.Entity.EntityImage)
+  - Toems_ApplicationApi.Controllers.ImageController.Put(System.Int32,Toems_Common.Entity.EntityImage)
+  - Toems_ApplicationApi.Controllers.ImageController.Search(Toems_Common.Dto.DtoSearchFilterCategories)
+  - Toems_ApplicationApi.Controllers.ImageController.SeedDefaultProfile(System.Int32)
+  - Toems_ApplicationApi.Controllers.ImageController.UpdateReplicationServers(System.Collections.Generic.List{Toems_Common.Entity.EntityImageReplicationServer})
+  langs:
+  - csharp
+  - vb
+  name: ImageController
+  nameWithType: ImageController
+  fullName: Toems_ApplicationApi.Controllers.ImageController
+  type: Class
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: 'public class ImageController : ApiController'
+    content.vb: Public Class ImageController Inherits ApiController
+  inheritance:
+  - System.Object
+- uid: Toems_ApplicationApi.Controllers.ImageController.#ctor
+  commentId: M:Toems_ApplicationApi.Controllers.ImageController.#ctor
+  id: '#ctor'
+  parent: Toems_ApplicationApi.Controllers.ImageController
+  langs:
+  - csharp
+  - vb
+  name: ImageController()
+  nameWithType: ImageController.ImageController()
+  fullName: Toems_ApplicationApi.Controllers.ImageController.ImageController()
+  type: Constructor
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: public ImageController()
+    content.vb: Public Sub New()
+  overload: Toems_ApplicationApi.Controllers.ImageController.#ctor*
+  nameWithType.vb: ImageController.New()
+  fullName.vb: Toems_ApplicationApi.Controllers.ImageController.New()
+  name.vb: New()
+- uid: Toems_ApplicationApi.Controllers.ImageController.Delete(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ImageController.Delete(System.Int32)
+  id: Delete(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ImageController
+  langs:
+  - csharp
+  - vb
+  name: Delete(int)
+  nameWithType: ImageController.Delete(int)
+  fullName: Toems_ApplicationApi.Controllers.ImageController.Delete(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "imageDelete")]
+
+      [ImageAuth]
+
+      public DtoActionResult Delete(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Dto.DtoActionResult
+    content.vb: >-
+      <CustomAuth(Permission:="imageDelete")>
+
+      <ImageAuth>
+
+      Public Function Delete(id As Integer) As DtoActionResult
+  overload: Toems_ApplicationApi.Controllers.ImageController.Delete*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: imageDelete
+  - type: Toems_ApplicationApi.Controllers.Authorization.ImageAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.ImageAuthAttribute.#ctor
+    arguments: []
+  nameWithType.vb: ImageController.Delete(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ImageController.Delete(Integer)
+  name.vb: Delete(Integer)
+- uid: Toems_ApplicationApi.Controllers.ImageController.Get(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ImageController.Get(System.Int32)
+  id: Get(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ImageController
+  langs:
+  - csharp
+  - vb
+  name: Get(int)
+  nameWithType: ImageController.Get(int)
+  fullName: Toems_ApplicationApi.Controllers.ImageController.Get(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "imageRead")]
+
+      [ImageAuth]
+
+      public EntityImage Get(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Entity.EntityImage
+    content.vb: >-
+      <CustomAuth(Permission:="imageRead")>
+
+      <ImageAuth>
+
+      Public Function [Get](id As Integer) As EntityImage
+  overload: Toems_ApplicationApi.Controllers.ImageController.Get*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: imageRead
+  - type: Toems_ApplicationApi.Controllers.Authorization.ImageAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.ImageAuthAttribute.#ctor
+    arguments: []
+  nameWithType.vb: ImageController.Get(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ImageController.Get(Integer)
+  name.vb: Get(Integer)
+- uid: Toems_ApplicationApi.Controllers.ImageController.Get
+  commentId: M:Toems_ApplicationApi.Controllers.ImageController.Get
+  id: Get
+  parent: Toems_ApplicationApi.Controllers.ImageController
+  langs:
+  - csharp
+  - vb
+  name: Get()
+  nameWithType: ImageController.Get()
+  fullName: Toems_ApplicationApi.Controllers.ImageController.Get()
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: public IEnumerable<EntityImage> Get()
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityImage}
+    content.vb: Public Function [Get]() As IEnumerable(Of EntityImage)
+  overload: Toems_ApplicationApi.Controllers.ImageController.Get*
+- uid: Toems_ApplicationApi.Controllers.ImageController.GetReplicationStatus(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ImageController.GetReplicationStatus(System.Int32)
+  id: GetReplicationStatus(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ImageController
+  langs:
+  - csharp
+  - vb
+  name: GetReplicationStatus(int)
+  nameWithType: ImageController.GetReplicationStatus(int)
+  fullName: Toems_ApplicationApi.Controllers.ImageController.GetReplicationStatus(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: public IEnumerable<DtoServerImageRepStatus> GetReplicationStatus(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Dto.DtoServerImageRepStatus}
+    content.vb: Public Function GetReplicationStatus(id As Integer) As IEnumerable(Of DtoServerImageRepStatus)
+  overload: Toems_ApplicationApi.Controllers.ImageController.GetReplicationStatus*
+  nameWithType.vb: ImageController.GetReplicationStatus(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ImageController.GetReplicationStatus(Integer)
+  name.vb: GetReplicationStatus(Integer)
+- uid: Toems_ApplicationApi.Controllers.ImageController.Search(Toems_Common.Dto.DtoSearchFilterCategories)
+  commentId: M:Toems_ApplicationApi.Controllers.ImageController.Search(Toems_Common.Dto.DtoSearchFilterCategories)
+  id: Search(Toems_Common.Dto.DtoSearchFilterCategories)
+  parent: Toems_ApplicationApi.Controllers.ImageController
+  langs:
+  - csharp
+  - vb
+  name: Search(DtoSearchFilterCategories)
+  nameWithType: ImageController.Search(DtoSearchFilterCategories)
+  fullName: Toems_ApplicationApi.Controllers.ImageController.Search(Toems_Common.Dto.DtoSearchFilterCategories)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "imageRead")]
+
+      public IEnumerable<ImageWithDate> Search(DtoSearchFilterCategories filter)
+    parameters:
+    - id: filter
+      type: Toems_Common.Dto.DtoSearchFilterCategories
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Entity.ImageWithDate}
+    content.vb: >-
+      <CustomAuth(Permission:="imageRead")>
+
+      Public Function Search(filter As DtoSearchFilterCategories) As IEnumerable(Of ImageWithDate)
+  overload: Toems_ApplicationApi.Controllers.ImageController.Search*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: imageRead
+- uid: Toems_ApplicationApi.Controllers.ImageController.GetCount
+  commentId: M:Toems_ApplicationApi.Controllers.ImageController.GetCount
+  id: GetCount
+  parent: Toems_ApplicationApi.Controllers.ImageController
+  langs:
+  - csharp
+  - vb
+  name: GetCount()
+  nameWithType: ImageController.GetCount()
+  fullName: Toems_ApplicationApi.Controllers.ImageController.GetCount()
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "imageRead")]
+
+      public DtoApiStringResponse GetCount()
+    return:
+      type: Toems_Common.Dto.DtoApiStringResponse
+    content.vb: >-
+      <CustomAuth(Permission:="imageRead")>
+
+      Public Function GetCount() As DtoApiStringResponse
+  overload: Toems_ApplicationApi.Controllers.ImageController.GetCount*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: imageRead
+- uid: Toems_ApplicationApi.Controllers.ImageController.GetImageProfiles(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ImageController.GetImageProfiles(System.Int32)
+  id: GetImageProfiles(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ImageController
+  langs:
+  - csharp
+  - vb
+  name: GetImageProfiles(int)
+  nameWithType: ImageController.GetImageProfiles(int)
+  fullName: Toems_ApplicationApi.Controllers.ImageController.GetImageProfiles(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: public IEnumerable<EntityImageProfile> GetImageProfiles(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityImageProfile}
+    content.vb: Public Function GetImageProfiles(id As Integer) As IEnumerable(Of EntityImageProfile)
+  overload: Toems_ApplicationApi.Controllers.ImageController.GetImageProfiles*
+  nameWithType.vb: ImageController.GetImageProfiles(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ImageController.GetImageProfiles(Integer)
+  name.vb: GetImageProfiles(Integer)
+- uid: Toems_ApplicationApi.Controllers.ImageController.GetImageSizeOnServer(System.String,System.String)
+  commentId: M:Toems_ApplicationApi.Controllers.ImageController.GetImageSizeOnServer(System.String,System.String)
+  id: GetImageSizeOnServer(System.String,System.String)
+  parent: Toems_ApplicationApi.Controllers.ImageController
+  langs:
+  - csharp
+  - vb
+  name: GetImageSizeOnServer(string, string)
+  nameWithType: ImageController.GetImageSizeOnServer(string, string)
+  fullName: Toems_ApplicationApi.Controllers.ImageController.GetImageSizeOnServer(string, string)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "imageRead")]
+
+      public DtoApiStringResponse GetImageSizeOnServer(string imageName, string hdNumber)
+    parameters:
+    - id: imageName
+      type: System.String
+    - id: hdNumber
+      type: System.String
+    return:
+      type: Toems_Common.Dto.DtoApiStringResponse
+    content.vb: >-
+      <CustomAuth(Permission:="imageRead")>
+
+      Public Function GetImageSizeOnServer(imageName As String, hdNumber As String) As DtoApiStringResponse
+  overload: Toems_ApplicationApi.Controllers.ImageController.GetImageSizeOnServer*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: imageRead
+  nameWithType.vb: ImageController.GetImageSizeOnServer(String, String)
+  fullName.vb: Toems_ApplicationApi.Controllers.ImageController.GetImageSizeOnServer(String, String)
+  name.vb: GetImageSizeOnServer(String, String)
+- uid: Toems_ApplicationApi.Controllers.ImageController.GetPartitionFileInfo(System.Int32,System.String,System.String)
+  commentId: M:Toems_ApplicationApi.Controllers.ImageController.GetPartitionFileInfo(System.Int32,System.String,System.String)
+  id: GetPartitionFileInfo(System.Int32,System.String,System.String)
+  parent: Toems_ApplicationApi.Controllers.ImageController
+  langs:
+  - csharp
+  - vb
+  name: GetPartitionFileInfo(int, string, string)
+  nameWithType: ImageController.GetPartitionFileInfo(int, string, string)
+  fullName: Toems_ApplicationApi.Controllers.ImageController.GetPartitionFileInfo(int, string, string)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "imageRead")]
+
+      public IEnumerable<DtoImageFileInfo> GetPartitionFileInfo(int id, string selectedHd, string selectedPartition)
+    parameters:
+    - id: id
+      type: System.Int32
+    - id: selectedHd
+      type: System.String
+    - id: selectedPartition
+      type: System.String
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Dto.DtoImageFileInfo}
+    content.vb: >-
+      <CustomAuth(Permission:="imageRead")>
+
+      Public Function GetPartitionFileInfo(id As Integer, selectedHd As String, selectedPartition As String) As IEnumerable(Of DtoImageFileInfo)
+  overload: Toems_ApplicationApi.Controllers.ImageController.GetPartitionFileInfo*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: imageRead
+  nameWithType.vb: ImageController.GetPartitionFileInfo(Integer, String, String)
+  fullName.vb: Toems_ApplicationApi.Controllers.ImageController.GetPartitionFileInfo(Integer, String, String)
+  name.vb: GetPartitionFileInfo(Integer, String, String)
+- uid: Toems_ApplicationApi.Controllers.ImageController.Post(Toems_Common.Entity.EntityImage)
+  commentId: M:Toems_ApplicationApi.Controllers.ImageController.Post(Toems_Common.Entity.EntityImage)
+  id: Post(Toems_Common.Entity.EntityImage)
+  parent: Toems_ApplicationApi.Controllers.ImageController
+  langs:
+  - csharp
+  - vb
+  name: Post(EntityImage)
+  nameWithType: ImageController.Post(EntityImage)
+  fullName: Toems_ApplicationApi.Controllers.ImageController.Post(Toems_Common.Entity.EntityImage)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "imageUpdate")]
+
+      public DtoActionResult Post(EntityImage image)
+    parameters:
+    - id: image
+      type: Toems_Common.Entity.EntityImage
+    return:
+      type: Toems_Common.Dto.DtoActionResult
+    content.vb: >-
+      <CustomAuth(Permission:="imageUpdate")>
+
+      Public Function Post(image As EntityImage) As DtoActionResult
+  overload: Toems_ApplicationApi.Controllers.ImageController.Post*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: imageUpdate
+- uid: Toems_ApplicationApi.Controllers.ImageController.Put(System.Int32,Toems_Common.Entity.EntityImage)
+  commentId: M:Toems_ApplicationApi.Controllers.ImageController.Put(System.Int32,Toems_Common.Entity.EntityImage)
+  id: Put(System.Int32,Toems_Common.Entity.EntityImage)
+  parent: Toems_ApplicationApi.Controllers.ImageController
+  langs:
+  - csharp
+  - vb
+  name: Put(int, EntityImage)
+  nameWithType: ImageController.Put(int, EntityImage)
+  fullName: Toems_ApplicationApi.Controllers.ImageController.Put(int, Toems_Common.Entity.EntityImage)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "imageUpdate")]
+
+      [ImageAuth]
+
+      public DtoActionResult Put(int id, EntityImage image)
+    parameters:
+    - id: id
+      type: System.Int32
+    - id: image
+      type: Toems_Common.Entity.EntityImage
+    return:
+      type: Toems_Common.Dto.DtoActionResult
+    content.vb: >-
+      <CustomAuth(Permission:="imageUpdate")>
+
+      <ImageAuth>
+
+      Public Function Put(id As Integer, image As EntityImage) As DtoActionResult
+  overload: Toems_ApplicationApi.Controllers.ImageController.Put*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: imageUpdate
+  - type: Toems_ApplicationApi.Controllers.Authorization.ImageAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.ImageAuthAttribute.#ctor
+    arguments: []
+  nameWithType.vb: ImageController.Put(Integer, EntityImage)
+  fullName.vb: Toems_ApplicationApi.Controllers.ImageController.Put(Integer, Toems_Common.Entity.EntityImage)
+  name.vb: Put(Integer, EntityImage)
+- uid: Toems_ApplicationApi.Controllers.ImageController.SeedDefaultProfile(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ImageController.SeedDefaultProfile(System.Int32)
+  id: SeedDefaultProfile(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ImageController
+  langs:
+  - csharp
+  - vb
+  name: SeedDefaultProfile(int)
+  nameWithType: ImageController.SeedDefaultProfile(int)
+  fullName: Toems_ApplicationApi.Controllers.ImageController.SeedDefaultProfile(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: public EntityImageProfile SeedDefaultProfile(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Entity.EntityImageProfile
+    content.vb: Public Function SeedDefaultProfile(id As Integer) As EntityImageProfile
+  overload: Toems_ApplicationApi.Controllers.ImageController.SeedDefaultProfile*
+  nameWithType.vb: ImageController.SeedDefaultProfile(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ImageController.SeedDefaultProfile(Integer)
+  name.vb: SeedDefaultProfile(Integer)
+- uid: Toems_ApplicationApi.Controllers.ImageController.GetImageCategories(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ImageController.GetImageCategories(System.Int32)
+  id: GetImageCategories(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ImageController
+  langs:
+  - csharp
+  - vb
+  name: GetImageCategories(int)
+  nameWithType: ImageController.GetImageCategories(int)
+  fullName: Toems_ApplicationApi.Controllers.ImageController.GetImageCategories(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "imageRead")]
+
+      public IEnumerable<EntityImageCategory> GetImageCategories(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityImageCategory}
+    content.vb: >-
+      <CustomAuth(Permission:="imageRead")>
+
+      Public Function GetImageCategories(id As Integer) As IEnumerable(Of EntityImageCategory)
+  overload: Toems_ApplicationApi.Controllers.ImageController.GetImageCategories*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: imageRead
+  nameWithType.vb: ImageController.GetImageCategories(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ImageController.GetImageCategories(Integer)
+  name.vb: GetImageCategories(Integer)
+- uid: Toems_ApplicationApi.Controllers.ImageController.GetImageAuditLogs(System.Int32,System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ImageController.GetImageAuditLogs(System.Int32,System.Int32)
+  id: GetImageAuditLogs(System.Int32,System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ImageController
+  langs:
+  - csharp
+  - vb
+  name: GetImageAuditLogs(int, int)
+  nameWithType: ImageController.GetImageAuditLogs(int, int)
+  fullName: Toems_ApplicationApi.Controllers.ImageController.GetImageAuditLogs(int, int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "imageRead")]
+
+      public IEnumerable<EntityAuditLog> GetImageAuditLogs(int id, int limit)
+    parameters:
+    - id: id
+      type: System.Int32
+    - id: limit
+      type: System.Int32
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityAuditLog}
+    content.vb: >-
+      <CustomAuth(Permission:="imageRead")>
+
+      Public Function GetImageAuditLogs(id As Integer, limit As Integer) As IEnumerable(Of EntityAuditLog)
+  overload: Toems_ApplicationApi.Controllers.ImageController.GetImageAuditLogs*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: imageRead
+  nameWithType.vb: ImageController.GetImageAuditLogs(Integer, Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ImageController.GetImageAuditLogs(Integer, Integer)
+  name.vb: GetImageAuditLogs(Integer, Integer)
+- uid: Toems_ApplicationApi.Controllers.ImageController.GetImageReplicationComServers(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ImageController.GetImageReplicationComServers(System.Int32)
+  id: GetImageReplicationComServers(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ImageController
+  langs:
+  - csharp
+  - vb
+  name: GetImageReplicationComServers(int)
+  nameWithType: ImageController.GetImageReplicationComServers(int)
+  fullName: Toems_ApplicationApi.Controllers.ImageController.GetImageReplicationComServers(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "imageRead")]
+
+      public IEnumerable<EntityImageReplicationServer> GetImageReplicationComServers(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityImageReplicationServer}
+    content.vb: >-
+      <CustomAuth(Permission:="imageRead")>
+
+      Public Function GetImageReplicationComServers(id As Integer) As IEnumerable(Of EntityImageReplicationServer)
+  overload: Toems_ApplicationApi.Controllers.ImageController.GetImageReplicationComServers*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: imageRead
+  nameWithType.vb: ImageController.GetImageReplicationComServers(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ImageController.GetImageReplicationComServers(Integer)
+  name.vb: GetImageReplicationComServers(Integer)
+- uid: Toems_ApplicationApi.Controllers.ImageController.UpdateReplicationServers(System.Collections.Generic.List{Toems_Common.Entity.EntityImageReplicationServer})
+  commentId: M:Toems_ApplicationApi.Controllers.ImageController.UpdateReplicationServers(System.Collections.Generic.List{Toems_Common.Entity.EntityImageReplicationServer})
+  id: UpdateReplicationServers(System.Collections.Generic.List{Toems_Common.Entity.EntityImageReplicationServer})
+  parent: Toems_ApplicationApi.Controllers.ImageController
+  langs:
+  - csharp
+  - vb
+  name: UpdateReplicationServers(List<EntityImageReplicationServer>)
+  nameWithType: ImageController.UpdateReplicationServers(List<EntityImageReplicationServer>)
+  fullName: Toems_ApplicationApi.Controllers.ImageController.UpdateReplicationServers(System.Collections.Generic.List<Toems_Common.Entity.EntityImageReplicationServer>)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "imageUpdate")]
+
+      public DtoActionResult UpdateReplicationServers(List<EntityImageReplicationServer> imageReplicationServers)
+    parameters:
+    - id: imageReplicationServers
+      type: System.Collections.Generic.List{Toems_Common.Entity.EntityImageReplicationServer}
+    return:
+      type: Toems_Common.Dto.DtoActionResult
+    content.vb: >-
+      <CustomAuth(Permission:="imageUpdate")>
+
+      Public Function UpdateReplicationServers(imageReplicationServers As List(Of EntityImageReplicationServer)) As DtoActionResult
+  overload: Toems_ApplicationApi.Controllers.ImageController.UpdateReplicationServers*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: imageUpdate
+  nameWithType.vb: ImageController.UpdateReplicationServers(List(Of EntityImageReplicationServer))
+  fullName.vb: Toems_ApplicationApi.Controllers.ImageController.UpdateReplicationServers(System.Collections.Generic.List(Of Toems_Common.Entity.EntityImageReplicationServer))
+  name.vb: UpdateReplicationServers(List(Of EntityImageReplicationServer))
+references:
+- uid: Toems_ApplicationApi.Controllers
+  commentId: N:Toems_ApplicationApi.Controllers
+  isExternal: true
+  href: Toems_ApplicationApi.html
+  name: Toems_ApplicationApi.Controllers
+  nameWithType: Toems_ApplicationApi.Controllers
+  fullName: Toems_ApplicationApi.Controllers
+  spec.csharp:
+  - uid: Toems_ApplicationApi
+    name: Toems_ApplicationApi
+    isExternal: true
+    href: Toems_ApplicationApi.html
+  - name: .
+  - uid: Toems_ApplicationApi.Controllers
+    name: Controllers
+    isExternal: true
+    href: Toems_ApplicationApi.Controllers.html
+  spec.vb:
+  - uid: Toems_ApplicationApi
+    name: Toems_ApplicationApi
+    isExternal: true
+    href: Toems_ApplicationApi.html
+  - name: .
+  - uid: Toems_ApplicationApi.Controllers
+    name: Controllers
+    isExternal: true
+    href: Toems_ApplicationApi.Controllers.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Toems_ApplicationApi.Controllers.ImageController.#ctor*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ImageController.#ctor
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ImageController.html#Toems_ApplicationApi.Controllers.ImageController.#ctor
+  name: ImageController
+  nameWithType: ImageController.ImageController
+  fullName: Toems_ApplicationApi.Controllers.ImageController.ImageController
+  nameWithType.vb: ImageController.New
+  fullName.vb: Toems_ApplicationApi.Controllers.ImageController.New
+  name.vb: New
+- uid: Toems_ApplicationApi.Controllers.ImageController.Delete*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ImageController.Delete
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ImageController.html#Toems_ApplicationApi.Controllers.ImageController.Delete(System.Int32)
+  name: Delete
+  nameWithType: ImageController.Delete
+  fullName: Toems_ApplicationApi.Controllers.ImageController.Delete
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Toems_Common.Dto.DtoActionResult
+  isExternal: true
+  name: DtoActionResult
+  nameWithType: DtoActionResult
+  fullName: Toems_Common.Dto.DtoActionResult
+- uid: Toems_ApplicationApi.Controllers.ImageController.Get*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ImageController.Get
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ImageController.html#Toems_ApplicationApi.Controllers.ImageController.Get(System.Int32)
+  name: Get
+  nameWithType: ImageController.Get
+  fullName: Toems_ApplicationApi.Controllers.ImageController.Get
+- uid: Toems_Common.Entity.EntityImage
+  isExternal: true
+  name: EntityImage
+  nameWithType: EntityImage
+  fullName: Toems_Common.Entity.EntityImage
+- uid: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityImage}
+  commentId: T:System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityImage}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<EntityImage>
+  nameWithType: IEnumerable<EntityImage>
+  fullName: System.Collections.Generic.IEnumerable<Toems_Common.Entity.EntityImage>
+  nameWithType.vb: IEnumerable(Of EntityImage)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Toems_Common.Entity.EntityImage)
+  name.vb: IEnumerable(Of EntityImage)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Toems_Common.Entity.EntityImage
+    name: EntityImage
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Entity.EntityImage
+    name: EntityImage
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Toems_ApplicationApi.Controllers.ImageController.GetReplicationStatus*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ImageController.GetReplicationStatus
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ImageController.html#Toems_ApplicationApi.Controllers.ImageController.GetReplicationStatus(System.Int32)
+  name: GetReplicationStatus
+  nameWithType: ImageController.GetReplicationStatus
+  fullName: Toems_ApplicationApi.Controllers.ImageController.GetReplicationStatus
+- uid: System.Collections.Generic.IEnumerable{Toems_Common.Dto.DtoServerImageRepStatus}
+  commentId: T:System.Collections.Generic.IEnumerable{Toems_Common.Dto.DtoServerImageRepStatus}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<DtoServerImageRepStatus>
+  nameWithType: IEnumerable<DtoServerImageRepStatus>
+  fullName: System.Collections.Generic.IEnumerable<Toems_Common.Dto.DtoServerImageRepStatus>
+  nameWithType.vb: IEnumerable(Of DtoServerImageRepStatus)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Toems_Common.Dto.DtoServerImageRepStatus)
+  name.vb: IEnumerable(Of DtoServerImageRepStatus)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Toems_Common.Dto.DtoServerImageRepStatus
+    name: DtoServerImageRepStatus
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Dto.DtoServerImageRepStatus
+    name: DtoServerImageRepStatus
+    isExternal: true
+  - name: )
+- uid: Toems_ApplicationApi.Controllers.ImageController.Search*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ImageController.Search
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ImageController.html#Toems_ApplicationApi.Controllers.ImageController.Search(Toems_Common.Dto.DtoSearchFilterCategories)
+  name: Search
+  nameWithType: ImageController.Search
+  fullName: Toems_ApplicationApi.Controllers.ImageController.Search
+- uid: Toems_Common.Dto.DtoSearchFilterCategories
+  isExternal: true
+  name: DtoSearchFilterCategories
+  nameWithType: DtoSearchFilterCategories
+  fullName: Toems_Common.Dto.DtoSearchFilterCategories
+- uid: System.Collections.Generic.IEnumerable{Toems_Common.Entity.ImageWithDate}
+  commentId: T:System.Collections.Generic.IEnumerable{Toems_Common.Entity.ImageWithDate}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<ImageWithDate>
+  nameWithType: IEnumerable<ImageWithDate>
+  fullName: System.Collections.Generic.IEnumerable<Toems_Common.Entity.ImageWithDate>
+  nameWithType.vb: IEnumerable(Of ImageWithDate)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Toems_Common.Entity.ImageWithDate)
+  name.vb: IEnumerable(Of ImageWithDate)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Toems_Common.Entity.ImageWithDate
+    name: ImageWithDate
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Entity.ImageWithDate
+    name: ImageWithDate
+    isExternal: true
+  - name: )
+- uid: Toems_ApplicationApi.Controllers.ImageController.GetCount*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ImageController.GetCount
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ImageController.html#Toems_ApplicationApi.Controllers.ImageController.GetCount
+  name: GetCount
+  nameWithType: ImageController.GetCount
+  fullName: Toems_ApplicationApi.Controllers.ImageController.GetCount
+- uid: Toems_Common.Dto.DtoApiStringResponse
+  isExternal: true
+  name: DtoApiStringResponse
+  nameWithType: DtoApiStringResponse
+  fullName: Toems_Common.Dto.DtoApiStringResponse
+- uid: Toems_ApplicationApi.Controllers.ImageController.GetImageProfiles*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ImageController.GetImageProfiles
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ImageController.html#Toems_ApplicationApi.Controllers.ImageController.GetImageProfiles(System.Int32)
+  name: GetImageProfiles
+  nameWithType: ImageController.GetImageProfiles
+  fullName: Toems_ApplicationApi.Controllers.ImageController.GetImageProfiles
+- uid: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityImageProfile}
+  commentId: T:System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityImageProfile}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<EntityImageProfile>
+  nameWithType: IEnumerable<EntityImageProfile>
+  fullName: System.Collections.Generic.IEnumerable<Toems_Common.Entity.EntityImageProfile>
+  nameWithType.vb: IEnumerable(Of EntityImageProfile)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Toems_Common.Entity.EntityImageProfile)
+  name.vb: IEnumerable(Of EntityImageProfile)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Toems_Common.Entity.EntityImageProfile
+    name: EntityImageProfile
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Entity.EntityImageProfile
+    name: EntityImageProfile
+    isExternal: true
+  - name: )
+- uid: Toems_ApplicationApi.Controllers.ImageController.GetImageSizeOnServer*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ImageController.GetImageSizeOnServer
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ImageController.html#Toems_ApplicationApi.Controllers.ImageController.GetImageSizeOnServer(System.String,System.String)
+  name: GetImageSizeOnServer
+  nameWithType: ImageController.GetImageSizeOnServer
+  fullName: Toems_ApplicationApi.Controllers.ImageController.GetImageSizeOnServer
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Toems_ApplicationApi.Controllers.ImageController.GetPartitionFileInfo*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ImageController.GetPartitionFileInfo
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ImageController.html#Toems_ApplicationApi.Controllers.ImageController.GetPartitionFileInfo(System.Int32,System.String,System.String)
+  name: GetPartitionFileInfo
+  nameWithType: ImageController.GetPartitionFileInfo
+  fullName: Toems_ApplicationApi.Controllers.ImageController.GetPartitionFileInfo
+- uid: System.Collections.Generic.IEnumerable{Toems_Common.Dto.DtoImageFileInfo}
+  commentId: T:System.Collections.Generic.IEnumerable{Toems_Common.Dto.DtoImageFileInfo}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<DtoImageFileInfo>
+  nameWithType: IEnumerable<DtoImageFileInfo>
+  fullName: System.Collections.Generic.IEnumerable<Toems_Common.Dto.DtoImageFileInfo>
+  nameWithType.vb: IEnumerable(Of DtoImageFileInfo)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Toems_Common.Dto.DtoImageFileInfo)
+  name.vb: IEnumerable(Of DtoImageFileInfo)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Toems_Common.Dto.DtoImageFileInfo
+    name: DtoImageFileInfo
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Dto.DtoImageFileInfo
+    name: DtoImageFileInfo
+    isExternal: true
+  - name: )
+- uid: Toems_ApplicationApi.Controllers.ImageController.Post*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ImageController.Post
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ImageController.html#Toems_ApplicationApi.Controllers.ImageController.Post(Toems_Common.Entity.EntityImage)
+  name: Post
+  nameWithType: ImageController.Post
+  fullName: Toems_ApplicationApi.Controllers.ImageController.Post
+- uid: Toems_ApplicationApi.Controllers.ImageController.Put*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ImageController.Put
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ImageController.html#Toems_ApplicationApi.Controllers.ImageController.Put(System.Int32,Toems_Common.Entity.EntityImage)
+  name: Put
+  nameWithType: ImageController.Put
+  fullName: Toems_ApplicationApi.Controllers.ImageController.Put
+- uid: Toems_ApplicationApi.Controllers.ImageController.SeedDefaultProfile*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ImageController.SeedDefaultProfile
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ImageController.html#Toems_ApplicationApi.Controllers.ImageController.SeedDefaultProfile(System.Int32)
+  name: SeedDefaultProfile
+  nameWithType: ImageController.SeedDefaultProfile
+  fullName: Toems_ApplicationApi.Controllers.ImageController.SeedDefaultProfile
+- uid: Toems_Common.Entity.EntityImageProfile
+  isExternal: true
+  name: EntityImageProfile
+  nameWithType: EntityImageProfile
+  fullName: Toems_Common.Entity.EntityImageProfile
+- uid: Toems_ApplicationApi.Controllers.ImageController.GetImageCategories*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ImageController.GetImageCategories
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ImageController.html#Toems_ApplicationApi.Controllers.ImageController.GetImageCategories(System.Int32)
+  name: GetImageCategories
+  nameWithType: ImageController.GetImageCategories
+  fullName: Toems_ApplicationApi.Controllers.ImageController.GetImageCategories
+- uid: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityImageCategory}
+  commentId: T:System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityImageCategory}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<EntityImageCategory>
+  nameWithType: IEnumerable<EntityImageCategory>
+  fullName: System.Collections.Generic.IEnumerable<Toems_Common.Entity.EntityImageCategory>
+  nameWithType.vb: IEnumerable(Of EntityImageCategory)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Toems_Common.Entity.EntityImageCategory)
+  name.vb: IEnumerable(Of EntityImageCategory)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Toems_Common.Entity.EntityImageCategory
+    name: EntityImageCategory
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Entity.EntityImageCategory
+    name: EntityImageCategory
+    isExternal: true
+  - name: )
+- uid: Toems_ApplicationApi.Controllers.ImageController.GetImageAuditLogs*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ImageController.GetImageAuditLogs
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ImageController.html#Toems_ApplicationApi.Controllers.ImageController.GetImageAuditLogs(System.Int32,System.Int32)
+  name: GetImageAuditLogs
+  nameWithType: ImageController.GetImageAuditLogs
+  fullName: Toems_ApplicationApi.Controllers.ImageController.GetImageAuditLogs
+- uid: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityAuditLog}
+  commentId: T:System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityAuditLog}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<EntityAuditLog>
+  nameWithType: IEnumerable<EntityAuditLog>
+  fullName: System.Collections.Generic.IEnumerable<Toems_Common.Entity.EntityAuditLog>
+  nameWithType.vb: IEnumerable(Of EntityAuditLog)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Toems_Common.Entity.EntityAuditLog)
+  name.vb: IEnumerable(Of EntityAuditLog)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Toems_Common.Entity.EntityAuditLog
+    name: EntityAuditLog
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Entity.EntityAuditLog
+    name: EntityAuditLog
+    isExternal: true
+  - name: )
+- uid: Toems_ApplicationApi.Controllers.ImageController.GetImageReplicationComServers*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ImageController.GetImageReplicationComServers
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ImageController.html#Toems_ApplicationApi.Controllers.ImageController.GetImageReplicationComServers(System.Int32)
+  name: GetImageReplicationComServers
+  nameWithType: ImageController.GetImageReplicationComServers
+  fullName: Toems_ApplicationApi.Controllers.ImageController.GetImageReplicationComServers
+- uid: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityImageReplicationServer}
+  commentId: T:System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityImageReplicationServer}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<EntityImageReplicationServer>
+  nameWithType: IEnumerable<EntityImageReplicationServer>
+  fullName: System.Collections.Generic.IEnumerable<Toems_Common.Entity.EntityImageReplicationServer>
+  nameWithType.vb: IEnumerable(Of EntityImageReplicationServer)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Toems_Common.Entity.EntityImageReplicationServer)
+  name.vb: IEnumerable(Of EntityImageReplicationServer)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Toems_Common.Entity.EntityImageReplicationServer
+    name: EntityImageReplicationServer
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Entity.EntityImageReplicationServer
+    name: EntityImageReplicationServer
+    isExternal: true
+  - name: )
+- uid: Toems_ApplicationApi.Controllers.ImageController.UpdateReplicationServers*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ImageController.UpdateReplicationServers
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ImageController.html#Toems_ApplicationApi.Controllers.ImageController.UpdateReplicationServers(System.Collections.Generic.List{Toems_Common.Entity.EntityImageReplicationServer})
+  name: UpdateReplicationServers
+  nameWithType: ImageController.UpdateReplicationServers
+  fullName: Toems_ApplicationApi.Controllers.ImageController.UpdateReplicationServers
+- uid: System.Collections.Generic.List{Toems_Common.Entity.EntityImageReplicationServer}
+  commentId: T:System.Collections.Generic.List{Toems_Common.Entity.EntityImageReplicationServer}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<EntityImageReplicationServer>
+  nameWithType: List<EntityImageReplicationServer>
+  fullName: System.Collections.Generic.List<Toems_Common.Entity.EntityImageReplicationServer>
+  nameWithType.vb: List(Of EntityImageReplicationServer)
+  fullName.vb: System.Collections.Generic.List(Of Toems_Common.Entity.EntityImageReplicationServer)
+  name.vb: List(Of EntityImageReplicationServer)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Toems_Common.Entity.EntityImageReplicationServer
+    name: EntityImageReplicationServer
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Entity.EntityImageReplicationServer
+    name: EntityImageReplicationServer
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

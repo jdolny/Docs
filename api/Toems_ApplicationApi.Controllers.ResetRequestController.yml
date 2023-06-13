@@ -1,0 +1,407 @@
+### YamlMime:ManagedReference
+items:
+- uid: Toems_ApplicationApi.Controllers.ResetRequestController
+  commentId: T:Toems_ApplicationApi.Controllers.ResetRequestController
+  id: ResetRequestController
+  parent: Toems_ApplicationApi.Controllers
+  children:
+  - Toems_ApplicationApi.Controllers.ResetRequestController.#ctor
+  - Toems_ApplicationApi.Controllers.ResetRequestController.Approve(System.Int32)
+  - Toems_ApplicationApi.Controllers.ResetRequestController.Delete(System.Int32)
+  - Toems_ApplicationApi.Controllers.ResetRequestController.GetCount
+  - Toems_ApplicationApi.Controllers.ResetRequestController.Search(Toems_Common.Dto.DtoSearchFilter)
+  langs:
+  - csharp
+  - vb
+  name: ResetRequestController
+  nameWithType: ResetRequestController
+  fullName: Toems_ApplicationApi.Controllers.ResetRequestController
+  type: Class
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: 'public class ResetRequestController : ApiController'
+    content.vb: Public Class ResetRequestController Inherits ApiController
+  inheritance:
+  - System.Object
+- uid: Toems_ApplicationApi.Controllers.ResetRequestController.#ctor
+  commentId: M:Toems_ApplicationApi.Controllers.ResetRequestController.#ctor
+  id: '#ctor'
+  parent: Toems_ApplicationApi.Controllers.ResetRequestController
+  langs:
+  - csharp
+  - vb
+  name: ResetRequestController()
+  nameWithType: ResetRequestController.ResetRequestController()
+  fullName: Toems_ApplicationApi.Controllers.ResetRequestController.ResetRequestController()
+  type: Constructor
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: public ResetRequestController()
+    content.vb: Public Sub New()
+  overload: Toems_ApplicationApi.Controllers.ResetRequestController.#ctor*
+  nameWithType.vb: ResetRequestController.New()
+  fullName.vb: Toems_ApplicationApi.Controllers.ResetRequestController.New()
+  name.vb: New()
+- uid: Toems_ApplicationApi.Controllers.ResetRequestController.Delete(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ResetRequestController.Delete(System.Int32)
+  id: Delete(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ResetRequestController
+  langs:
+  - csharp
+  - vb
+  name: Delete(int)
+  nameWithType: ResetRequestController.Delete(int)
+  fullName: Toems_ApplicationApi.Controllers.ResetRequestController.Delete(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "approveReset")]
+
+      public DtoActionResult Delete(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Dto.DtoActionResult
+    content.vb: >-
+      <CustomAuth(Permission:="approveReset")>
+
+      Public Function Delete(id As Integer) As DtoActionResult
+  overload: Toems_ApplicationApi.Controllers.ResetRequestController.Delete*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: approveReset
+  nameWithType.vb: ResetRequestController.Delete(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ResetRequestController.Delete(Integer)
+  name.vb: Delete(Integer)
+- uid: Toems_ApplicationApi.Controllers.ResetRequestController.Search(Toems_Common.Dto.DtoSearchFilter)
+  commentId: M:Toems_ApplicationApi.Controllers.ResetRequestController.Search(Toems_Common.Dto.DtoSearchFilter)
+  id: Search(Toems_Common.Dto.DtoSearchFilter)
+  parent: Toems_ApplicationApi.Controllers.ResetRequestController
+  langs:
+  - csharp
+  - vb
+  name: Search(DtoSearchFilter)
+  nameWithType: ResetRequestController.Search(DtoSearchFilter)
+  fullName: Toems_ApplicationApi.Controllers.ResetRequestController.Search(Toems_Common.Dto.DtoSearchFilter)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "computerRead")]
+
+      public IEnumerable<EntityResetRequest> Search(DtoSearchFilter filter)
+    parameters:
+    - id: filter
+      type: Toems_Common.Dto.DtoSearchFilter
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityResetRequest}
+    content.vb: >-
+      <CustomAuth(Permission:="computerRead")>
+
+      Public Function Search(filter As DtoSearchFilter) As IEnumerable(Of EntityResetRequest)
+  overload: Toems_ApplicationApi.Controllers.ResetRequestController.Search*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: computerRead
+- uid: Toems_ApplicationApi.Controllers.ResetRequestController.GetCount
+  commentId: M:Toems_ApplicationApi.Controllers.ResetRequestController.GetCount
+  id: GetCount
+  parent: Toems_ApplicationApi.Controllers.ResetRequestController
+  langs:
+  - csharp
+  - vb
+  name: GetCount()
+  nameWithType: ResetRequestController.GetCount()
+  fullName: Toems_ApplicationApi.Controllers.ResetRequestController.GetCount()
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "computerRead")]
+
+      public DtoApiStringResponse GetCount()
+    return:
+      type: Toems_Common.Dto.DtoApiStringResponse
+    content.vb: >-
+      <CustomAuth(Permission:="computerRead")>
+
+      Public Function GetCount() As DtoApiStringResponse
+  overload: Toems_ApplicationApi.Controllers.ResetRequestController.GetCount*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: computerRead
+- uid: Toems_ApplicationApi.Controllers.ResetRequestController.Approve(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ResetRequestController.Approve(System.Int32)
+  id: Approve(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ResetRequestController
+  langs:
+  - csharp
+  - vb
+  name: Approve(int)
+  nameWithType: ResetRequestController.Approve(int)
+  fullName: Toems_ApplicationApi.Controllers.ResetRequestController.Approve(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "approveReset")]
+
+      public DtoActionResult Approve(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Dto.DtoActionResult
+    content.vb: >-
+      <CustomAuth(Permission:="approveReset")>
+
+      Public Function Approve(id As Integer) As DtoActionResult
+  overload: Toems_ApplicationApi.Controllers.ResetRequestController.Approve*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: approveReset
+  nameWithType.vb: ResetRequestController.Approve(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ResetRequestController.Approve(Integer)
+  name.vb: Approve(Integer)
+references:
+- uid: Toems_ApplicationApi.Controllers
+  commentId: N:Toems_ApplicationApi.Controllers
+  isExternal: true
+  href: Toems_ApplicationApi.html
+  name: Toems_ApplicationApi.Controllers
+  nameWithType: Toems_ApplicationApi.Controllers
+  fullName: Toems_ApplicationApi.Controllers
+  spec.csharp:
+  - uid: Toems_ApplicationApi
+    name: Toems_ApplicationApi
+    isExternal: true
+    href: Toems_ApplicationApi.html
+  - name: .
+  - uid: Toems_ApplicationApi.Controllers
+    name: Controllers
+    isExternal: true
+    href: Toems_ApplicationApi.Controllers.html
+  spec.vb:
+  - uid: Toems_ApplicationApi
+    name: Toems_ApplicationApi
+    isExternal: true
+    href: Toems_ApplicationApi.html
+  - name: .
+  - uid: Toems_ApplicationApi.Controllers
+    name: Controllers
+    isExternal: true
+    href: Toems_ApplicationApi.Controllers.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Toems_ApplicationApi.Controllers.ResetRequestController.#ctor*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ResetRequestController.#ctor
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ResetRequestController.html#Toems_ApplicationApi.Controllers.ResetRequestController.#ctor
+  name: ResetRequestController
+  nameWithType: ResetRequestController.ResetRequestController
+  fullName: Toems_ApplicationApi.Controllers.ResetRequestController.ResetRequestController
+  nameWithType.vb: ResetRequestController.New
+  fullName.vb: Toems_ApplicationApi.Controllers.ResetRequestController.New
+  name.vb: New
+- uid: Toems_ApplicationApi.Controllers.ResetRequestController.Delete*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ResetRequestController.Delete
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ResetRequestController.html#Toems_ApplicationApi.Controllers.ResetRequestController.Delete(System.Int32)
+  name: Delete
+  nameWithType: ResetRequestController.Delete
+  fullName: Toems_ApplicationApi.Controllers.ResetRequestController.Delete
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Toems_Common.Dto.DtoActionResult
+  isExternal: true
+  name: DtoActionResult
+  nameWithType: DtoActionResult
+  fullName: Toems_Common.Dto.DtoActionResult
+- uid: Toems_ApplicationApi.Controllers.ResetRequestController.Search*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ResetRequestController.Search
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ResetRequestController.html#Toems_ApplicationApi.Controllers.ResetRequestController.Search(Toems_Common.Dto.DtoSearchFilter)
+  name: Search
+  nameWithType: ResetRequestController.Search
+  fullName: Toems_ApplicationApi.Controllers.ResetRequestController.Search
+- uid: Toems_Common.Dto.DtoSearchFilter
+  isExternal: true
+  name: DtoSearchFilter
+  nameWithType: DtoSearchFilter
+  fullName: Toems_Common.Dto.DtoSearchFilter
+- uid: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityResetRequest}
+  commentId: T:System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityResetRequest}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<EntityResetRequest>
+  nameWithType: IEnumerable<EntityResetRequest>
+  fullName: System.Collections.Generic.IEnumerable<Toems_Common.Entity.EntityResetRequest>
+  nameWithType.vb: IEnumerable(Of EntityResetRequest)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Toems_Common.Entity.EntityResetRequest)
+  name.vb: IEnumerable(Of EntityResetRequest)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Toems_Common.Entity.EntityResetRequest
+    name: EntityResetRequest
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Entity.EntityResetRequest
+    name: EntityResetRequest
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Toems_ApplicationApi.Controllers.ResetRequestController.GetCount*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ResetRequestController.GetCount
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ResetRequestController.html#Toems_ApplicationApi.Controllers.ResetRequestController.GetCount
+  name: GetCount
+  nameWithType: ResetRequestController.GetCount
+  fullName: Toems_ApplicationApi.Controllers.ResetRequestController.GetCount
+- uid: Toems_Common.Dto.DtoApiStringResponse
+  isExternal: true
+  name: DtoApiStringResponse
+  nameWithType: DtoApiStringResponse
+  fullName: Toems_Common.Dto.DtoApiStringResponse
+- uid: Toems_ApplicationApi.Controllers.ResetRequestController.Approve*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ResetRequestController.Approve
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ResetRequestController.html#Toems_ApplicationApi.Controllers.ResetRequestController.Approve(System.Int32)
+  name: Approve
+  nameWithType: ResetRequestController.Approve
+  fullName: Toems_ApplicationApi.Controllers.ResetRequestController.Approve

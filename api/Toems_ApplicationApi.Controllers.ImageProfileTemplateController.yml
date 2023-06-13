@@ -1,0 +1,192 @@
+### YamlMime:ManagedReference
+items:
+- uid: Toems_ApplicationApi.Controllers.ImageProfileTemplateController
+  commentId: T:Toems_ApplicationApi.Controllers.ImageProfileTemplateController
+  id: ImageProfileTemplateController
+  parent: Toems_ApplicationApi.Controllers
+  children:
+  - Toems_ApplicationApi.Controllers.ImageProfileTemplateController.#ctor
+  - Toems_ApplicationApi.Controllers.ImageProfileTemplateController.Get(Toems_Common.Enum.EnumProfileTemplate.TemplateType)
+  - Toems_ApplicationApi.Controllers.ImageProfileTemplateController.Put(Toems_Common.Entity.EntityImageProfileTemplate)
+  langs:
+  - csharp
+  - vb
+  name: ImageProfileTemplateController
+  nameWithType: ImageProfileTemplateController
+  fullName: Toems_ApplicationApi.Controllers.ImageProfileTemplateController
+  type: Class
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: 'public class ImageProfileTemplateController : ApiController'
+    content.vb: Public Class ImageProfileTemplateController Inherits ApiController
+  inheritance:
+  - System.Object
+- uid: Toems_ApplicationApi.Controllers.ImageProfileTemplateController.#ctor
+  commentId: M:Toems_ApplicationApi.Controllers.ImageProfileTemplateController.#ctor
+  id: '#ctor'
+  parent: Toems_ApplicationApi.Controllers.ImageProfileTemplateController
+  langs:
+  - csharp
+  - vb
+  name: ImageProfileTemplateController()
+  nameWithType: ImageProfileTemplateController.ImageProfileTemplateController()
+  fullName: Toems_ApplicationApi.Controllers.ImageProfileTemplateController.ImageProfileTemplateController()
+  type: Constructor
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: public ImageProfileTemplateController()
+    content.vb: Public Sub New()
+  overload: Toems_ApplicationApi.Controllers.ImageProfileTemplateController.#ctor*
+  nameWithType.vb: ImageProfileTemplateController.New()
+  fullName.vb: Toems_ApplicationApi.Controllers.ImageProfileTemplateController.New()
+  name.vb: New()
+- uid: Toems_ApplicationApi.Controllers.ImageProfileTemplateController.Get(Toems_Common.Enum.EnumProfileTemplate.TemplateType)
+  commentId: M:Toems_ApplicationApi.Controllers.ImageProfileTemplateController.Get(Toems_Common.Enum.EnumProfileTemplate.TemplateType)
+  id: Get(Toems_Common.Enum.EnumProfileTemplate.TemplateType)
+  parent: Toems_ApplicationApi.Controllers.ImageProfileTemplateController
+  langs:
+  - csharp
+  - vb
+  name: Get(TemplateType)
+  nameWithType: ImageProfileTemplateController.Get(EnumProfileTemplate.TemplateType)
+  fullName: Toems_ApplicationApi.Controllers.ImageProfileTemplateController.Get(Toems_Common.Enum.EnumProfileTemplate.TemplateType)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: public EntityImageProfileTemplate Get(EnumProfileTemplate.TemplateType templateType)
+    parameters:
+    - id: templateType
+      type: Toems_Common.Enum.EnumProfileTemplate.TemplateType
+    return:
+      type: Toems_Common.Entity.EntityImageProfileTemplate
+    content.vb: Public Function [Get](templateType As EnumProfileTemplate.TemplateType) As EntityImageProfileTemplate
+  overload: Toems_ApplicationApi.Controllers.ImageProfileTemplateController.Get*
+- uid: Toems_ApplicationApi.Controllers.ImageProfileTemplateController.Put(Toems_Common.Entity.EntityImageProfileTemplate)
+  commentId: M:Toems_ApplicationApi.Controllers.ImageProfileTemplateController.Put(Toems_Common.Entity.EntityImageProfileTemplate)
+  id: Put(Toems_Common.Entity.EntityImageProfileTemplate)
+  parent: Toems_ApplicationApi.Controllers.ImageProfileTemplateController
+  langs:
+  - csharp
+  - vb
+  name: Put(EntityImageProfileTemplate)
+  nameWithType: ImageProfileTemplateController.Put(EntityImageProfileTemplate)
+  fullName: Toems_ApplicationApi.Controllers.ImageProfileTemplateController.Put(Toems_Common.Entity.EntityImageProfileTemplate)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "Administrator")]
+
+      public DtoActionResult Put(EntityImageProfileTemplate template)
+    parameters:
+    - id: template
+      type: Toems_Common.Entity.EntityImageProfileTemplate
+    return:
+      type: Toems_Common.Dto.DtoActionResult
+    content.vb: >-
+      <CustomAuth(Permission:="Administrator")>
+
+      Public Function Put(template As EntityImageProfileTemplate) As DtoActionResult
+  overload: Toems_ApplicationApi.Controllers.ImageProfileTemplateController.Put*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: Administrator
+references:
+- uid: Toems_ApplicationApi.Controllers
+  commentId: N:Toems_ApplicationApi.Controllers
+  isExternal: true
+  href: Toems_ApplicationApi.html
+  name: Toems_ApplicationApi.Controllers
+  nameWithType: Toems_ApplicationApi.Controllers
+  fullName: Toems_ApplicationApi.Controllers
+  spec.csharp:
+  - uid: Toems_ApplicationApi
+    name: Toems_ApplicationApi
+    isExternal: true
+    href: Toems_ApplicationApi.html
+  - name: .
+  - uid: Toems_ApplicationApi.Controllers
+    name: Controllers
+    isExternal: true
+    href: Toems_ApplicationApi.Controllers.html
+  spec.vb:
+  - uid: Toems_ApplicationApi
+    name: Toems_ApplicationApi
+    isExternal: true
+    href: Toems_ApplicationApi.html
+  - name: .
+  - uid: Toems_ApplicationApi.Controllers
+    name: Controllers
+    isExternal: true
+    href: Toems_ApplicationApi.Controllers.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Toems_ApplicationApi.Controllers.ImageProfileTemplateController.#ctor*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ImageProfileTemplateController.#ctor
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ImageProfileTemplateController.html#Toems_ApplicationApi.Controllers.ImageProfileTemplateController.#ctor
+  name: ImageProfileTemplateController
+  nameWithType: ImageProfileTemplateController.ImageProfileTemplateController
+  fullName: Toems_ApplicationApi.Controllers.ImageProfileTemplateController.ImageProfileTemplateController
+  nameWithType.vb: ImageProfileTemplateController.New
+  fullName.vb: Toems_ApplicationApi.Controllers.ImageProfileTemplateController.New
+  name.vb: New
+- uid: Toems_ApplicationApi.Controllers.ImageProfileTemplateController.Get*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ImageProfileTemplateController.Get
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ImageProfileTemplateController.html#Toems_ApplicationApi.Controllers.ImageProfileTemplateController.Get(Toems_Common.Enum.EnumProfileTemplate.TemplateType)
+  name: Get
+  nameWithType: ImageProfileTemplateController.Get
+  fullName: Toems_ApplicationApi.Controllers.ImageProfileTemplateController.Get
+- uid: Toems_Common.Enum.EnumProfileTemplate.TemplateType
+  commentId: '!:Toems_Common.Enum.EnumProfileTemplate.TemplateType'
+  isExternal: true
+  name: TemplateType
+  nameWithType: EnumProfileTemplate.TemplateType
+  fullName: Toems_Common.Enum.EnumProfileTemplate.TemplateType
+- uid: Toems_Common.Entity.EntityImageProfileTemplate
+  isExternal: true
+  name: EntityImageProfileTemplate
+  nameWithType: EntityImageProfileTemplate
+  fullName: Toems_Common.Entity.EntityImageProfileTemplate
+- uid: Toems_ApplicationApi.Controllers.ImageProfileTemplateController.Put*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ImageProfileTemplateController.Put
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ImageProfileTemplateController.html#Toems_ApplicationApi.Controllers.ImageProfileTemplateController.Put(Toems_Common.Entity.EntityImageProfileTemplate)
+  name: Put
+  nameWithType: ImageProfileTemplateController.Put
+  fullName: Toems_ApplicationApi.Controllers.ImageProfileTemplateController.Put
+- uid: Toems_Common.Dto.DtoActionResult
+  isExternal: true
+  name: DtoActionResult
+  nameWithType: DtoActionResult
+  fullName: Toems_Common.Dto.DtoActionResult

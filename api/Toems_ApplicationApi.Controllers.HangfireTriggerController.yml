@@ -1,0 +1,623 @@
+### YamlMime:ManagedReference
+items:
+- uid: Toems_ApplicationApi.Controllers.HangfireTriggerController
+  commentId: T:Toems_ApplicationApi.Controllers.HangfireTriggerController
+  id: HangfireTriggerController
+  parent: Toems_ApplicationApi.Controllers
+  children:
+  - Toems_ApplicationApi.Controllers.HangfireTriggerController.#ctor
+  - Toems_ApplicationApi.Controllers.HangfireTriggerController.GetJobStatus
+  - Toems_ApplicationApi.Controllers.HangfireTriggerController.StartApproveReport
+  - Toems_ApplicationApi.Controllers.HangfireTriggerController.StartDataCleanup
+  - Toems_ApplicationApi.Controllers.HangfireTriggerController.StartDynamicGroupSync
+  - Toems_ApplicationApi.Controllers.HangfireTriggerController.StartFolderSync
+  - Toems_ApplicationApi.Controllers.HangfireTriggerController.StartLdapSync
+  - Toems_ApplicationApi.Controllers.HangfireTriggerController.StartLowDiskReport
+  - Toems_ApplicationApi.Controllers.HangfireTriggerController.StartResetReport
+  - Toems_ApplicationApi.Controllers.HangfireTriggerController.StartShutdown
+  - Toems_ApplicationApi.Controllers.HangfireTriggerController.StartSmartReport
+  langs:
+  - csharp
+  - vb
+  name: HangfireTriggerController
+  nameWithType: HangfireTriggerController
+  fullName: Toems_ApplicationApi.Controllers.HangfireTriggerController
+  type: Class
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: 'public class HangfireTriggerController : ApiController'
+    content.vb: Public Class HangfireTriggerController Inherits ApiController
+  inheritance:
+  - System.Object
+- uid: Toems_ApplicationApi.Controllers.HangfireTriggerController.StartFolderSync
+  commentId: M:Toems_ApplicationApi.Controllers.HangfireTriggerController.StartFolderSync
+  id: StartFolderSync
+  parent: Toems_ApplicationApi.Controllers.HangfireTriggerController
+  langs:
+  - csharp
+  - vb
+  name: StartFolderSync()
+  nameWithType: HangfireTriggerController.StartFolderSync()
+  fullName: Toems_ApplicationApi.Controllers.HangfireTriggerController.StartFolderSync()
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "Administrator")]
+
+      public DtoApiBoolResponse StartFolderSync()
+    return:
+      type: Toems_Common.Dto.DtoApiBoolResponse
+    content.vb: >-
+      <CustomAuth(Permission:="Administrator")>
+
+      Public Function StartFolderSync() As DtoApiBoolResponse
+  overload: Toems_ApplicationApi.Controllers.HangfireTriggerController.StartFolderSync*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: Administrator
+- uid: Toems_ApplicationApi.Controllers.HangfireTriggerController.StartLdapSync
+  commentId: M:Toems_ApplicationApi.Controllers.HangfireTriggerController.StartLdapSync
+  id: StartLdapSync
+  parent: Toems_ApplicationApi.Controllers.HangfireTriggerController
+  langs:
+  - csharp
+  - vb
+  name: StartLdapSync()
+  nameWithType: HangfireTriggerController.StartLdapSync()
+  fullName: Toems_ApplicationApi.Controllers.HangfireTriggerController.StartLdapSync()
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "Administrator")]
+
+      public DtoApiBoolResponse StartLdapSync()
+    return:
+      type: Toems_Common.Dto.DtoApiBoolResponse
+    content.vb: >-
+      <CustomAuth(Permission:="Administrator")>
+
+      Public Function StartLdapSync() As DtoApiBoolResponse
+  overload: Toems_ApplicationApi.Controllers.HangfireTriggerController.StartLdapSync*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: Administrator
+- uid: Toems_ApplicationApi.Controllers.HangfireTriggerController.StartDynamicGroupSync
+  commentId: M:Toems_ApplicationApi.Controllers.HangfireTriggerController.StartDynamicGroupSync
+  id: StartDynamicGroupSync
+  parent: Toems_ApplicationApi.Controllers.HangfireTriggerController
+  langs:
+  - csharp
+  - vb
+  name: StartDynamicGroupSync()
+  nameWithType: HangfireTriggerController.StartDynamicGroupSync()
+  fullName: Toems_ApplicationApi.Controllers.HangfireTriggerController.StartDynamicGroupSync()
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "Administrator")]
+
+      public DtoApiBoolResponse StartDynamicGroupSync()
+    return:
+      type: Toems_Common.Dto.DtoApiBoolResponse
+    content.vb: >-
+      <CustomAuth(Permission:="Administrator")>
+
+      Public Function StartDynamicGroupSync() As DtoApiBoolResponse
+  overload: Toems_ApplicationApi.Controllers.HangfireTriggerController.StartDynamicGroupSync*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: Administrator
+- uid: Toems_ApplicationApi.Controllers.HangfireTriggerController.StartResetReport
+  commentId: M:Toems_ApplicationApi.Controllers.HangfireTriggerController.StartResetReport
+  id: StartResetReport
+  parent: Toems_ApplicationApi.Controllers.HangfireTriggerController
+  langs:
+  - csharp
+  - vb
+  name: StartResetReport()
+  nameWithType: HangfireTriggerController.StartResetReport()
+  fullName: Toems_ApplicationApi.Controllers.HangfireTriggerController.StartResetReport()
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "Administrator")]
+
+      public DtoApiBoolResponse StartResetReport()
+    return:
+      type: Toems_Common.Dto.DtoApiBoolResponse
+    content.vb: >-
+      <CustomAuth(Permission:="Administrator")>
+
+      Public Function StartResetReport() As DtoApiBoolResponse
+  overload: Toems_ApplicationApi.Controllers.HangfireTriggerController.StartResetReport*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: Administrator
+- uid: Toems_ApplicationApi.Controllers.HangfireTriggerController.StartApproveReport
+  commentId: M:Toems_ApplicationApi.Controllers.HangfireTriggerController.StartApproveReport
+  id: StartApproveReport
+  parent: Toems_ApplicationApi.Controllers.HangfireTriggerController
+  langs:
+  - csharp
+  - vb
+  name: StartApproveReport()
+  nameWithType: HangfireTriggerController.StartApproveReport()
+  fullName: Toems_ApplicationApi.Controllers.HangfireTriggerController.StartApproveReport()
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "Administrator")]
+
+      public DtoApiBoolResponse StartApproveReport()
+    return:
+      type: Toems_Common.Dto.DtoApiBoolResponse
+    content.vb: >-
+      <CustomAuth(Permission:="Administrator")>
+
+      Public Function StartApproveReport() As DtoApiBoolResponse
+  overload: Toems_ApplicationApi.Controllers.HangfireTriggerController.StartApproveReport*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: Administrator
+- uid: Toems_ApplicationApi.Controllers.HangfireTriggerController.StartSmartReport
+  commentId: M:Toems_ApplicationApi.Controllers.HangfireTriggerController.StartSmartReport
+  id: StartSmartReport
+  parent: Toems_ApplicationApi.Controllers.HangfireTriggerController
+  langs:
+  - csharp
+  - vb
+  name: StartSmartReport()
+  nameWithType: HangfireTriggerController.StartSmartReport()
+  fullName: Toems_ApplicationApi.Controllers.HangfireTriggerController.StartSmartReport()
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "Administrator")]
+
+      public DtoApiBoolResponse StartSmartReport()
+    return:
+      type: Toems_Common.Dto.DtoApiBoolResponse
+    content.vb: >-
+      <CustomAuth(Permission:="Administrator")>
+
+      Public Function StartSmartReport() As DtoApiBoolResponse
+  overload: Toems_ApplicationApi.Controllers.HangfireTriggerController.StartSmartReport*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: Administrator
+- uid: Toems_ApplicationApi.Controllers.HangfireTriggerController.StartDataCleanup
+  commentId: M:Toems_ApplicationApi.Controllers.HangfireTriggerController.StartDataCleanup
+  id: StartDataCleanup
+  parent: Toems_ApplicationApi.Controllers.HangfireTriggerController
+  langs:
+  - csharp
+  - vb
+  name: StartDataCleanup()
+  nameWithType: HangfireTriggerController.StartDataCleanup()
+  fullName: Toems_ApplicationApi.Controllers.HangfireTriggerController.StartDataCleanup()
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "Administrator")]
+
+      public DtoApiBoolResponse StartDataCleanup()
+    return:
+      type: Toems_Common.Dto.DtoApiBoolResponse
+    content.vb: >-
+      <CustomAuth(Permission:="Administrator")>
+
+      Public Function StartDataCleanup() As DtoApiBoolResponse
+  overload: Toems_ApplicationApi.Controllers.HangfireTriggerController.StartDataCleanup*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: Administrator
+- uid: Toems_ApplicationApi.Controllers.HangfireTriggerController.StartLowDiskReport
+  commentId: M:Toems_ApplicationApi.Controllers.HangfireTriggerController.StartLowDiskReport
+  id: StartLowDiskReport
+  parent: Toems_ApplicationApi.Controllers.HangfireTriggerController
+  langs:
+  - csharp
+  - vb
+  name: StartLowDiskReport()
+  nameWithType: HangfireTriggerController.StartLowDiskReport()
+  fullName: Toems_ApplicationApi.Controllers.HangfireTriggerController.StartLowDiskReport()
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "Administrator")]
+
+      public DtoApiBoolResponse StartLowDiskReport()
+    return:
+      type: Toems_Common.Dto.DtoApiBoolResponse
+    content.vb: >-
+      <CustomAuth(Permission:="Administrator")>
+
+      Public Function StartLowDiskReport() As DtoApiBoolResponse
+  overload: Toems_ApplicationApi.Controllers.HangfireTriggerController.StartLowDiskReport*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: Administrator
+- uid: Toems_ApplicationApi.Controllers.HangfireTriggerController.StartShutdown
+  commentId: M:Toems_ApplicationApi.Controllers.HangfireTriggerController.StartShutdown
+  id: StartShutdown
+  parent: Toems_ApplicationApi.Controllers.HangfireTriggerController
+  langs:
+  - csharp
+  - vb
+  name: StartShutdown()
+  nameWithType: HangfireTriggerController.StartShutdown()
+  fullName: Toems_ApplicationApi.Controllers.HangfireTriggerController.StartShutdown()
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "Administrator")]
+
+      public DtoApiBoolResponse StartShutdown()
+    return:
+      type: Toems_Common.Dto.DtoApiBoolResponse
+    content.vb: >-
+      <CustomAuth(Permission:="Administrator")>
+
+      Public Function StartShutdown() As DtoApiBoolResponse
+  overload: Toems_ApplicationApi.Controllers.HangfireTriggerController.StartShutdown*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: Administrator
+- uid: Toems_ApplicationApi.Controllers.HangfireTriggerController.GetJobStatus
+  commentId: M:Toems_ApplicationApi.Controllers.HangfireTriggerController.GetJobStatus
+  id: GetJobStatus
+  parent: Toems_ApplicationApi.Controllers.HangfireTriggerController
+  langs:
+  - csharp
+  - vb
+  name: GetJobStatus()
+  nameWithType: HangfireTriggerController.GetJobStatus()
+  fullName: Toems_ApplicationApi.Controllers.HangfireTriggerController.GetJobStatus()
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "Administrator")]
+
+      public List<DtoRecurringJobStatus> GetJobStatus()
+    return:
+      type: System.Collections.Generic.List{Toems_Common.Dto.DtoRecurringJobStatus}
+    content.vb: >-
+      <CustomAuth(Permission:="Administrator")>
+
+      Public Function GetJobStatus() As List(Of DtoRecurringJobStatus)
+  overload: Toems_ApplicationApi.Controllers.HangfireTriggerController.GetJobStatus*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: Administrator
+- uid: Toems_ApplicationApi.Controllers.HangfireTriggerController.#ctor
+  commentId: M:Toems_ApplicationApi.Controllers.HangfireTriggerController.#ctor
+  id: '#ctor'
+  parent: Toems_ApplicationApi.Controllers.HangfireTriggerController
+  langs:
+  - csharp
+  - vb
+  name: HangfireTriggerController()
+  nameWithType: HangfireTriggerController.HangfireTriggerController()
+  fullName: Toems_ApplicationApi.Controllers.HangfireTriggerController.HangfireTriggerController()
+  type: Constructor
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: public HangfireTriggerController()
+    content.vb: Public Sub New()
+  overload: Toems_ApplicationApi.Controllers.HangfireTriggerController.#ctor*
+  nameWithType.vb: HangfireTriggerController.New()
+  fullName.vb: Toems_ApplicationApi.Controllers.HangfireTriggerController.New()
+  name.vb: New()
+references:
+- uid: Toems_ApplicationApi.Controllers
+  commentId: N:Toems_ApplicationApi.Controllers
+  isExternal: true
+  href: Toems_ApplicationApi.html
+  name: Toems_ApplicationApi.Controllers
+  nameWithType: Toems_ApplicationApi.Controllers
+  fullName: Toems_ApplicationApi.Controllers
+  spec.csharp:
+  - uid: Toems_ApplicationApi
+    name: Toems_ApplicationApi
+    isExternal: true
+    href: Toems_ApplicationApi.html
+  - name: .
+  - uid: Toems_ApplicationApi.Controllers
+    name: Controllers
+    isExternal: true
+    href: Toems_ApplicationApi.Controllers.html
+  spec.vb:
+  - uid: Toems_ApplicationApi
+    name: Toems_ApplicationApi
+    isExternal: true
+    href: Toems_ApplicationApi.html
+  - name: .
+  - uid: Toems_ApplicationApi.Controllers
+    name: Controllers
+    isExternal: true
+    href: Toems_ApplicationApi.Controllers.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Toems_ApplicationApi.Controllers.HangfireTriggerController.StartFolderSync*
+  commentId: Overload:Toems_ApplicationApi.Controllers.HangfireTriggerController.StartFolderSync
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.HangfireTriggerController.html#Toems_ApplicationApi.Controllers.HangfireTriggerController.StartFolderSync
+  name: StartFolderSync
+  nameWithType: HangfireTriggerController.StartFolderSync
+  fullName: Toems_ApplicationApi.Controllers.HangfireTriggerController.StartFolderSync
+- uid: Toems_Common.Dto.DtoApiBoolResponse
+  isExternal: true
+  name: DtoApiBoolResponse
+  nameWithType: DtoApiBoolResponse
+  fullName: Toems_Common.Dto.DtoApiBoolResponse
+- uid: Toems_ApplicationApi.Controllers.HangfireTriggerController.StartLdapSync*
+  commentId: Overload:Toems_ApplicationApi.Controllers.HangfireTriggerController.StartLdapSync
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.HangfireTriggerController.html#Toems_ApplicationApi.Controllers.HangfireTriggerController.StartLdapSync
+  name: StartLdapSync
+  nameWithType: HangfireTriggerController.StartLdapSync
+  fullName: Toems_ApplicationApi.Controllers.HangfireTriggerController.StartLdapSync
+- uid: Toems_ApplicationApi.Controllers.HangfireTriggerController.StartDynamicGroupSync*
+  commentId: Overload:Toems_ApplicationApi.Controllers.HangfireTriggerController.StartDynamicGroupSync
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.HangfireTriggerController.html#Toems_ApplicationApi.Controllers.HangfireTriggerController.StartDynamicGroupSync
+  name: StartDynamicGroupSync
+  nameWithType: HangfireTriggerController.StartDynamicGroupSync
+  fullName: Toems_ApplicationApi.Controllers.HangfireTriggerController.StartDynamicGroupSync
+- uid: Toems_ApplicationApi.Controllers.HangfireTriggerController.StartResetReport*
+  commentId: Overload:Toems_ApplicationApi.Controllers.HangfireTriggerController.StartResetReport
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.HangfireTriggerController.html#Toems_ApplicationApi.Controllers.HangfireTriggerController.StartResetReport
+  name: StartResetReport
+  nameWithType: HangfireTriggerController.StartResetReport
+  fullName: Toems_ApplicationApi.Controllers.HangfireTriggerController.StartResetReport
+- uid: Toems_ApplicationApi.Controllers.HangfireTriggerController.StartApproveReport*
+  commentId: Overload:Toems_ApplicationApi.Controllers.HangfireTriggerController.StartApproveReport
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.HangfireTriggerController.html#Toems_ApplicationApi.Controllers.HangfireTriggerController.StartApproveReport
+  name: StartApproveReport
+  nameWithType: HangfireTriggerController.StartApproveReport
+  fullName: Toems_ApplicationApi.Controllers.HangfireTriggerController.StartApproveReport
+- uid: Toems_ApplicationApi.Controllers.HangfireTriggerController.StartSmartReport*
+  commentId: Overload:Toems_ApplicationApi.Controllers.HangfireTriggerController.StartSmartReport
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.HangfireTriggerController.html#Toems_ApplicationApi.Controllers.HangfireTriggerController.StartSmartReport
+  name: StartSmartReport
+  nameWithType: HangfireTriggerController.StartSmartReport
+  fullName: Toems_ApplicationApi.Controllers.HangfireTriggerController.StartSmartReport
+- uid: Toems_ApplicationApi.Controllers.HangfireTriggerController.StartDataCleanup*
+  commentId: Overload:Toems_ApplicationApi.Controllers.HangfireTriggerController.StartDataCleanup
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.HangfireTriggerController.html#Toems_ApplicationApi.Controllers.HangfireTriggerController.StartDataCleanup
+  name: StartDataCleanup
+  nameWithType: HangfireTriggerController.StartDataCleanup
+  fullName: Toems_ApplicationApi.Controllers.HangfireTriggerController.StartDataCleanup
+- uid: Toems_ApplicationApi.Controllers.HangfireTriggerController.StartLowDiskReport*
+  commentId: Overload:Toems_ApplicationApi.Controllers.HangfireTriggerController.StartLowDiskReport
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.HangfireTriggerController.html#Toems_ApplicationApi.Controllers.HangfireTriggerController.StartLowDiskReport
+  name: StartLowDiskReport
+  nameWithType: HangfireTriggerController.StartLowDiskReport
+  fullName: Toems_ApplicationApi.Controllers.HangfireTriggerController.StartLowDiskReport
+- uid: Toems_ApplicationApi.Controllers.HangfireTriggerController.StartShutdown*
+  commentId: Overload:Toems_ApplicationApi.Controllers.HangfireTriggerController.StartShutdown
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.HangfireTriggerController.html#Toems_ApplicationApi.Controllers.HangfireTriggerController.StartShutdown
+  name: StartShutdown
+  nameWithType: HangfireTriggerController.StartShutdown
+  fullName: Toems_ApplicationApi.Controllers.HangfireTriggerController.StartShutdown
+- uid: Toems_ApplicationApi.Controllers.HangfireTriggerController.GetJobStatus*
+  commentId: Overload:Toems_ApplicationApi.Controllers.HangfireTriggerController.GetJobStatus
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.HangfireTriggerController.html#Toems_ApplicationApi.Controllers.HangfireTriggerController.GetJobStatus
+  name: GetJobStatus
+  nameWithType: HangfireTriggerController.GetJobStatus
+  fullName: Toems_ApplicationApi.Controllers.HangfireTriggerController.GetJobStatus
+- uid: System.Collections.Generic.List{Toems_Common.Dto.DtoRecurringJobStatus}
+  commentId: T:System.Collections.Generic.List{Toems_Common.Dto.DtoRecurringJobStatus}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<DtoRecurringJobStatus>
+  nameWithType: List<DtoRecurringJobStatus>
+  fullName: System.Collections.Generic.List<Toems_Common.Dto.DtoRecurringJobStatus>
+  nameWithType.vb: List(Of DtoRecurringJobStatus)
+  fullName.vb: System.Collections.Generic.List(Of Toems_Common.Dto.DtoRecurringJobStatus)
+  name.vb: List(Of DtoRecurringJobStatus)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Toems_Common.Dto.DtoRecurringJobStatus
+    name: DtoRecurringJobStatus
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Dto.DtoRecurringJobStatus
+    name: DtoRecurringJobStatus
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Toems_ApplicationApi.Controllers.HangfireTriggerController.#ctor*
+  commentId: Overload:Toems_ApplicationApi.Controllers.HangfireTriggerController.#ctor
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.HangfireTriggerController.html#Toems_ApplicationApi.Controllers.HangfireTriggerController.#ctor
+  name: HangfireTriggerController
+  nameWithType: HangfireTriggerController.HangfireTriggerController
+  fullName: Toems_ApplicationApi.Controllers.HangfireTriggerController.HangfireTriggerController
+  nameWithType.vb: HangfireTriggerController.New
+  fullName.vb: Toems_ApplicationApi.Controllers.HangfireTriggerController.New
+  name.vb: New

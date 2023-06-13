@@ -1,0 +1,189 @@
+### YamlMime:ManagedReference
+items:
+- uid: Toems_ApplicationApi.Controllers.TokenController
+  commentId: T:Toems_ApplicationApi.Controllers.TokenController
+  id: TokenController
+  parent: Toems_ApplicationApi.Controllers
+  children:
+  - Toems_ApplicationApi.Controllers.TokenController.#ctor
+  - Toems_ApplicationApi.Controllers.TokenController.Get(System.String,System.String,System.String)
+  - Toems_ApplicationApi.Controllers.TokenController.GetWithMfa(System.String,System.String,System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: TokenController
+  nameWithType: TokenController
+  fullName: Toems_ApplicationApi.Controllers.TokenController
+  type: Class
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: 'public class TokenController : ApiController'
+    content.vb: Public Class TokenController Inherits ApiController
+  inheritance:
+  - System.Object
+- uid: Toems_ApplicationApi.Controllers.TokenController.Get(System.String,System.String,System.String)
+  commentId: M:Toems_ApplicationApi.Controllers.TokenController.Get(System.String,System.String,System.String)
+  id: Get(System.String,System.String,System.String)
+  parent: Toems_ApplicationApi.Controllers.TokenController
+  langs:
+  - csharp
+  - vb
+  name: Get(string, string, string)
+  nameWithType: TokenController.Get(string, string, string)
+  fullName: Toems_ApplicationApi.Controllers.TokenController.Get(string, string, string)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: public string Get(string username, string password, string baseUrl)
+    parameters:
+    - id: username
+      type: System.String
+    - id: password
+      type: System.String
+    - id: baseUrl
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Function [Get](username As String, password As String, baseUrl As String) As String
+  overload: Toems_ApplicationApi.Controllers.TokenController.Get*
+  nameWithType.vb: TokenController.Get(String, String, String)
+  fullName.vb: Toems_ApplicationApi.Controllers.TokenController.Get(String, String, String)
+  name.vb: Get(String, String, String)
+- uid: Toems_ApplicationApi.Controllers.TokenController.GetWithMfa(System.String,System.String,System.String,System.String)
+  commentId: M:Toems_ApplicationApi.Controllers.TokenController.GetWithMfa(System.String,System.String,System.String,System.String)
+  id: GetWithMfa(System.String,System.String,System.String,System.String)
+  parent: Toems_ApplicationApi.Controllers.TokenController
+  langs:
+  - csharp
+  - vb
+  name: GetWithMfa(string, string, string, string)
+  nameWithType: TokenController.GetWithMfa(string, string, string, string)
+  fullName: Toems_ApplicationApi.Controllers.TokenController.GetWithMfa(string, string, string, string)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: public string GetWithMfa(string username, string password, string baseUrl, string verificationCode)
+    parameters:
+    - id: username
+      type: System.String
+    - id: password
+      type: System.String
+    - id: baseUrl
+      type: System.String
+    - id: verificationCode
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Function GetWithMfa(username As String, password As String, baseUrl As String, verificationCode As String) As String
+  overload: Toems_ApplicationApi.Controllers.TokenController.GetWithMfa*
+  nameWithType.vb: TokenController.GetWithMfa(String, String, String, String)
+  fullName.vb: Toems_ApplicationApi.Controllers.TokenController.GetWithMfa(String, String, String, String)
+  name.vb: GetWithMfa(String, String, String, String)
+- uid: Toems_ApplicationApi.Controllers.TokenController.#ctor
+  commentId: M:Toems_ApplicationApi.Controllers.TokenController.#ctor
+  id: '#ctor'
+  parent: Toems_ApplicationApi.Controllers.TokenController
+  langs:
+  - csharp
+  - vb
+  name: TokenController()
+  nameWithType: TokenController.TokenController()
+  fullName: Toems_ApplicationApi.Controllers.TokenController.TokenController()
+  type: Constructor
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: public TokenController()
+    content.vb: Public Sub New()
+  overload: Toems_ApplicationApi.Controllers.TokenController.#ctor*
+  nameWithType.vb: TokenController.New()
+  fullName.vb: Toems_ApplicationApi.Controllers.TokenController.New()
+  name.vb: New()
+references:
+- uid: Toems_ApplicationApi.Controllers
+  commentId: N:Toems_ApplicationApi.Controllers
+  isExternal: true
+  href: Toems_ApplicationApi.html
+  name: Toems_ApplicationApi.Controllers
+  nameWithType: Toems_ApplicationApi.Controllers
+  fullName: Toems_ApplicationApi.Controllers
+  spec.csharp:
+  - uid: Toems_ApplicationApi
+    name: Toems_ApplicationApi
+    isExternal: true
+    href: Toems_ApplicationApi.html
+  - name: .
+  - uid: Toems_ApplicationApi.Controllers
+    name: Controllers
+    isExternal: true
+    href: Toems_ApplicationApi.Controllers.html
+  spec.vb:
+  - uid: Toems_ApplicationApi
+    name: Toems_ApplicationApi
+    isExternal: true
+    href: Toems_ApplicationApi.html
+  - name: .
+  - uid: Toems_ApplicationApi.Controllers
+    name: Controllers
+    isExternal: true
+    href: Toems_ApplicationApi.Controllers.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Toems_ApplicationApi.Controllers.TokenController.Get*
+  commentId: Overload:Toems_ApplicationApi.Controllers.TokenController.Get
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.TokenController.html#Toems_ApplicationApi.Controllers.TokenController.Get(System.String,System.String,System.String)
+  name: Get
+  nameWithType: TokenController.Get
+  fullName: Toems_ApplicationApi.Controllers.TokenController.Get
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Toems_ApplicationApi.Controllers.TokenController.GetWithMfa*
+  commentId: Overload:Toems_ApplicationApi.Controllers.TokenController.GetWithMfa
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.TokenController.html#Toems_ApplicationApi.Controllers.TokenController.GetWithMfa(System.String,System.String,System.String,System.String)
+  name: GetWithMfa
+  nameWithType: TokenController.GetWithMfa
+  fullName: Toems_ApplicationApi.Controllers.TokenController.GetWithMfa
+- uid: Toems_ApplicationApi.Controllers.TokenController.#ctor*
+  commentId: Overload:Toems_ApplicationApi.Controllers.TokenController.#ctor
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.TokenController.html#Toems_ApplicationApi.Controllers.TokenController.#ctor
+  name: TokenController
+  nameWithType: TokenController.TokenController
+  fullName: Toems_ApplicationApi.Controllers.TokenController.TokenController
+  nameWithType.vb: TokenController.New
+  fullName.vb: Toems_ApplicationApi.Controllers.TokenController.New
+  name.vb: New

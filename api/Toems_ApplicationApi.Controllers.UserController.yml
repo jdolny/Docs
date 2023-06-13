@@ -1,0 +1,1622 @@
+### YamlMime:ManagedReference
+items:
+- uid: Toems_ApplicationApi.Controllers.UserController
+  commentId: T:Toems_ApplicationApi.Controllers.UserController
+  id: UserController
+  parent: Toems_ApplicationApi.Controllers
+  children:
+  - Toems_ApplicationApi.Controllers.UserController.#ctor
+  - Toems_ApplicationApi.Controllers.UserController.ChangePassword(Toems_Common.Entity.EntityToemsUser)
+  - Toems_ApplicationApi.Controllers.UserController.CheckMfaSetupComplete
+  - Toems_ApplicationApi.Controllers.UserController.Delete(System.Int32)
+  - Toems_ApplicationApi.Controllers.UserController.GenerateTempMfaSecret
+  - Toems_ApplicationApi.Controllers.UserController.Get
+  - Toems_ApplicationApi.Controllers.UserController.Get(System.Int32)
+  - Toems_ApplicationApi.Controllers.UserController.GetAdminCount
+  - Toems_ApplicationApi.Controllers.UserController.GetByName(System.String)
+  - Toems_ApplicationApi.Controllers.UserController.GetCount
+  - Toems_ApplicationApi.Controllers.UserController.GetForLogin(System.String)
+  - Toems_ApplicationApi.Controllers.UserController.GetPinnedGroups
+  - Toems_ApplicationApi.Controllers.UserController.GetPinnedPolicies
+  - Toems_ApplicationApi.Controllers.UserController.GetRights(System.Int32)
+  - Toems_ApplicationApi.Controllers.UserController.GetSelf
+  - Toems_ApplicationApi.Controllers.UserController.GetUserAuditLogs(System.Int32,Toems_Common.Dto.DtoSearchFilter)
+  - Toems_ApplicationApi.Controllers.UserController.GetUserComputerSort
+  - Toems_ApplicationApi.Controllers.UserController.GetUserComputerView
+  - Toems_ApplicationApi.Controllers.UserController.GetUserLoginPage
+  - Toems_ApplicationApi.Controllers.UserController.IsAdmin(System.Int32)
+  - Toems_ApplicationApi.Controllers.UserController.Post(Toems_Common.Entity.EntityToemsUser)
+  - Toems_ApplicationApi.Controllers.UserController.Put(System.Int32,Toems_Common.Entity.EntityToemsUser)
+  - Toems_ApplicationApi.Controllers.UserController.RemoveUserLegacyGroup(System.Int32)
+  - Toems_ApplicationApi.Controllers.UserController.ResetUserMfaData(System.Int32)
+  - Toems_ApplicationApi.Controllers.UserController.Search(Toems_Common.Dto.DtoSearchFilter)
+  - Toems_ApplicationApi.Controllers.UserController.UserProcess(System.DateTime,System.Int32,System.String)
+  - Toems_ApplicationApi.Controllers.UserController.UserProcessCounts(System.DateTime,System.Int32,System.String)
+  - Toems_ApplicationApi.Controllers.UserController.UserProcessTimes(System.DateTime,System.Int32,System.String)
+  - Toems_ApplicationApi.Controllers.UserController.VerifyMfaSecret(System.String)
+  langs:
+  - csharp
+  - vb
+  name: UserController
+  nameWithType: UserController
+  fullName: Toems_ApplicationApi.Controllers.UserController
+  type: Class
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: 'public class UserController : ApiController'
+    content.vb: Public Class UserController Inherits ApiController
+  inheritance:
+  - System.Object
+- uid: Toems_ApplicationApi.Controllers.UserController.#ctor
+  commentId: M:Toems_ApplicationApi.Controllers.UserController.#ctor
+  id: '#ctor'
+  parent: Toems_ApplicationApi.Controllers.UserController
+  langs:
+  - csharp
+  - vb
+  name: UserController()
+  nameWithType: UserController.UserController()
+  fullName: Toems_ApplicationApi.Controllers.UserController.UserController()
+  type: Constructor
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: public UserController()
+    content.vb: Public Sub New()
+  overload: Toems_ApplicationApi.Controllers.UserController.#ctor*
+  nameWithType.vb: UserController.New()
+  fullName.vb: Toems_ApplicationApi.Controllers.UserController.New()
+  name.vb: New()
+- uid: Toems_ApplicationApi.Controllers.UserController.Delete(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.UserController.Delete(System.Int32)
+  id: Delete(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.UserController
+  langs:
+  - csharp
+  - vb
+  name: Delete(int)
+  nameWithType: UserController.Delete(int)
+  fullName: Toems_ApplicationApi.Controllers.UserController.Delete(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "Administrator")]
+
+      public DtoActionResult Delete(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Dto.DtoActionResult
+    content.vb: >-
+      <CustomAuth(Permission:="Administrator")>
+
+      Public Function Delete(id As Integer) As DtoActionResult
+  overload: Toems_ApplicationApi.Controllers.UserController.Delete*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: Administrator
+  nameWithType.vb: UserController.Delete(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.UserController.Delete(Integer)
+  name.vb: Delete(Integer)
+- uid: Toems_ApplicationApi.Controllers.UserController.Get(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.UserController.Get(System.Int32)
+  id: Get(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.UserController
+  langs:
+  - csharp
+  - vb
+  name: Get(int)
+  nameWithType: UserController.Get(int)
+  fullName: Toems_ApplicationApi.Controllers.UserController.Get(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "Administrator")]
+
+      public EntityToemsUser Get(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Entity.EntityToemsUser
+    content.vb: >-
+      <CustomAuth(Permission:="Administrator")>
+
+      Public Function [Get](id As Integer) As EntityToemsUser
+  overload: Toems_ApplicationApi.Controllers.UserController.Get*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: Administrator
+  nameWithType.vb: UserController.Get(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.UserController.Get(Integer)
+  name.vb: Get(Integer)
+- uid: Toems_ApplicationApi.Controllers.UserController.ResetUserMfaData(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.UserController.ResetUserMfaData(System.Int32)
+  id: ResetUserMfaData(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.UserController
+  langs:
+  - csharp
+  - vb
+  name: ResetUserMfaData(int)
+  nameWithType: UserController.ResetUserMfaData(int)
+  fullName: Toems_ApplicationApi.Controllers.UserController.ResetUserMfaData(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "Administrator")]
+
+      public DtoApiBoolResponse ResetUserMfaData(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Dto.DtoApiBoolResponse
+    content.vb: >-
+      <CustomAuth(Permission:="Administrator")>
+
+      Public Function ResetUserMfaData(id As Integer) As DtoApiBoolResponse
+  overload: Toems_ApplicationApi.Controllers.UserController.ResetUserMfaData*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: Administrator
+  nameWithType.vb: UserController.ResetUserMfaData(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.UserController.ResetUserMfaData(Integer)
+  name.vb: ResetUserMfaData(Integer)
+- uid: Toems_ApplicationApi.Controllers.UserController.RemoveUserLegacyGroup(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.UserController.RemoveUserLegacyGroup(System.Int32)
+  id: RemoveUserLegacyGroup(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.UserController
+  langs:
+  - csharp
+  - vb
+  name: RemoveUserLegacyGroup(int)
+  nameWithType: UserController.RemoveUserLegacyGroup(int)
+  fullName: Toems_ApplicationApi.Controllers.UserController.RemoveUserLegacyGroup(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "Administrator")]
+
+      public DtoApiBoolResponse RemoveUserLegacyGroup(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Dto.DtoApiBoolResponse
+    content.vb: >-
+      <CustomAuth(Permission:="Administrator")>
+
+      Public Function RemoveUserLegacyGroup(id As Integer) As DtoApiBoolResponse
+  overload: Toems_ApplicationApi.Controllers.UserController.RemoveUserLegacyGroup*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: Administrator
+  nameWithType.vb: UserController.RemoveUserLegacyGroup(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.UserController.RemoveUserLegacyGroup(Integer)
+  name.vb: RemoveUserLegacyGroup(Integer)
+- uid: Toems_ApplicationApi.Controllers.UserController.GenerateTempMfaSecret
+  commentId: M:Toems_ApplicationApi.Controllers.UserController.GenerateTempMfaSecret
+  id: GenerateTempMfaSecret
+  parent: Toems_ApplicationApi.Controllers.UserController
+  langs:
+  - csharp
+  - vb
+  name: GenerateTempMfaSecret()
+  nameWithType: UserController.GenerateTempMfaSecret()
+  fullName: Toems_ApplicationApi.Controllers.UserController.GenerateTempMfaSecret()
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: public DtoApiStringResponse GenerateTempMfaSecret()
+    return:
+      type: Toems_Common.Dto.DtoApiStringResponse
+    content.vb: Public Function GenerateTempMfaSecret() As DtoApiStringResponse
+  overload: Toems_ApplicationApi.Controllers.UserController.GenerateTempMfaSecret*
+- uid: Toems_ApplicationApi.Controllers.UserController.VerifyMfaSecret(System.String)
+  commentId: M:Toems_ApplicationApi.Controllers.UserController.VerifyMfaSecret(System.String)
+  id: VerifyMfaSecret(System.String)
+  parent: Toems_ApplicationApi.Controllers.UserController
+  langs:
+  - csharp
+  - vb
+  name: VerifyMfaSecret(string)
+  nameWithType: UserController.VerifyMfaSecret(string)
+  fullName: Toems_ApplicationApi.Controllers.UserController.VerifyMfaSecret(string)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: public DtoApiBoolResponse VerifyMfaSecret(string code)
+    parameters:
+    - id: code
+      type: System.String
+    return:
+      type: Toems_Common.Dto.DtoApiBoolResponse
+    content.vb: Public Function VerifyMfaSecret(code As String) As DtoApiBoolResponse
+  overload: Toems_ApplicationApi.Controllers.UserController.VerifyMfaSecret*
+  nameWithType.vb: UserController.VerifyMfaSecret(String)
+  fullName.vb: Toems_ApplicationApi.Controllers.UserController.VerifyMfaSecret(String)
+  name.vb: VerifyMfaSecret(String)
+- uid: Toems_ApplicationApi.Controllers.UserController.CheckMfaSetupComplete
+  commentId: M:Toems_ApplicationApi.Controllers.UserController.CheckMfaSetupComplete
+  id: CheckMfaSetupComplete
+  parent: Toems_ApplicationApi.Controllers.UserController
+  langs:
+  - csharp
+  - vb
+  name: CheckMfaSetupComplete()
+  nameWithType: UserController.CheckMfaSetupComplete()
+  fullName: Toems_ApplicationApi.Controllers.UserController.CheckMfaSetupComplete()
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: public DtoApiBoolResponse CheckMfaSetupComplete()
+    return:
+      type: Toems_Common.Dto.DtoApiBoolResponse
+    content.vb: Public Function CheckMfaSetupComplete() As DtoApiBoolResponse
+  overload: Toems_ApplicationApi.Controllers.UserController.CheckMfaSetupComplete*
+- uid: Toems_ApplicationApi.Controllers.UserController.GetSelf
+  commentId: M:Toems_ApplicationApi.Controllers.UserController.GetSelf
+  id: GetSelf
+  parent: Toems_ApplicationApi.Controllers.UserController
+  langs:
+  - csharp
+  - vb
+  name: GetSelf()
+  nameWithType: UserController.GetSelf()
+  fullName: Toems_ApplicationApi.Controllers.UserController.GetSelf()
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: public EntityToemsUser GetSelf()
+    return:
+      type: Toems_Common.Entity.EntityToemsUser
+    content.vb: Public Function GetSelf() As EntityToemsUser
+  overload: Toems_ApplicationApi.Controllers.UserController.GetSelf*
+- uid: Toems_ApplicationApi.Controllers.UserController.Get
+  commentId: M:Toems_ApplicationApi.Controllers.UserController.Get
+  id: Get
+  parent: Toems_ApplicationApi.Controllers.UserController
+  langs:
+  - csharp
+  - vb
+  name: Get()
+  nameWithType: UserController.Get()
+  fullName: Toems_ApplicationApi.Controllers.UserController.Get()
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "Administrator")]
+
+      public IEnumerable<EntityToemsUser> Get()
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityToemsUser}
+    content.vb: >-
+      <CustomAuth(Permission:="Administrator")>
+
+      Public Function [Get]() As IEnumerable(Of EntityToemsUser)
+  overload: Toems_ApplicationApi.Controllers.UserController.Get*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: Administrator
+- uid: Toems_ApplicationApi.Controllers.UserController.Search(Toems_Common.Dto.DtoSearchFilter)
+  commentId: M:Toems_ApplicationApi.Controllers.UserController.Search(Toems_Common.Dto.DtoSearchFilter)
+  id: Search(Toems_Common.Dto.DtoSearchFilter)
+  parent: Toems_ApplicationApi.Controllers.UserController
+  langs:
+  - csharp
+  - vb
+  name: Search(DtoSearchFilter)
+  nameWithType: UserController.Search(DtoSearchFilter)
+  fullName: Toems_ApplicationApi.Controllers.UserController.Search(Toems_Common.Dto.DtoSearchFilter)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "Administrator")]
+
+      public IEnumerable<EntityToemsUser> Search(DtoSearchFilter filter)
+    parameters:
+    - id: filter
+      type: Toems_Common.Dto.DtoSearchFilter
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityToemsUser}
+    content.vb: >-
+      <CustomAuth(Permission:="Administrator")>
+
+      Public Function Search(filter As DtoSearchFilter) As IEnumerable(Of EntityToemsUser)
+  overload: Toems_ApplicationApi.Controllers.UserController.Search*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: Administrator
+- uid: Toems_ApplicationApi.Controllers.UserController.GetPinnedPolicies
+  commentId: M:Toems_ApplicationApi.Controllers.UserController.GetPinnedPolicies
+  id: GetPinnedPolicies
+  parent: Toems_ApplicationApi.Controllers.UserController
+  langs:
+  - csharp
+  - vb
+  name: GetPinnedPolicies()
+  nameWithType: UserController.GetPinnedPolicies()
+  fullName: Toems_ApplicationApi.Controllers.UserController.GetPinnedPolicies()
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: public IEnumerable<DtoPinnedPolicy> GetPinnedPolicies()
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Dto.DtoPinnedPolicy}
+    content.vb: Public Function GetPinnedPolicies() As IEnumerable(Of DtoPinnedPolicy)
+  overload: Toems_ApplicationApi.Controllers.UserController.GetPinnedPolicies*
+- uid: Toems_ApplicationApi.Controllers.UserController.GetPinnedGroups
+  commentId: M:Toems_ApplicationApi.Controllers.UserController.GetPinnedGroups
+  id: GetPinnedGroups
+  parent: Toems_ApplicationApi.Controllers.UserController
+  langs:
+  - csharp
+  - vb
+  name: GetPinnedGroups()
+  nameWithType: UserController.GetPinnedGroups()
+  fullName: Toems_ApplicationApi.Controllers.UserController.GetPinnedGroups()
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: public IEnumerable<DtoPinnedGroup> GetPinnedGroups()
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Dto.DtoPinnedGroup}
+    content.vb: Public Function GetPinnedGroups() As IEnumerable(Of DtoPinnedGroup)
+  overload: Toems_ApplicationApi.Controllers.UserController.GetPinnedGroups*
+- uid: Toems_ApplicationApi.Controllers.UserController.GetAdminCount
+  commentId: M:Toems_ApplicationApi.Controllers.UserController.GetAdminCount
+  id: GetAdminCount
+  parent: Toems_ApplicationApi.Controllers.UserController
+  langs:
+  - csharp
+  - vb
+  name: GetAdminCount()
+  nameWithType: UserController.GetAdminCount()
+  fullName: Toems_ApplicationApi.Controllers.UserController.GetAdminCount()
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: public DtoApiIntResponse GetAdminCount()
+    return:
+      type: Toems_Common.Dto.DtoApiIntResponse
+    content.vb: Public Function GetAdminCount() As DtoApiIntResponse
+  overload: Toems_ApplicationApi.Controllers.UserController.GetAdminCount*
+- uid: Toems_ApplicationApi.Controllers.UserController.GetByName(System.String)
+  commentId: M:Toems_ApplicationApi.Controllers.UserController.GetByName(System.String)
+  id: GetByName(System.String)
+  parent: Toems_ApplicationApi.Controllers.UserController
+  langs:
+  - csharp
+  - vb
+  name: GetByName(string)
+  nameWithType: UserController.GetByName(string)
+  fullName: Toems_ApplicationApi.Controllers.UserController.GetByName(string)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "Administrator")]
+
+      public EntityToemsUser GetByName(string username)
+    parameters:
+    - id: username
+      type: System.String
+    return:
+      type: Toems_Common.Entity.EntityToemsUser
+    content.vb: >-
+      <CustomAuth(Permission:="Administrator")>
+
+      Public Function GetByName(username As String) As EntityToemsUser
+  overload: Toems_ApplicationApi.Controllers.UserController.GetByName*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: Administrator
+  nameWithType.vb: UserController.GetByName(String)
+  fullName.vb: Toems_ApplicationApi.Controllers.UserController.GetByName(String)
+  name.vb: GetByName(String)
+- uid: Toems_ApplicationApi.Controllers.UserController.GetCount
+  commentId: M:Toems_ApplicationApi.Controllers.UserController.GetCount
+  id: GetCount
+  parent: Toems_ApplicationApi.Controllers.UserController
+  langs:
+  - csharp
+  - vb
+  name: GetCount()
+  nameWithType: UserController.GetCount()
+  fullName: Toems_ApplicationApi.Controllers.UserController.GetCount()
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "Administrator")]
+
+      public DtoApiStringResponse GetCount()
+    return:
+      type: Toems_Common.Dto.DtoApiStringResponse
+    content.vb: >-
+      <CustomAuth(Permission:="Administrator")>
+
+      Public Function GetCount() As DtoApiStringResponse
+  overload: Toems_ApplicationApi.Controllers.UserController.GetCount*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: Administrator
+- uid: Toems_ApplicationApi.Controllers.UserController.GetForLogin(System.String)
+  commentId: M:Toems_ApplicationApi.Controllers.UserController.GetForLogin(System.String)
+  id: GetForLogin(System.String)
+  parent: Toems_ApplicationApi.Controllers.UserController
+  langs:
+  - csharp
+  - vb
+  name: GetForLogin(string)
+  nameWithType: UserController.GetForLogin(string)
+  fullName: Toems_ApplicationApi.Controllers.UserController.GetForLogin(string)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: public DtoApiObjectResponse GetForLogin(string username)
+    parameters:
+    - id: username
+      type: System.String
+    return:
+      type: Toems_Common.Dto.DtoApiObjectResponse
+    content.vb: Public Function GetForLogin(username As String) As DtoApiObjectResponse
+  overload: Toems_ApplicationApi.Controllers.UserController.GetForLogin*
+  nameWithType.vb: UserController.GetForLogin(String)
+  fullName.vb: Toems_ApplicationApi.Controllers.UserController.GetForLogin(String)
+  name.vb: GetForLogin(String)
+- uid: Toems_ApplicationApi.Controllers.UserController.GetRights(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.UserController.GetRights(System.Int32)
+  id: GetRights(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.UserController
+  langs:
+  - csharp
+  - vb
+  name: GetRights(int)
+  nameWithType: UserController.GetRights(int)
+  fullName: Toems_ApplicationApi.Controllers.UserController.GetRights(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "Administrator")]
+
+      public IEnumerable<EntityUserRight> GetRights(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityUserRight}
+    content.vb: >-
+      <CustomAuth(Permission:="Administrator")>
+
+      Public Function GetRights(id As Integer) As IEnumerable(Of EntityUserRight)
+  overload: Toems_ApplicationApi.Controllers.UserController.GetRights*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: Administrator
+  nameWithType.vb: UserController.GetRights(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.UserController.GetRights(Integer)
+  name.vb: GetRights(Integer)
+- uid: Toems_ApplicationApi.Controllers.UserController.GetUserAuditLogs(System.Int32,Toems_Common.Dto.DtoSearchFilter)
+  commentId: M:Toems_ApplicationApi.Controllers.UserController.GetUserAuditLogs(System.Int32,Toems_Common.Dto.DtoSearchFilter)
+  id: GetUserAuditLogs(System.Int32,Toems_Common.Dto.DtoSearchFilter)
+  parent: Toems_ApplicationApi.Controllers.UserController
+  langs:
+  - csharp
+  - vb
+  name: GetUserAuditLogs(int, DtoSearchFilter)
+  nameWithType: UserController.GetUserAuditLogs(int, DtoSearchFilter)
+  fullName: Toems_ApplicationApi.Controllers.UserController.GetUserAuditLogs(int, Toems_Common.Dto.DtoSearchFilter)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "Administrator")]
+
+      public IEnumerable<EntityAuditLog> GetUserAuditLogs(int id, DtoSearchFilter filter)
+    parameters:
+    - id: id
+      type: System.Int32
+    - id: filter
+      type: Toems_Common.Dto.DtoSearchFilter
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityAuditLog}
+    content.vb: >-
+      <CustomAuth(Permission:="Administrator")>
+
+      Public Function GetUserAuditLogs(id As Integer, filter As DtoSearchFilter) As IEnumerable(Of EntityAuditLog)
+  overload: Toems_ApplicationApi.Controllers.UserController.GetUserAuditLogs*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: Administrator
+  nameWithType.vb: UserController.GetUserAuditLogs(Integer, DtoSearchFilter)
+  fullName.vb: Toems_ApplicationApi.Controllers.UserController.GetUserAuditLogs(Integer, Toems_Common.Dto.DtoSearchFilter)
+  name.vb: GetUserAuditLogs(Integer, DtoSearchFilter)
+- uid: Toems_ApplicationApi.Controllers.UserController.Post(Toems_Common.Entity.EntityToemsUser)
+  commentId: M:Toems_ApplicationApi.Controllers.UserController.Post(Toems_Common.Entity.EntityToemsUser)
+  id: Post(Toems_Common.Entity.EntityToemsUser)
+  parent: Toems_ApplicationApi.Controllers.UserController
+  langs:
+  - csharp
+  - vb
+  name: Post(EntityToemsUser)
+  nameWithType: UserController.Post(EntityToemsUser)
+  fullName: Toems_ApplicationApi.Controllers.UserController.Post(Toems_Common.Entity.EntityToemsUser)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "Administrator")]
+
+      public DtoActionResult Post(EntityToemsUser user)
+    parameters:
+    - id: user
+      type: Toems_Common.Entity.EntityToemsUser
+    return:
+      type: Toems_Common.Dto.DtoActionResult
+    content.vb: >-
+      <CustomAuth(Permission:="Administrator")>
+
+      Public Function Post(user As EntityToemsUser) As DtoActionResult
+  overload: Toems_ApplicationApi.Controllers.UserController.Post*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: Administrator
+- uid: Toems_ApplicationApi.Controllers.UserController.Put(System.Int32,Toems_Common.Entity.EntityToemsUser)
+  commentId: M:Toems_ApplicationApi.Controllers.UserController.Put(System.Int32,Toems_Common.Entity.EntityToemsUser)
+  id: Put(System.Int32,Toems_Common.Entity.EntityToemsUser)
+  parent: Toems_ApplicationApi.Controllers.UserController
+  langs:
+  - csharp
+  - vb
+  name: Put(int, EntityToemsUser)
+  nameWithType: UserController.Put(int, EntityToemsUser)
+  fullName: Toems_ApplicationApi.Controllers.UserController.Put(int, Toems_Common.Entity.EntityToemsUser)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "Administrator")]
+
+      public DtoActionResult Put(int id, EntityToemsUser user)
+    parameters:
+    - id: id
+      type: System.Int32
+    - id: user
+      type: Toems_Common.Entity.EntityToemsUser
+    return:
+      type: Toems_Common.Dto.DtoActionResult
+    content.vb: >-
+      <CustomAuth(Permission:="Administrator")>
+
+      Public Function Put(id As Integer, user As EntityToemsUser) As DtoActionResult
+  overload: Toems_ApplicationApi.Controllers.UserController.Put*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: Administrator
+  nameWithType.vb: UserController.Put(Integer, EntityToemsUser)
+  fullName.vb: Toems_ApplicationApi.Controllers.UserController.Put(Integer, Toems_Common.Entity.EntityToemsUser)
+  name.vb: Put(Integer, EntityToemsUser)
+- uid: Toems_ApplicationApi.Controllers.UserController.ChangePassword(Toems_Common.Entity.EntityToemsUser)
+  commentId: M:Toems_ApplicationApi.Controllers.UserController.ChangePassword(Toems_Common.Entity.EntityToemsUser)
+  id: ChangePassword(Toems_Common.Entity.EntityToemsUser)
+  parent: Toems_ApplicationApi.Controllers.UserController
+  langs:
+  - csharp
+  - vb
+  name: ChangePassword(EntityToemsUser)
+  nameWithType: UserController.ChangePassword(EntityToemsUser)
+  fullName: Toems_ApplicationApi.Controllers.UserController.ChangePassword(Toems_Common.Entity.EntityToemsUser)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: public DtoActionResult ChangePassword(EntityToemsUser user)
+    parameters:
+    - id: user
+      type: Toems_Common.Entity.EntityToemsUser
+    return:
+      type: Toems_Common.Dto.DtoActionResult
+    content.vb: Public Function ChangePassword(user As EntityToemsUser) As DtoActionResult
+  overload: Toems_ApplicationApi.Controllers.UserController.ChangePassword*
+- uid: Toems_ApplicationApi.Controllers.UserController.UserProcessTimes(System.DateTime,System.Int32,System.String)
+  commentId: M:Toems_ApplicationApi.Controllers.UserController.UserProcessTimes(System.DateTime,System.Int32,System.String)
+  id: UserProcessTimes(System.DateTime,System.Int32,System.String)
+  parent: Toems_ApplicationApi.Controllers.UserController
+  langs:
+  - csharp
+  - vb
+  name: UserProcessTimes(DateTime, int, string)
+  nameWithType: UserController.UserProcessTimes(DateTime, int, string)
+  fullName: Toems_ApplicationApi.Controllers.UserController.UserProcessTimes(System.DateTime, int, string)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "reportRead")]
+
+      public List<DtoProcessWithTime> UserProcessTimes(DateTime dateCutoff, int limit, string userName)
+    parameters:
+    - id: dateCutoff
+      type: System.DateTime
+    - id: limit
+      type: System.Int32
+    - id: userName
+      type: System.String
+    return:
+      type: System.Collections.Generic.List{Toems_Common.Dto.DtoProcessWithTime}
+    content.vb: >-
+      <CustomAuth(Permission:="reportRead")>
+
+      Public Function UserProcessTimes(dateCutoff As Date, limit As Integer, userName As String) As List(Of DtoProcessWithTime)
+  overload: Toems_ApplicationApi.Controllers.UserController.UserProcessTimes*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: reportRead
+  nameWithType.vb: UserController.UserProcessTimes(Date, Integer, String)
+  fullName.vb: Toems_ApplicationApi.Controllers.UserController.UserProcessTimes(Date, Integer, String)
+  name.vb: UserProcessTimes(Date, Integer, String)
+- uid: Toems_ApplicationApi.Controllers.UserController.UserProcessCounts(System.DateTime,System.Int32,System.String)
+  commentId: M:Toems_ApplicationApi.Controllers.UserController.UserProcessCounts(System.DateTime,System.Int32,System.String)
+  id: UserProcessCounts(System.DateTime,System.Int32,System.String)
+  parent: Toems_ApplicationApi.Controllers.UserController
+  langs:
+  - csharp
+  - vb
+  name: UserProcessCounts(DateTime, int, string)
+  nameWithType: UserController.UserProcessCounts(DateTime, int, string)
+  fullName: Toems_ApplicationApi.Controllers.UserController.UserProcessCounts(System.DateTime, int, string)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "reportRead")]
+
+      public List<DtoProcessWithCount> UserProcessCounts(DateTime dateCutoff, int limit, string userName)
+    parameters:
+    - id: dateCutoff
+      type: System.DateTime
+    - id: limit
+      type: System.Int32
+    - id: userName
+      type: System.String
+    return:
+      type: System.Collections.Generic.List{Toems_Common.Dto.DtoProcessWithCount}
+    content.vb: >-
+      <CustomAuth(Permission:="reportRead")>
+
+      Public Function UserProcessCounts(dateCutoff As Date, limit As Integer, userName As String) As List(Of DtoProcessWithCount)
+  overload: Toems_ApplicationApi.Controllers.UserController.UserProcessCounts*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: reportRead
+  nameWithType.vb: UserController.UserProcessCounts(Date, Integer, String)
+  fullName.vb: Toems_ApplicationApi.Controllers.UserController.UserProcessCounts(Date, Integer, String)
+  name.vb: UserProcessCounts(Date, Integer, String)
+- uid: Toems_ApplicationApi.Controllers.UserController.UserProcess(System.DateTime,System.Int32,System.String)
+  commentId: M:Toems_ApplicationApi.Controllers.UserController.UserProcess(System.DateTime,System.Int32,System.String)
+  id: UserProcess(System.DateTime,System.Int32,System.String)
+  parent: Toems_ApplicationApi.Controllers.UserController
+  langs:
+  - csharp
+  - vb
+  name: UserProcess(DateTime, int, string)
+  nameWithType: UserController.UserProcess(DateTime, int, string)
+  fullName: Toems_ApplicationApi.Controllers.UserController.UserProcess(System.DateTime, int, string)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "reportRead")]
+
+      public List<DtoProcessWithUser> UserProcess(DateTime dateCutoff, int limit, string userName)
+    parameters:
+    - id: dateCutoff
+      type: System.DateTime
+    - id: limit
+      type: System.Int32
+    - id: userName
+      type: System.String
+    return:
+      type: System.Collections.Generic.List{Toems_Common.Dto.DtoProcessWithUser}
+    content.vb: >-
+      <CustomAuth(Permission:="reportRead")>
+
+      Public Function UserProcess(dateCutoff As Date, limit As Integer, userName As String) As List(Of DtoProcessWithUser)
+  overload: Toems_ApplicationApi.Controllers.UserController.UserProcess*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: reportRead
+  nameWithType.vb: UserController.UserProcess(Date, Integer, String)
+  fullName.vb: Toems_ApplicationApi.Controllers.UserController.UserProcess(Date, Integer, String)
+  name.vb: UserProcess(Date, Integer, String)
+- uid: Toems_ApplicationApi.Controllers.UserController.IsAdmin(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.UserController.IsAdmin(System.Int32)
+  id: IsAdmin(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.UserController
+  langs:
+  - csharp
+  - vb
+  name: IsAdmin(int)
+  nameWithType: UserController.IsAdmin(int)
+  fullName: Toems_ApplicationApi.Controllers.UserController.IsAdmin(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: public DtoApiBoolResponse IsAdmin(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Dto.DtoApiBoolResponse
+    content.vb: Public Function IsAdmin(id As Integer) As DtoApiBoolResponse
+  overload: Toems_ApplicationApi.Controllers.UserController.IsAdmin*
+  nameWithType.vb: UserController.IsAdmin(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.UserController.IsAdmin(Integer)
+  name.vb: IsAdmin(Integer)
+- uid: Toems_ApplicationApi.Controllers.UserController.GetUserComputerView
+  commentId: M:Toems_ApplicationApi.Controllers.UserController.GetUserComputerView
+  id: GetUserComputerView
+  parent: Toems_ApplicationApi.Controllers.UserController
+  langs:
+  - csharp
+  - vb
+  name: GetUserComputerView()
+  nameWithType: UserController.GetUserComputerView()
+  fullName: Toems_ApplicationApi.Controllers.UserController.GetUserComputerView()
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: public DtoApiStringResponse GetUserComputerView()
+    return:
+      type: Toems_Common.Dto.DtoApiStringResponse
+    content.vb: Public Function GetUserComputerView() As DtoApiStringResponse
+  overload: Toems_ApplicationApi.Controllers.UserController.GetUserComputerView*
+- uid: Toems_ApplicationApi.Controllers.UserController.GetUserComputerSort
+  commentId: M:Toems_ApplicationApi.Controllers.UserController.GetUserComputerSort
+  id: GetUserComputerSort
+  parent: Toems_ApplicationApi.Controllers.UserController
+  langs:
+  - csharp
+  - vb
+  name: GetUserComputerSort()
+  nameWithType: UserController.GetUserComputerSort()
+  fullName: Toems_ApplicationApi.Controllers.UserController.GetUserComputerSort()
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: public DtoApiStringResponse GetUserComputerSort()
+    return:
+      type: Toems_Common.Dto.DtoApiStringResponse
+    content.vb: Public Function GetUserComputerSort() As DtoApiStringResponse
+  overload: Toems_ApplicationApi.Controllers.UserController.GetUserComputerSort*
+- uid: Toems_ApplicationApi.Controllers.UserController.GetUserLoginPage
+  commentId: M:Toems_ApplicationApi.Controllers.UserController.GetUserLoginPage
+  id: GetUserLoginPage
+  parent: Toems_ApplicationApi.Controllers.UserController
+  langs:
+  - csharp
+  - vb
+  name: GetUserLoginPage()
+  nameWithType: UserController.GetUserLoginPage()
+  fullName: Toems_ApplicationApi.Controllers.UserController.GetUserLoginPage()
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: public DtoApiStringResponse GetUserLoginPage()
+    return:
+      type: Toems_Common.Dto.DtoApiStringResponse
+    content.vb: Public Function GetUserLoginPage() As DtoApiStringResponse
+  overload: Toems_ApplicationApi.Controllers.UserController.GetUserLoginPage*
+references:
+- uid: Toems_ApplicationApi.Controllers
+  commentId: N:Toems_ApplicationApi.Controllers
+  isExternal: true
+  href: Toems_ApplicationApi.html
+  name: Toems_ApplicationApi.Controllers
+  nameWithType: Toems_ApplicationApi.Controllers
+  fullName: Toems_ApplicationApi.Controllers
+  spec.csharp:
+  - uid: Toems_ApplicationApi
+    name: Toems_ApplicationApi
+    isExternal: true
+    href: Toems_ApplicationApi.html
+  - name: .
+  - uid: Toems_ApplicationApi.Controllers
+    name: Controllers
+    isExternal: true
+    href: Toems_ApplicationApi.Controllers.html
+  spec.vb:
+  - uid: Toems_ApplicationApi
+    name: Toems_ApplicationApi
+    isExternal: true
+    href: Toems_ApplicationApi.html
+  - name: .
+  - uid: Toems_ApplicationApi.Controllers
+    name: Controllers
+    isExternal: true
+    href: Toems_ApplicationApi.Controllers.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Toems_ApplicationApi.Controllers.UserController.#ctor*
+  commentId: Overload:Toems_ApplicationApi.Controllers.UserController.#ctor
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.UserController.html#Toems_ApplicationApi.Controllers.UserController.#ctor
+  name: UserController
+  nameWithType: UserController.UserController
+  fullName: Toems_ApplicationApi.Controllers.UserController.UserController
+  nameWithType.vb: UserController.New
+  fullName.vb: Toems_ApplicationApi.Controllers.UserController.New
+  name.vb: New
+- uid: Toems_ApplicationApi.Controllers.UserController.Delete*
+  commentId: Overload:Toems_ApplicationApi.Controllers.UserController.Delete
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.UserController.html#Toems_ApplicationApi.Controllers.UserController.Delete(System.Int32)
+  name: Delete
+  nameWithType: UserController.Delete
+  fullName: Toems_ApplicationApi.Controllers.UserController.Delete
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Toems_Common.Dto.DtoActionResult
+  isExternal: true
+  name: DtoActionResult
+  nameWithType: DtoActionResult
+  fullName: Toems_Common.Dto.DtoActionResult
+- uid: Toems_ApplicationApi.Controllers.UserController.Get*
+  commentId: Overload:Toems_ApplicationApi.Controllers.UserController.Get
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.UserController.html#Toems_ApplicationApi.Controllers.UserController.Get(System.Int32)
+  name: Get
+  nameWithType: UserController.Get
+  fullName: Toems_ApplicationApi.Controllers.UserController.Get
+- uid: Toems_Common.Entity.EntityToemsUser
+  isExternal: true
+  name: EntityToemsUser
+  nameWithType: EntityToemsUser
+  fullName: Toems_Common.Entity.EntityToemsUser
+- uid: Toems_ApplicationApi.Controllers.UserController.ResetUserMfaData*
+  commentId: Overload:Toems_ApplicationApi.Controllers.UserController.ResetUserMfaData
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.UserController.html#Toems_ApplicationApi.Controllers.UserController.ResetUserMfaData(System.Int32)
+  name: ResetUserMfaData
+  nameWithType: UserController.ResetUserMfaData
+  fullName: Toems_ApplicationApi.Controllers.UserController.ResetUserMfaData
+- uid: Toems_Common.Dto.DtoApiBoolResponse
+  isExternal: true
+  name: DtoApiBoolResponse
+  nameWithType: DtoApiBoolResponse
+  fullName: Toems_Common.Dto.DtoApiBoolResponse
+- uid: Toems_ApplicationApi.Controllers.UserController.RemoveUserLegacyGroup*
+  commentId: Overload:Toems_ApplicationApi.Controllers.UserController.RemoveUserLegacyGroup
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.UserController.html#Toems_ApplicationApi.Controllers.UserController.RemoveUserLegacyGroup(System.Int32)
+  name: RemoveUserLegacyGroup
+  nameWithType: UserController.RemoveUserLegacyGroup
+  fullName: Toems_ApplicationApi.Controllers.UserController.RemoveUserLegacyGroup
+- uid: Toems_ApplicationApi.Controllers.UserController.GenerateTempMfaSecret*
+  commentId: Overload:Toems_ApplicationApi.Controllers.UserController.GenerateTempMfaSecret
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.UserController.html#Toems_ApplicationApi.Controllers.UserController.GenerateTempMfaSecret
+  name: GenerateTempMfaSecret
+  nameWithType: UserController.GenerateTempMfaSecret
+  fullName: Toems_ApplicationApi.Controllers.UserController.GenerateTempMfaSecret
+- uid: Toems_Common.Dto.DtoApiStringResponse
+  isExternal: true
+  name: DtoApiStringResponse
+  nameWithType: DtoApiStringResponse
+  fullName: Toems_Common.Dto.DtoApiStringResponse
+- uid: Toems_ApplicationApi.Controllers.UserController.VerifyMfaSecret*
+  commentId: Overload:Toems_ApplicationApi.Controllers.UserController.VerifyMfaSecret
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.UserController.html#Toems_ApplicationApi.Controllers.UserController.VerifyMfaSecret(System.String)
+  name: VerifyMfaSecret
+  nameWithType: UserController.VerifyMfaSecret
+  fullName: Toems_ApplicationApi.Controllers.UserController.VerifyMfaSecret
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Toems_ApplicationApi.Controllers.UserController.CheckMfaSetupComplete*
+  commentId: Overload:Toems_ApplicationApi.Controllers.UserController.CheckMfaSetupComplete
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.UserController.html#Toems_ApplicationApi.Controllers.UserController.CheckMfaSetupComplete
+  name: CheckMfaSetupComplete
+  nameWithType: UserController.CheckMfaSetupComplete
+  fullName: Toems_ApplicationApi.Controllers.UserController.CheckMfaSetupComplete
+- uid: Toems_ApplicationApi.Controllers.UserController.GetSelf*
+  commentId: Overload:Toems_ApplicationApi.Controllers.UserController.GetSelf
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.UserController.html#Toems_ApplicationApi.Controllers.UserController.GetSelf
+  name: GetSelf
+  nameWithType: UserController.GetSelf
+  fullName: Toems_ApplicationApi.Controllers.UserController.GetSelf
+- uid: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityToemsUser}
+  commentId: T:System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityToemsUser}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<EntityToemsUser>
+  nameWithType: IEnumerable<EntityToemsUser>
+  fullName: System.Collections.Generic.IEnumerable<Toems_Common.Entity.EntityToemsUser>
+  nameWithType.vb: IEnumerable(Of EntityToemsUser)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Toems_Common.Entity.EntityToemsUser)
+  name.vb: IEnumerable(Of EntityToemsUser)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Toems_Common.Entity.EntityToemsUser
+    name: EntityToemsUser
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Entity.EntityToemsUser
+    name: EntityToemsUser
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Toems_ApplicationApi.Controllers.UserController.Search*
+  commentId: Overload:Toems_ApplicationApi.Controllers.UserController.Search
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.UserController.html#Toems_ApplicationApi.Controllers.UserController.Search(Toems_Common.Dto.DtoSearchFilter)
+  name: Search
+  nameWithType: UserController.Search
+  fullName: Toems_ApplicationApi.Controllers.UserController.Search
+- uid: Toems_Common.Dto.DtoSearchFilter
+  isExternal: true
+  name: DtoSearchFilter
+  nameWithType: DtoSearchFilter
+  fullName: Toems_Common.Dto.DtoSearchFilter
+- uid: Toems_ApplicationApi.Controllers.UserController.GetPinnedPolicies*
+  commentId: Overload:Toems_ApplicationApi.Controllers.UserController.GetPinnedPolicies
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.UserController.html#Toems_ApplicationApi.Controllers.UserController.GetPinnedPolicies
+  name: GetPinnedPolicies
+  nameWithType: UserController.GetPinnedPolicies
+  fullName: Toems_ApplicationApi.Controllers.UserController.GetPinnedPolicies
+- uid: System.Collections.Generic.IEnumerable{Toems_Common.Dto.DtoPinnedPolicy}
+  commentId: T:System.Collections.Generic.IEnumerable{Toems_Common.Dto.DtoPinnedPolicy}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<DtoPinnedPolicy>
+  nameWithType: IEnumerable<DtoPinnedPolicy>
+  fullName: System.Collections.Generic.IEnumerable<Toems_Common.Dto.DtoPinnedPolicy>
+  nameWithType.vb: IEnumerable(Of DtoPinnedPolicy)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Toems_Common.Dto.DtoPinnedPolicy)
+  name.vb: IEnumerable(Of DtoPinnedPolicy)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Toems_Common.Dto.DtoPinnedPolicy
+    name: DtoPinnedPolicy
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Dto.DtoPinnedPolicy
+    name: DtoPinnedPolicy
+    isExternal: true
+  - name: )
+- uid: Toems_ApplicationApi.Controllers.UserController.GetPinnedGroups*
+  commentId: Overload:Toems_ApplicationApi.Controllers.UserController.GetPinnedGroups
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.UserController.html#Toems_ApplicationApi.Controllers.UserController.GetPinnedGroups
+  name: GetPinnedGroups
+  nameWithType: UserController.GetPinnedGroups
+  fullName: Toems_ApplicationApi.Controllers.UserController.GetPinnedGroups
+- uid: System.Collections.Generic.IEnumerable{Toems_Common.Dto.DtoPinnedGroup}
+  commentId: T:System.Collections.Generic.IEnumerable{Toems_Common.Dto.DtoPinnedGroup}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<DtoPinnedGroup>
+  nameWithType: IEnumerable<DtoPinnedGroup>
+  fullName: System.Collections.Generic.IEnumerable<Toems_Common.Dto.DtoPinnedGroup>
+  nameWithType.vb: IEnumerable(Of DtoPinnedGroup)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Toems_Common.Dto.DtoPinnedGroup)
+  name.vb: IEnumerable(Of DtoPinnedGroup)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Toems_Common.Dto.DtoPinnedGroup
+    name: DtoPinnedGroup
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Dto.DtoPinnedGroup
+    name: DtoPinnedGroup
+    isExternal: true
+  - name: )
+- uid: Toems_ApplicationApi.Controllers.UserController.GetAdminCount*
+  commentId: Overload:Toems_ApplicationApi.Controllers.UserController.GetAdminCount
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.UserController.html#Toems_ApplicationApi.Controllers.UserController.GetAdminCount
+  name: GetAdminCount
+  nameWithType: UserController.GetAdminCount
+  fullName: Toems_ApplicationApi.Controllers.UserController.GetAdminCount
+- uid: Toems_Common.Dto.DtoApiIntResponse
+  isExternal: true
+  name: DtoApiIntResponse
+  nameWithType: DtoApiIntResponse
+  fullName: Toems_Common.Dto.DtoApiIntResponse
+- uid: Toems_ApplicationApi.Controllers.UserController.GetByName*
+  commentId: Overload:Toems_ApplicationApi.Controllers.UserController.GetByName
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.UserController.html#Toems_ApplicationApi.Controllers.UserController.GetByName(System.String)
+  name: GetByName
+  nameWithType: UserController.GetByName
+  fullName: Toems_ApplicationApi.Controllers.UserController.GetByName
+- uid: Toems_ApplicationApi.Controllers.UserController.GetCount*
+  commentId: Overload:Toems_ApplicationApi.Controllers.UserController.GetCount
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.UserController.html#Toems_ApplicationApi.Controllers.UserController.GetCount
+  name: GetCount
+  nameWithType: UserController.GetCount
+  fullName: Toems_ApplicationApi.Controllers.UserController.GetCount
+- uid: Toems_ApplicationApi.Controllers.UserController.GetForLogin*
+  commentId: Overload:Toems_ApplicationApi.Controllers.UserController.GetForLogin
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.UserController.html#Toems_ApplicationApi.Controllers.UserController.GetForLogin(System.String)
+  name: GetForLogin
+  nameWithType: UserController.GetForLogin
+  fullName: Toems_ApplicationApi.Controllers.UserController.GetForLogin
+- uid: Toems_Common.Dto.DtoApiObjectResponse
+  commentId: '!:Toems_Common.Dto.DtoApiObjectResponse'
+  isExternal: true
+  name: DtoApiObjectResponse
+  nameWithType: DtoApiObjectResponse
+  fullName: Toems_Common.Dto.DtoApiObjectResponse
+- uid: Toems_ApplicationApi.Controllers.UserController.GetRights*
+  commentId: Overload:Toems_ApplicationApi.Controllers.UserController.GetRights
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.UserController.html#Toems_ApplicationApi.Controllers.UserController.GetRights(System.Int32)
+  name: GetRights
+  nameWithType: UserController.GetRights
+  fullName: Toems_ApplicationApi.Controllers.UserController.GetRights
+- uid: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityUserRight}
+  commentId: T:System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityUserRight}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<EntityUserRight>
+  nameWithType: IEnumerable<EntityUserRight>
+  fullName: System.Collections.Generic.IEnumerable<Toems_Common.Entity.EntityUserRight>
+  nameWithType.vb: IEnumerable(Of EntityUserRight)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Toems_Common.Entity.EntityUserRight)
+  name.vb: IEnumerable(Of EntityUserRight)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Toems_Common.Entity.EntityUserRight
+    name: EntityUserRight
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Entity.EntityUserRight
+    name: EntityUserRight
+    isExternal: true
+  - name: )
+- uid: Toems_ApplicationApi.Controllers.UserController.GetUserAuditLogs*
+  commentId: Overload:Toems_ApplicationApi.Controllers.UserController.GetUserAuditLogs
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.UserController.html#Toems_ApplicationApi.Controllers.UserController.GetUserAuditLogs(System.Int32,Toems_Common.Dto.DtoSearchFilter)
+  name: GetUserAuditLogs
+  nameWithType: UserController.GetUserAuditLogs
+  fullName: Toems_ApplicationApi.Controllers.UserController.GetUserAuditLogs
+- uid: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityAuditLog}
+  commentId: T:System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityAuditLog}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<EntityAuditLog>
+  nameWithType: IEnumerable<EntityAuditLog>
+  fullName: System.Collections.Generic.IEnumerable<Toems_Common.Entity.EntityAuditLog>
+  nameWithType.vb: IEnumerable(Of EntityAuditLog)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Toems_Common.Entity.EntityAuditLog)
+  name.vb: IEnumerable(Of EntityAuditLog)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Toems_Common.Entity.EntityAuditLog
+    name: EntityAuditLog
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Entity.EntityAuditLog
+    name: EntityAuditLog
+    isExternal: true
+  - name: )
+- uid: Toems_ApplicationApi.Controllers.UserController.Post*
+  commentId: Overload:Toems_ApplicationApi.Controllers.UserController.Post
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.UserController.html#Toems_ApplicationApi.Controllers.UserController.Post(Toems_Common.Entity.EntityToemsUser)
+  name: Post
+  nameWithType: UserController.Post
+  fullName: Toems_ApplicationApi.Controllers.UserController.Post
+- uid: Toems_ApplicationApi.Controllers.UserController.Put*
+  commentId: Overload:Toems_ApplicationApi.Controllers.UserController.Put
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.UserController.html#Toems_ApplicationApi.Controllers.UserController.Put(System.Int32,Toems_Common.Entity.EntityToemsUser)
+  name: Put
+  nameWithType: UserController.Put
+  fullName: Toems_ApplicationApi.Controllers.UserController.Put
+- uid: Toems_ApplicationApi.Controllers.UserController.ChangePassword*
+  commentId: Overload:Toems_ApplicationApi.Controllers.UserController.ChangePassword
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.UserController.html#Toems_ApplicationApi.Controllers.UserController.ChangePassword(Toems_Common.Entity.EntityToemsUser)
+  name: ChangePassword
+  nameWithType: UserController.ChangePassword
+  fullName: Toems_ApplicationApi.Controllers.UserController.ChangePassword
+- uid: Toems_ApplicationApi.Controllers.UserController.UserProcessTimes*
+  commentId: Overload:Toems_ApplicationApi.Controllers.UserController.UserProcessTimes
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.UserController.html#Toems_ApplicationApi.Controllers.UserController.UserProcessTimes(System.DateTime,System.Int32,System.String)
+  name: UserProcessTimes
+  nameWithType: UserController.UserProcessTimes
+  fullName: Toems_ApplicationApi.Controllers.UserController.UserProcessTimes
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: System.Collections.Generic.List{Toems_Common.Dto.DtoProcessWithTime}
+  commentId: T:System.Collections.Generic.List{Toems_Common.Dto.DtoProcessWithTime}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<DtoProcessWithTime>
+  nameWithType: List<DtoProcessWithTime>
+  fullName: System.Collections.Generic.List<Toems_Common.Dto.DtoProcessWithTime>
+  nameWithType.vb: List(Of DtoProcessWithTime)
+  fullName.vb: System.Collections.Generic.List(Of Toems_Common.Dto.DtoProcessWithTime)
+  name.vb: List(Of DtoProcessWithTime)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Toems_Common.Dto.DtoProcessWithTime
+    name: DtoProcessWithTime
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Dto.DtoProcessWithTime
+    name: DtoProcessWithTime
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Toems_ApplicationApi.Controllers.UserController.UserProcessCounts*
+  commentId: Overload:Toems_ApplicationApi.Controllers.UserController.UserProcessCounts
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.UserController.html#Toems_ApplicationApi.Controllers.UserController.UserProcessCounts(System.DateTime,System.Int32,System.String)
+  name: UserProcessCounts
+  nameWithType: UserController.UserProcessCounts
+  fullName: Toems_ApplicationApi.Controllers.UserController.UserProcessCounts
+- uid: System.Collections.Generic.List{Toems_Common.Dto.DtoProcessWithCount}
+  commentId: T:System.Collections.Generic.List{Toems_Common.Dto.DtoProcessWithCount}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<DtoProcessWithCount>
+  nameWithType: List<DtoProcessWithCount>
+  fullName: System.Collections.Generic.List<Toems_Common.Dto.DtoProcessWithCount>
+  nameWithType.vb: List(Of DtoProcessWithCount)
+  fullName.vb: System.Collections.Generic.List(Of Toems_Common.Dto.DtoProcessWithCount)
+  name.vb: List(Of DtoProcessWithCount)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Toems_Common.Dto.DtoProcessWithCount
+    name: DtoProcessWithCount
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Dto.DtoProcessWithCount
+    name: DtoProcessWithCount
+    isExternal: true
+  - name: )
+- uid: Toems_ApplicationApi.Controllers.UserController.UserProcess*
+  commentId: Overload:Toems_ApplicationApi.Controllers.UserController.UserProcess
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.UserController.html#Toems_ApplicationApi.Controllers.UserController.UserProcess(System.DateTime,System.Int32,System.String)
+  name: UserProcess
+  nameWithType: UserController.UserProcess
+  fullName: Toems_ApplicationApi.Controllers.UserController.UserProcess
+- uid: System.Collections.Generic.List{Toems_Common.Dto.DtoProcessWithUser}
+  commentId: T:System.Collections.Generic.List{Toems_Common.Dto.DtoProcessWithUser}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<DtoProcessWithUser>
+  nameWithType: List<DtoProcessWithUser>
+  fullName: System.Collections.Generic.List<Toems_Common.Dto.DtoProcessWithUser>
+  nameWithType.vb: List(Of DtoProcessWithUser)
+  fullName.vb: System.Collections.Generic.List(Of Toems_Common.Dto.DtoProcessWithUser)
+  name.vb: List(Of DtoProcessWithUser)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Toems_Common.Dto.DtoProcessWithUser
+    name: DtoProcessWithUser
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Dto.DtoProcessWithUser
+    name: DtoProcessWithUser
+    isExternal: true
+  - name: )
+- uid: Toems_ApplicationApi.Controllers.UserController.IsAdmin*
+  commentId: Overload:Toems_ApplicationApi.Controllers.UserController.IsAdmin
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.UserController.html#Toems_ApplicationApi.Controllers.UserController.IsAdmin(System.Int32)
+  name: IsAdmin
+  nameWithType: UserController.IsAdmin
+  fullName: Toems_ApplicationApi.Controllers.UserController.IsAdmin
+- uid: Toems_ApplicationApi.Controllers.UserController.GetUserComputerView*
+  commentId: Overload:Toems_ApplicationApi.Controllers.UserController.GetUserComputerView
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.UserController.html#Toems_ApplicationApi.Controllers.UserController.GetUserComputerView
+  name: GetUserComputerView
+  nameWithType: UserController.GetUserComputerView
+  fullName: Toems_ApplicationApi.Controllers.UserController.GetUserComputerView
+- uid: Toems_ApplicationApi.Controllers.UserController.GetUserComputerSort*
+  commentId: Overload:Toems_ApplicationApi.Controllers.UserController.GetUserComputerSort
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.UserController.html#Toems_ApplicationApi.Controllers.UserController.GetUserComputerSort
+  name: GetUserComputerSort
+  nameWithType: UserController.GetUserComputerSort
+  fullName: Toems_ApplicationApi.Controllers.UserController.GetUserComputerSort
+- uid: Toems_ApplicationApi.Controllers.UserController.GetUserLoginPage*
+  commentId: Overload:Toems_ApplicationApi.Controllers.UserController.GetUserLoginPage
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.UserController.html#Toems_ApplicationApi.Controllers.UserController.GetUserLoginPage
+  name: GetUserLoginPage
+  nameWithType: UserController.GetUserLoginPage
+  fullName: Toems_ApplicationApi.Controllers.UserController.GetUserLoginPage

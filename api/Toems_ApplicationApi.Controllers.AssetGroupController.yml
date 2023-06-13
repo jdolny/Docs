@@ -1,0 +1,678 @@
+### YamlMime:ManagedReference
+items:
+- uid: Toems_ApplicationApi.Controllers.AssetGroupController
+  commentId: T:Toems_ApplicationApi.Controllers.AssetGroupController
+  id: AssetGroupController
+  parent: Toems_ApplicationApi.Controllers
+  children:
+  - Toems_ApplicationApi.Controllers.AssetGroupController.#ctor
+  - Toems_ApplicationApi.Controllers.AssetGroupController.Delete(System.Int32)
+  - Toems_ApplicationApi.Controllers.AssetGroupController.Get
+  - Toems_ApplicationApi.Controllers.AssetGroupController.Get(System.Int32)
+  - Toems_ApplicationApi.Controllers.AssetGroupController.GetCount
+  - Toems_ApplicationApi.Controllers.AssetGroupController.GetGroupMembers(System.Int32)
+  - Toems_ApplicationApi.Controllers.AssetGroupController.Post(Toems_Common.Entity.EntityAssetGroup)
+  - Toems_ApplicationApi.Controllers.AssetGroupController.Put(System.Int32,Toems_Common.Entity.EntityAssetGroup)
+  - Toems_ApplicationApi.Controllers.AssetGroupController.RemoveGroupMember(System.Int32,System.Int32)
+  - Toems_ApplicationApi.Controllers.AssetGroupController.Search(Toems_Common.Dto.DtoSearchFilter)
+  langs:
+  - csharp
+  - vb
+  name: AssetGroupController
+  nameWithType: AssetGroupController
+  fullName: Toems_ApplicationApi.Controllers.AssetGroupController
+  type: Class
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: 'public class AssetGroupController : ApiController'
+    content.vb: Public Class AssetGroupController Inherits ApiController
+  inheritance:
+  - System.Object
+- uid: Toems_ApplicationApi.Controllers.AssetGroupController.#ctor
+  commentId: M:Toems_ApplicationApi.Controllers.AssetGroupController.#ctor
+  id: '#ctor'
+  parent: Toems_ApplicationApi.Controllers.AssetGroupController
+  langs:
+  - csharp
+  - vb
+  name: AssetGroupController()
+  nameWithType: AssetGroupController.AssetGroupController()
+  fullName: Toems_ApplicationApi.Controllers.AssetGroupController.AssetGroupController()
+  type: Constructor
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: public AssetGroupController()
+    content.vb: Public Sub New()
+  overload: Toems_ApplicationApi.Controllers.AssetGroupController.#ctor*
+  nameWithType.vb: AssetGroupController.New()
+  fullName.vb: Toems_ApplicationApi.Controllers.AssetGroupController.New()
+  name.vb: New()
+- uid: Toems_ApplicationApi.Controllers.AssetGroupController.Search(Toems_Common.Dto.DtoSearchFilter)
+  commentId: M:Toems_ApplicationApi.Controllers.AssetGroupController.Search(Toems_Common.Dto.DtoSearchFilter)
+  id: Search(Toems_Common.Dto.DtoSearchFilter)
+  parent: Toems_ApplicationApi.Controllers.AssetGroupController
+  langs:
+  - csharp
+  - vb
+  name: Search(DtoSearchFilter)
+  nameWithType: AssetGroupController.Search(DtoSearchFilter)
+  fullName: Toems_ApplicationApi.Controllers.AssetGroupController.Search(Toems_Common.Dto.DtoSearchFilter)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "assetRead")]
+
+      public IEnumerable<EntityAssetGroup> Search(DtoSearchFilter filter)
+    parameters:
+    - id: filter
+      type: Toems_Common.Dto.DtoSearchFilter
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityAssetGroup}
+    content.vb: >-
+      <CustomAuth(Permission:="assetRead")>
+
+      Public Function Search(filter As DtoSearchFilter) As IEnumerable(Of EntityAssetGroup)
+  overload: Toems_ApplicationApi.Controllers.AssetGroupController.Search*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: assetRead
+- uid: Toems_ApplicationApi.Controllers.AssetGroupController.Delete(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.AssetGroupController.Delete(System.Int32)
+  id: Delete(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.AssetGroupController
+  langs:
+  - csharp
+  - vb
+  name: Delete(int)
+  nameWithType: AssetGroupController.Delete(int)
+  fullName: Toems_ApplicationApi.Controllers.AssetGroupController.Delete(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "assetDelete")]
+
+      public DtoActionResult Delete(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Dto.DtoActionResult
+    content.vb: >-
+      <CustomAuth(Permission:="assetDelete")>
+
+      Public Function Delete(id As Integer) As DtoActionResult
+  overload: Toems_ApplicationApi.Controllers.AssetGroupController.Delete*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: assetDelete
+  nameWithType.vb: AssetGroupController.Delete(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.AssetGroupController.Delete(Integer)
+  name.vb: Delete(Integer)
+- uid: Toems_ApplicationApi.Controllers.AssetGroupController.Get(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.AssetGroupController.Get(System.Int32)
+  id: Get(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.AssetGroupController
+  langs:
+  - csharp
+  - vb
+  name: Get(int)
+  nameWithType: AssetGroupController.Get(int)
+  fullName: Toems_ApplicationApi.Controllers.AssetGroupController.Get(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "assetRead")]
+
+      public EntityAssetGroup Get(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Entity.EntityAssetGroup
+    content.vb: >-
+      <CustomAuth(Permission:="assetRead")>
+
+      Public Function [Get](id As Integer) As EntityAssetGroup
+  overload: Toems_ApplicationApi.Controllers.AssetGroupController.Get*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: assetRead
+  nameWithType.vb: AssetGroupController.Get(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.AssetGroupController.Get(Integer)
+  name.vb: Get(Integer)
+- uid: Toems_ApplicationApi.Controllers.AssetGroupController.Get
+  commentId: M:Toems_ApplicationApi.Controllers.AssetGroupController.Get
+  id: Get
+  parent: Toems_ApplicationApi.Controllers.AssetGroupController
+  langs:
+  - csharp
+  - vb
+  name: Get()
+  nameWithType: AssetGroupController.Get()
+  fullName: Toems_ApplicationApi.Controllers.AssetGroupController.Get()
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "assetRead")]
+
+      public IEnumerable<EntityAssetGroup> Get()
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityAssetGroup}
+    content.vb: >-
+      <CustomAuth(Permission:="assetRead")>
+
+      Public Function [Get]() As IEnumerable(Of EntityAssetGroup)
+  overload: Toems_ApplicationApi.Controllers.AssetGroupController.Get*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: assetRead
+- uid: Toems_ApplicationApi.Controllers.AssetGroupController.GetCount
+  commentId: M:Toems_ApplicationApi.Controllers.AssetGroupController.GetCount
+  id: GetCount
+  parent: Toems_ApplicationApi.Controllers.AssetGroupController
+  langs:
+  - csharp
+  - vb
+  name: GetCount()
+  nameWithType: AssetGroupController.GetCount()
+  fullName: Toems_ApplicationApi.Controllers.AssetGroupController.GetCount()
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "assetRead")]
+
+      public DtoApiStringResponse GetCount()
+    return:
+      type: Toems_Common.Dto.DtoApiStringResponse
+    content.vb: >-
+      <CustomAuth(Permission:="assetRead")>
+
+      Public Function GetCount() As DtoApiStringResponse
+  overload: Toems_ApplicationApi.Controllers.AssetGroupController.GetCount*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: assetRead
+- uid: Toems_ApplicationApi.Controllers.AssetGroupController.Post(Toems_Common.Entity.EntityAssetGroup)
+  commentId: M:Toems_ApplicationApi.Controllers.AssetGroupController.Post(Toems_Common.Entity.EntityAssetGroup)
+  id: Post(Toems_Common.Entity.EntityAssetGroup)
+  parent: Toems_ApplicationApi.Controllers.AssetGroupController
+  langs:
+  - csharp
+  - vb
+  name: Post(EntityAssetGroup)
+  nameWithType: AssetGroupController.Post(EntityAssetGroup)
+  fullName: Toems_ApplicationApi.Controllers.AssetGroupController.Post(Toems_Common.Entity.EntityAssetGroup)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "assetUpdate")]
+
+      public DtoActionResult Post(EntityAssetGroup assetGroup)
+    parameters:
+    - id: assetGroup
+      type: Toems_Common.Entity.EntityAssetGroup
+    return:
+      type: Toems_Common.Dto.DtoActionResult
+    content.vb: >-
+      <CustomAuth(Permission:="assetUpdate")>
+
+      Public Function Post(assetGroup As EntityAssetGroup) As DtoActionResult
+  overload: Toems_ApplicationApi.Controllers.AssetGroupController.Post*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: assetUpdate
+- uid: Toems_ApplicationApi.Controllers.AssetGroupController.Put(System.Int32,Toems_Common.Entity.EntityAssetGroup)
+  commentId: M:Toems_ApplicationApi.Controllers.AssetGroupController.Put(System.Int32,Toems_Common.Entity.EntityAssetGroup)
+  id: Put(System.Int32,Toems_Common.Entity.EntityAssetGroup)
+  parent: Toems_ApplicationApi.Controllers.AssetGroupController
+  langs:
+  - csharp
+  - vb
+  name: Put(int, EntityAssetGroup)
+  nameWithType: AssetGroupController.Put(int, EntityAssetGroup)
+  fullName: Toems_ApplicationApi.Controllers.AssetGroupController.Put(int, Toems_Common.Entity.EntityAssetGroup)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "assetUpdate")]
+
+      public DtoActionResult Put(int id, EntityAssetGroup assetGroup)
+    parameters:
+    - id: id
+      type: System.Int32
+    - id: assetGroup
+      type: Toems_Common.Entity.EntityAssetGroup
+    return:
+      type: Toems_Common.Dto.DtoActionResult
+    content.vb: >-
+      <CustomAuth(Permission:="assetUpdate")>
+
+      Public Function Put(id As Integer, assetGroup As EntityAssetGroup) As DtoActionResult
+  overload: Toems_ApplicationApi.Controllers.AssetGroupController.Put*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: assetUpdate
+  nameWithType.vb: AssetGroupController.Put(Integer, EntityAssetGroup)
+  fullName.vb: Toems_ApplicationApi.Controllers.AssetGroupController.Put(Integer, Toems_Common.Entity.EntityAssetGroup)
+  name.vb: Put(Integer, EntityAssetGroup)
+- uid: Toems_ApplicationApi.Controllers.AssetGroupController.RemoveGroupMember(System.Int32,System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.AssetGroupController.RemoveGroupMember(System.Int32,System.Int32)
+  id: RemoveGroupMember(System.Int32,System.Int32)
+  parent: Toems_ApplicationApi.Controllers.AssetGroupController
+  langs:
+  - csharp
+  - vb
+  name: RemoveGroupMember(int, int)
+  nameWithType: AssetGroupController.RemoveGroupMember(int, int)
+  fullName: Toems_ApplicationApi.Controllers.AssetGroupController.RemoveGroupMember(int, int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "assetUpdate")]
+
+      public DtoApiBoolResponse RemoveGroupMember(int id, int assetId)
+    parameters:
+    - id: id
+      type: System.Int32
+    - id: assetId
+      type: System.Int32
+    return:
+      type: Toems_Common.Dto.DtoApiBoolResponse
+    content.vb: >-
+      <CustomAuth(Permission:="assetUpdate")>
+
+      Public Function RemoveGroupMember(id As Integer, assetId As Integer) As DtoApiBoolResponse
+  overload: Toems_ApplicationApi.Controllers.AssetGroupController.RemoveGroupMember*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: assetUpdate
+  nameWithType.vb: AssetGroupController.RemoveGroupMember(Integer, Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.AssetGroupController.RemoveGroupMember(Integer, Integer)
+  name.vb: RemoveGroupMember(Integer, Integer)
+- uid: Toems_ApplicationApi.Controllers.AssetGroupController.GetGroupMembers(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.AssetGroupController.GetGroupMembers(System.Int32)
+  id: GetGroupMembers(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.AssetGroupController
+  langs:
+  - csharp
+  - vb
+  name: GetGroupMembers(int)
+  nameWithType: AssetGroupController.GetGroupMembers(int)
+  fullName: Toems_ApplicationApi.Controllers.AssetGroupController.GetGroupMembers(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "assetRead")]
+
+      public IEnumerable<DtoAssetWithType> GetGroupMembers(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Dto.DtoAssetWithType}
+    content.vb: >-
+      <CustomAuth(Permission:="assetRead")>
+
+      Public Function GetGroupMembers(id As Integer) As IEnumerable(Of DtoAssetWithType)
+  overload: Toems_ApplicationApi.Controllers.AssetGroupController.GetGroupMembers*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: assetRead
+  nameWithType.vb: AssetGroupController.GetGroupMembers(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.AssetGroupController.GetGroupMembers(Integer)
+  name.vb: GetGroupMembers(Integer)
+references:
+- uid: Toems_ApplicationApi.Controllers
+  commentId: N:Toems_ApplicationApi.Controllers
+  isExternal: true
+  href: Toems_ApplicationApi.html
+  name: Toems_ApplicationApi.Controllers
+  nameWithType: Toems_ApplicationApi.Controllers
+  fullName: Toems_ApplicationApi.Controllers
+  spec.csharp:
+  - uid: Toems_ApplicationApi
+    name: Toems_ApplicationApi
+    isExternal: true
+    href: Toems_ApplicationApi.html
+  - name: .
+  - uid: Toems_ApplicationApi.Controllers
+    name: Controllers
+    isExternal: true
+    href: Toems_ApplicationApi.Controllers.html
+  spec.vb:
+  - uid: Toems_ApplicationApi
+    name: Toems_ApplicationApi
+    isExternal: true
+    href: Toems_ApplicationApi.html
+  - name: .
+  - uid: Toems_ApplicationApi.Controllers
+    name: Controllers
+    isExternal: true
+    href: Toems_ApplicationApi.Controllers.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Toems_ApplicationApi.Controllers.AssetGroupController.#ctor*
+  commentId: Overload:Toems_ApplicationApi.Controllers.AssetGroupController.#ctor
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.AssetGroupController.html#Toems_ApplicationApi.Controllers.AssetGroupController.#ctor
+  name: AssetGroupController
+  nameWithType: AssetGroupController.AssetGroupController
+  fullName: Toems_ApplicationApi.Controllers.AssetGroupController.AssetGroupController
+  nameWithType.vb: AssetGroupController.New
+  fullName.vb: Toems_ApplicationApi.Controllers.AssetGroupController.New
+  name.vb: New
+- uid: Toems_ApplicationApi.Controllers.AssetGroupController.Search*
+  commentId: Overload:Toems_ApplicationApi.Controllers.AssetGroupController.Search
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.AssetGroupController.html#Toems_ApplicationApi.Controllers.AssetGroupController.Search(Toems_Common.Dto.DtoSearchFilter)
+  name: Search
+  nameWithType: AssetGroupController.Search
+  fullName: Toems_ApplicationApi.Controllers.AssetGroupController.Search
+- uid: Toems_Common.Dto.DtoSearchFilter
+  isExternal: true
+  name: DtoSearchFilter
+  nameWithType: DtoSearchFilter
+  fullName: Toems_Common.Dto.DtoSearchFilter
+- uid: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityAssetGroup}
+  commentId: T:System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityAssetGroup}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<EntityAssetGroup>
+  nameWithType: IEnumerable<EntityAssetGroup>
+  fullName: System.Collections.Generic.IEnumerable<Toems_Common.Entity.EntityAssetGroup>
+  nameWithType.vb: IEnumerable(Of EntityAssetGroup)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Toems_Common.Entity.EntityAssetGroup)
+  name.vb: IEnumerable(Of EntityAssetGroup)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Toems_Common.Entity.EntityAssetGroup
+    name: EntityAssetGroup
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Entity.EntityAssetGroup
+    name: EntityAssetGroup
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Toems_ApplicationApi.Controllers.AssetGroupController.Delete*
+  commentId: Overload:Toems_ApplicationApi.Controllers.AssetGroupController.Delete
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.AssetGroupController.html#Toems_ApplicationApi.Controllers.AssetGroupController.Delete(System.Int32)
+  name: Delete
+  nameWithType: AssetGroupController.Delete
+  fullName: Toems_ApplicationApi.Controllers.AssetGroupController.Delete
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Toems_Common.Dto.DtoActionResult
+  isExternal: true
+  name: DtoActionResult
+  nameWithType: DtoActionResult
+  fullName: Toems_Common.Dto.DtoActionResult
+- uid: Toems_ApplicationApi.Controllers.AssetGroupController.Get*
+  commentId: Overload:Toems_ApplicationApi.Controllers.AssetGroupController.Get
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.AssetGroupController.html#Toems_ApplicationApi.Controllers.AssetGroupController.Get(System.Int32)
+  name: Get
+  nameWithType: AssetGroupController.Get
+  fullName: Toems_ApplicationApi.Controllers.AssetGroupController.Get
+- uid: Toems_Common.Entity.EntityAssetGroup
+  isExternal: true
+  name: EntityAssetGroup
+  nameWithType: EntityAssetGroup
+  fullName: Toems_Common.Entity.EntityAssetGroup
+- uid: Toems_ApplicationApi.Controllers.AssetGroupController.GetCount*
+  commentId: Overload:Toems_ApplicationApi.Controllers.AssetGroupController.GetCount
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.AssetGroupController.html#Toems_ApplicationApi.Controllers.AssetGroupController.GetCount
+  name: GetCount
+  nameWithType: AssetGroupController.GetCount
+  fullName: Toems_ApplicationApi.Controllers.AssetGroupController.GetCount
+- uid: Toems_Common.Dto.DtoApiStringResponse
+  isExternal: true
+  name: DtoApiStringResponse
+  nameWithType: DtoApiStringResponse
+  fullName: Toems_Common.Dto.DtoApiStringResponse
+- uid: Toems_ApplicationApi.Controllers.AssetGroupController.Post*
+  commentId: Overload:Toems_ApplicationApi.Controllers.AssetGroupController.Post
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.AssetGroupController.html#Toems_ApplicationApi.Controllers.AssetGroupController.Post(Toems_Common.Entity.EntityAssetGroup)
+  name: Post
+  nameWithType: AssetGroupController.Post
+  fullName: Toems_ApplicationApi.Controllers.AssetGroupController.Post
+- uid: Toems_ApplicationApi.Controllers.AssetGroupController.Put*
+  commentId: Overload:Toems_ApplicationApi.Controllers.AssetGroupController.Put
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.AssetGroupController.html#Toems_ApplicationApi.Controllers.AssetGroupController.Put(System.Int32,Toems_Common.Entity.EntityAssetGroup)
+  name: Put
+  nameWithType: AssetGroupController.Put
+  fullName: Toems_ApplicationApi.Controllers.AssetGroupController.Put
+- uid: Toems_ApplicationApi.Controllers.AssetGroupController.RemoveGroupMember*
+  commentId: Overload:Toems_ApplicationApi.Controllers.AssetGroupController.RemoveGroupMember
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.AssetGroupController.html#Toems_ApplicationApi.Controllers.AssetGroupController.RemoveGroupMember(System.Int32,System.Int32)
+  name: RemoveGroupMember
+  nameWithType: AssetGroupController.RemoveGroupMember
+  fullName: Toems_ApplicationApi.Controllers.AssetGroupController.RemoveGroupMember
+- uid: Toems_Common.Dto.DtoApiBoolResponse
+  isExternal: true
+  name: DtoApiBoolResponse
+  nameWithType: DtoApiBoolResponse
+  fullName: Toems_Common.Dto.DtoApiBoolResponse
+- uid: Toems_ApplicationApi.Controllers.AssetGroupController.GetGroupMembers*
+  commentId: Overload:Toems_ApplicationApi.Controllers.AssetGroupController.GetGroupMembers
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.AssetGroupController.html#Toems_ApplicationApi.Controllers.AssetGroupController.GetGroupMembers(System.Int32)
+  name: GetGroupMembers
+  nameWithType: AssetGroupController.GetGroupMembers
+  fullName: Toems_ApplicationApi.Controllers.AssetGroupController.GetGroupMembers
+- uid: System.Collections.Generic.IEnumerable{Toems_Common.Dto.DtoAssetWithType}
+  commentId: T:System.Collections.Generic.IEnumerable{Toems_Common.Dto.DtoAssetWithType}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<DtoAssetWithType>
+  nameWithType: IEnumerable<DtoAssetWithType>
+  fullName: System.Collections.Generic.IEnumerable<Toems_Common.Dto.DtoAssetWithType>
+  nameWithType.vb: IEnumerable(Of DtoAssetWithType)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Toems_Common.Dto.DtoAssetWithType)
+  name.vb: IEnumerable(Of DtoAssetWithType)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Toems_Common.Dto.DtoAssetWithType
+    name: DtoAssetWithType
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Dto.DtoAssetWithType
+    name: DtoAssetWithType
+    isExternal: true
+  - name: )

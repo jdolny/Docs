@@ -1,0 +1,217 @@
+### YamlMime:ManagedReference
+items:
+- uid: Toems_ApplicationApi.Controllers.PinnedPolicyController
+  commentId: T:Toems_ApplicationApi.Controllers.PinnedPolicyController
+  id: PinnedPolicyController
+  parent: Toems_ApplicationApi.Controllers
+  children:
+  - Toems_ApplicationApi.Controllers.PinnedPolicyController.#ctor
+  - Toems_ApplicationApi.Controllers.PinnedPolicyController.Delete(System.Int32,System.Int32)
+  - Toems_ApplicationApi.Controllers.PinnedPolicyController.Post(Toems_Common.Entity.EntityPinnedPolicy)
+  langs:
+  - csharp
+  - vb
+  name: PinnedPolicyController
+  nameWithType: PinnedPolicyController
+  fullName: Toems_ApplicationApi.Controllers.PinnedPolicyController
+  type: Class
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: 'public class PinnedPolicyController : ApiController'
+    content.vb: Public Class PinnedPolicyController Inherits ApiController
+  inheritance:
+  - System.Object
+- uid: Toems_ApplicationApi.Controllers.PinnedPolicyController.#ctor
+  commentId: M:Toems_ApplicationApi.Controllers.PinnedPolicyController.#ctor
+  id: '#ctor'
+  parent: Toems_ApplicationApi.Controllers.PinnedPolicyController
+  langs:
+  - csharp
+  - vb
+  name: PinnedPolicyController()
+  nameWithType: PinnedPolicyController.PinnedPolicyController()
+  fullName: Toems_ApplicationApi.Controllers.PinnedPolicyController.PinnedPolicyController()
+  type: Constructor
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: public PinnedPolicyController()
+    content.vb: Public Sub New()
+  overload: Toems_ApplicationApi.Controllers.PinnedPolicyController.#ctor*
+  nameWithType.vb: PinnedPolicyController.New()
+  fullName.vb: Toems_ApplicationApi.Controllers.PinnedPolicyController.New()
+  name.vb: New()
+- uid: Toems_ApplicationApi.Controllers.PinnedPolicyController.Delete(System.Int32,System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.PinnedPolicyController.Delete(System.Int32,System.Int32)
+  id: Delete(System.Int32,System.Int32)
+  parent: Toems_ApplicationApi.Controllers.PinnedPolicyController
+  langs:
+  - csharp
+  - vb
+  name: Delete(int, int)
+  nameWithType: PinnedPolicyController.Delete(int, int)
+  fullName: Toems_ApplicationApi.Controllers.PinnedPolicyController.Delete(int, int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "policyRead")]
+
+      public DtoActionResult Delete(int policyId, int userId)
+    parameters:
+    - id: policyId
+      type: System.Int32
+    - id: userId
+      type: System.Int32
+    return:
+      type: Toems_Common.Dto.DtoActionResult
+    content.vb: >-
+      <CustomAuth(Permission:="policyRead")>
+
+      Public Function Delete(policyId As Integer, userId As Integer) As DtoActionResult
+  overload: Toems_ApplicationApi.Controllers.PinnedPolicyController.Delete*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: policyRead
+  nameWithType.vb: PinnedPolicyController.Delete(Integer, Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.PinnedPolicyController.Delete(Integer, Integer)
+  name.vb: Delete(Integer, Integer)
+- uid: Toems_ApplicationApi.Controllers.PinnedPolicyController.Post(Toems_Common.Entity.EntityPinnedPolicy)
+  commentId: M:Toems_ApplicationApi.Controllers.PinnedPolicyController.Post(Toems_Common.Entity.EntityPinnedPolicy)
+  id: Post(Toems_Common.Entity.EntityPinnedPolicy)
+  parent: Toems_ApplicationApi.Controllers.PinnedPolicyController
+  langs:
+  - csharp
+  - vb
+  name: Post(EntityPinnedPolicy)
+  nameWithType: PinnedPolicyController.Post(EntityPinnedPolicy)
+  fullName: Toems_ApplicationApi.Controllers.PinnedPolicyController.Post(Toems_Common.Entity.EntityPinnedPolicy)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "policyRead")]
+
+      public DtoActionResult Post(EntityPinnedPolicy pinnedPolicy)
+    parameters:
+    - id: pinnedPolicy
+      type: Toems_Common.Entity.EntityPinnedPolicy
+    return:
+      type: Toems_Common.Dto.DtoActionResult
+    content.vb: >-
+      <CustomAuth(Permission:="policyRead")>
+
+      Public Function Post(pinnedPolicy As EntityPinnedPolicy) As DtoActionResult
+  overload: Toems_ApplicationApi.Controllers.PinnedPolicyController.Post*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: policyRead
+references:
+- uid: Toems_ApplicationApi.Controllers
+  commentId: N:Toems_ApplicationApi.Controllers
+  isExternal: true
+  href: Toems_ApplicationApi.html
+  name: Toems_ApplicationApi.Controllers
+  nameWithType: Toems_ApplicationApi.Controllers
+  fullName: Toems_ApplicationApi.Controllers
+  spec.csharp:
+  - uid: Toems_ApplicationApi
+    name: Toems_ApplicationApi
+    isExternal: true
+    href: Toems_ApplicationApi.html
+  - name: .
+  - uid: Toems_ApplicationApi.Controllers
+    name: Controllers
+    isExternal: true
+    href: Toems_ApplicationApi.Controllers.html
+  spec.vb:
+  - uid: Toems_ApplicationApi
+    name: Toems_ApplicationApi
+    isExternal: true
+    href: Toems_ApplicationApi.html
+  - name: .
+  - uid: Toems_ApplicationApi.Controllers
+    name: Controllers
+    isExternal: true
+    href: Toems_ApplicationApi.Controllers.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Toems_ApplicationApi.Controllers.PinnedPolicyController.#ctor*
+  commentId: Overload:Toems_ApplicationApi.Controllers.PinnedPolicyController.#ctor
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.PinnedPolicyController.html#Toems_ApplicationApi.Controllers.PinnedPolicyController.#ctor
+  name: PinnedPolicyController
+  nameWithType: PinnedPolicyController.PinnedPolicyController
+  fullName: Toems_ApplicationApi.Controllers.PinnedPolicyController.PinnedPolicyController
+  nameWithType.vb: PinnedPolicyController.New
+  fullName.vb: Toems_ApplicationApi.Controllers.PinnedPolicyController.New
+  name.vb: New
+- uid: Toems_ApplicationApi.Controllers.PinnedPolicyController.Delete*
+  commentId: Overload:Toems_ApplicationApi.Controllers.PinnedPolicyController.Delete
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.PinnedPolicyController.html#Toems_ApplicationApi.Controllers.PinnedPolicyController.Delete(System.Int32,System.Int32)
+  name: Delete
+  nameWithType: PinnedPolicyController.Delete
+  fullName: Toems_ApplicationApi.Controllers.PinnedPolicyController.Delete
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Toems_Common.Dto.DtoActionResult
+  isExternal: true
+  name: DtoActionResult
+  nameWithType: DtoActionResult
+  fullName: Toems_Common.Dto.DtoActionResult
+- uid: Toems_ApplicationApi.Controllers.PinnedPolicyController.Post*
+  commentId: Overload:Toems_ApplicationApi.Controllers.PinnedPolicyController.Post
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.PinnedPolicyController.html#Toems_ApplicationApi.Controllers.PinnedPolicyController.Post(Toems_Common.Entity.EntityPinnedPolicy)
+  name: Post
+  nameWithType: PinnedPolicyController.Post
+  fullName: Toems_ApplicationApi.Controllers.PinnedPolicyController.Post
+- uid: Toems_Common.Entity.EntityPinnedPolicy
+  commentId: '!:Toems_Common.Entity.EntityPinnedPolicy'
+  isExternal: true
+  name: EntityPinnedPolicy
+  nameWithType: EntityPinnedPolicy
+  fullName: Toems_Common.Entity.EntityPinnedPolicy

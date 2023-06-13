@@ -1,0 +1,2072 @@
+### YamlMime:ManagedReference
+items:
+- uid: Toems_ApplicationApi.Controllers.GroupController
+  commentId: T:Toems_ApplicationApi.Controllers.GroupController
+  id: GroupController
+  parent: Toems_ApplicationApi.Controllers
+  children:
+  - Toems_ApplicationApi.Controllers.GroupController.#ctor
+  - Toems_ApplicationApi.Controllers.GroupController.ClearImagingIds(System.Int32)
+  - Toems_ApplicationApi.Controllers.GroupController.CollectInventory(System.Int32)
+  - Toems_ApplicationApi.Controllers.GroupController.Delete(System.Int32)
+  - Toems_ApplicationApi.Controllers.GroupController.ForceCheckin(System.Int32)
+  - Toems_ApplicationApi.Controllers.GroupController.Get
+  - Toems_ApplicationApi.Controllers.GroupController.Get(System.Int32)
+  - Toems_ApplicationApi.Controllers.GroupController.GetAdGroups
+  - Toems_ApplicationApi.Controllers.GroupController.GetAdSecurityGroups
+  - Toems_ApplicationApi.Controllers.GroupController.GetAssignedPolicies(System.Int32,Toems_Common.Dto.DtoSearchFilter)
+  - Toems_ApplicationApi.Controllers.GroupController.GetCount
+  - Toems_ApplicationApi.Controllers.GroupController.GetDynamic(System.Collections.Generic.List{Toems_Common.Entity.EntitySmartGroupQuery})
+  - Toems_ApplicationApi.Controllers.GroupController.GetDynamicQuery(System.Int32)
+  - Toems_ApplicationApi.Controllers.GroupController.GetGroupCategories(System.Int32)
+  - Toems_ApplicationApi.Controllers.GroupController.GetGroupMembers(System.Int32,Toems_Common.Dto.DtoSearchFilter)
+  - Toems_ApplicationApi.Controllers.GroupController.GetMemberCount(System.Int32)
+  - Toems_ApplicationApi.Controllers.GroupController.GetOuGroups
+  - Toems_ApplicationApi.Controllers.GroupController.GroupProcessCounts(System.DateTime,System.Int32,System.Int32)
+  - Toems_ApplicationApi.Controllers.GroupController.GroupProcessTimes(System.DateTime,System.Int32,System.Int32)
+  - Toems_ApplicationApi.Controllers.GroupController.Post(Toems_Common.Entity.EntityGroup)
+  - Toems_ApplicationApi.Controllers.GroupController.Put(System.Int32,Toems_Common.Entity.EntityGroup)
+  - Toems_ApplicationApi.Controllers.GroupController.Reboot(System.Int32)
+  - Toems_ApplicationApi.Controllers.GroupController.RemoveGroupMember(System.Int32,System.Int32)
+  - Toems_ApplicationApi.Controllers.GroupController.Search(Toems_Common.Dto.DtoSearchFilterCategories)
+  - Toems_ApplicationApi.Controllers.GroupController.SendMessage(System.Int32,Toems_Common.Dto.DtoMessage)
+  - Toems_ApplicationApi.Controllers.GroupController.Shutdown(System.Int32)
+  - Toems_ApplicationApi.Controllers.GroupController.StartGroupUnicast(System.Int32)
+  - Toems_ApplicationApi.Controllers.GroupController.StartGroupWinPe(System.Int32)
+  - Toems_ApplicationApi.Controllers.GroupController.StartMulticast(System.Int32)
+  - Toems_ApplicationApi.Controllers.GroupController.UpdateDynamicQuery(System.Collections.Generic.List{Toems_Common.Entity.EntitySmartGroupQuery})
+  - Toems_ApplicationApi.Controllers.GroupController.Wakeup(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: GroupController
+  nameWithType: GroupController
+  fullName: Toems_ApplicationApi.Controllers.GroupController
+  type: Class
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: 'public class GroupController : ApiController'
+    content.vb: Public Class GroupController Inherits ApiController
+  inheritance:
+  - System.Object
+- uid: Toems_ApplicationApi.Controllers.GroupController.#ctor
+  commentId: M:Toems_ApplicationApi.Controllers.GroupController.#ctor
+  id: '#ctor'
+  parent: Toems_ApplicationApi.Controllers.GroupController
+  langs:
+  - csharp
+  - vb
+  name: GroupController()
+  nameWithType: GroupController.GroupController()
+  fullName: Toems_ApplicationApi.Controllers.GroupController.GroupController()
+  type: Constructor
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: public GroupController()
+    content.vb: Public Sub New()
+  overload: Toems_ApplicationApi.Controllers.GroupController.#ctor*
+  nameWithType.vb: GroupController.New()
+  fullName.vb: Toems_ApplicationApi.Controllers.GroupController.New()
+  name.vb: New()
+- uid: Toems_ApplicationApi.Controllers.GroupController.Delete(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.GroupController.Delete(System.Int32)
+  id: Delete(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.GroupController
+  langs:
+  - csharp
+  - vb
+  name: Delete(int)
+  nameWithType: GroupController.Delete(int)
+  fullName: Toems_ApplicationApi.Controllers.GroupController.Delete(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "groupDelete")]
+
+      [GroupAuth]
+
+      public DtoActionResult Delete(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Dto.DtoActionResult
+    content.vb: >-
+      <CustomAuth(Permission:="groupDelete")>
+
+      <GroupAuth>
+
+      Public Function Delete(id As Integer) As DtoActionResult
+  overload: Toems_ApplicationApi.Controllers.GroupController.Delete*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: groupDelete
+  - type: Toems_ApplicationApi.Controllers.Authorization.GroupAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.GroupAuthAttribute.#ctor
+    arguments: []
+  nameWithType.vb: GroupController.Delete(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.GroupController.Delete(Integer)
+  name.vb: Delete(Integer)
+- uid: Toems_ApplicationApi.Controllers.GroupController.Get(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.GroupController.Get(System.Int32)
+  id: Get(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.GroupController
+  langs:
+  - csharp
+  - vb
+  name: Get(int)
+  nameWithType: GroupController.Get(int)
+  fullName: Toems_ApplicationApi.Controllers.GroupController.Get(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "groupRead")]
+
+      [GroupAuth]
+
+      public EntityGroup Get(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Entity.EntityGroup
+    content.vb: >-
+      <CustomAuth(Permission:="groupRead")>
+
+      <GroupAuth>
+
+      Public Function [Get](id As Integer) As EntityGroup
+  overload: Toems_ApplicationApi.Controllers.GroupController.Get*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: groupRead
+  - type: Toems_ApplicationApi.Controllers.Authorization.GroupAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.GroupAuthAttribute.#ctor
+    arguments: []
+  nameWithType.vb: GroupController.Get(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.GroupController.Get(Integer)
+  name.vb: Get(Integer)
+- uid: Toems_ApplicationApi.Controllers.GroupController.GetGroupCategories(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.GroupController.GetGroupCategories(System.Int32)
+  id: GetGroupCategories(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.GroupController
+  langs:
+  - csharp
+  - vb
+  name: GetGroupCategories(int)
+  nameWithType: GroupController.GetGroupCategories(int)
+  fullName: Toems_ApplicationApi.Controllers.GroupController.GetGroupCategories(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "groupRead")]
+
+      public IEnumerable<EntityGroupCategory> GetGroupCategories(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityGroupCategory}
+    content.vb: >-
+      <CustomAuth(Permission:="groupRead")>
+
+      Public Function GetGroupCategories(id As Integer) As IEnumerable(Of EntityGroupCategory)
+  overload: Toems_ApplicationApi.Controllers.GroupController.GetGroupCategories*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: groupRead
+  nameWithType.vb: GroupController.GetGroupCategories(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.GroupController.GetGroupCategories(Integer)
+  name.vb: GetGroupCategories(Integer)
+- uid: Toems_ApplicationApi.Controllers.GroupController.Get
+  commentId: M:Toems_ApplicationApi.Controllers.GroupController.Get
+  id: Get
+  parent: Toems_ApplicationApi.Controllers.GroupController
+  langs:
+  - csharp
+  - vb
+  name: Get()
+  nameWithType: GroupController.Get()
+  fullName: Toems_ApplicationApi.Controllers.GroupController.Get()
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "groupRead")]
+
+      public IEnumerable<DtoGroupWithCount> Get()
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Dto.DtoGroupWithCount}
+    content.vb: >-
+      <CustomAuth(Permission:="groupRead")>
+
+      Public Function [Get]() As IEnumerable(Of DtoGroupWithCount)
+  overload: Toems_ApplicationApi.Controllers.GroupController.Get*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: groupRead
+- uid: Toems_ApplicationApi.Controllers.GroupController.ClearImagingIds(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.GroupController.ClearImagingIds(System.Int32)
+  id: ClearImagingIds(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.GroupController
+  langs:
+  - csharp
+  - vb
+  name: ClearImagingIds(int)
+  nameWithType: GroupController.ClearImagingIds(int)
+  fullName: Toems_ApplicationApi.Controllers.GroupController.ClearImagingIds(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "groupUpdate")]
+
+      [GroupAuth]
+
+      public DtoActionResult ClearImagingIds(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Dto.DtoActionResult
+    content.vb: >-
+      <CustomAuth(Permission:="groupUpdate")>
+
+      <GroupAuth>
+
+      Public Function ClearImagingIds(id As Integer) As DtoActionResult
+  overload: Toems_ApplicationApi.Controllers.GroupController.ClearImagingIds*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: groupUpdate
+  - type: Toems_ApplicationApi.Controllers.Authorization.GroupAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.GroupAuthAttribute.#ctor
+    arguments: []
+  nameWithType.vb: GroupController.ClearImagingIds(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.GroupController.ClearImagingIds(Integer)
+  name.vb: ClearImagingIds(Integer)
+- uid: Toems_ApplicationApi.Controllers.GroupController.GetAdGroups
+  commentId: M:Toems_ApplicationApi.Controllers.GroupController.GetAdGroups
+  id: GetAdGroups
+  parent: Toems_ApplicationApi.Controllers.GroupController
+  langs:
+  - csharp
+  - vb
+  name: GetAdGroups()
+  nameWithType: GroupController.GetAdGroups()
+  fullName: Toems_ApplicationApi.Controllers.GroupController.GetAdGroups()
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "groupRead")]
+
+      public IEnumerable<EntityGroup> GetAdGroups()
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityGroup}
+    content.vb: >-
+      <CustomAuth(Permission:="groupRead")>
+
+      Public Function GetAdGroups() As IEnumerable(Of EntityGroup)
+  overload: Toems_ApplicationApi.Controllers.GroupController.GetAdGroups*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: groupRead
+- uid: Toems_ApplicationApi.Controllers.GroupController.GetOuGroups
+  commentId: M:Toems_ApplicationApi.Controllers.GroupController.GetOuGroups
+  id: GetOuGroups
+  parent: Toems_ApplicationApi.Controllers.GroupController
+  langs:
+  - csharp
+  - vb
+  name: GetOuGroups()
+  nameWithType: GroupController.GetOuGroups()
+  fullName: Toems_ApplicationApi.Controllers.GroupController.GetOuGroups()
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "groupRead")]
+
+      public IEnumerable<EntityGroup> GetOuGroups()
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityGroup}
+    content.vb: >-
+      <CustomAuth(Permission:="groupRead")>
+
+      Public Function GetOuGroups() As IEnumerable(Of EntityGroup)
+  overload: Toems_ApplicationApi.Controllers.GroupController.GetOuGroups*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: groupRead
+- uid: Toems_ApplicationApi.Controllers.GroupController.GetAdSecurityGroups
+  commentId: M:Toems_ApplicationApi.Controllers.GroupController.GetAdSecurityGroups
+  id: GetAdSecurityGroups
+  parent: Toems_ApplicationApi.Controllers.GroupController
+  langs:
+  - csharp
+  - vb
+  name: GetAdSecurityGroups()
+  nameWithType: GroupController.GetAdSecurityGroups()
+  fullName: Toems_ApplicationApi.Controllers.GroupController.GetAdSecurityGroups()
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "groupRead")]
+
+      public IEnumerable<EntityGroup> GetAdSecurityGroups()
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityGroup}
+    content.vb: >-
+      <CustomAuth(Permission:="groupRead")>
+
+      Public Function GetAdSecurityGroups() As IEnumerable(Of EntityGroup)
+  overload: Toems_ApplicationApi.Controllers.GroupController.GetAdSecurityGroups*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: groupRead
+- uid: Toems_ApplicationApi.Controllers.GroupController.Search(Toems_Common.Dto.DtoSearchFilterCategories)
+  commentId: M:Toems_ApplicationApi.Controllers.GroupController.Search(Toems_Common.Dto.DtoSearchFilterCategories)
+  id: Search(Toems_Common.Dto.DtoSearchFilterCategories)
+  parent: Toems_ApplicationApi.Controllers.GroupController
+  langs:
+  - csharp
+  - vb
+  name: Search(DtoSearchFilterCategories)
+  nameWithType: GroupController.Search(DtoSearchFilterCategories)
+  fullName: Toems_ApplicationApi.Controllers.GroupController.Search(Toems_Common.Dto.DtoSearchFilterCategories)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "groupRead")]
+
+      public IEnumerable<DtoGroupWithCount> Search(DtoSearchFilterCategories filter)
+    parameters:
+    - id: filter
+      type: Toems_Common.Dto.DtoSearchFilterCategories
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Dto.DtoGroupWithCount}
+    content.vb: >-
+      <CustomAuth(Permission:="groupRead")>
+
+      Public Function Search(filter As DtoSearchFilterCategories) As IEnumerable(Of DtoGroupWithCount)
+  overload: Toems_ApplicationApi.Controllers.GroupController.Search*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: groupRead
+- uid: Toems_ApplicationApi.Controllers.GroupController.GetCount
+  commentId: M:Toems_ApplicationApi.Controllers.GroupController.GetCount
+  id: GetCount
+  parent: Toems_ApplicationApi.Controllers.GroupController
+  langs:
+  - csharp
+  - vb
+  name: GetCount()
+  nameWithType: GroupController.GetCount()
+  fullName: Toems_ApplicationApi.Controllers.GroupController.GetCount()
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "groupRead")]
+
+      public DtoApiStringResponse GetCount()
+    return:
+      type: Toems_Common.Dto.DtoApiStringResponse
+    content.vb: >-
+      <CustomAuth(Permission:="groupRead")>
+
+      Public Function GetCount() As DtoApiStringResponse
+  overload: Toems_ApplicationApi.Controllers.GroupController.GetCount*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: groupRead
+- uid: Toems_ApplicationApi.Controllers.GroupController.SendMessage(System.Int32,Toems_Common.Dto.DtoMessage)
+  commentId: M:Toems_ApplicationApi.Controllers.GroupController.SendMessage(System.Int32,Toems_Common.Dto.DtoMessage)
+  id: SendMessage(System.Int32,Toems_Common.Dto.DtoMessage)
+  parent: Toems_ApplicationApi.Controllers.GroupController
+  langs:
+  - csharp
+  - vb
+  name: SendMessage(int, DtoMessage)
+  nameWithType: GroupController.SendMessage(int, DtoMessage)
+  fullName: Toems_ApplicationApi.Controllers.GroupController.SendMessage(int, Toems_Common.Dto.DtoMessage)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "computerSendMessage")]
+
+      [GroupAuth]
+
+      public DtoApiBoolResponse SendMessage(int id, DtoMessage message)
+    parameters:
+    - id: id
+      type: System.Int32
+    - id: message
+      type: Toems_Common.Dto.DtoMessage
+    return:
+      type: Toems_Common.Dto.DtoApiBoolResponse
+    content.vb: >-
+      <CustomAuth(Permission:="computerSendMessage")>
+
+      <GroupAuth>
+
+      Public Function SendMessage(id As Integer, message As DtoMessage) As DtoApiBoolResponse
+  overload: Toems_ApplicationApi.Controllers.GroupController.SendMessage*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: computerSendMessage
+  - type: Toems_ApplicationApi.Controllers.Authorization.GroupAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.GroupAuthAttribute.#ctor
+    arguments: []
+  nameWithType.vb: GroupController.SendMessage(Integer, DtoMessage)
+  fullName.vb: Toems_ApplicationApi.Controllers.GroupController.SendMessage(Integer, Toems_Common.Dto.DtoMessage)
+  name.vb: SendMessage(Integer, DtoMessage)
+- uid: Toems_ApplicationApi.Controllers.GroupController.Reboot(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.GroupController.Reboot(System.Int32)
+  id: Reboot(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.GroupController
+  langs:
+  - csharp
+  - vb
+  name: Reboot(int)
+  nameWithType: GroupController.Reboot(int)
+  fullName: Toems_ApplicationApi.Controllers.GroupController.Reboot(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "groupReboot")]
+
+      [GroupAuth]
+
+      public DtoApiBoolResponse Reboot(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Dto.DtoApiBoolResponse
+    content.vb: >-
+      <CustomAuth(Permission:="groupReboot")>
+
+      <GroupAuth>
+
+      Public Function Reboot(id As Integer) As DtoApiBoolResponse
+  overload: Toems_ApplicationApi.Controllers.GroupController.Reboot*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: groupReboot
+  - type: Toems_ApplicationApi.Controllers.Authorization.GroupAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.GroupAuthAttribute.#ctor
+    arguments: []
+  nameWithType.vb: GroupController.Reboot(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.GroupController.Reboot(Integer)
+  name.vb: Reboot(Integer)
+- uid: Toems_ApplicationApi.Controllers.GroupController.Shutdown(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.GroupController.Shutdown(System.Int32)
+  id: Shutdown(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.GroupController
+  langs:
+  - csharp
+  - vb
+  name: Shutdown(int)
+  nameWithType: GroupController.Shutdown(int)
+  fullName: Toems_ApplicationApi.Controllers.GroupController.Shutdown(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "groupShutdown")]
+
+      [GroupAuth]
+
+      public DtoApiBoolResponse Shutdown(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Dto.DtoApiBoolResponse
+    content.vb: >-
+      <CustomAuth(Permission:="groupShutdown")>
+
+      <GroupAuth>
+
+      Public Function Shutdown(id As Integer) As DtoApiBoolResponse
+  overload: Toems_ApplicationApi.Controllers.GroupController.Shutdown*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: groupShutdown
+  - type: Toems_ApplicationApi.Controllers.Authorization.GroupAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.GroupAuthAttribute.#ctor
+    arguments: []
+  nameWithType.vb: GroupController.Shutdown(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.GroupController.Shutdown(Integer)
+  name.vb: Shutdown(Integer)
+- uid: Toems_ApplicationApi.Controllers.GroupController.Wakeup(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.GroupController.Wakeup(System.Int32)
+  id: Wakeup(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.GroupController
+  langs:
+  - csharp
+  - vb
+  name: Wakeup(int)
+  nameWithType: GroupController.Wakeup(int)
+  fullName: Toems_ApplicationApi.Controllers.GroupController.Wakeup(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "groupWakeup")]
+
+      [GroupAuth]
+
+      public DtoApiBoolResponse Wakeup(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Dto.DtoApiBoolResponse
+    content.vb: >-
+      <CustomAuth(Permission:="groupWakeup")>
+
+      <GroupAuth>
+
+      Public Function Wakeup(id As Integer) As DtoApiBoolResponse
+  overload: Toems_ApplicationApi.Controllers.GroupController.Wakeup*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: groupWakeup
+  - type: Toems_ApplicationApi.Controllers.Authorization.GroupAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.GroupAuthAttribute.#ctor
+    arguments: []
+  nameWithType.vb: GroupController.Wakeup(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.GroupController.Wakeup(Integer)
+  name.vb: Wakeup(Integer)
+- uid: Toems_ApplicationApi.Controllers.GroupController.ForceCheckin(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.GroupController.ForceCheckin(System.Int32)
+  id: ForceCheckin(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.GroupController
+  langs:
+  - csharp
+  - vb
+  name: ForceCheckin(int)
+  nameWithType: GroupController.ForceCheckin(int)
+  fullName: Toems_ApplicationApi.Controllers.GroupController.ForceCheckin(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "computerForceCheckin")]
+
+      [GroupAuth]
+
+      public DtoApiBoolResponse ForceCheckin(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Dto.DtoApiBoolResponse
+    content.vb: >-
+      <CustomAuth(Permission:="computerForceCheckin")>
+
+      <GroupAuth>
+
+      Public Function ForceCheckin(id As Integer) As DtoApiBoolResponse
+  overload: Toems_ApplicationApi.Controllers.GroupController.ForceCheckin*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: computerForceCheckin
+  - type: Toems_ApplicationApi.Controllers.Authorization.GroupAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.GroupAuthAttribute.#ctor
+    arguments: []
+  nameWithType.vb: GroupController.ForceCheckin(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.GroupController.ForceCheckin(Integer)
+  name.vb: ForceCheckin(Integer)
+- uid: Toems_ApplicationApi.Controllers.GroupController.CollectInventory(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.GroupController.CollectInventory(System.Int32)
+  id: CollectInventory(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.GroupController
+  langs:
+  - csharp
+  - vb
+  name: CollectInventory(int)
+  nameWithType: GroupController.CollectInventory(int)
+  fullName: Toems_ApplicationApi.Controllers.GroupController.CollectInventory(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "computerForceCheckin")]
+
+      [GroupAuth]
+
+      public DtoApiBoolResponse CollectInventory(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Dto.DtoApiBoolResponse
+    content.vb: >-
+      <CustomAuth(Permission:="computerForceCheckin")>
+
+      <GroupAuth>
+
+      Public Function CollectInventory(id As Integer) As DtoApiBoolResponse
+  overload: Toems_ApplicationApi.Controllers.GroupController.CollectInventory*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: computerForceCheckin
+  - type: Toems_ApplicationApi.Controllers.Authorization.GroupAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.GroupAuthAttribute.#ctor
+    arguments: []
+  nameWithType.vb: GroupController.CollectInventory(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.GroupController.CollectInventory(Integer)
+  name.vb: CollectInventory(Integer)
+- uid: Toems_ApplicationApi.Controllers.GroupController.Post(Toems_Common.Entity.EntityGroup)
+  commentId: M:Toems_ApplicationApi.Controllers.GroupController.Post(Toems_Common.Entity.EntityGroup)
+  id: Post(Toems_Common.Entity.EntityGroup)
+  parent: Toems_ApplicationApi.Controllers.GroupController
+  langs:
+  - csharp
+  - vb
+  name: Post(EntityGroup)
+  nameWithType: GroupController.Post(EntityGroup)
+  fullName: Toems_ApplicationApi.Controllers.GroupController.Post(Toems_Common.Entity.EntityGroup)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "groupUpdate")]
+
+      public DtoActionResult Post(EntityGroup group)
+    parameters:
+    - id: group
+      type: Toems_Common.Entity.EntityGroup
+    return:
+      type: Toems_Common.Dto.DtoActionResult
+    content.vb: >-
+      <CustomAuth(Permission:="groupUpdate")>
+
+      Public Function Post(group As EntityGroup) As DtoActionResult
+  overload: Toems_ApplicationApi.Controllers.GroupController.Post*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: groupUpdate
+- uid: Toems_ApplicationApi.Controllers.GroupController.Put(System.Int32,Toems_Common.Entity.EntityGroup)
+  commentId: M:Toems_ApplicationApi.Controllers.GroupController.Put(System.Int32,Toems_Common.Entity.EntityGroup)
+  id: Put(System.Int32,Toems_Common.Entity.EntityGroup)
+  parent: Toems_ApplicationApi.Controllers.GroupController
+  langs:
+  - csharp
+  - vb
+  name: Put(int, EntityGroup)
+  nameWithType: GroupController.Put(int, EntityGroup)
+  fullName: Toems_ApplicationApi.Controllers.GroupController.Put(int, Toems_Common.Entity.EntityGroup)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "groupUpdate")]
+
+      [GroupAuth]
+
+      public DtoActionResult Put(int id, EntityGroup group)
+    parameters:
+    - id: id
+      type: System.Int32
+    - id: group
+      type: Toems_Common.Entity.EntityGroup
+    return:
+      type: Toems_Common.Dto.DtoActionResult
+    content.vb: >-
+      <CustomAuth(Permission:="groupUpdate")>
+
+      <GroupAuth>
+
+      Public Function Put(id As Integer, group As EntityGroup) As DtoActionResult
+  overload: Toems_ApplicationApi.Controllers.GroupController.Put*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: groupUpdate
+  - type: Toems_ApplicationApi.Controllers.Authorization.GroupAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.GroupAuthAttribute.#ctor
+    arguments: []
+  nameWithType.vb: GroupController.Put(Integer, EntityGroup)
+  fullName.vb: Toems_ApplicationApi.Controllers.GroupController.Put(Integer, Toems_Common.Entity.EntityGroup)
+  name.vb: Put(Integer, EntityGroup)
+- uid: Toems_ApplicationApi.Controllers.GroupController.GetAssignedPolicies(System.Int32,Toems_Common.Dto.DtoSearchFilter)
+  commentId: M:Toems_ApplicationApi.Controllers.GroupController.GetAssignedPolicies(System.Int32,Toems_Common.Dto.DtoSearchFilter)
+  id: GetAssignedPolicies(System.Int32,Toems_Common.Dto.DtoSearchFilter)
+  parent: Toems_ApplicationApi.Controllers.GroupController
+  langs:
+  - csharp
+  - vb
+  name: GetAssignedPolicies(int, DtoSearchFilter)
+  nameWithType: GroupController.GetAssignedPolicies(int, DtoSearchFilter)
+  fullName: Toems_ApplicationApi.Controllers.GroupController.GetAssignedPolicies(int, Toems_Common.Dto.DtoSearchFilter)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "groupRead")]
+
+      public IEnumerable<GroupPolicyDetailed> GetAssignedPolicies(int id, DtoSearchFilter filter)
+    parameters:
+    - id: id
+      type: System.Int32
+    - id: filter
+      type: Toems_Common.Dto.DtoSearchFilter
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Entity.GroupPolicyDetailed}
+    content.vb: >-
+      <CustomAuth(Permission:="groupRead")>
+
+      Public Function GetAssignedPolicies(id As Integer, filter As DtoSearchFilter) As IEnumerable(Of GroupPolicyDetailed)
+  overload: Toems_ApplicationApi.Controllers.GroupController.GetAssignedPolicies*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: groupRead
+  nameWithType.vb: GroupController.GetAssignedPolicies(Integer, DtoSearchFilter)
+  fullName.vb: Toems_ApplicationApi.Controllers.GroupController.GetAssignedPolicies(Integer, Toems_Common.Dto.DtoSearchFilter)
+  name.vb: GetAssignedPolicies(Integer, DtoSearchFilter)
+- uid: Toems_ApplicationApi.Controllers.GroupController.GetDynamic(System.Collections.Generic.List{Toems_Common.Entity.EntitySmartGroupQuery})
+  commentId: M:Toems_ApplicationApi.Controllers.GroupController.GetDynamic(System.Collections.Generic.List{Toems_Common.Entity.EntitySmartGroupQuery})
+  id: GetDynamic(System.Collections.Generic.List{Toems_Common.Entity.EntitySmartGroupQuery})
+  parent: Toems_ApplicationApi.Controllers.GroupController
+  langs:
+  - csharp
+  - vb
+  name: GetDynamic(List<EntitySmartGroupQuery>)
+  nameWithType: GroupController.GetDynamic(List<EntitySmartGroupQuery>)
+  fullName: Toems_ApplicationApi.Controllers.GroupController.GetDynamic(System.Collections.Generic.List<Toems_Common.Entity.EntitySmartGroupQuery>)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "groupRead")]
+
+      public DtoApiStringResponse GetDynamic(List<EntitySmartGroupQuery> queries)
+    parameters:
+    - id: queries
+      type: System.Collections.Generic.List{Toems_Common.Entity.EntitySmartGroupQuery}
+    return:
+      type: Toems_Common.Dto.DtoApiStringResponse
+    content.vb: >-
+      <CustomAuth(Permission:="groupRead")>
+
+      Public Function GetDynamic(queries As List(Of EntitySmartGroupQuery)) As DtoApiStringResponse
+  overload: Toems_ApplicationApi.Controllers.GroupController.GetDynamic*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: groupRead
+  nameWithType.vb: GroupController.GetDynamic(List(Of EntitySmartGroupQuery))
+  fullName.vb: Toems_ApplicationApi.Controllers.GroupController.GetDynamic(System.Collections.Generic.List(Of Toems_Common.Entity.EntitySmartGroupQuery))
+  name.vb: GetDynamic(List(Of EntitySmartGroupQuery))
+- uid: Toems_ApplicationApi.Controllers.GroupController.UpdateDynamicQuery(System.Collections.Generic.List{Toems_Common.Entity.EntitySmartGroupQuery})
+  commentId: M:Toems_ApplicationApi.Controllers.GroupController.UpdateDynamicQuery(System.Collections.Generic.List{Toems_Common.Entity.EntitySmartGroupQuery})
+  id: UpdateDynamicQuery(System.Collections.Generic.List{Toems_Common.Entity.EntitySmartGroupQuery})
+  parent: Toems_ApplicationApi.Controllers.GroupController
+  langs:
+  - csharp
+  - vb
+  name: UpdateDynamicQuery(List<EntitySmartGroupQuery>)
+  nameWithType: GroupController.UpdateDynamicQuery(List<EntitySmartGroupQuery>)
+  fullName: Toems_ApplicationApi.Controllers.GroupController.UpdateDynamicQuery(System.Collections.Generic.List<Toems_Common.Entity.EntitySmartGroupQuery>)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "groupUpdate")]
+
+      public DtoApiBoolResponse UpdateDynamicQuery(List<EntitySmartGroupQuery> queries)
+    parameters:
+    - id: queries
+      type: System.Collections.Generic.List{Toems_Common.Entity.EntitySmartGroupQuery}
+    return:
+      type: Toems_Common.Dto.DtoApiBoolResponse
+    content.vb: >-
+      <CustomAuth(Permission:="groupUpdate")>
+
+      Public Function UpdateDynamicQuery(queries As List(Of EntitySmartGroupQuery)) As DtoApiBoolResponse
+  overload: Toems_ApplicationApi.Controllers.GroupController.UpdateDynamicQuery*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: groupUpdate
+  nameWithType.vb: GroupController.UpdateDynamicQuery(List(Of EntitySmartGroupQuery))
+  fullName.vb: Toems_ApplicationApi.Controllers.GroupController.UpdateDynamicQuery(System.Collections.Generic.List(Of Toems_Common.Entity.EntitySmartGroupQuery))
+  name.vb: UpdateDynamicQuery(List(Of EntitySmartGroupQuery))
+- uid: Toems_ApplicationApi.Controllers.GroupController.GetDynamicQuery(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.GroupController.GetDynamicQuery(System.Int32)
+  id: GetDynamicQuery(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.GroupController
+  langs:
+  - csharp
+  - vb
+  name: GetDynamicQuery(int)
+  nameWithType: GroupController.GetDynamicQuery(int)
+  fullName: Toems_ApplicationApi.Controllers.GroupController.GetDynamicQuery(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "groupRead")]
+
+      public IEnumerable<EntitySmartGroupQuery> GetDynamicQuery(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntitySmartGroupQuery}
+    content.vb: >-
+      <CustomAuth(Permission:="groupRead")>
+
+      Public Function GetDynamicQuery(id As Integer) As IEnumerable(Of EntitySmartGroupQuery)
+  overload: Toems_ApplicationApi.Controllers.GroupController.GetDynamicQuery*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: groupRead
+  nameWithType.vb: GroupController.GetDynamicQuery(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.GroupController.GetDynamicQuery(Integer)
+  name.vb: GetDynamicQuery(Integer)
+- uid: Toems_ApplicationApi.Controllers.GroupController.GetGroupMembers(System.Int32,Toems_Common.Dto.DtoSearchFilter)
+  commentId: M:Toems_ApplicationApi.Controllers.GroupController.GetGroupMembers(System.Int32,Toems_Common.Dto.DtoSearchFilter)
+  id: GetGroupMembers(System.Int32,Toems_Common.Dto.DtoSearchFilter)
+  parent: Toems_ApplicationApi.Controllers.GroupController
+  langs:
+  - csharp
+  - vb
+  name: GetGroupMembers(int, DtoSearchFilter)
+  nameWithType: GroupController.GetGroupMembers(int, DtoSearchFilter)
+  fullName: Toems_ApplicationApi.Controllers.GroupController.GetGroupMembers(int, Toems_Common.Dto.DtoSearchFilter)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "groupRead")]
+
+      public IEnumerable<EntityComputer> GetGroupMembers(int id, DtoSearchFilter filter)
+    parameters:
+    - id: id
+      type: System.Int32
+    - id: filter
+      type: Toems_Common.Dto.DtoSearchFilter
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityComputer}
+    content.vb: >-
+      <CustomAuth(Permission:="groupRead")>
+
+      Public Function GetGroupMembers(id As Integer, filter As DtoSearchFilter) As IEnumerable(Of EntityComputer)
+  overload: Toems_ApplicationApi.Controllers.GroupController.GetGroupMembers*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: groupRead
+  nameWithType.vb: GroupController.GetGroupMembers(Integer, DtoSearchFilter)
+  fullName.vb: Toems_ApplicationApi.Controllers.GroupController.GetGroupMembers(Integer, Toems_Common.Dto.DtoSearchFilter)
+  name.vb: GetGroupMembers(Integer, DtoSearchFilter)
+- uid: Toems_ApplicationApi.Controllers.GroupController.GetMemberCount(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.GroupController.GetMemberCount(System.Int32)
+  id: GetMemberCount(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.GroupController
+  langs:
+  - csharp
+  - vb
+  name: GetMemberCount(int)
+  nameWithType: GroupController.GetMemberCount(int)
+  fullName: Toems_ApplicationApi.Controllers.GroupController.GetMemberCount(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "groupRead")]
+
+      public DtoApiStringResponse GetMemberCount(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Dto.DtoApiStringResponse
+    content.vb: >-
+      <CustomAuth(Permission:="groupRead")>
+
+      Public Function GetMemberCount(id As Integer) As DtoApiStringResponse
+  overload: Toems_ApplicationApi.Controllers.GroupController.GetMemberCount*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: groupRead
+  nameWithType.vb: GroupController.GetMemberCount(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.GroupController.GetMemberCount(Integer)
+  name.vb: GetMemberCount(Integer)
+- uid: Toems_ApplicationApi.Controllers.GroupController.RemoveGroupMember(System.Int32,System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.GroupController.RemoveGroupMember(System.Int32,System.Int32)
+  id: RemoveGroupMember(System.Int32,System.Int32)
+  parent: Toems_ApplicationApi.Controllers.GroupController
+  langs:
+  - csharp
+  - vb
+  name: RemoveGroupMember(int, int)
+  nameWithType: GroupController.RemoveGroupMember(int, int)
+  fullName: Toems_ApplicationApi.Controllers.GroupController.RemoveGroupMember(int, int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "groupUpdate")]
+
+      [GroupAuth]
+
+      [GroupAuth]
+
+      public DtoApiBoolResponse RemoveGroupMember(int id, int computerId)
+    parameters:
+    - id: id
+      type: System.Int32
+    - id: computerId
+      type: System.Int32
+    return:
+      type: Toems_Common.Dto.DtoApiBoolResponse
+    content.vb: >-
+      <CustomAuth(Permission:="groupUpdate")>
+
+      <GroupAuth>
+
+      <GroupAuth>
+
+      Public Function RemoveGroupMember(id As Integer, computerId As Integer) As DtoApiBoolResponse
+  overload: Toems_ApplicationApi.Controllers.GroupController.RemoveGroupMember*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: groupUpdate
+  - type: Toems_ApplicationApi.Controllers.Authorization.GroupAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.GroupAuthAttribute.#ctor
+    arguments: []
+  - type: Toems_ApplicationApi.Controllers.Authorization.GroupAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.GroupAuthAttribute.#ctor
+    arguments: []
+  nameWithType.vb: GroupController.RemoveGroupMember(Integer, Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.GroupController.RemoveGroupMember(Integer, Integer)
+  name.vb: RemoveGroupMember(Integer, Integer)
+- uid: Toems_ApplicationApi.Controllers.GroupController.GroupProcessTimes(System.DateTime,System.Int32,System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.GroupController.GroupProcessTimes(System.DateTime,System.Int32,System.Int32)
+  id: GroupProcessTimes(System.DateTime,System.Int32,System.Int32)
+  parent: Toems_ApplicationApi.Controllers.GroupController
+  langs:
+  - csharp
+  - vb
+  name: GroupProcessTimes(DateTime, int, int)
+  nameWithType: GroupController.GroupProcessTimes(DateTime, int, int)
+  fullName: Toems_ApplicationApi.Controllers.GroupController.GroupProcessTimes(System.DateTime, int, int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "reportRead")]
+
+      public List<DtoProcessWithTime> GroupProcessTimes(DateTime dateCutoff, int limit, int groupId)
+    parameters:
+    - id: dateCutoff
+      type: System.DateTime
+    - id: limit
+      type: System.Int32
+    - id: groupId
+      type: System.Int32
+    return:
+      type: System.Collections.Generic.List{Toems_Common.Dto.DtoProcessWithTime}
+    content.vb: >-
+      <CustomAuth(Permission:="reportRead")>
+
+      Public Function GroupProcessTimes(dateCutoff As Date, limit As Integer, groupId As Integer) As List(Of DtoProcessWithTime)
+  overload: Toems_ApplicationApi.Controllers.GroupController.GroupProcessTimes*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: reportRead
+  nameWithType.vb: GroupController.GroupProcessTimes(Date, Integer, Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.GroupController.GroupProcessTimes(Date, Integer, Integer)
+  name.vb: GroupProcessTimes(Date, Integer, Integer)
+- uid: Toems_ApplicationApi.Controllers.GroupController.GroupProcessCounts(System.DateTime,System.Int32,System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.GroupController.GroupProcessCounts(System.DateTime,System.Int32,System.Int32)
+  id: GroupProcessCounts(System.DateTime,System.Int32,System.Int32)
+  parent: Toems_ApplicationApi.Controllers.GroupController
+  langs:
+  - csharp
+  - vb
+  name: GroupProcessCounts(DateTime, int, int)
+  nameWithType: GroupController.GroupProcessCounts(DateTime, int, int)
+  fullName: Toems_ApplicationApi.Controllers.GroupController.GroupProcessCounts(System.DateTime, int, int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "reportRead")]
+
+      public List<DtoProcessWithCount> GroupProcessCounts(DateTime dateCutoff, int limit, int groupId)
+    parameters:
+    - id: dateCutoff
+      type: System.DateTime
+    - id: limit
+      type: System.Int32
+    - id: groupId
+      type: System.Int32
+    return:
+      type: System.Collections.Generic.List{Toems_Common.Dto.DtoProcessWithCount}
+    content.vb: >-
+      <CustomAuth(Permission:="reportRead")>
+
+      Public Function GroupProcessCounts(dateCutoff As Date, limit As Integer, groupId As Integer) As List(Of DtoProcessWithCount)
+  overload: Toems_ApplicationApi.Controllers.GroupController.GroupProcessCounts*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: reportRead
+  nameWithType.vb: GroupController.GroupProcessCounts(Date, Integer, Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.GroupController.GroupProcessCounts(Date, Integer, Integer)
+  name.vb: GroupProcessCounts(Date, Integer, Integer)
+- uid: Toems_ApplicationApi.Controllers.GroupController.StartGroupUnicast(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.GroupController.StartGroupUnicast(System.Int32)
+  id: StartGroupUnicast(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.GroupController
+  langs:
+  - csharp
+  - vb
+  name: StartGroupUnicast(int)
+  nameWithType: GroupController.StartGroupUnicast(int)
+  fullName: Toems_ApplicationApi.Controllers.GroupController.StartGroupUnicast(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "imageDeployTask")]
+
+      [GroupAuth]
+
+      public DtoApiIntResponse StartGroupUnicast(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Dto.DtoApiIntResponse
+    content.vb: >-
+      <CustomAuth(Permission:="imageDeployTask")>
+
+      <GroupAuth>
+
+      Public Function StartGroupUnicast(id As Integer) As DtoApiIntResponse
+  overload: Toems_ApplicationApi.Controllers.GroupController.StartGroupUnicast*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: imageDeployTask
+  - type: Toems_ApplicationApi.Controllers.Authorization.GroupAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.GroupAuthAttribute.#ctor
+    arguments: []
+  nameWithType.vb: GroupController.StartGroupUnicast(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.GroupController.StartGroupUnicast(Integer)
+  name.vb: StartGroupUnicast(Integer)
+- uid: Toems_ApplicationApi.Controllers.GroupController.StartGroupWinPe(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.GroupController.StartGroupWinPe(System.Int32)
+  id: StartGroupWinPe(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.GroupController
+  langs:
+  - csharp
+  - vb
+  name: StartGroupWinPe(int)
+  nameWithType: GroupController.StartGroupWinPe(int)
+  fullName: Toems_ApplicationApi.Controllers.GroupController.StartGroupWinPe(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "imageDeployTask")]
+
+      [GroupAuth]
+
+      public DtoApiBoolResponse StartGroupWinPe(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Dto.DtoApiBoolResponse
+    content.vb: >-
+      <CustomAuth(Permission:="imageDeployTask")>
+
+      <GroupAuth>
+
+      Public Function StartGroupWinPe(id As Integer) As DtoApiBoolResponse
+  overload: Toems_ApplicationApi.Controllers.GroupController.StartGroupWinPe*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: imageDeployTask
+  - type: Toems_ApplicationApi.Controllers.Authorization.GroupAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.GroupAuthAttribute.#ctor
+    arguments: []
+  nameWithType.vb: GroupController.StartGroupWinPe(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.GroupController.StartGroupWinPe(Integer)
+  name.vb: StartGroupWinPe(Integer)
+- uid: Toems_ApplicationApi.Controllers.GroupController.StartMulticast(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.GroupController.StartMulticast(System.Int32)
+  id: StartMulticast(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.GroupController
+  langs:
+  - csharp
+  - vb
+  name: StartMulticast(int)
+  nameWithType: GroupController.StartMulticast(int)
+  fullName: Toems_ApplicationApi.Controllers.GroupController.StartMulticast(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "imageMulticastTask")]
+
+      [GroupAuth]
+
+      public DtoApiStringResponse StartMulticast(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Dto.DtoApiStringResponse
+    content.vb: >-
+      <CustomAuth(Permission:="imageMulticastTask")>
+
+      <GroupAuth>
+
+      Public Function StartMulticast(id As Integer) As DtoApiStringResponse
+  overload: Toems_ApplicationApi.Controllers.GroupController.StartMulticast*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: imageMulticastTask
+  - type: Toems_ApplicationApi.Controllers.Authorization.GroupAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.GroupAuthAttribute.#ctor
+    arguments: []
+  nameWithType.vb: GroupController.StartMulticast(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.GroupController.StartMulticast(Integer)
+  name.vb: StartMulticast(Integer)
+references:
+- uid: Toems_ApplicationApi.Controllers
+  commentId: N:Toems_ApplicationApi.Controllers
+  isExternal: true
+  href: Toems_ApplicationApi.html
+  name: Toems_ApplicationApi.Controllers
+  nameWithType: Toems_ApplicationApi.Controllers
+  fullName: Toems_ApplicationApi.Controllers
+  spec.csharp:
+  - uid: Toems_ApplicationApi
+    name: Toems_ApplicationApi
+    isExternal: true
+    href: Toems_ApplicationApi.html
+  - name: .
+  - uid: Toems_ApplicationApi.Controllers
+    name: Controllers
+    isExternal: true
+    href: Toems_ApplicationApi.Controllers.html
+  spec.vb:
+  - uid: Toems_ApplicationApi
+    name: Toems_ApplicationApi
+    isExternal: true
+    href: Toems_ApplicationApi.html
+  - name: .
+  - uid: Toems_ApplicationApi.Controllers
+    name: Controllers
+    isExternal: true
+    href: Toems_ApplicationApi.Controllers.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Toems_ApplicationApi.Controllers.GroupController.#ctor*
+  commentId: Overload:Toems_ApplicationApi.Controllers.GroupController.#ctor
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.GroupController.html#Toems_ApplicationApi.Controllers.GroupController.#ctor
+  name: GroupController
+  nameWithType: GroupController.GroupController
+  fullName: Toems_ApplicationApi.Controllers.GroupController.GroupController
+  nameWithType.vb: GroupController.New
+  fullName.vb: Toems_ApplicationApi.Controllers.GroupController.New
+  name.vb: New
+- uid: Toems_ApplicationApi.Controllers.GroupController.Delete*
+  commentId: Overload:Toems_ApplicationApi.Controllers.GroupController.Delete
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.GroupController.html#Toems_ApplicationApi.Controllers.GroupController.Delete(System.Int32)
+  name: Delete
+  nameWithType: GroupController.Delete
+  fullName: Toems_ApplicationApi.Controllers.GroupController.Delete
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Toems_Common.Dto.DtoActionResult
+  isExternal: true
+  name: DtoActionResult
+  nameWithType: DtoActionResult
+  fullName: Toems_Common.Dto.DtoActionResult
+- uid: Toems_ApplicationApi.Controllers.GroupController.Get*
+  commentId: Overload:Toems_ApplicationApi.Controllers.GroupController.Get
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.GroupController.html#Toems_ApplicationApi.Controllers.GroupController.Get(System.Int32)
+  name: Get
+  nameWithType: GroupController.Get
+  fullName: Toems_ApplicationApi.Controllers.GroupController.Get
+- uid: Toems_Common.Entity.EntityGroup
+  isExternal: true
+  name: EntityGroup
+  nameWithType: EntityGroup
+  fullName: Toems_Common.Entity.EntityGroup
+- uid: Toems_ApplicationApi.Controllers.GroupController.GetGroupCategories*
+  commentId: Overload:Toems_ApplicationApi.Controllers.GroupController.GetGroupCategories
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.GroupController.html#Toems_ApplicationApi.Controllers.GroupController.GetGroupCategories(System.Int32)
+  name: GetGroupCategories
+  nameWithType: GroupController.GetGroupCategories
+  fullName: Toems_ApplicationApi.Controllers.GroupController.GetGroupCategories
+- uid: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityGroupCategory}
+  commentId: T:System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityGroupCategory}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<EntityGroupCategory>
+  nameWithType: IEnumerable<EntityGroupCategory>
+  fullName: System.Collections.Generic.IEnumerable<Toems_Common.Entity.EntityGroupCategory>
+  nameWithType.vb: IEnumerable(Of EntityGroupCategory)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Toems_Common.Entity.EntityGroupCategory)
+  name.vb: IEnumerable(Of EntityGroupCategory)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Toems_Common.Entity.EntityGroupCategory
+    name: EntityGroupCategory
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Entity.EntityGroupCategory
+    name: EntityGroupCategory
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections.Generic.IEnumerable{Toems_Common.Dto.DtoGroupWithCount}
+  commentId: T:System.Collections.Generic.IEnumerable{Toems_Common.Dto.DtoGroupWithCount}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<DtoGroupWithCount>
+  nameWithType: IEnumerable<DtoGroupWithCount>
+  fullName: System.Collections.Generic.IEnumerable<Toems_Common.Dto.DtoGroupWithCount>
+  nameWithType.vb: IEnumerable(Of DtoGroupWithCount)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Toems_Common.Dto.DtoGroupWithCount)
+  name.vb: IEnumerable(Of DtoGroupWithCount)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Toems_Common.Dto.DtoGroupWithCount
+    name: DtoGroupWithCount
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Dto.DtoGroupWithCount
+    name: DtoGroupWithCount
+    isExternal: true
+  - name: )
+- uid: Toems_ApplicationApi.Controllers.GroupController.ClearImagingIds*
+  commentId: Overload:Toems_ApplicationApi.Controllers.GroupController.ClearImagingIds
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.GroupController.html#Toems_ApplicationApi.Controllers.GroupController.ClearImagingIds(System.Int32)
+  name: ClearImagingIds
+  nameWithType: GroupController.ClearImagingIds
+  fullName: Toems_ApplicationApi.Controllers.GroupController.ClearImagingIds
+- uid: Toems_ApplicationApi.Controllers.GroupController.GetAdGroups*
+  commentId: Overload:Toems_ApplicationApi.Controllers.GroupController.GetAdGroups
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.GroupController.html#Toems_ApplicationApi.Controllers.GroupController.GetAdGroups
+  name: GetAdGroups
+  nameWithType: GroupController.GetAdGroups
+  fullName: Toems_ApplicationApi.Controllers.GroupController.GetAdGroups
+- uid: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityGroup}
+  commentId: T:System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityGroup}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<EntityGroup>
+  nameWithType: IEnumerable<EntityGroup>
+  fullName: System.Collections.Generic.IEnumerable<Toems_Common.Entity.EntityGroup>
+  nameWithType.vb: IEnumerable(Of EntityGroup)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Toems_Common.Entity.EntityGroup)
+  name.vb: IEnumerable(Of EntityGroup)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Toems_Common.Entity.EntityGroup
+    name: EntityGroup
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Entity.EntityGroup
+    name: EntityGroup
+    isExternal: true
+  - name: )
+- uid: Toems_ApplicationApi.Controllers.GroupController.GetOuGroups*
+  commentId: Overload:Toems_ApplicationApi.Controllers.GroupController.GetOuGroups
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.GroupController.html#Toems_ApplicationApi.Controllers.GroupController.GetOuGroups
+  name: GetOuGroups
+  nameWithType: GroupController.GetOuGroups
+  fullName: Toems_ApplicationApi.Controllers.GroupController.GetOuGroups
+- uid: Toems_ApplicationApi.Controllers.GroupController.GetAdSecurityGroups*
+  commentId: Overload:Toems_ApplicationApi.Controllers.GroupController.GetAdSecurityGroups
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.GroupController.html#Toems_ApplicationApi.Controllers.GroupController.GetAdSecurityGroups
+  name: GetAdSecurityGroups
+  nameWithType: GroupController.GetAdSecurityGroups
+  fullName: Toems_ApplicationApi.Controllers.GroupController.GetAdSecurityGroups
+- uid: Toems_ApplicationApi.Controllers.GroupController.Search*
+  commentId: Overload:Toems_ApplicationApi.Controllers.GroupController.Search
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.GroupController.html#Toems_ApplicationApi.Controllers.GroupController.Search(Toems_Common.Dto.DtoSearchFilterCategories)
+  name: Search
+  nameWithType: GroupController.Search
+  fullName: Toems_ApplicationApi.Controllers.GroupController.Search
+- uid: Toems_Common.Dto.DtoSearchFilterCategories
+  isExternal: true
+  name: DtoSearchFilterCategories
+  nameWithType: DtoSearchFilterCategories
+  fullName: Toems_Common.Dto.DtoSearchFilterCategories
+- uid: Toems_ApplicationApi.Controllers.GroupController.GetCount*
+  commentId: Overload:Toems_ApplicationApi.Controllers.GroupController.GetCount
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.GroupController.html#Toems_ApplicationApi.Controllers.GroupController.GetCount
+  name: GetCount
+  nameWithType: GroupController.GetCount
+  fullName: Toems_ApplicationApi.Controllers.GroupController.GetCount
+- uid: Toems_Common.Dto.DtoApiStringResponse
+  isExternal: true
+  name: DtoApiStringResponse
+  nameWithType: DtoApiStringResponse
+  fullName: Toems_Common.Dto.DtoApiStringResponse
+- uid: Toems_ApplicationApi.Controllers.GroupController.SendMessage*
+  commentId: Overload:Toems_ApplicationApi.Controllers.GroupController.SendMessage
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.GroupController.html#Toems_ApplicationApi.Controllers.GroupController.SendMessage(System.Int32,Toems_Common.Dto.DtoMessage)
+  name: SendMessage
+  nameWithType: GroupController.SendMessage
+  fullName: Toems_ApplicationApi.Controllers.GroupController.SendMessage
+- uid: Toems_Common.Dto.DtoMessage
+  isExternal: true
+  name: DtoMessage
+  nameWithType: DtoMessage
+  fullName: Toems_Common.Dto.DtoMessage
+- uid: Toems_Common.Dto.DtoApiBoolResponse
+  isExternal: true
+  name: DtoApiBoolResponse
+  nameWithType: DtoApiBoolResponse
+  fullName: Toems_Common.Dto.DtoApiBoolResponse
+- uid: Toems_ApplicationApi.Controllers.GroupController.Reboot*
+  commentId: Overload:Toems_ApplicationApi.Controllers.GroupController.Reboot
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.GroupController.html#Toems_ApplicationApi.Controllers.GroupController.Reboot(System.Int32)
+  name: Reboot
+  nameWithType: GroupController.Reboot
+  fullName: Toems_ApplicationApi.Controllers.GroupController.Reboot
+- uid: Toems_ApplicationApi.Controllers.GroupController.Shutdown*
+  commentId: Overload:Toems_ApplicationApi.Controllers.GroupController.Shutdown
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.GroupController.html#Toems_ApplicationApi.Controllers.GroupController.Shutdown(System.Int32)
+  name: Shutdown
+  nameWithType: GroupController.Shutdown
+  fullName: Toems_ApplicationApi.Controllers.GroupController.Shutdown
+- uid: Toems_ApplicationApi.Controllers.GroupController.Wakeup*
+  commentId: Overload:Toems_ApplicationApi.Controllers.GroupController.Wakeup
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.GroupController.html#Toems_ApplicationApi.Controllers.GroupController.Wakeup(System.Int32)
+  name: Wakeup
+  nameWithType: GroupController.Wakeup
+  fullName: Toems_ApplicationApi.Controllers.GroupController.Wakeup
+- uid: Toems_ApplicationApi.Controllers.GroupController.ForceCheckin*
+  commentId: Overload:Toems_ApplicationApi.Controllers.GroupController.ForceCheckin
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.GroupController.html#Toems_ApplicationApi.Controllers.GroupController.ForceCheckin(System.Int32)
+  name: ForceCheckin
+  nameWithType: GroupController.ForceCheckin
+  fullName: Toems_ApplicationApi.Controllers.GroupController.ForceCheckin
+- uid: Toems_ApplicationApi.Controllers.GroupController.CollectInventory*
+  commentId: Overload:Toems_ApplicationApi.Controllers.GroupController.CollectInventory
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.GroupController.html#Toems_ApplicationApi.Controllers.GroupController.CollectInventory(System.Int32)
+  name: CollectInventory
+  nameWithType: GroupController.CollectInventory
+  fullName: Toems_ApplicationApi.Controllers.GroupController.CollectInventory
+- uid: Toems_ApplicationApi.Controllers.GroupController.Post*
+  commentId: Overload:Toems_ApplicationApi.Controllers.GroupController.Post
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.GroupController.html#Toems_ApplicationApi.Controllers.GroupController.Post(Toems_Common.Entity.EntityGroup)
+  name: Post
+  nameWithType: GroupController.Post
+  fullName: Toems_ApplicationApi.Controllers.GroupController.Post
+- uid: Toems_ApplicationApi.Controllers.GroupController.Put*
+  commentId: Overload:Toems_ApplicationApi.Controllers.GroupController.Put
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.GroupController.html#Toems_ApplicationApi.Controllers.GroupController.Put(System.Int32,Toems_Common.Entity.EntityGroup)
+  name: Put
+  nameWithType: GroupController.Put
+  fullName: Toems_ApplicationApi.Controllers.GroupController.Put
+- uid: Toems_ApplicationApi.Controllers.GroupController.GetAssignedPolicies*
+  commentId: Overload:Toems_ApplicationApi.Controllers.GroupController.GetAssignedPolicies
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.GroupController.html#Toems_ApplicationApi.Controllers.GroupController.GetAssignedPolicies(System.Int32,Toems_Common.Dto.DtoSearchFilter)
+  name: GetAssignedPolicies
+  nameWithType: GroupController.GetAssignedPolicies
+  fullName: Toems_ApplicationApi.Controllers.GroupController.GetAssignedPolicies
+- uid: Toems_Common.Dto.DtoSearchFilter
+  isExternal: true
+  name: DtoSearchFilter
+  nameWithType: DtoSearchFilter
+  fullName: Toems_Common.Dto.DtoSearchFilter
+- uid: System.Collections.Generic.IEnumerable{Toems_Common.Entity.GroupPolicyDetailed}
+  commentId: T:System.Collections.Generic.IEnumerable{Toems_Common.Entity.GroupPolicyDetailed}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<GroupPolicyDetailed>
+  nameWithType: IEnumerable<GroupPolicyDetailed>
+  fullName: System.Collections.Generic.IEnumerable<Toems_Common.Entity.GroupPolicyDetailed>
+  nameWithType.vb: IEnumerable(Of GroupPolicyDetailed)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Toems_Common.Entity.GroupPolicyDetailed)
+  name.vb: IEnumerable(Of GroupPolicyDetailed)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Toems_Common.Entity.GroupPolicyDetailed
+    name: GroupPolicyDetailed
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Entity.GroupPolicyDetailed
+    name: GroupPolicyDetailed
+    isExternal: true
+  - name: )
+- uid: Toems_ApplicationApi.Controllers.GroupController.GetDynamic*
+  commentId: Overload:Toems_ApplicationApi.Controllers.GroupController.GetDynamic
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.GroupController.html#Toems_ApplicationApi.Controllers.GroupController.GetDynamic(System.Collections.Generic.List{Toems_Common.Entity.EntitySmartGroupQuery})
+  name: GetDynamic
+  nameWithType: GroupController.GetDynamic
+  fullName: Toems_ApplicationApi.Controllers.GroupController.GetDynamic
+- uid: System.Collections.Generic.List{Toems_Common.Entity.EntitySmartGroupQuery}
+  commentId: T:System.Collections.Generic.List{Toems_Common.Entity.EntitySmartGroupQuery}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<EntitySmartGroupQuery>
+  nameWithType: List<EntitySmartGroupQuery>
+  fullName: System.Collections.Generic.List<Toems_Common.Entity.EntitySmartGroupQuery>
+  nameWithType.vb: List(Of EntitySmartGroupQuery)
+  fullName.vb: System.Collections.Generic.List(Of Toems_Common.Entity.EntitySmartGroupQuery)
+  name.vb: List(Of EntitySmartGroupQuery)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Toems_Common.Entity.EntitySmartGroupQuery
+    name: EntitySmartGroupQuery
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Entity.EntitySmartGroupQuery
+    name: EntitySmartGroupQuery
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Toems_ApplicationApi.Controllers.GroupController.UpdateDynamicQuery*
+  commentId: Overload:Toems_ApplicationApi.Controllers.GroupController.UpdateDynamicQuery
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.GroupController.html#Toems_ApplicationApi.Controllers.GroupController.UpdateDynamicQuery(System.Collections.Generic.List{Toems_Common.Entity.EntitySmartGroupQuery})
+  name: UpdateDynamicQuery
+  nameWithType: GroupController.UpdateDynamicQuery
+  fullName: Toems_ApplicationApi.Controllers.GroupController.UpdateDynamicQuery
+- uid: Toems_ApplicationApi.Controllers.GroupController.GetDynamicQuery*
+  commentId: Overload:Toems_ApplicationApi.Controllers.GroupController.GetDynamicQuery
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.GroupController.html#Toems_ApplicationApi.Controllers.GroupController.GetDynamicQuery(System.Int32)
+  name: GetDynamicQuery
+  nameWithType: GroupController.GetDynamicQuery
+  fullName: Toems_ApplicationApi.Controllers.GroupController.GetDynamicQuery
+- uid: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntitySmartGroupQuery}
+  commentId: T:System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntitySmartGroupQuery}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<EntitySmartGroupQuery>
+  nameWithType: IEnumerable<EntitySmartGroupQuery>
+  fullName: System.Collections.Generic.IEnumerable<Toems_Common.Entity.EntitySmartGroupQuery>
+  nameWithType.vb: IEnumerable(Of EntitySmartGroupQuery)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Toems_Common.Entity.EntitySmartGroupQuery)
+  name.vb: IEnumerable(Of EntitySmartGroupQuery)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Toems_Common.Entity.EntitySmartGroupQuery
+    name: EntitySmartGroupQuery
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Entity.EntitySmartGroupQuery
+    name: EntitySmartGroupQuery
+    isExternal: true
+  - name: )
+- uid: Toems_ApplicationApi.Controllers.GroupController.GetGroupMembers*
+  commentId: Overload:Toems_ApplicationApi.Controllers.GroupController.GetGroupMembers
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.GroupController.html#Toems_ApplicationApi.Controllers.GroupController.GetGroupMembers(System.Int32,Toems_Common.Dto.DtoSearchFilter)
+  name: GetGroupMembers
+  nameWithType: GroupController.GetGroupMembers
+  fullName: Toems_ApplicationApi.Controllers.GroupController.GetGroupMembers
+- uid: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityComputer}
+  commentId: T:System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityComputer}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<EntityComputer>
+  nameWithType: IEnumerable<EntityComputer>
+  fullName: System.Collections.Generic.IEnumerable<Toems_Common.Entity.EntityComputer>
+  nameWithType.vb: IEnumerable(Of EntityComputer)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Toems_Common.Entity.EntityComputer)
+  name.vb: IEnumerable(Of EntityComputer)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Toems_Common.Entity.EntityComputer
+    name: EntityComputer
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Entity.EntityComputer
+    name: EntityComputer
+    isExternal: true
+  - name: )
+- uid: Toems_ApplicationApi.Controllers.GroupController.GetMemberCount*
+  commentId: Overload:Toems_ApplicationApi.Controllers.GroupController.GetMemberCount
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.GroupController.html#Toems_ApplicationApi.Controllers.GroupController.GetMemberCount(System.Int32)
+  name: GetMemberCount
+  nameWithType: GroupController.GetMemberCount
+  fullName: Toems_ApplicationApi.Controllers.GroupController.GetMemberCount
+- uid: Toems_ApplicationApi.Controllers.GroupController.RemoveGroupMember*
+  commentId: Overload:Toems_ApplicationApi.Controllers.GroupController.RemoveGroupMember
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.GroupController.html#Toems_ApplicationApi.Controllers.GroupController.RemoveGroupMember(System.Int32,System.Int32)
+  name: RemoveGroupMember
+  nameWithType: GroupController.RemoveGroupMember
+  fullName: Toems_ApplicationApi.Controllers.GroupController.RemoveGroupMember
+- uid: Toems_ApplicationApi.Controllers.GroupController.GroupProcessTimes*
+  commentId: Overload:Toems_ApplicationApi.Controllers.GroupController.GroupProcessTimes
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.GroupController.html#Toems_ApplicationApi.Controllers.GroupController.GroupProcessTimes(System.DateTime,System.Int32,System.Int32)
+  name: GroupProcessTimes
+  nameWithType: GroupController.GroupProcessTimes
+  fullName: Toems_ApplicationApi.Controllers.GroupController.GroupProcessTimes
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: System.Collections.Generic.List{Toems_Common.Dto.DtoProcessWithTime}
+  commentId: T:System.Collections.Generic.List{Toems_Common.Dto.DtoProcessWithTime}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<DtoProcessWithTime>
+  nameWithType: List<DtoProcessWithTime>
+  fullName: System.Collections.Generic.List<Toems_Common.Dto.DtoProcessWithTime>
+  nameWithType.vb: List(Of DtoProcessWithTime)
+  fullName.vb: System.Collections.Generic.List(Of Toems_Common.Dto.DtoProcessWithTime)
+  name.vb: List(Of DtoProcessWithTime)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Toems_Common.Dto.DtoProcessWithTime
+    name: DtoProcessWithTime
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Dto.DtoProcessWithTime
+    name: DtoProcessWithTime
+    isExternal: true
+  - name: )
+- uid: Toems_ApplicationApi.Controllers.GroupController.GroupProcessCounts*
+  commentId: Overload:Toems_ApplicationApi.Controllers.GroupController.GroupProcessCounts
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.GroupController.html#Toems_ApplicationApi.Controllers.GroupController.GroupProcessCounts(System.DateTime,System.Int32,System.Int32)
+  name: GroupProcessCounts
+  nameWithType: GroupController.GroupProcessCounts
+  fullName: Toems_ApplicationApi.Controllers.GroupController.GroupProcessCounts
+- uid: System.Collections.Generic.List{Toems_Common.Dto.DtoProcessWithCount}
+  commentId: T:System.Collections.Generic.List{Toems_Common.Dto.DtoProcessWithCount}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<DtoProcessWithCount>
+  nameWithType: List<DtoProcessWithCount>
+  fullName: System.Collections.Generic.List<Toems_Common.Dto.DtoProcessWithCount>
+  nameWithType.vb: List(Of DtoProcessWithCount)
+  fullName.vb: System.Collections.Generic.List(Of Toems_Common.Dto.DtoProcessWithCount)
+  name.vb: List(Of DtoProcessWithCount)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Toems_Common.Dto.DtoProcessWithCount
+    name: DtoProcessWithCount
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Dto.DtoProcessWithCount
+    name: DtoProcessWithCount
+    isExternal: true
+  - name: )
+- uid: Toems_ApplicationApi.Controllers.GroupController.StartGroupUnicast*
+  commentId: Overload:Toems_ApplicationApi.Controllers.GroupController.StartGroupUnicast
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.GroupController.html#Toems_ApplicationApi.Controllers.GroupController.StartGroupUnicast(System.Int32)
+  name: StartGroupUnicast
+  nameWithType: GroupController.StartGroupUnicast
+  fullName: Toems_ApplicationApi.Controllers.GroupController.StartGroupUnicast
+- uid: Toems_Common.Dto.DtoApiIntResponse
+  isExternal: true
+  name: DtoApiIntResponse
+  nameWithType: DtoApiIntResponse
+  fullName: Toems_Common.Dto.DtoApiIntResponse
+- uid: Toems_ApplicationApi.Controllers.GroupController.StartGroupWinPe*
+  commentId: Overload:Toems_ApplicationApi.Controllers.GroupController.StartGroupWinPe
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.GroupController.html#Toems_ApplicationApi.Controllers.GroupController.StartGroupWinPe(System.Int32)
+  name: StartGroupWinPe
+  nameWithType: GroupController.StartGroupWinPe
+  fullName: Toems_ApplicationApi.Controllers.GroupController.StartGroupWinPe
+- uid: Toems_ApplicationApi.Controllers.GroupController.StartMulticast*
+  commentId: Overload:Toems_ApplicationApi.Controllers.GroupController.StartMulticast
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.GroupController.html#Toems_ApplicationApi.Controllers.GroupController.StartMulticast(System.Int32)
+  name: StartMulticast
+  nameWithType: GroupController.StartMulticast
+  fullName: Toems_ApplicationApi.Controllers.GroupController.StartMulticast

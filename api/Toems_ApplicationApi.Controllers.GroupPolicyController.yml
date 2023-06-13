@@ -1,0 +1,458 @@
+### YamlMime:ManagedReference
+items:
+- uid: Toems_ApplicationApi.Controllers.GroupPolicyController
+  commentId: T:Toems_ApplicationApi.Controllers.GroupPolicyController
+  id: GroupPolicyController
+  parent: Toems_ApplicationApi.Controllers
+  children:
+  - Toems_ApplicationApi.Controllers.GroupPolicyController.#ctor
+  - Toems_ApplicationApi.Controllers.GroupPolicyController.Delete(System.Int32)
+  - Toems_ApplicationApi.Controllers.GroupPolicyController.Get(System.Int32)
+  - Toems_ApplicationApi.Controllers.GroupPolicyController.Post(Toems_Common.Entity.EntityGroupPolicy)
+  - Toems_ApplicationApi.Controllers.GroupPolicyController.PostList(System.Collections.Generic.List{Toems_Common.Entity.EntityGroupPolicy})
+  - Toems_ApplicationApi.Controllers.GroupPolicyController.Put(System.Int32,Toems_Common.Entity.EntityGroupPolicy)
+  langs:
+  - csharp
+  - vb
+  name: GroupPolicyController
+  nameWithType: GroupPolicyController
+  fullName: Toems_ApplicationApi.Controllers.GroupPolicyController
+  type: Class
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: 'public class GroupPolicyController : ApiController'
+    content.vb: Public Class GroupPolicyController Inherits ApiController
+  inheritance:
+  - System.Object
+- uid: Toems_ApplicationApi.Controllers.GroupPolicyController.#ctor
+  commentId: M:Toems_ApplicationApi.Controllers.GroupPolicyController.#ctor
+  id: '#ctor'
+  parent: Toems_ApplicationApi.Controllers.GroupPolicyController
+  langs:
+  - csharp
+  - vb
+  name: GroupPolicyController()
+  nameWithType: GroupPolicyController.GroupPolicyController()
+  fullName: Toems_ApplicationApi.Controllers.GroupPolicyController.GroupPolicyController()
+  type: Constructor
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: public GroupPolicyController()
+    content.vb: Public Sub New()
+  overload: Toems_ApplicationApi.Controllers.GroupPolicyController.#ctor*
+  nameWithType.vb: GroupPolicyController.New()
+  fullName.vb: Toems_ApplicationApi.Controllers.GroupPolicyController.New()
+  name.vb: New()
+- uid: Toems_ApplicationApi.Controllers.GroupPolicyController.Delete(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.GroupPolicyController.Delete(System.Int32)
+  id: Delete(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.GroupPolicyController
+  langs:
+  - csharp
+  - vb
+  name: Delete(int)
+  nameWithType: GroupPolicyController.Delete(int)
+  fullName: Toems_ApplicationApi.Controllers.GroupPolicyController.Delete(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "groupPolicyUpdate")]
+
+      public DtoActionResult Delete(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Dto.DtoActionResult
+    content.vb: >-
+      <CustomAuth(Permission:="groupPolicyUpdate")>
+
+      Public Function Delete(id As Integer) As DtoActionResult
+  overload: Toems_ApplicationApi.Controllers.GroupPolicyController.Delete*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: groupPolicyUpdate
+  nameWithType.vb: GroupPolicyController.Delete(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.GroupPolicyController.Delete(Integer)
+  name.vb: Delete(Integer)
+- uid: Toems_ApplicationApi.Controllers.GroupPolicyController.Get(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.GroupPolicyController.Get(System.Int32)
+  id: Get(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.GroupPolicyController
+  langs:
+  - csharp
+  - vb
+  name: Get(int)
+  nameWithType: GroupPolicyController.Get(int)
+  fullName: Toems_ApplicationApi.Controllers.GroupPolicyController.Get(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "groupPolicyRead")]
+
+      public EntityGroupPolicy Get(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Entity.EntityGroupPolicy
+    content.vb: >-
+      <CustomAuth(Permission:="groupPolicyRead")>
+
+      Public Function [Get](id As Integer) As EntityGroupPolicy
+  overload: Toems_ApplicationApi.Controllers.GroupPolicyController.Get*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: groupPolicyRead
+  nameWithType.vb: GroupPolicyController.Get(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.GroupPolicyController.Get(Integer)
+  name.vb: Get(Integer)
+- uid: Toems_ApplicationApi.Controllers.GroupPolicyController.Post(Toems_Common.Entity.EntityGroupPolicy)
+  commentId: M:Toems_ApplicationApi.Controllers.GroupPolicyController.Post(Toems_Common.Entity.EntityGroupPolicy)
+  id: Post(Toems_Common.Entity.EntityGroupPolicy)
+  parent: Toems_ApplicationApi.Controllers.GroupPolicyController
+  langs:
+  - csharp
+  - vb
+  name: Post(EntityGroupPolicy)
+  nameWithType: GroupPolicyController.Post(EntityGroupPolicy)
+  fullName: Toems_ApplicationApi.Controllers.GroupPolicyController.Post(Toems_Common.Entity.EntityGroupPolicy)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "groupPolicyUpdate")]
+
+      public DtoActionResult Post(EntityGroupPolicy groupPolicy)
+    parameters:
+    - id: groupPolicy
+      type: Toems_Common.Entity.EntityGroupPolicy
+    return:
+      type: Toems_Common.Dto.DtoActionResult
+    content.vb: >-
+      <CustomAuth(Permission:="groupPolicyUpdate")>
+
+      Public Function Post(groupPolicy As EntityGroupPolicy) As DtoActionResult
+  overload: Toems_ApplicationApi.Controllers.GroupPolicyController.Post*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: groupPolicyUpdate
+- uid: Toems_ApplicationApi.Controllers.GroupPolicyController.PostList(System.Collections.Generic.List{Toems_Common.Entity.EntityGroupPolicy})
+  commentId: M:Toems_ApplicationApi.Controllers.GroupPolicyController.PostList(System.Collections.Generic.List{Toems_Common.Entity.EntityGroupPolicy})
+  id: PostList(System.Collections.Generic.List{Toems_Common.Entity.EntityGroupPolicy})
+  parent: Toems_ApplicationApi.Controllers.GroupPolicyController
+  langs:
+  - csharp
+  - vb
+  name: PostList(List<EntityGroupPolicy>)
+  nameWithType: GroupPolicyController.PostList(List<EntityGroupPolicy>)
+  fullName: Toems_ApplicationApi.Controllers.GroupPolicyController.PostList(System.Collections.Generic.List<Toems_Common.Entity.EntityGroupPolicy>)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "groupPolicyUpdate")]
+
+      public DtoActionResult PostList(List<EntityGroupPolicy> groupPolicies)
+    parameters:
+    - id: groupPolicies
+      type: System.Collections.Generic.List{Toems_Common.Entity.EntityGroupPolicy}
+    return:
+      type: Toems_Common.Dto.DtoActionResult
+    content.vb: >-
+      <CustomAuth(Permission:="groupPolicyUpdate")>
+
+      Public Function PostList(groupPolicies As List(Of EntityGroupPolicy)) As DtoActionResult
+  overload: Toems_ApplicationApi.Controllers.GroupPolicyController.PostList*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: groupPolicyUpdate
+  nameWithType.vb: GroupPolicyController.PostList(List(Of EntityGroupPolicy))
+  fullName.vb: Toems_ApplicationApi.Controllers.GroupPolicyController.PostList(System.Collections.Generic.List(Of Toems_Common.Entity.EntityGroupPolicy))
+  name.vb: PostList(List(Of EntityGroupPolicy))
+- uid: Toems_ApplicationApi.Controllers.GroupPolicyController.Put(System.Int32,Toems_Common.Entity.EntityGroupPolicy)
+  commentId: M:Toems_ApplicationApi.Controllers.GroupPolicyController.Put(System.Int32,Toems_Common.Entity.EntityGroupPolicy)
+  id: Put(System.Int32,Toems_Common.Entity.EntityGroupPolicy)
+  parent: Toems_ApplicationApi.Controllers.GroupPolicyController
+  langs:
+  - csharp
+  - vb
+  name: Put(int, EntityGroupPolicy)
+  nameWithType: GroupPolicyController.Put(int, EntityGroupPolicy)
+  fullName: Toems_ApplicationApi.Controllers.GroupPolicyController.Put(int, Toems_Common.Entity.EntityGroupPolicy)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "groupPolicyUpdate")]
+
+      public DtoActionResult Put(int id, EntityGroupPolicy groupPolicy)
+    parameters:
+    - id: id
+      type: System.Int32
+    - id: groupPolicy
+      type: Toems_Common.Entity.EntityGroupPolicy
+    return:
+      type: Toems_Common.Dto.DtoActionResult
+    content.vb: >-
+      <CustomAuth(Permission:="groupPolicyUpdate")>
+
+      Public Function Put(id As Integer, groupPolicy As EntityGroupPolicy) As DtoActionResult
+  overload: Toems_ApplicationApi.Controllers.GroupPolicyController.Put*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: groupPolicyUpdate
+  nameWithType.vb: GroupPolicyController.Put(Integer, EntityGroupPolicy)
+  fullName.vb: Toems_ApplicationApi.Controllers.GroupPolicyController.Put(Integer, Toems_Common.Entity.EntityGroupPolicy)
+  name.vb: Put(Integer, EntityGroupPolicy)
+references:
+- uid: Toems_ApplicationApi.Controllers
+  commentId: N:Toems_ApplicationApi.Controllers
+  isExternal: true
+  href: Toems_ApplicationApi.html
+  name: Toems_ApplicationApi.Controllers
+  nameWithType: Toems_ApplicationApi.Controllers
+  fullName: Toems_ApplicationApi.Controllers
+  spec.csharp:
+  - uid: Toems_ApplicationApi
+    name: Toems_ApplicationApi
+    isExternal: true
+    href: Toems_ApplicationApi.html
+  - name: .
+  - uid: Toems_ApplicationApi.Controllers
+    name: Controllers
+    isExternal: true
+    href: Toems_ApplicationApi.Controllers.html
+  spec.vb:
+  - uid: Toems_ApplicationApi
+    name: Toems_ApplicationApi
+    isExternal: true
+    href: Toems_ApplicationApi.html
+  - name: .
+  - uid: Toems_ApplicationApi.Controllers
+    name: Controllers
+    isExternal: true
+    href: Toems_ApplicationApi.Controllers.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Toems_ApplicationApi.Controllers.GroupPolicyController.#ctor*
+  commentId: Overload:Toems_ApplicationApi.Controllers.GroupPolicyController.#ctor
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.GroupPolicyController.html#Toems_ApplicationApi.Controllers.GroupPolicyController.#ctor
+  name: GroupPolicyController
+  nameWithType: GroupPolicyController.GroupPolicyController
+  fullName: Toems_ApplicationApi.Controllers.GroupPolicyController.GroupPolicyController
+  nameWithType.vb: GroupPolicyController.New
+  fullName.vb: Toems_ApplicationApi.Controllers.GroupPolicyController.New
+  name.vb: New
+- uid: Toems_ApplicationApi.Controllers.GroupPolicyController.Delete*
+  commentId: Overload:Toems_ApplicationApi.Controllers.GroupPolicyController.Delete
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.GroupPolicyController.html#Toems_ApplicationApi.Controllers.GroupPolicyController.Delete(System.Int32)
+  name: Delete
+  nameWithType: GroupPolicyController.Delete
+  fullName: Toems_ApplicationApi.Controllers.GroupPolicyController.Delete
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Toems_Common.Dto.DtoActionResult
+  isExternal: true
+  name: DtoActionResult
+  nameWithType: DtoActionResult
+  fullName: Toems_Common.Dto.DtoActionResult
+- uid: Toems_ApplicationApi.Controllers.GroupPolicyController.Get*
+  commentId: Overload:Toems_ApplicationApi.Controllers.GroupPolicyController.Get
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.GroupPolicyController.html#Toems_ApplicationApi.Controllers.GroupPolicyController.Get(System.Int32)
+  name: Get
+  nameWithType: GroupPolicyController.Get
+  fullName: Toems_ApplicationApi.Controllers.GroupPolicyController.Get
+- uid: Toems_Common.Entity.EntityGroupPolicy
+  isExternal: true
+  name: EntityGroupPolicy
+  nameWithType: EntityGroupPolicy
+  fullName: Toems_Common.Entity.EntityGroupPolicy
+- uid: Toems_ApplicationApi.Controllers.GroupPolicyController.Post*
+  commentId: Overload:Toems_ApplicationApi.Controllers.GroupPolicyController.Post
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.GroupPolicyController.html#Toems_ApplicationApi.Controllers.GroupPolicyController.Post(Toems_Common.Entity.EntityGroupPolicy)
+  name: Post
+  nameWithType: GroupPolicyController.Post
+  fullName: Toems_ApplicationApi.Controllers.GroupPolicyController.Post
+- uid: Toems_ApplicationApi.Controllers.GroupPolicyController.PostList*
+  commentId: Overload:Toems_ApplicationApi.Controllers.GroupPolicyController.PostList
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.GroupPolicyController.html#Toems_ApplicationApi.Controllers.GroupPolicyController.PostList(System.Collections.Generic.List{Toems_Common.Entity.EntityGroupPolicy})
+  name: PostList
+  nameWithType: GroupPolicyController.PostList
+  fullName: Toems_ApplicationApi.Controllers.GroupPolicyController.PostList
+- uid: System.Collections.Generic.List{Toems_Common.Entity.EntityGroupPolicy}
+  commentId: T:System.Collections.Generic.List{Toems_Common.Entity.EntityGroupPolicy}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<EntityGroupPolicy>
+  nameWithType: List<EntityGroupPolicy>
+  fullName: System.Collections.Generic.List<Toems_Common.Entity.EntityGroupPolicy>
+  nameWithType.vb: List(Of EntityGroupPolicy)
+  fullName.vb: System.Collections.Generic.List(Of Toems_Common.Entity.EntityGroupPolicy)
+  name.vb: List(Of EntityGroupPolicy)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Toems_Common.Entity.EntityGroupPolicy
+    name: EntityGroupPolicy
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Entity.EntityGroupPolicy
+    name: EntityGroupPolicy
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Toems_ApplicationApi.Controllers.GroupPolicyController.Put*
+  commentId: Overload:Toems_ApplicationApi.Controllers.GroupPolicyController.Put
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.GroupPolicyController.html#Toems_ApplicationApi.Controllers.GroupPolicyController.Put(System.Int32,Toems_Common.Entity.EntityGroupPolicy)
+  name: Put
+  nameWithType: GroupPolicyController.Put
+  fullName: Toems_ApplicationApi.Controllers.GroupPolicyController.Put

@@ -1,0 +1,296 @@
+### YamlMime:ManagedReference
+items:
+- uid: Toems_ApplicationApi.Controllers.OnlineKernelController
+  commentId: T:Toems_ApplicationApi.Controllers.OnlineKernelController
+  id: OnlineKernelController
+  parent: Toems_ApplicationApi.Controllers
+  children:
+  - Toems_ApplicationApi.Controllers.OnlineKernelController.#ctor
+  - Toems_ApplicationApi.Controllers.OnlineKernelController.DownloadKernel(Toems_Common.Dto.DtoOnlineKernel)
+  - Toems_ApplicationApi.Controllers.OnlineKernelController.Get
+  langs:
+  - csharp
+  - vb
+  name: OnlineKernelController
+  nameWithType: OnlineKernelController
+  fullName: Toems_ApplicationApi.Controllers.OnlineKernelController
+  type: Class
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: 'public class OnlineKernelController : ApiController'
+    content.vb: Public Class OnlineKernelController Inherits ApiController
+  inheritance:
+  - System.Object
+- uid: Toems_ApplicationApi.Controllers.OnlineKernelController.#ctor
+  commentId: M:Toems_ApplicationApi.Controllers.OnlineKernelController.#ctor
+  id: '#ctor'
+  parent: Toems_ApplicationApi.Controllers.OnlineKernelController
+  langs:
+  - csharp
+  - vb
+  name: OnlineKernelController()
+  nameWithType: OnlineKernelController.OnlineKernelController()
+  fullName: Toems_ApplicationApi.Controllers.OnlineKernelController.OnlineKernelController()
+  type: Constructor
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: public OnlineKernelController()
+    content.vb: Public Sub New()
+  overload: Toems_ApplicationApi.Controllers.OnlineKernelController.#ctor*
+  nameWithType.vb: OnlineKernelController.New()
+  fullName.vb: Toems_ApplicationApi.Controllers.OnlineKernelController.New()
+  name.vb: New()
+- uid: Toems_ApplicationApi.Controllers.OnlineKernelController.DownloadKernel(Toems_Common.Dto.DtoOnlineKernel)
+  commentId: M:Toems_ApplicationApi.Controllers.OnlineKernelController.DownloadKernel(Toems_Common.Dto.DtoOnlineKernel)
+  id: DownloadKernel(Toems_Common.Dto.DtoOnlineKernel)
+  parent: Toems_ApplicationApi.Controllers.OnlineKernelController
+  langs:
+  - csharp
+  - vb
+  name: DownloadKernel(DtoOnlineKernel)
+  nameWithType: OnlineKernelController.DownloadKernel(DtoOnlineKernel)
+  fullName: Toems_ApplicationApi.Controllers.OnlineKernelController.DownloadKernel(Toems_Common.Dto.DtoOnlineKernel)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "Administrator")]
+
+      public DtoApiBoolResponse DownloadKernel(DtoOnlineKernel onlineKernel)
+    parameters:
+    - id: onlineKernel
+      type: Toems_Common.Dto.DtoOnlineKernel
+    return:
+      type: Toems_Common.Dto.DtoApiBoolResponse
+    content.vb: >-
+      <CustomAuth(Permission:="Administrator")>
+
+      Public Function DownloadKernel(onlineKernel As DtoOnlineKernel) As DtoApiBoolResponse
+  overload: Toems_ApplicationApi.Controllers.OnlineKernelController.DownloadKernel*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: Administrator
+- uid: Toems_ApplicationApi.Controllers.OnlineKernelController.Get
+  commentId: M:Toems_ApplicationApi.Controllers.OnlineKernelController.Get
+  id: Get
+  parent: Toems_ApplicationApi.Controllers.OnlineKernelController
+  langs:
+  - csharp
+  - vb
+  name: Get()
+  nameWithType: OnlineKernelController.Get()
+  fullName: Toems_ApplicationApi.Controllers.OnlineKernelController.Get()
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "Administrator")]
+
+      public IEnumerable<DtoOnlineKernel> Get()
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Dto.DtoOnlineKernel}
+    content.vb: >-
+      <CustomAuth(Permission:="Administrator")>
+
+      Public Function [Get]() As IEnumerable(Of DtoOnlineKernel)
+  overload: Toems_ApplicationApi.Controllers.OnlineKernelController.Get*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: Administrator
+references:
+- uid: Toems_ApplicationApi.Controllers
+  commentId: N:Toems_ApplicationApi.Controllers
+  isExternal: true
+  href: Toems_ApplicationApi.html
+  name: Toems_ApplicationApi.Controllers
+  nameWithType: Toems_ApplicationApi.Controllers
+  fullName: Toems_ApplicationApi.Controllers
+  spec.csharp:
+  - uid: Toems_ApplicationApi
+    name: Toems_ApplicationApi
+    isExternal: true
+    href: Toems_ApplicationApi.html
+  - name: .
+  - uid: Toems_ApplicationApi.Controllers
+    name: Controllers
+    isExternal: true
+    href: Toems_ApplicationApi.Controllers.html
+  spec.vb:
+  - uid: Toems_ApplicationApi
+    name: Toems_ApplicationApi
+    isExternal: true
+    href: Toems_ApplicationApi.html
+  - name: .
+  - uid: Toems_ApplicationApi.Controllers
+    name: Controllers
+    isExternal: true
+    href: Toems_ApplicationApi.Controllers.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Toems_ApplicationApi.Controllers.OnlineKernelController.#ctor*
+  commentId: Overload:Toems_ApplicationApi.Controllers.OnlineKernelController.#ctor
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.OnlineKernelController.html#Toems_ApplicationApi.Controllers.OnlineKernelController.#ctor
+  name: OnlineKernelController
+  nameWithType: OnlineKernelController.OnlineKernelController
+  fullName: Toems_ApplicationApi.Controllers.OnlineKernelController.OnlineKernelController
+  nameWithType.vb: OnlineKernelController.New
+  fullName.vb: Toems_ApplicationApi.Controllers.OnlineKernelController.New
+  name.vb: New
+- uid: Toems_ApplicationApi.Controllers.OnlineKernelController.DownloadKernel*
+  commentId: Overload:Toems_ApplicationApi.Controllers.OnlineKernelController.DownloadKernel
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.OnlineKernelController.html#Toems_ApplicationApi.Controllers.OnlineKernelController.DownloadKernel(Toems_Common.Dto.DtoOnlineKernel)
+  name: DownloadKernel
+  nameWithType: OnlineKernelController.DownloadKernel
+  fullName: Toems_ApplicationApi.Controllers.OnlineKernelController.DownloadKernel
+- uid: Toems_Common.Dto.DtoOnlineKernel
+  commentId: '!:Toems_Common.Dto.DtoOnlineKernel'
+  isExternal: true
+  name: DtoOnlineKernel
+  nameWithType: DtoOnlineKernel
+  fullName: Toems_Common.Dto.DtoOnlineKernel
+- uid: Toems_Common.Dto.DtoApiBoolResponse
+  isExternal: true
+  name: DtoApiBoolResponse
+  nameWithType: DtoApiBoolResponse
+  fullName: Toems_Common.Dto.DtoApiBoolResponse
+- uid: Toems_ApplicationApi.Controllers.OnlineKernelController.Get*
+  commentId: Overload:Toems_ApplicationApi.Controllers.OnlineKernelController.Get
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.OnlineKernelController.html#Toems_ApplicationApi.Controllers.OnlineKernelController.Get
+  name: Get
+  nameWithType: OnlineKernelController.Get
+  fullName: Toems_ApplicationApi.Controllers.OnlineKernelController.Get
+- uid: System.Collections.Generic.IEnumerable{Toems_Common.Dto.DtoOnlineKernel}
+  commentId: T:System.Collections.Generic.IEnumerable{Toems_Common.Dto.DtoOnlineKernel}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<DtoOnlineKernel>
+  nameWithType: IEnumerable<DtoOnlineKernel>
+  fullName: System.Collections.Generic.IEnumerable<Toems_Common.Dto.DtoOnlineKernel>
+  nameWithType.vb: IEnumerable(Of DtoOnlineKernel)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Toems_Common.Dto.DtoOnlineKernel)
+  name.vb: IEnumerable(Of DtoOnlineKernel)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Toems_Common.Dto.DtoOnlineKernel
+    name: DtoOnlineKernel
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Dto.DtoOnlineKernel
+    name: DtoOnlineKernel
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

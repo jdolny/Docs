@@ -1,0 +1,3005 @@
+### YamlMime:ManagedReference
+items:
+- uid: Toems_ApplicationApi.WebApiApplication
+  commentId: T:Toems_ApplicationApi.WebApiApplication
+  id: WebApiApplication
+  parent: Toems_ApplicationApi
+  children:
+  - Toems_ApplicationApi.WebApiApplication.#ctor
+  - Toems_ApplicationApi.WebApiApplication.Application_Start
+  langs:
+  - csharp
+  - vb
+  name: WebApiApplication
+  nameWithType: WebApiApplication
+  fullName: Toems_ApplicationApi.WebApiApplication
+  type: Class
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi
+  syntax:
+    content: 'public class WebApiApplication : HttpApplication, IComponent, IDisposable, IHttpAsyncHandler, IHttpHandler'
+    content.vb: Public Class WebApiApplication Inherits HttpApplication Implements IComponent, IDisposable, IHttpAsyncHandler, IHttpHandler
+  inheritance:
+  - System.Object
+  - System.Web.HttpApplication
+  implements:
+  - System.ComponentModel.IComponent
+  - System.IDisposable
+  - System.Web.IHttpAsyncHandler
+  - System.Web.IHttpHandler
+  inheritedMembers:
+  - System.Web.HttpApplication.CompleteRequest
+  - System.Web.HttpApplication.AddOnBeginRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+  - System.Web.HttpApplication.AddOnBeginRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+  - System.Web.HttpApplication.AddOnAuthenticateRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+  - System.Web.HttpApplication.AddOnAuthenticateRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+  - System.Web.HttpApplication.AddOnPostAuthenticateRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+  - System.Web.HttpApplication.AddOnPostAuthenticateRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+  - System.Web.HttpApplication.AddOnAuthorizeRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+  - System.Web.HttpApplication.AddOnAuthorizeRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+  - System.Web.HttpApplication.AddOnPostAuthorizeRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+  - System.Web.HttpApplication.AddOnPostAuthorizeRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+  - System.Web.HttpApplication.AddOnResolveRequestCacheAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+  - System.Web.HttpApplication.AddOnResolveRequestCacheAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+  - System.Web.HttpApplication.AddOnPostResolveRequestCacheAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+  - System.Web.HttpApplication.AddOnPostResolveRequestCacheAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+  - System.Web.HttpApplication.AddOnMapRequestHandlerAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+  - System.Web.HttpApplication.AddOnMapRequestHandlerAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+  - System.Web.HttpApplication.AddOnPostMapRequestHandlerAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+  - System.Web.HttpApplication.AddOnPostMapRequestHandlerAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+  - System.Web.HttpApplication.AddOnAcquireRequestStateAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+  - System.Web.HttpApplication.AddOnAcquireRequestStateAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+  - System.Web.HttpApplication.AddOnPostAcquireRequestStateAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+  - System.Web.HttpApplication.AddOnPostAcquireRequestStateAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+  - System.Web.HttpApplication.AddOnPreRequestHandlerExecuteAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+  - System.Web.HttpApplication.AddOnPreRequestHandlerExecuteAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+  - System.Web.HttpApplication.AddOnPostRequestHandlerExecuteAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+  - System.Web.HttpApplication.AddOnPostRequestHandlerExecuteAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+  - System.Web.HttpApplication.AddOnReleaseRequestStateAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+  - System.Web.HttpApplication.AddOnReleaseRequestStateAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+  - System.Web.HttpApplication.AddOnPostReleaseRequestStateAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+  - System.Web.HttpApplication.AddOnPostReleaseRequestStateAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+  - System.Web.HttpApplication.AddOnUpdateRequestCacheAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+  - System.Web.HttpApplication.AddOnUpdateRequestCacheAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+  - System.Web.HttpApplication.AddOnPostUpdateRequestCacheAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+  - System.Web.HttpApplication.AddOnPostUpdateRequestCacheAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+  - System.Web.HttpApplication.AddOnLogRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+  - System.Web.HttpApplication.AddOnLogRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+  - System.Web.HttpApplication.AddOnPostLogRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+  - System.Web.HttpApplication.AddOnPostLogRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+  - System.Web.HttpApplication.AddOnEndRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+  - System.Web.HttpApplication.AddOnEndRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+  - System.Web.HttpApplication.Init
+  - System.Web.HttpApplication.Dispose
+  - System.Web.HttpApplication.GetVaryByCustomString(System.Web.HttpContext,System.String)
+  - System.Web.HttpApplication.GetOutputCacheProviderName(System.Web.HttpContext)
+  - System.Web.HttpApplication.OnExecuteRequestStep(System.Action{System.Web.HttpContextBase,System.Action})
+  - System.Web.HttpApplication.RegisterModule(System.Type)
+  - System.Web.HttpApplication.Context
+  - System.Web.HttpApplication.Events
+  - System.Web.HttpApplication.Request
+  - System.Web.HttpApplication.Response
+  - System.Web.HttpApplication.Session
+  - System.Web.HttpApplication.Application
+  - System.Web.HttpApplication.Server
+  - System.Web.HttpApplication.User
+  - System.Web.HttpApplication.Modules
+  - System.Web.HttpApplication.Site
+  - System.Web.HttpApplication.Disposed
+  - System.Web.HttpApplication.BeginRequest
+  - System.Web.HttpApplication.AuthenticateRequest
+  - System.Web.HttpApplication.PostAuthenticateRequest
+  - System.Web.HttpApplication.AuthorizeRequest
+  - System.Web.HttpApplication.PostAuthorizeRequest
+  - System.Web.HttpApplication.ResolveRequestCache
+  - System.Web.HttpApplication.PostResolveRequestCache
+  - System.Web.HttpApplication.MapRequestHandler
+  - System.Web.HttpApplication.PostMapRequestHandler
+  - System.Web.HttpApplication.AcquireRequestState
+  - System.Web.HttpApplication.PostAcquireRequestState
+  - System.Web.HttpApplication.PreRequestHandlerExecute
+  - System.Web.HttpApplication.PostRequestHandlerExecute
+  - System.Web.HttpApplication.ReleaseRequestState
+  - System.Web.HttpApplication.PostReleaseRequestState
+  - System.Web.HttpApplication.UpdateRequestCache
+  - System.Web.HttpApplication.PostUpdateRequestCache
+  - System.Web.HttpApplication.LogRequest
+  - System.Web.HttpApplication.PostLogRequest
+  - System.Web.HttpApplication.EndRequest
+  - System.Web.HttpApplication.Error
+  - System.Web.HttpApplication.RequestCompleted
+  - System.Web.HttpApplication.PreSendRequestHeaders
+  - System.Web.HttpApplication.PreSendRequestContent
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Toems_ApplicationApi.WebApiApplication.Application_Start
+  commentId: M:Toems_ApplicationApi.WebApiApplication.Application_Start
+  id: Application_Start
+  parent: Toems_ApplicationApi.WebApiApplication
+  langs:
+  - csharp
+  - vb
+  name: Application_Start()
+  nameWithType: WebApiApplication.Application_Start()
+  fullName: Toems_ApplicationApi.WebApiApplication.Application_Start()
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi
+  syntax:
+    content: protected void Application_Start()
+    content.vb: Protected Sub Application_Start()
+  overload: Toems_ApplicationApi.WebApiApplication.Application_Start*
+- uid: Toems_ApplicationApi.WebApiApplication.#ctor
+  commentId: M:Toems_ApplicationApi.WebApiApplication.#ctor
+  id: '#ctor'
+  parent: Toems_ApplicationApi.WebApiApplication
+  langs:
+  - csharp
+  - vb
+  name: WebApiApplication()
+  nameWithType: WebApiApplication.WebApiApplication()
+  fullName: Toems_ApplicationApi.WebApiApplication.WebApiApplication()
+  type: Constructor
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi
+  syntax:
+    content: public WebApiApplication()
+    content.vb: Public Sub New()
+  overload: Toems_ApplicationApi.WebApiApplication.#ctor*
+  nameWithType.vb: WebApiApplication.New()
+  fullName.vb: Toems_ApplicationApi.WebApiApplication.New()
+  name.vb: New()
+references:
+- uid: Toems_ApplicationApi
+  commentId: N:Toems_ApplicationApi
+  isExternal: true
+  href: Toems_ApplicationApi.html
+  name: Toems_ApplicationApi
+  nameWithType: Toems_ApplicationApi
+  fullName: Toems_ApplicationApi
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Web.HttpApplication
+  commentId: T:System.Web.HttpApplication
+  parent: System.Web
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication
+  name: HttpApplication
+  nameWithType: HttpApplication
+  fullName: System.Web.HttpApplication
+- uid: System.ComponentModel.IComponent
+  commentId: T:System.ComponentModel.IComponent
+  parent: System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.icomponent
+  name: IComponent
+  nameWithType: IComponent
+  fullName: System.ComponentModel.IComponent
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Web.IHttpAsyncHandler
+  commentId: T:System.Web.IHttpAsyncHandler
+  parent: System.Web
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.ihttpasynchandler
+  name: IHttpAsyncHandler
+  nameWithType: IHttpAsyncHandler
+  fullName: System.Web.IHttpAsyncHandler
+- uid: System.Web.IHttpHandler
+  commentId: T:System.Web.IHttpHandler
+  parent: System.Web
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.ihttphandler
+  name: IHttpHandler
+  nameWithType: IHttpHandler
+  fullName: System.Web.IHttpHandler
+- uid: System.Web.HttpApplication.CompleteRequest
+  commentId: M:System.Web.HttpApplication.CompleteRequest
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.completerequest
+  name: CompleteRequest()
+  nameWithType: HttpApplication.CompleteRequest()
+  fullName: System.Web.HttpApplication.CompleteRequest()
+  spec.csharp:
+  - uid: System.Web.HttpApplication.CompleteRequest
+    name: CompleteRequest
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.completerequest
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Web.HttpApplication.CompleteRequest
+    name: CompleteRequest
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.completerequest
+  - name: (
+  - name: )
+- uid: System.Web.HttpApplication.AddOnBeginRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+  commentId: M:System.Web.HttpApplication.AddOnBeginRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonbeginrequestasync#system-web-httpapplication-addonbeginrequestasync(system-web-begineventhandler-system-web-endeventhandler)
+  name: AddOnBeginRequestAsync(BeginEventHandler, EndEventHandler)
+  nameWithType: HttpApplication.AddOnBeginRequestAsync(BeginEventHandler, EndEventHandler)
+  fullName: System.Web.HttpApplication.AddOnBeginRequestAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler)
+  spec.csharp:
+  - uid: System.Web.HttpApplication.AddOnBeginRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+    name: AddOnBeginRequestAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonbeginrequestasync#system-web-httpapplication-addonbeginrequestasync(system-web-begineventhandler-system-web-endeventhandler)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: )
+  spec.vb:
+  - uid: System.Web.HttpApplication.AddOnBeginRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+    name: AddOnBeginRequestAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonbeginrequestasync#system-web-httpapplication-addonbeginrequestasync(system-web-begineventhandler-system-web-endeventhandler)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: )
+- uid: System.Web.HttpApplication.AddOnBeginRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+  commentId: M:System.Web.HttpApplication.AddOnBeginRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonbeginrequestasync#system-web-httpapplication-addonbeginrequestasync(system-web-begineventhandler-system-web-endeventhandler-system-object)
+  name: AddOnBeginRequestAsync(BeginEventHandler, EndEventHandler, object)
+  nameWithType: HttpApplication.AddOnBeginRequestAsync(BeginEventHandler, EndEventHandler, object)
+  fullName: System.Web.HttpApplication.AddOnBeginRequestAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler, object)
+  nameWithType.vb: HttpApplication.AddOnBeginRequestAsync(BeginEventHandler, EndEventHandler, Object)
+  fullName.vb: System.Web.HttpApplication.AddOnBeginRequestAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler, Object)
+  name.vb: AddOnBeginRequestAsync(BeginEventHandler, EndEventHandler, Object)
+  spec.csharp:
+  - uid: System.Web.HttpApplication.AddOnBeginRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+    name: AddOnBeginRequestAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonbeginrequestasync#system-web-httpapplication-addonbeginrequestasync(system-web-begineventhandler-system-web-endeventhandler-system-object)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Web.HttpApplication.AddOnBeginRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+    name: AddOnBeginRequestAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonbeginrequestasync#system-web-httpapplication-addonbeginrequestasync(system-web-begineventhandler-system-web-endeventhandler-system-object)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Web.HttpApplication.AddOnAuthenticateRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+  commentId: M:System.Web.HttpApplication.AddOnAuthenticateRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonauthenticaterequestasync#system-web-httpapplication-addonauthenticaterequestasync(system-web-begineventhandler-system-web-endeventhandler)
+  name: AddOnAuthenticateRequestAsync(BeginEventHandler, EndEventHandler)
+  nameWithType: HttpApplication.AddOnAuthenticateRequestAsync(BeginEventHandler, EndEventHandler)
+  fullName: System.Web.HttpApplication.AddOnAuthenticateRequestAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler)
+  spec.csharp:
+  - uid: System.Web.HttpApplication.AddOnAuthenticateRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+    name: AddOnAuthenticateRequestAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonauthenticaterequestasync#system-web-httpapplication-addonauthenticaterequestasync(system-web-begineventhandler-system-web-endeventhandler)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: )
+  spec.vb:
+  - uid: System.Web.HttpApplication.AddOnAuthenticateRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+    name: AddOnAuthenticateRequestAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonauthenticaterequestasync#system-web-httpapplication-addonauthenticaterequestasync(system-web-begineventhandler-system-web-endeventhandler)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: )
+- uid: System.Web.HttpApplication.AddOnAuthenticateRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+  commentId: M:System.Web.HttpApplication.AddOnAuthenticateRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonauthenticaterequestasync#system-web-httpapplication-addonauthenticaterequestasync(system-web-begineventhandler-system-web-endeventhandler-system-object)
+  name: AddOnAuthenticateRequestAsync(BeginEventHandler, EndEventHandler, object)
+  nameWithType: HttpApplication.AddOnAuthenticateRequestAsync(BeginEventHandler, EndEventHandler, object)
+  fullName: System.Web.HttpApplication.AddOnAuthenticateRequestAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler, object)
+  nameWithType.vb: HttpApplication.AddOnAuthenticateRequestAsync(BeginEventHandler, EndEventHandler, Object)
+  fullName.vb: System.Web.HttpApplication.AddOnAuthenticateRequestAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler, Object)
+  name.vb: AddOnAuthenticateRequestAsync(BeginEventHandler, EndEventHandler, Object)
+  spec.csharp:
+  - uid: System.Web.HttpApplication.AddOnAuthenticateRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+    name: AddOnAuthenticateRequestAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonauthenticaterequestasync#system-web-httpapplication-addonauthenticaterequestasync(system-web-begineventhandler-system-web-endeventhandler-system-object)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Web.HttpApplication.AddOnAuthenticateRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+    name: AddOnAuthenticateRequestAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonauthenticaterequestasync#system-web-httpapplication-addonauthenticaterequestasync(system-web-begineventhandler-system-web-endeventhandler-system-object)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Web.HttpApplication.AddOnPostAuthenticateRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+  commentId: M:System.Web.HttpApplication.AddOnPostAuthenticateRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonpostauthenticaterequestasync#system-web-httpapplication-addonpostauthenticaterequestasync(system-web-begineventhandler-system-web-endeventhandler)
+  name: AddOnPostAuthenticateRequestAsync(BeginEventHandler, EndEventHandler)
+  nameWithType: HttpApplication.AddOnPostAuthenticateRequestAsync(BeginEventHandler, EndEventHandler)
+  fullName: System.Web.HttpApplication.AddOnPostAuthenticateRequestAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler)
+  spec.csharp:
+  - uid: System.Web.HttpApplication.AddOnPostAuthenticateRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+    name: AddOnPostAuthenticateRequestAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonpostauthenticaterequestasync#system-web-httpapplication-addonpostauthenticaterequestasync(system-web-begineventhandler-system-web-endeventhandler)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: )
+  spec.vb:
+  - uid: System.Web.HttpApplication.AddOnPostAuthenticateRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+    name: AddOnPostAuthenticateRequestAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonpostauthenticaterequestasync#system-web-httpapplication-addonpostauthenticaterequestasync(system-web-begineventhandler-system-web-endeventhandler)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: )
+- uid: System.Web.HttpApplication.AddOnPostAuthenticateRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+  commentId: M:System.Web.HttpApplication.AddOnPostAuthenticateRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonpostauthenticaterequestasync#system-web-httpapplication-addonpostauthenticaterequestasync(system-web-begineventhandler-system-web-endeventhandler-system-object)
+  name: AddOnPostAuthenticateRequestAsync(BeginEventHandler, EndEventHandler, object)
+  nameWithType: HttpApplication.AddOnPostAuthenticateRequestAsync(BeginEventHandler, EndEventHandler, object)
+  fullName: System.Web.HttpApplication.AddOnPostAuthenticateRequestAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler, object)
+  nameWithType.vb: HttpApplication.AddOnPostAuthenticateRequestAsync(BeginEventHandler, EndEventHandler, Object)
+  fullName.vb: System.Web.HttpApplication.AddOnPostAuthenticateRequestAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler, Object)
+  name.vb: AddOnPostAuthenticateRequestAsync(BeginEventHandler, EndEventHandler, Object)
+  spec.csharp:
+  - uid: System.Web.HttpApplication.AddOnPostAuthenticateRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+    name: AddOnPostAuthenticateRequestAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonpostauthenticaterequestasync#system-web-httpapplication-addonpostauthenticaterequestasync(system-web-begineventhandler-system-web-endeventhandler-system-object)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Web.HttpApplication.AddOnPostAuthenticateRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+    name: AddOnPostAuthenticateRequestAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonpostauthenticaterequestasync#system-web-httpapplication-addonpostauthenticaterequestasync(system-web-begineventhandler-system-web-endeventhandler-system-object)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Web.HttpApplication.AddOnAuthorizeRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+  commentId: M:System.Web.HttpApplication.AddOnAuthorizeRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonauthorizerequestasync#system-web-httpapplication-addonauthorizerequestasync(system-web-begineventhandler-system-web-endeventhandler)
+  name: AddOnAuthorizeRequestAsync(BeginEventHandler, EndEventHandler)
+  nameWithType: HttpApplication.AddOnAuthorizeRequestAsync(BeginEventHandler, EndEventHandler)
+  fullName: System.Web.HttpApplication.AddOnAuthorizeRequestAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler)
+  spec.csharp:
+  - uid: System.Web.HttpApplication.AddOnAuthorizeRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+    name: AddOnAuthorizeRequestAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonauthorizerequestasync#system-web-httpapplication-addonauthorizerequestasync(system-web-begineventhandler-system-web-endeventhandler)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: )
+  spec.vb:
+  - uid: System.Web.HttpApplication.AddOnAuthorizeRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+    name: AddOnAuthorizeRequestAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonauthorizerequestasync#system-web-httpapplication-addonauthorizerequestasync(system-web-begineventhandler-system-web-endeventhandler)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: )
+- uid: System.Web.HttpApplication.AddOnAuthorizeRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+  commentId: M:System.Web.HttpApplication.AddOnAuthorizeRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonauthorizerequestasync#system-web-httpapplication-addonauthorizerequestasync(system-web-begineventhandler-system-web-endeventhandler-system-object)
+  name: AddOnAuthorizeRequestAsync(BeginEventHandler, EndEventHandler, object)
+  nameWithType: HttpApplication.AddOnAuthorizeRequestAsync(BeginEventHandler, EndEventHandler, object)
+  fullName: System.Web.HttpApplication.AddOnAuthorizeRequestAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler, object)
+  nameWithType.vb: HttpApplication.AddOnAuthorizeRequestAsync(BeginEventHandler, EndEventHandler, Object)
+  fullName.vb: System.Web.HttpApplication.AddOnAuthorizeRequestAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler, Object)
+  name.vb: AddOnAuthorizeRequestAsync(BeginEventHandler, EndEventHandler, Object)
+  spec.csharp:
+  - uid: System.Web.HttpApplication.AddOnAuthorizeRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+    name: AddOnAuthorizeRequestAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonauthorizerequestasync#system-web-httpapplication-addonauthorizerequestasync(system-web-begineventhandler-system-web-endeventhandler-system-object)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Web.HttpApplication.AddOnAuthorizeRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+    name: AddOnAuthorizeRequestAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonauthorizerequestasync#system-web-httpapplication-addonauthorizerequestasync(system-web-begineventhandler-system-web-endeventhandler-system-object)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Web.HttpApplication.AddOnPostAuthorizeRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+  commentId: M:System.Web.HttpApplication.AddOnPostAuthorizeRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonpostauthorizerequestasync#system-web-httpapplication-addonpostauthorizerequestasync(system-web-begineventhandler-system-web-endeventhandler)
+  name: AddOnPostAuthorizeRequestAsync(BeginEventHandler, EndEventHandler)
+  nameWithType: HttpApplication.AddOnPostAuthorizeRequestAsync(BeginEventHandler, EndEventHandler)
+  fullName: System.Web.HttpApplication.AddOnPostAuthorizeRequestAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler)
+  spec.csharp:
+  - uid: System.Web.HttpApplication.AddOnPostAuthorizeRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+    name: AddOnPostAuthorizeRequestAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonpostauthorizerequestasync#system-web-httpapplication-addonpostauthorizerequestasync(system-web-begineventhandler-system-web-endeventhandler)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: )
+  spec.vb:
+  - uid: System.Web.HttpApplication.AddOnPostAuthorizeRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+    name: AddOnPostAuthorizeRequestAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonpostauthorizerequestasync#system-web-httpapplication-addonpostauthorizerequestasync(system-web-begineventhandler-system-web-endeventhandler)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: )
+- uid: System.Web.HttpApplication.AddOnPostAuthorizeRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+  commentId: M:System.Web.HttpApplication.AddOnPostAuthorizeRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonpostauthorizerequestasync#system-web-httpapplication-addonpostauthorizerequestasync(system-web-begineventhandler-system-web-endeventhandler-system-object)
+  name: AddOnPostAuthorizeRequestAsync(BeginEventHandler, EndEventHandler, object)
+  nameWithType: HttpApplication.AddOnPostAuthorizeRequestAsync(BeginEventHandler, EndEventHandler, object)
+  fullName: System.Web.HttpApplication.AddOnPostAuthorizeRequestAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler, object)
+  nameWithType.vb: HttpApplication.AddOnPostAuthorizeRequestAsync(BeginEventHandler, EndEventHandler, Object)
+  fullName.vb: System.Web.HttpApplication.AddOnPostAuthorizeRequestAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler, Object)
+  name.vb: AddOnPostAuthorizeRequestAsync(BeginEventHandler, EndEventHandler, Object)
+  spec.csharp:
+  - uid: System.Web.HttpApplication.AddOnPostAuthorizeRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+    name: AddOnPostAuthorizeRequestAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonpostauthorizerequestasync#system-web-httpapplication-addonpostauthorizerequestasync(system-web-begineventhandler-system-web-endeventhandler-system-object)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Web.HttpApplication.AddOnPostAuthorizeRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+    name: AddOnPostAuthorizeRequestAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonpostauthorizerequestasync#system-web-httpapplication-addonpostauthorizerequestasync(system-web-begineventhandler-system-web-endeventhandler-system-object)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Web.HttpApplication.AddOnResolveRequestCacheAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+  commentId: M:System.Web.HttpApplication.AddOnResolveRequestCacheAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonresolverequestcacheasync#system-web-httpapplication-addonresolverequestcacheasync(system-web-begineventhandler-system-web-endeventhandler)
+  name: AddOnResolveRequestCacheAsync(BeginEventHandler, EndEventHandler)
+  nameWithType: HttpApplication.AddOnResolveRequestCacheAsync(BeginEventHandler, EndEventHandler)
+  fullName: System.Web.HttpApplication.AddOnResolveRequestCacheAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler)
+  spec.csharp:
+  - uid: System.Web.HttpApplication.AddOnResolveRequestCacheAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+    name: AddOnResolveRequestCacheAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonresolverequestcacheasync#system-web-httpapplication-addonresolverequestcacheasync(system-web-begineventhandler-system-web-endeventhandler)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: )
+  spec.vb:
+  - uid: System.Web.HttpApplication.AddOnResolveRequestCacheAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+    name: AddOnResolveRequestCacheAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonresolverequestcacheasync#system-web-httpapplication-addonresolverequestcacheasync(system-web-begineventhandler-system-web-endeventhandler)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: )
+- uid: System.Web.HttpApplication.AddOnResolveRequestCacheAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+  commentId: M:System.Web.HttpApplication.AddOnResolveRequestCacheAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonresolverequestcacheasync#system-web-httpapplication-addonresolverequestcacheasync(system-web-begineventhandler-system-web-endeventhandler-system-object)
+  name: AddOnResolveRequestCacheAsync(BeginEventHandler, EndEventHandler, object)
+  nameWithType: HttpApplication.AddOnResolveRequestCacheAsync(BeginEventHandler, EndEventHandler, object)
+  fullName: System.Web.HttpApplication.AddOnResolveRequestCacheAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler, object)
+  nameWithType.vb: HttpApplication.AddOnResolveRequestCacheAsync(BeginEventHandler, EndEventHandler, Object)
+  fullName.vb: System.Web.HttpApplication.AddOnResolveRequestCacheAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler, Object)
+  name.vb: AddOnResolveRequestCacheAsync(BeginEventHandler, EndEventHandler, Object)
+  spec.csharp:
+  - uid: System.Web.HttpApplication.AddOnResolveRequestCacheAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+    name: AddOnResolveRequestCacheAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonresolverequestcacheasync#system-web-httpapplication-addonresolverequestcacheasync(system-web-begineventhandler-system-web-endeventhandler-system-object)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Web.HttpApplication.AddOnResolveRequestCacheAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+    name: AddOnResolveRequestCacheAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonresolverequestcacheasync#system-web-httpapplication-addonresolverequestcacheasync(system-web-begineventhandler-system-web-endeventhandler-system-object)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Web.HttpApplication.AddOnPostResolveRequestCacheAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+  commentId: M:System.Web.HttpApplication.AddOnPostResolveRequestCacheAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonpostresolverequestcacheasync#system-web-httpapplication-addonpostresolverequestcacheasync(system-web-begineventhandler-system-web-endeventhandler)
+  name: AddOnPostResolveRequestCacheAsync(BeginEventHandler, EndEventHandler)
+  nameWithType: HttpApplication.AddOnPostResolveRequestCacheAsync(BeginEventHandler, EndEventHandler)
+  fullName: System.Web.HttpApplication.AddOnPostResolveRequestCacheAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler)
+  spec.csharp:
+  - uid: System.Web.HttpApplication.AddOnPostResolveRequestCacheAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+    name: AddOnPostResolveRequestCacheAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonpostresolverequestcacheasync#system-web-httpapplication-addonpostresolverequestcacheasync(system-web-begineventhandler-system-web-endeventhandler)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: )
+  spec.vb:
+  - uid: System.Web.HttpApplication.AddOnPostResolveRequestCacheAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+    name: AddOnPostResolveRequestCacheAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonpostresolverequestcacheasync#system-web-httpapplication-addonpostresolverequestcacheasync(system-web-begineventhandler-system-web-endeventhandler)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: )
+- uid: System.Web.HttpApplication.AddOnPostResolveRequestCacheAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+  commentId: M:System.Web.HttpApplication.AddOnPostResolveRequestCacheAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonpostresolverequestcacheasync#system-web-httpapplication-addonpostresolverequestcacheasync(system-web-begineventhandler-system-web-endeventhandler-system-object)
+  name: AddOnPostResolveRequestCacheAsync(BeginEventHandler, EndEventHandler, object)
+  nameWithType: HttpApplication.AddOnPostResolveRequestCacheAsync(BeginEventHandler, EndEventHandler, object)
+  fullName: System.Web.HttpApplication.AddOnPostResolveRequestCacheAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler, object)
+  nameWithType.vb: HttpApplication.AddOnPostResolveRequestCacheAsync(BeginEventHandler, EndEventHandler, Object)
+  fullName.vb: System.Web.HttpApplication.AddOnPostResolveRequestCacheAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler, Object)
+  name.vb: AddOnPostResolveRequestCacheAsync(BeginEventHandler, EndEventHandler, Object)
+  spec.csharp:
+  - uid: System.Web.HttpApplication.AddOnPostResolveRequestCacheAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+    name: AddOnPostResolveRequestCacheAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonpostresolverequestcacheasync#system-web-httpapplication-addonpostresolverequestcacheasync(system-web-begineventhandler-system-web-endeventhandler-system-object)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Web.HttpApplication.AddOnPostResolveRequestCacheAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+    name: AddOnPostResolveRequestCacheAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonpostresolverequestcacheasync#system-web-httpapplication-addonpostresolverequestcacheasync(system-web-begineventhandler-system-web-endeventhandler-system-object)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Web.HttpApplication.AddOnMapRequestHandlerAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+  commentId: M:System.Web.HttpApplication.AddOnMapRequestHandlerAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonmaprequesthandlerasync#system-web-httpapplication-addonmaprequesthandlerasync(system-web-begineventhandler-system-web-endeventhandler)
+  name: AddOnMapRequestHandlerAsync(BeginEventHandler, EndEventHandler)
+  nameWithType: HttpApplication.AddOnMapRequestHandlerAsync(BeginEventHandler, EndEventHandler)
+  fullName: System.Web.HttpApplication.AddOnMapRequestHandlerAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler)
+  spec.csharp:
+  - uid: System.Web.HttpApplication.AddOnMapRequestHandlerAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+    name: AddOnMapRequestHandlerAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonmaprequesthandlerasync#system-web-httpapplication-addonmaprequesthandlerasync(system-web-begineventhandler-system-web-endeventhandler)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: )
+  spec.vb:
+  - uid: System.Web.HttpApplication.AddOnMapRequestHandlerAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+    name: AddOnMapRequestHandlerAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonmaprequesthandlerasync#system-web-httpapplication-addonmaprequesthandlerasync(system-web-begineventhandler-system-web-endeventhandler)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: )
+- uid: System.Web.HttpApplication.AddOnMapRequestHandlerAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+  commentId: M:System.Web.HttpApplication.AddOnMapRequestHandlerAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonmaprequesthandlerasync#system-web-httpapplication-addonmaprequesthandlerasync(system-web-begineventhandler-system-web-endeventhandler-system-object)
+  name: AddOnMapRequestHandlerAsync(BeginEventHandler, EndEventHandler, object)
+  nameWithType: HttpApplication.AddOnMapRequestHandlerAsync(BeginEventHandler, EndEventHandler, object)
+  fullName: System.Web.HttpApplication.AddOnMapRequestHandlerAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler, object)
+  nameWithType.vb: HttpApplication.AddOnMapRequestHandlerAsync(BeginEventHandler, EndEventHandler, Object)
+  fullName.vb: System.Web.HttpApplication.AddOnMapRequestHandlerAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler, Object)
+  name.vb: AddOnMapRequestHandlerAsync(BeginEventHandler, EndEventHandler, Object)
+  spec.csharp:
+  - uid: System.Web.HttpApplication.AddOnMapRequestHandlerAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+    name: AddOnMapRequestHandlerAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonmaprequesthandlerasync#system-web-httpapplication-addonmaprequesthandlerasync(system-web-begineventhandler-system-web-endeventhandler-system-object)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Web.HttpApplication.AddOnMapRequestHandlerAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+    name: AddOnMapRequestHandlerAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonmaprequesthandlerasync#system-web-httpapplication-addonmaprequesthandlerasync(system-web-begineventhandler-system-web-endeventhandler-system-object)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Web.HttpApplication.AddOnPostMapRequestHandlerAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+  commentId: M:System.Web.HttpApplication.AddOnPostMapRequestHandlerAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonpostmaprequesthandlerasync#system-web-httpapplication-addonpostmaprequesthandlerasync(system-web-begineventhandler-system-web-endeventhandler)
+  name: AddOnPostMapRequestHandlerAsync(BeginEventHandler, EndEventHandler)
+  nameWithType: HttpApplication.AddOnPostMapRequestHandlerAsync(BeginEventHandler, EndEventHandler)
+  fullName: System.Web.HttpApplication.AddOnPostMapRequestHandlerAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler)
+  spec.csharp:
+  - uid: System.Web.HttpApplication.AddOnPostMapRequestHandlerAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+    name: AddOnPostMapRequestHandlerAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonpostmaprequesthandlerasync#system-web-httpapplication-addonpostmaprequesthandlerasync(system-web-begineventhandler-system-web-endeventhandler)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: )
+  spec.vb:
+  - uid: System.Web.HttpApplication.AddOnPostMapRequestHandlerAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+    name: AddOnPostMapRequestHandlerAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonpostmaprequesthandlerasync#system-web-httpapplication-addonpostmaprequesthandlerasync(system-web-begineventhandler-system-web-endeventhandler)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: )
+- uid: System.Web.HttpApplication.AddOnPostMapRequestHandlerAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+  commentId: M:System.Web.HttpApplication.AddOnPostMapRequestHandlerAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonpostmaprequesthandlerasync#system-web-httpapplication-addonpostmaprequesthandlerasync(system-web-begineventhandler-system-web-endeventhandler-system-object)
+  name: AddOnPostMapRequestHandlerAsync(BeginEventHandler, EndEventHandler, object)
+  nameWithType: HttpApplication.AddOnPostMapRequestHandlerAsync(BeginEventHandler, EndEventHandler, object)
+  fullName: System.Web.HttpApplication.AddOnPostMapRequestHandlerAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler, object)
+  nameWithType.vb: HttpApplication.AddOnPostMapRequestHandlerAsync(BeginEventHandler, EndEventHandler, Object)
+  fullName.vb: System.Web.HttpApplication.AddOnPostMapRequestHandlerAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler, Object)
+  name.vb: AddOnPostMapRequestHandlerAsync(BeginEventHandler, EndEventHandler, Object)
+  spec.csharp:
+  - uid: System.Web.HttpApplication.AddOnPostMapRequestHandlerAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+    name: AddOnPostMapRequestHandlerAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonpostmaprequesthandlerasync#system-web-httpapplication-addonpostmaprequesthandlerasync(system-web-begineventhandler-system-web-endeventhandler-system-object)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Web.HttpApplication.AddOnPostMapRequestHandlerAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+    name: AddOnPostMapRequestHandlerAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonpostmaprequesthandlerasync#system-web-httpapplication-addonpostmaprequesthandlerasync(system-web-begineventhandler-system-web-endeventhandler-system-object)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Web.HttpApplication.AddOnAcquireRequestStateAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+  commentId: M:System.Web.HttpApplication.AddOnAcquireRequestStateAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonacquirerequeststateasync#system-web-httpapplication-addonacquirerequeststateasync(system-web-begineventhandler-system-web-endeventhandler)
+  name: AddOnAcquireRequestStateAsync(BeginEventHandler, EndEventHandler)
+  nameWithType: HttpApplication.AddOnAcquireRequestStateAsync(BeginEventHandler, EndEventHandler)
+  fullName: System.Web.HttpApplication.AddOnAcquireRequestStateAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler)
+  spec.csharp:
+  - uid: System.Web.HttpApplication.AddOnAcquireRequestStateAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+    name: AddOnAcquireRequestStateAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonacquirerequeststateasync#system-web-httpapplication-addonacquirerequeststateasync(system-web-begineventhandler-system-web-endeventhandler)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: )
+  spec.vb:
+  - uid: System.Web.HttpApplication.AddOnAcquireRequestStateAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+    name: AddOnAcquireRequestStateAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonacquirerequeststateasync#system-web-httpapplication-addonacquirerequeststateasync(system-web-begineventhandler-system-web-endeventhandler)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: )
+- uid: System.Web.HttpApplication.AddOnAcquireRequestStateAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+  commentId: M:System.Web.HttpApplication.AddOnAcquireRequestStateAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonacquirerequeststateasync#system-web-httpapplication-addonacquirerequeststateasync(system-web-begineventhandler-system-web-endeventhandler-system-object)
+  name: AddOnAcquireRequestStateAsync(BeginEventHandler, EndEventHandler, object)
+  nameWithType: HttpApplication.AddOnAcquireRequestStateAsync(BeginEventHandler, EndEventHandler, object)
+  fullName: System.Web.HttpApplication.AddOnAcquireRequestStateAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler, object)
+  nameWithType.vb: HttpApplication.AddOnAcquireRequestStateAsync(BeginEventHandler, EndEventHandler, Object)
+  fullName.vb: System.Web.HttpApplication.AddOnAcquireRequestStateAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler, Object)
+  name.vb: AddOnAcquireRequestStateAsync(BeginEventHandler, EndEventHandler, Object)
+  spec.csharp:
+  - uid: System.Web.HttpApplication.AddOnAcquireRequestStateAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+    name: AddOnAcquireRequestStateAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonacquirerequeststateasync#system-web-httpapplication-addonacquirerequeststateasync(system-web-begineventhandler-system-web-endeventhandler-system-object)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Web.HttpApplication.AddOnAcquireRequestStateAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+    name: AddOnAcquireRequestStateAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonacquirerequeststateasync#system-web-httpapplication-addonacquirerequeststateasync(system-web-begineventhandler-system-web-endeventhandler-system-object)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Web.HttpApplication.AddOnPostAcquireRequestStateAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+  commentId: M:System.Web.HttpApplication.AddOnPostAcquireRequestStateAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonpostacquirerequeststateasync#system-web-httpapplication-addonpostacquirerequeststateasync(system-web-begineventhandler-system-web-endeventhandler)
+  name: AddOnPostAcquireRequestStateAsync(BeginEventHandler, EndEventHandler)
+  nameWithType: HttpApplication.AddOnPostAcquireRequestStateAsync(BeginEventHandler, EndEventHandler)
+  fullName: System.Web.HttpApplication.AddOnPostAcquireRequestStateAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler)
+  spec.csharp:
+  - uid: System.Web.HttpApplication.AddOnPostAcquireRequestStateAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+    name: AddOnPostAcquireRequestStateAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonpostacquirerequeststateasync#system-web-httpapplication-addonpostacquirerequeststateasync(system-web-begineventhandler-system-web-endeventhandler)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: )
+  spec.vb:
+  - uid: System.Web.HttpApplication.AddOnPostAcquireRequestStateAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+    name: AddOnPostAcquireRequestStateAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonpostacquirerequeststateasync#system-web-httpapplication-addonpostacquirerequeststateasync(system-web-begineventhandler-system-web-endeventhandler)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: )
+- uid: System.Web.HttpApplication.AddOnPostAcquireRequestStateAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+  commentId: M:System.Web.HttpApplication.AddOnPostAcquireRequestStateAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonpostacquirerequeststateasync#system-web-httpapplication-addonpostacquirerequeststateasync(system-web-begineventhandler-system-web-endeventhandler-system-object)
+  name: AddOnPostAcquireRequestStateAsync(BeginEventHandler, EndEventHandler, object)
+  nameWithType: HttpApplication.AddOnPostAcquireRequestStateAsync(BeginEventHandler, EndEventHandler, object)
+  fullName: System.Web.HttpApplication.AddOnPostAcquireRequestStateAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler, object)
+  nameWithType.vb: HttpApplication.AddOnPostAcquireRequestStateAsync(BeginEventHandler, EndEventHandler, Object)
+  fullName.vb: System.Web.HttpApplication.AddOnPostAcquireRequestStateAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler, Object)
+  name.vb: AddOnPostAcquireRequestStateAsync(BeginEventHandler, EndEventHandler, Object)
+  spec.csharp:
+  - uid: System.Web.HttpApplication.AddOnPostAcquireRequestStateAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+    name: AddOnPostAcquireRequestStateAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonpostacquirerequeststateasync#system-web-httpapplication-addonpostacquirerequeststateasync(system-web-begineventhandler-system-web-endeventhandler-system-object)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Web.HttpApplication.AddOnPostAcquireRequestStateAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+    name: AddOnPostAcquireRequestStateAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonpostacquirerequeststateasync#system-web-httpapplication-addonpostacquirerequeststateasync(system-web-begineventhandler-system-web-endeventhandler-system-object)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Web.HttpApplication.AddOnPreRequestHandlerExecuteAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+  commentId: M:System.Web.HttpApplication.AddOnPreRequestHandlerExecuteAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonprerequesthandlerexecuteasync#system-web-httpapplication-addonprerequesthandlerexecuteasync(system-web-begineventhandler-system-web-endeventhandler)
+  name: AddOnPreRequestHandlerExecuteAsync(BeginEventHandler, EndEventHandler)
+  nameWithType: HttpApplication.AddOnPreRequestHandlerExecuteAsync(BeginEventHandler, EndEventHandler)
+  fullName: System.Web.HttpApplication.AddOnPreRequestHandlerExecuteAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler)
+  spec.csharp:
+  - uid: System.Web.HttpApplication.AddOnPreRequestHandlerExecuteAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+    name: AddOnPreRequestHandlerExecuteAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonprerequesthandlerexecuteasync#system-web-httpapplication-addonprerequesthandlerexecuteasync(system-web-begineventhandler-system-web-endeventhandler)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: )
+  spec.vb:
+  - uid: System.Web.HttpApplication.AddOnPreRequestHandlerExecuteAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+    name: AddOnPreRequestHandlerExecuteAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonprerequesthandlerexecuteasync#system-web-httpapplication-addonprerequesthandlerexecuteasync(system-web-begineventhandler-system-web-endeventhandler)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: )
+- uid: System.Web.HttpApplication.AddOnPreRequestHandlerExecuteAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+  commentId: M:System.Web.HttpApplication.AddOnPreRequestHandlerExecuteAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonprerequesthandlerexecuteasync#system-web-httpapplication-addonprerequesthandlerexecuteasync(system-web-begineventhandler-system-web-endeventhandler-system-object)
+  name: AddOnPreRequestHandlerExecuteAsync(BeginEventHandler, EndEventHandler, object)
+  nameWithType: HttpApplication.AddOnPreRequestHandlerExecuteAsync(BeginEventHandler, EndEventHandler, object)
+  fullName: System.Web.HttpApplication.AddOnPreRequestHandlerExecuteAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler, object)
+  nameWithType.vb: HttpApplication.AddOnPreRequestHandlerExecuteAsync(BeginEventHandler, EndEventHandler, Object)
+  fullName.vb: System.Web.HttpApplication.AddOnPreRequestHandlerExecuteAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler, Object)
+  name.vb: AddOnPreRequestHandlerExecuteAsync(BeginEventHandler, EndEventHandler, Object)
+  spec.csharp:
+  - uid: System.Web.HttpApplication.AddOnPreRequestHandlerExecuteAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+    name: AddOnPreRequestHandlerExecuteAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonprerequesthandlerexecuteasync#system-web-httpapplication-addonprerequesthandlerexecuteasync(system-web-begineventhandler-system-web-endeventhandler-system-object)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Web.HttpApplication.AddOnPreRequestHandlerExecuteAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+    name: AddOnPreRequestHandlerExecuteAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonprerequesthandlerexecuteasync#system-web-httpapplication-addonprerequesthandlerexecuteasync(system-web-begineventhandler-system-web-endeventhandler-system-object)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Web.HttpApplication.AddOnPostRequestHandlerExecuteAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+  commentId: M:System.Web.HttpApplication.AddOnPostRequestHandlerExecuteAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonpostrequesthandlerexecuteasync#system-web-httpapplication-addonpostrequesthandlerexecuteasync(system-web-begineventhandler-system-web-endeventhandler)
+  name: AddOnPostRequestHandlerExecuteAsync(BeginEventHandler, EndEventHandler)
+  nameWithType: HttpApplication.AddOnPostRequestHandlerExecuteAsync(BeginEventHandler, EndEventHandler)
+  fullName: System.Web.HttpApplication.AddOnPostRequestHandlerExecuteAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler)
+  spec.csharp:
+  - uid: System.Web.HttpApplication.AddOnPostRequestHandlerExecuteAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+    name: AddOnPostRequestHandlerExecuteAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonpostrequesthandlerexecuteasync#system-web-httpapplication-addonpostrequesthandlerexecuteasync(system-web-begineventhandler-system-web-endeventhandler)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: )
+  spec.vb:
+  - uid: System.Web.HttpApplication.AddOnPostRequestHandlerExecuteAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+    name: AddOnPostRequestHandlerExecuteAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonpostrequesthandlerexecuteasync#system-web-httpapplication-addonpostrequesthandlerexecuteasync(system-web-begineventhandler-system-web-endeventhandler)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: )
+- uid: System.Web.HttpApplication.AddOnPostRequestHandlerExecuteAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+  commentId: M:System.Web.HttpApplication.AddOnPostRequestHandlerExecuteAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonpostrequesthandlerexecuteasync#system-web-httpapplication-addonpostrequesthandlerexecuteasync(system-web-begineventhandler-system-web-endeventhandler-system-object)
+  name: AddOnPostRequestHandlerExecuteAsync(BeginEventHandler, EndEventHandler, object)
+  nameWithType: HttpApplication.AddOnPostRequestHandlerExecuteAsync(BeginEventHandler, EndEventHandler, object)
+  fullName: System.Web.HttpApplication.AddOnPostRequestHandlerExecuteAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler, object)
+  nameWithType.vb: HttpApplication.AddOnPostRequestHandlerExecuteAsync(BeginEventHandler, EndEventHandler, Object)
+  fullName.vb: System.Web.HttpApplication.AddOnPostRequestHandlerExecuteAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler, Object)
+  name.vb: AddOnPostRequestHandlerExecuteAsync(BeginEventHandler, EndEventHandler, Object)
+  spec.csharp:
+  - uid: System.Web.HttpApplication.AddOnPostRequestHandlerExecuteAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+    name: AddOnPostRequestHandlerExecuteAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonpostrequesthandlerexecuteasync#system-web-httpapplication-addonpostrequesthandlerexecuteasync(system-web-begineventhandler-system-web-endeventhandler-system-object)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Web.HttpApplication.AddOnPostRequestHandlerExecuteAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+    name: AddOnPostRequestHandlerExecuteAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonpostrequesthandlerexecuteasync#system-web-httpapplication-addonpostrequesthandlerexecuteasync(system-web-begineventhandler-system-web-endeventhandler-system-object)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Web.HttpApplication.AddOnReleaseRequestStateAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+  commentId: M:System.Web.HttpApplication.AddOnReleaseRequestStateAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonreleaserequeststateasync#system-web-httpapplication-addonreleaserequeststateasync(system-web-begineventhandler-system-web-endeventhandler)
+  name: AddOnReleaseRequestStateAsync(BeginEventHandler, EndEventHandler)
+  nameWithType: HttpApplication.AddOnReleaseRequestStateAsync(BeginEventHandler, EndEventHandler)
+  fullName: System.Web.HttpApplication.AddOnReleaseRequestStateAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler)
+  spec.csharp:
+  - uid: System.Web.HttpApplication.AddOnReleaseRequestStateAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+    name: AddOnReleaseRequestStateAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonreleaserequeststateasync#system-web-httpapplication-addonreleaserequeststateasync(system-web-begineventhandler-system-web-endeventhandler)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: )
+  spec.vb:
+  - uid: System.Web.HttpApplication.AddOnReleaseRequestStateAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+    name: AddOnReleaseRequestStateAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonreleaserequeststateasync#system-web-httpapplication-addonreleaserequeststateasync(system-web-begineventhandler-system-web-endeventhandler)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: )
+- uid: System.Web.HttpApplication.AddOnReleaseRequestStateAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+  commentId: M:System.Web.HttpApplication.AddOnReleaseRequestStateAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonreleaserequeststateasync#system-web-httpapplication-addonreleaserequeststateasync(system-web-begineventhandler-system-web-endeventhandler-system-object)
+  name: AddOnReleaseRequestStateAsync(BeginEventHandler, EndEventHandler, object)
+  nameWithType: HttpApplication.AddOnReleaseRequestStateAsync(BeginEventHandler, EndEventHandler, object)
+  fullName: System.Web.HttpApplication.AddOnReleaseRequestStateAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler, object)
+  nameWithType.vb: HttpApplication.AddOnReleaseRequestStateAsync(BeginEventHandler, EndEventHandler, Object)
+  fullName.vb: System.Web.HttpApplication.AddOnReleaseRequestStateAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler, Object)
+  name.vb: AddOnReleaseRequestStateAsync(BeginEventHandler, EndEventHandler, Object)
+  spec.csharp:
+  - uid: System.Web.HttpApplication.AddOnReleaseRequestStateAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+    name: AddOnReleaseRequestStateAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonreleaserequeststateasync#system-web-httpapplication-addonreleaserequeststateasync(system-web-begineventhandler-system-web-endeventhandler-system-object)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Web.HttpApplication.AddOnReleaseRequestStateAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+    name: AddOnReleaseRequestStateAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonreleaserequeststateasync#system-web-httpapplication-addonreleaserequeststateasync(system-web-begineventhandler-system-web-endeventhandler-system-object)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Web.HttpApplication.AddOnPostReleaseRequestStateAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+  commentId: M:System.Web.HttpApplication.AddOnPostReleaseRequestStateAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonpostreleaserequeststateasync#system-web-httpapplication-addonpostreleaserequeststateasync(system-web-begineventhandler-system-web-endeventhandler)
+  name: AddOnPostReleaseRequestStateAsync(BeginEventHandler, EndEventHandler)
+  nameWithType: HttpApplication.AddOnPostReleaseRequestStateAsync(BeginEventHandler, EndEventHandler)
+  fullName: System.Web.HttpApplication.AddOnPostReleaseRequestStateAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler)
+  spec.csharp:
+  - uid: System.Web.HttpApplication.AddOnPostReleaseRequestStateAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+    name: AddOnPostReleaseRequestStateAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonpostreleaserequeststateasync#system-web-httpapplication-addonpostreleaserequeststateasync(system-web-begineventhandler-system-web-endeventhandler)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: )
+  spec.vb:
+  - uid: System.Web.HttpApplication.AddOnPostReleaseRequestStateAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+    name: AddOnPostReleaseRequestStateAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonpostreleaserequeststateasync#system-web-httpapplication-addonpostreleaserequeststateasync(system-web-begineventhandler-system-web-endeventhandler)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: )
+- uid: System.Web.HttpApplication.AddOnPostReleaseRequestStateAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+  commentId: M:System.Web.HttpApplication.AddOnPostReleaseRequestStateAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonpostreleaserequeststateasync#system-web-httpapplication-addonpostreleaserequeststateasync(system-web-begineventhandler-system-web-endeventhandler-system-object)
+  name: AddOnPostReleaseRequestStateAsync(BeginEventHandler, EndEventHandler, object)
+  nameWithType: HttpApplication.AddOnPostReleaseRequestStateAsync(BeginEventHandler, EndEventHandler, object)
+  fullName: System.Web.HttpApplication.AddOnPostReleaseRequestStateAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler, object)
+  nameWithType.vb: HttpApplication.AddOnPostReleaseRequestStateAsync(BeginEventHandler, EndEventHandler, Object)
+  fullName.vb: System.Web.HttpApplication.AddOnPostReleaseRequestStateAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler, Object)
+  name.vb: AddOnPostReleaseRequestStateAsync(BeginEventHandler, EndEventHandler, Object)
+  spec.csharp:
+  - uid: System.Web.HttpApplication.AddOnPostReleaseRequestStateAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+    name: AddOnPostReleaseRequestStateAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonpostreleaserequeststateasync#system-web-httpapplication-addonpostreleaserequeststateasync(system-web-begineventhandler-system-web-endeventhandler-system-object)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Web.HttpApplication.AddOnPostReleaseRequestStateAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+    name: AddOnPostReleaseRequestStateAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonpostreleaserequeststateasync#system-web-httpapplication-addonpostreleaserequeststateasync(system-web-begineventhandler-system-web-endeventhandler-system-object)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Web.HttpApplication.AddOnUpdateRequestCacheAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+  commentId: M:System.Web.HttpApplication.AddOnUpdateRequestCacheAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonupdaterequestcacheasync#system-web-httpapplication-addonupdaterequestcacheasync(system-web-begineventhandler-system-web-endeventhandler)
+  name: AddOnUpdateRequestCacheAsync(BeginEventHandler, EndEventHandler)
+  nameWithType: HttpApplication.AddOnUpdateRequestCacheAsync(BeginEventHandler, EndEventHandler)
+  fullName: System.Web.HttpApplication.AddOnUpdateRequestCacheAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler)
+  spec.csharp:
+  - uid: System.Web.HttpApplication.AddOnUpdateRequestCacheAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+    name: AddOnUpdateRequestCacheAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonupdaterequestcacheasync#system-web-httpapplication-addonupdaterequestcacheasync(system-web-begineventhandler-system-web-endeventhandler)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: )
+  spec.vb:
+  - uid: System.Web.HttpApplication.AddOnUpdateRequestCacheAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+    name: AddOnUpdateRequestCacheAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonupdaterequestcacheasync#system-web-httpapplication-addonupdaterequestcacheasync(system-web-begineventhandler-system-web-endeventhandler)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: )
+- uid: System.Web.HttpApplication.AddOnUpdateRequestCacheAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+  commentId: M:System.Web.HttpApplication.AddOnUpdateRequestCacheAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonupdaterequestcacheasync#system-web-httpapplication-addonupdaterequestcacheasync(system-web-begineventhandler-system-web-endeventhandler-system-object)
+  name: AddOnUpdateRequestCacheAsync(BeginEventHandler, EndEventHandler, object)
+  nameWithType: HttpApplication.AddOnUpdateRequestCacheAsync(BeginEventHandler, EndEventHandler, object)
+  fullName: System.Web.HttpApplication.AddOnUpdateRequestCacheAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler, object)
+  nameWithType.vb: HttpApplication.AddOnUpdateRequestCacheAsync(BeginEventHandler, EndEventHandler, Object)
+  fullName.vb: System.Web.HttpApplication.AddOnUpdateRequestCacheAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler, Object)
+  name.vb: AddOnUpdateRequestCacheAsync(BeginEventHandler, EndEventHandler, Object)
+  spec.csharp:
+  - uid: System.Web.HttpApplication.AddOnUpdateRequestCacheAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+    name: AddOnUpdateRequestCacheAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonupdaterequestcacheasync#system-web-httpapplication-addonupdaterequestcacheasync(system-web-begineventhandler-system-web-endeventhandler-system-object)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Web.HttpApplication.AddOnUpdateRequestCacheAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+    name: AddOnUpdateRequestCacheAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonupdaterequestcacheasync#system-web-httpapplication-addonupdaterequestcacheasync(system-web-begineventhandler-system-web-endeventhandler-system-object)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Web.HttpApplication.AddOnPostUpdateRequestCacheAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+  commentId: M:System.Web.HttpApplication.AddOnPostUpdateRequestCacheAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonpostupdaterequestcacheasync#system-web-httpapplication-addonpostupdaterequestcacheasync(system-web-begineventhandler-system-web-endeventhandler)
+  name: AddOnPostUpdateRequestCacheAsync(BeginEventHandler, EndEventHandler)
+  nameWithType: HttpApplication.AddOnPostUpdateRequestCacheAsync(BeginEventHandler, EndEventHandler)
+  fullName: System.Web.HttpApplication.AddOnPostUpdateRequestCacheAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler)
+  spec.csharp:
+  - uid: System.Web.HttpApplication.AddOnPostUpdateRequestCacheAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+    name: AddOnPostUpdateRequestCacheAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonpostupdaterequestcacheasync#system-web-httpapplication-addonpostupdaterequestcacheasync(system-web-begineventhandler-system-web-endeventhandler)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: )
+  spec.vb:
+  - uid: System.Web.HttpApplication.AddOnPostUpdateRequestCacheAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+    name: AddOnPostUpdateRequestCacheAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonpostupdaterequestcacheasync#system-web-httpapplication-addonpostupdaterequestcacheasync(system-web-begineventhandler-system-web-endeventhandler)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: )
+- uid: System.Web.HttpApplication.AddOnPostUpdateRequestCacheAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+  commentId: M:System.Web.HttpApplication.AddOnPostUpdateRequestCacheAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonpostupdaterequestcacheasync#system-web-httpapplication-addonpostupdaterequestcacheasync(system-web-begineventhandler-system-web-endeventhandler-system-object)
+  name: AddOnPostUpdateRequestCacheAsync(BeginEventHandler, EndEventHandler, object)
+  nameWithType: HttpApplication.AddOnPostUpdateRequestCacheAsync(BeginEventHandler, EndEventHandler, object)
+  fullName: System.Web.HttpApplication.AddOnPostUpdateRequestCacheAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler, object)
+  nameWithType.vb: HttpApplication.AddOnPostUpdateRequestCacheAsync(BeginEventHandler, EndEventHandler, Object)
+  fullName.vb: System.Web.HttpApplication.AddOnPostUpdateRequestCacheAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler, Object)
+  name.vb: AddOnPostUpdateRequestCacheAsync(BeginEventHandler, EndEventHandler, Object)
+  spec.csharp:
+  - uid: System.Web.HttpApplication.AddOnPostUpdateRequestCacheAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+    name: AddOnPostUpdateRequestCacheAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonpostupdaterequestcacheasync#system-web-httpapplication-addonpostupdaterequestcacheasync(system-web-begineventhandler-system-web-endeventhandler-system-object)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Web.HttpApplication.AddOnPostUpdateRequestCacheAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+    name: AddOnPostUpdateRequestCacheAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonpostupdaterequestcacheasync#system-web-httpapplication-addonpostupdaterequestcacheasync(system-web-begineventhandler-system-web-endeventhandler-system-object)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Web.HttpApplication.AddOnLogRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+  commentId: M:System.Web.HttpApplication.AddOnLogRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonlogrequestasync#system-web-httpapplication-addonlogrequestasync(system-web-begineventhandler-system-web-endeventhandler)
+  name: AddOnLogRequestAsync(BeginEventHandler, EndEventHandler)
+  nameWithType: HttpApplication.AddOnLogRequestAsync(BeginEventHandler, EndEventHandler)
+  fullName: System.Web.HttpApplication.AddOnLogRequestAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler)
+  spec.csharp:
+  - uid: System.Web.HttpApplication.AddOnLogRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+    name: AddOnLogRequestAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonlogrequestasync#system-web-httpapplication-addonlogrequestasync(system-web-begineventhandler-system-web-endeventhandler)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: )
+  spec.vb:
+  - uid: System.Web.HttpApplication.AddOnLogRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+    name: AddOnLogRequestAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonlogrequestasync#system-web-httpapplication-addonlogrequestasync(system-web-begineventhandler-system-web-endeventhandler)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: )
+- uid: System.Web.HttpApplication.AddOnLogRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+  commentId: M:System.Web.HttpApplication.AddOnLogRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonlogrequestasync#system-web-httpapplication-addonlogrequestasync(system-web-begineventhandler-system-web-endeventhandler-system-object)
+  name: AddOnLogRequestAsync(BeginEventHandler, EndEventHandler, object)
+  nameWithType: HttpApplication.AddOnLogRequestAsync(BeginEventHandler, EndEventHandler, object)
+  fullName: System.Web.HttpApplication.AddOnLogRequestAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler, object)
+  nameWithType.vb: HttpApplication.AddOnLogRequestAsync(BeginEventHandler, EndEventHandler, Object)
+  fullName.vb: System.Web.HttpApplication.AddOnLogRequestAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler, Object)
+  name.vb: AddOnLogRequestAsync(BeginEventHandler, EndEventHandler, Object)
+  spec.csharp:
+  - uid: System.Web.HttpApplication.AddOnLogRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+    name: AddOnLogRequestAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonlogrequestasync#system-web-httpapplication-addonlogrequestasync(system-web-begineventhandler-system-web-endeventhandler-system-object)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Web.HttpApplication.AddOnLogRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+    name: AddOnLogRequestAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonlogrequestasync#system-web-httpapplication-addonlogrequestasync(system-web-begineventhandler-system-web-endeventhandler-system-object)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Web.HttpApplication.AddOnPostLogRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+  commentId: M:System.Web.HttpApplication.AddOnPostLogRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonpostlogrequestasync#system-web-httpapplication-addonpostlogrequestasync(system-web-begineventhandler-system-web-endeventhandler)
+  name: AddOnPostLogRequestAsync(BeginEventHandler, EndEventHandler)
+  nameWithType: HttpApplication.AddOnPostLogRequestAsync(BeginEventHandler, EndEventHandler)
+  fullName: System.Web.HttpApplication.AddOnPostLogRequestAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler)
+  spec.csharp:
+  - uid: System.Web.HttpApplication.AddOnPostLogRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+    name: AddOnPostLogRequestAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonpostlogrequestasync#system-web-httpapplication-addonpostlogrequestasync(system-web-begineventhandler-system-web-endeventhandler)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: )
+  spec.vb:
+  - uid: System.Web.HttpApplication.AddOnPostLogRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+    name: AddOnPostLogRequestAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonpostlogrequestasync#system-web-httpapplication-addonpostlogrequestasync(system-web-begineventhandler-system-web-endeventhandler)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: )
+- uid: System.Web.HttpApplication.AddOnPostLogRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+  commentId: M:System.Web.HttpApplication.AddOnPostLogRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonpostlogrequestasync#system-web-httpapplication-addonpostlogrequestasync(system-web-begineventhandler-system-web-endeventhandler-system-object)
+  name: AddOnPostLogRequestAsync(BeginEventHandler, EndEventHandler, object)
+  nameWithType: HttpApplication.AddOnPostLogRequestAsync(BeginEventHandler, EndEventHandler, object)
+  fullName: System.Web.HttpApplication.AddOnPostLogRequestAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler, object)
+  nameWithType.vb: HttpApplication.AddOnPostLogRequestAsync(BeginEventHandler, EndEventHandler, Object)
+  fullName.vb: System.Web.HttpApplication.AddOnPostLogRequestAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler, Object)
+  name.vb: AddOnPostLogRequestAsync(BeginEventHandler, EndEventHandler, Object)
+  spec.csharp:
+  - uid: System.Web.HttpApplication.AddOnPostLogRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+    name: AddOnPostLogRequestAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonpostlogrequestasync#system-web-httpapplication-addonpostlogrequestasync(system-web-begineventhandler-system-web-endeventhandler-system-object)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Web.HttpApplication.AddOnPostLogRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+    name: AddOnPostLogRequestAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonpostlogrequestasync#system-web-httpapplication-addonpostlogrequestasync(system-web-begineventhandler-system-web-endeventhandler-system-object)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Web.HttpApplication.AddOnEndRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+  commentId: M:System.Web.HttpApplication.AddOnEndRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonendrequestasync#system-web-httpapplication-addonendrequestasync(system-web-begineventhandler-system-web-endeventhandler)
+  name: AddOnEndRequestAsync(BeginEventHandler, EndEventHandler)
+  nameWithType: HttpApplication.AddOnEndRequestAsync(BeginEventHandler, EndEventHandler)
+  fullName: System.Web.HttpApplication.AddOnEndRequestAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler)
+  spec.csharp:
+  - uid: System.Web.HttpApplication.AddOnEndRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+    name: AddOnEndRequestAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonendrequestasync#system-web-httpapplication-addonendrequestasync(system-web-begineventhandler-system-web-endeventhandler)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: )
+  spec.vb:
+  - uid: System.Web.HttpApplication.AddOnEndRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)
+    name: AddOnEndRequestAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonendrequestasync#system-web-httpapplication-addonendrequestasync(system-web-begineventhandler-system-web-endeventhandler)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: )
+- uid: System.Web.HttpApplication.AddOnEndRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+  commentId: M:System.Web.HttpApplication.AddOnEndRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonendrequestasync#system-web-httpapplication-addonendrequestasync(system-web-begineventhandler-system-web-endeventhandler-system-object)
+  name: AddOnEndRequestAsync(BeginEventHandler, EndEventHandler, object)
+  nameWithType: HttpApplication.AddOnEndRequestAsync(BeginEventHandler, EndEventHandler, object)
+  fullName: System.Web.HttpApplication.AddOnEndRequestAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler, object)
+  nameWithType.vb: HttpApplication.AddOnEndRequestAsync(BeginEventHandler, EndEventHandler, Object)
+  fullName.vb: System.Web.HttpApplication.AddOnEndRequestAsync(System.Web.BeginEventHandler, System.Web.EndEventHandler, Object)
+  name.vb: AddOnEndRequestAsync(BeginEventHandler, EndEventHandler, Object)
+  spec.csharp:
+  - uid: System.Web.HttpApplication.AddOnEndRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+    name: AddOnEndRequestAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonendrequestasync#system-web-httpapplication-addonendrequestasync(system-web-begineventhandler-system-web-endeventhandler-system-object)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Web.HttpApplication.AddOnEndRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)
+    name: AddOnEndRequestAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.addonendrequestasync#system-web-httpapplication-addonendrequestasync(system-web-begineventhandler-system-web-endeventhandler-system-object)
+  - name: (
+  - uid: System.Web.BeginEventHandler
+    name: BeginEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.begineventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Web.EndEventHandler
+    name: EndEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.endeventhandler
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Web.HttpApplication.Init
+  commentId: M:System.Web.HttpApplication.Init
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.init
+  name: Init()
+  nameWithType: HttpApplication.Init()
+  fullName: System.Web.HttpApplication.Init()
+  spec.csharp:
+  - uid: System.Web.HttpApplication.Init
+    name: Init
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.init
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Web.HttpApplication.Init
+    name: Init
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.init
+  - name: (
+  - name: )
+- uid: System.Web.HttpApplication.Dispose
+  commentId: M:System.Web.HttpApplication.Dispose
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.dispose
+  name: Dispose()
+  nameWithType: HttpApplication.Dispose()
+  fullName: System.Web.HttpApplication.Dispose()
+  spec.csharp:
+  - uid: System.Web.HttpApplication.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Web.HttpApplication.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.dispose
+  - name: (
+  - name: )
+- uid: System.Web.HttpApplication.GetVaryByCustomString(System.Web.HttpContext,System.String)
+  commentId: M:System.Web.HttpApplication.GetVaryByCustomString(System.Web.HttpContext,System.String)
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.getvarybycustomstring
+  name: GetVaryByCustomString(HttpContext, string)
+  nameWithType: HttpApplication.GetVaryByCustomString(HttpContext, string)
+  fullName: System.Web.HttpApplication.GetVaryByCustomString(System.Web.HttpContext, string)
+  nameWithType.vb: HttpApplication.GetVaryByCustomString(HttpContext, String)
+  fullName.vb: System.Web.HttpApplication.GetVaryByCustomString(System.Web.HttpContext, String)
+  name.vb: GetVaryByCustomString(HttpContext, String)
+  spec.csharp:
+  - uid: System.Web.HttpApplication.GetVaryByCustomString(System.Web.HttpContext,System.String)
+    name: GetVaryByCustomString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.getvarybycustomstring
+  - name: (
+  - uid: System.Web.HttpContext
+    name: HttpContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpcontext
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: System.Web.HttpApplication.GetVaryByCustomString(System.Web.HttpContext,System.String)
+    name: GetVaryByCustomString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.getvarybycustomstring
+  - name: (
+  - uid: System.Web.HttpContext
+    name: HttpContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpcontext
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Web.HttpApplication.GetOutputCacheProviderName(System.Web.HttpContext)
+  commentId: M:System.Web.HttpApplication.GetOutputCacheProviderName(System.Web.HttpContext)
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.getoutputcacheprovidername
+  name: GetOutputCacheProviderName(HttpContext)
+  nameWithType: HttpApplication.GetOutputCacheProviderName(HttpContext)
+  fullName: System.Web.HttpApplication.GetOutputCacheProviderName(System.Web.HttpContext)
+  spec.csharp:
+  - uid: System.Web.HttpApplication.GetOutputCacheProviderName(System.Web.HttpContext)
+    name: GetOutputCacheProviderName
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.getoutputcacheprovidername
+  - name: (
+  - uid: System.Web.HttpContext
+    name: HttpContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpcontext
+  - name: )
+  spec.vb:
+  - uid: System.Web.HttpApplication.GetOutputCacheProviderName(System.Web.HttpContext)
+    name: GetOutputCacheProviderName
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.getoutputcacheprovidername
+  - name: (
+  - uid: System.Web.HttpContext
+    name: HttpContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpcontext
+  - name: )
+- uid: System.Web.HttpApplication.OnExecuteRequestStep(System.Action{System.Web.HttpContextBase,System.Action})
+  commentId: M:System.Web.HttpApplication.OnExecuteRequestStep(System.Action{System.Web.HttpContextBase,System.Action})
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.onexecuterequeststep
+  name: OnExecuteRequestStep(Action<HttpContextBase, Action>)
+  nameWithType: HttpApplication.OnExecuteRequestStep(Action<HttpContextBase, Action>)
+  fullName: System.Web.HttpApplication.OnExecuteRequestStep(System.Action<System.Web.HttpContextBase, System.Action>)
+  nameWithType.vb: HttpApplication.OnExecuteRequestStep(Action(Of HttpContextBase, Action))
+  fullName.vb: System.Web.HttpApplication.OnExecuteRequestStep(System.Action(Of System.Web.HttpContextBase, System.Action))
+  name.vb: OnExecuteRequestStep(Action(Of HttpContextBase, Action))
+  spec.csharp:
+  - uid: System.Web.HttpApplication.OnExecuteRequestStep(System.Action{System.Web.HttpContextBase,System.Action})
+    name: OnExecuteRequestStep
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.onexecuterequeststep
+  - name: (
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - uid: System.Web.HttpContextBase
+    name: HttpContextBase
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpcontextbase
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: System.Web.HttpApplication.OnExecuteRequestStep(System.Action{System.Web.HttpContextBase,System.Action})
+    name: OnExecuteRequestStep
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.onexecuterequeststep
+  - name: (
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Web.HttpContextBase
+    name: HttpContextBase
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpcontextbase
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+  - name: )
+- uid: System.Web.HttpApplication.RegisterModule(System.Type)
+  commentId: M:System.Web.HttpApplication.RegisterModule(System.Type)
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.registermodule
+  name: RegisterModule(Type)
+  nameWithType: HttpApplication.RegisterModule(Type)
+  fullName: System.Web.HttpApplication.RegisterModule(System.Type)
+  spec.csharp:
+  - uid: System.Web.HttpApplication.RegisterModule(System.Type)
+    name: RegisterModule
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.registermodule
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: System.Web.HttpApplication.RegisterModule(System.Type)
+    name: RegisterModule
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.registermodule
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: System.Web.HttpApplication.Context
+  commentId: P:System.Web.HttpApplication.Context
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.context
+  name: Context
+  nameWithType: HttpApplication.Context
+  fullName: System.Web.HttpApplication.Context
+- uid: System.Web.HttpApplication.Events
+  commentId: P:System.Web.HttpApplication.Events
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.events
+  name: Events
+  nameWithType: HttpApplication.Events
+  fullName: System.Web.HttpApplication.Events
+- uid: System.Web.HttpApplication.Request
+  commentId: P:System.Web.HttpApplication.Request
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.request
+  name: Request
+  nameWithType: HttpApplication.Request
+  fullName: System.Web.HttpApplication.Request
+- uid: System.Web.HttpApplication.Response
+  commentId: P:System.Web.HttpApplication.Response
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.response
+  name: Response
+  nameWithType: HttpApplication.Response
+  fullName: System.Web.HttpApplication.Response
+- uid: System.Web.HttpApplication.Session
+  commentId: P:System.Web.HttpApplication.Session
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.session
+  name: Session
+  nameWithType: HttpApplication.Session
+  fullName: System.Web.HttpApplication.Session
+- uid: System.Web.HttpApplication.Application
+  commentId: P:System.Web.HttpApplication.Application
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.application
+  name: Application
+  nameWithType: HttpApplication.Application
+  fullName: System.Web.HttpApplication.Application
+- uid: System.Web.HttpApplication.Server
+  commentId: P:System.Web.HttpApplication.Server
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.server
+  name: Server
+  nameWithType: HttpApplication.Server
+  fullName: System.Web.HttpApplication.Server
+- uid: System.Web.HttpApplication.User
+  commentId: P:System.Web.HttpApplication.User
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.user
+  name: User
+  nameWithType: HttpApplication.User
+  fullName: System.Web.HttpApplication.User
+- uid: System.Web.HttpApplication.Modules
+  commentId: P:System.Web.HttpApplication.Modules
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.modules
+  name: Modules
+  nameWithType: HttpApplication.Modules
+  fullName: System.Web.HttpApplication.Modules
+- uid: System.Web.HttpApplication.Site
+  commentId: P:System.Web.HttpApplication.Site
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.site
+  name: Site
+  nameWithType: HttpApplication.Site
+  fullName: System.Web.HttpApplication.Site
+- uid: System.Web.HttpApplication.Disposed
+  commentId: E:System.Web.HttpApplication.Disposed
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.disposed
+  name: Disposed
+  nameWithType: HttpApplication.Disposed
+  fullName: System.Web.HttpApplication.Disposed
+- uid: System.Web.HttpApplication.BeginRequest
+  commentId: E:System.Web.HttpApplication.BeginRequest
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.beginrequest
+  name: BeginRequest
+  nameWithType: HttpApplication.BeginRequest
+  fullName: System.Web.HttpApplication.BeginRequest
+- uid: System.Web.HttpApplication.AuthenticateRequest
+  commentId: E:System.Web.HttpApplication.AuthenticateRequest
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.authenticaterequest
+  name: AuthenticateRequest
+  nameWithType: HttpApplication.AuthenticateRequest
+  fullName: System.Web.HttpApplication.AuthenticateRequest
+- uid: System.Web.HttpApplication.PostAuthenticateRequest
+  commentId: E:System.Web.HttpApplication.PostAuthenticateRequest
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.postauthenticaterequest
+  name: PostAuthenticateRequest
+  nameWithType: HttpApplication.PostAuthenticateRequest
+  fullName: System.Web.HttpApplication.PostAuthenticateRequest
+- uid: System.Web.HttpApplication.AuthorizeRequest
+  commentId: E:System.Web.HttpApplication.AuthorizeRequest
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.authorizerequest
+  name: AuthorizeRequest
+  nameWithType: HttpApplication.AuthorizeRequest
+  fullName: System.Web.HttpApplication.AuthorizeRequest
+- uid: System.Web.HttpApplication.PostAuthorizeRequest
+  commentId: E:System.Web.HttpApplication.PostAuthorizeRequest
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.postauthorizerequest
+  name: PostAuthorizeRequest
+  nameWithType: HttpApplication.PostAuthorizeRequest
+  fullName: System.Web.HttpApplication.PostAuthorizeRequest
+- uid: System.Web.HttpApplication.ResolveRequestCache
+  commentId: E:System.Web.HttpApplication.ResolveRequestCache
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.resolverequestcache
+  name: ResolveRequestCache
+  nameWithType: HttpApplication.ResolveRequestCache
+  fullName: System.Web.HttpApplication.ResolveRequestCache
+- uid: System.Web.HttpApplication.PostResolveRequestCache
+  commentId: E:System.Web.HttpApplication.PostResolveRequestCache
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.postresolverequestcache
+  name: PostResolveRequestCache
+  nameWithType: HttpApplication.PostResolveRequestCache
+  fullName: System.Web.HttpApplication.PostResolveRequestCache
+- uid: System.Web.HttpApplication.MapRequestHandler
+  commentId: E:System.Web.HttpApplication.MapRequestHandler
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.maprequesthandler
+  name: MapRequestHandler
+  nameWithType: HttpApplication.MapRequestHandler
+  fullName: System.Web.HttpApplication.MapRequestHandler
+- uid: System.Web.HttpApplication.PostMapRequestHandler
+  commentId: E:System.Web.HttpApplication.PostMapRequestHandler
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.postmaprequesthandler
+  name: PostMapRequestHandler
+  nameWithType: HttpApplication.PostMapRequestHandler
+  fullName: System.Web.HttpApplication.PostMapRequestHandler
+- uid: System.Web.HttpApplication.AcquireRequestState
+  commentId: E:System.Web.HttpApplication.AcquireRequestState
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.acquirerequeststate
+  name: AcquireRequestState
+  nameWithType: HttpApplication.AcquireRequestState
+  fullName: System.Web.HttpApplication.AcquireRequestState
+- uid: System.Web.HttpApplication.PostAcquireRequestState
+  commentId: E:System.Web.HttpApplication.PostAcquireRequestState
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.postacquirerequeststate
+  name: PostAcquireRequestState
+  nameWithType: HttpApplication.PostAcquireRequestState
+  fullName: System.Web.HttpApplication.PostAcquireRequestState
+- uid: System.Web.HttpApplication.PreRequestHandlerExecute
+  commentId: E:System.Web.HttpApplication.PreRequestHandlerExecute
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.prerequesthandlerexecute
+  name: PreRequestHandlerExecute
+  nameWithType: HttpApplication.PreRequestHandlerExecute
+  fullName: System.Web.HttpApplication.PreRequestHandlerExecute
+- uid: System.Web.HttpApplication.PostRequestHandlerExecute
+  commentId: E:System.Web.HttpApplication.PostRequestHandlerExecute
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.postrequesthandlerexecute
+  name: PostRequestHandlerExecute
+  nameWithType: HttpApplication.PostRequestHandlerExecute
+  fullName: System.Web.HttpApplication.PostRequestHandlerExecute
+- uid: System.Web.HttpApplication.ReleaseRequestState
+  commentId: E:System.Web.HttpApplication.ReleaseRequestState
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.releaserequeststate
+  name: ReleaseRequestState
+  nameWithType: HttpApplication.ReleaseRequestState
+  fullName: System.Web.HttpApplication.ReleaseRequestState
+- uid: System.Web.HttpApplication.PostReleaseRequestState
+  commentId: E:System.Web.HttpApplication.PostReleaseRequestState
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.postreleaserequeststate
+  name: PostReleaseRequestState
+  nameWithType: HttpApplication.PostReleaseRequestState
+  fullName: System.Web.HttpApplication.PostReleaseRequestState
+- uid: System.Web.HttpApplication.UpdateRequestCache
+  commentId: E:System.Web.HttpApplication.UpdateRequestCache
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.updaterequestcache
+  name: UpdateRequestCache
+  nameWithType: HttpApplication.UpdateRequestCache
+  fullName: System.Web.HttpApplication.UpdateRequestCache
+- uid: System.Web.HttpApplication.PostUpdateRequestCache
+  commentId: E:System.Web.HttpApplication.PostUpdateRequestCache
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.postupdaterequestcache
+  name: PostUpdateRequestCache
+  nameWithType: HttpApplication.PostUpdateRequestCache
+  fullName: System.Web.HttpApplication.PostUpdateRequestCache
+- uid: System.Web.HttpApplication.LogRequest
+  commentId: E:System.Web.HttpApplication.LogRequest
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.logrequest
+  name: LogRequest
+  nameWithType: HttpApplication.LogRequest
+  fullName: System.Web.HttpApplication.LogRequest
+- uid: System.Web.HttpApplication.PostLogRequest
+  commentId: E:System.Web.HttpApplication.PostLogRequest
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.postlogrequest
+  name: PostLogRequest
+  nameWithType: HttpApplication.PostLogRequest
+  fullName: System.Web.HttpApplication.PostLogRequest
+- uid: System.Web.HttpApplication.EndRequest
+  commentId: E:System.Web.HttpApplication.EndRequest
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.endrequest
+  name: EndRequest
+  nameWithType: HttpApplication.EndRequest
+  fullName: System.Web.HttpApplication.EndRequest
+- uid: System.Web.HttpApplication.Error
+  commentId: E:System.Web.HttpApplication.Error
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.error
+  name: Error
+  nameWithType: HttpApplication.Error
+  fullName: System.Web.HttpApplication.Error
+- uid: System.Web.HttpApplication.RequestCompleted
+  commentId: E:System.Web.HttpApplication.RequestCompleted
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.requestcompleted
+  name: RequestCompleted
+  nameWithType: HttpApplication.RequestCompleted
+  fullName: System.Web.HttpApplication.RequestCompleted
+- uid: System.Web.HttpApplication.PreSendRequestHeaders
+  commentId: E:System.Web.HttpApplication.PreSendRequestHeaders
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.presendrequestheaders
+  name: PreSendRequestHeaders
+  nameWithType: HttpApplication.PreSendRequestHeaders
+  fullName: System.Web.HttpApplication.PreSendRequestHeaders
+- uid: System.Web.HttpApplication.PreSendRequestContent
+  commentId: E:System.Web.HttpApplication.PreSendRequestContent
+  parent: System.Web.HttpApplication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpapplication.presendrequestcontent
+  name: PreSendRequestContent
+  nameWithType: HttpApplication.PreSendRequestContent
+  fullName: System.Web.HttpApplication.PreSendRequestContent
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Web
+  commentId: N:System.Web
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Web
+  nameWithType: System.Web
+  fullName: System.Web
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Web
+    name: Web
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Web
+    name: Web
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+- uid: Toems_ApplicationApi.WebApiApplication.Application_Start*
+  commentId: Overload:Toems_ApplicationApi.WebApiApplication.Application_Start
+  isExternal: true
+  href: Toems_ApplicationApi.WebApiApplication.html#Toems_ApplicationApi.WebApiApplication.Application_Start
+  name: Application_Start
+  nameWithType: WebApiApplication.Application_Start
+  fullName: Toems_ApplicationApi.WebApiApplication.Application_Start
+- uid: Toems_ApplicationApi.WebApiApplication.#ctor*
+  commentId: Overload:Toems_ApplicationApi.WebApiApplication.#ctor
+  isExternal: true
+  href: Toems_ApplicationApi.WebApiApplication.html#Toems_ApplicationApi.WebApiApplication.#ctor
+  name: WebApiApplication
+  nameWithType: WebApiApplication.WebApiApplication
+  fullName: Toems_ApplicationApi.WebApiApplication.WebApiApplication
+  nameWithType.vb: WebApiApplication.New
+  fullName.vb: Toems_ApplicationApi.WebApiApplication.New
+  name.vb: New

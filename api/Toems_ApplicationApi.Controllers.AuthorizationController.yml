@@ -1,0 +1,150 @@
+### YamlMime:ManagedReference
+items:
+- uid: Toems_ApplicationApi.Controllers.AuthorizationController
+  commentId: T:Toems_ApplicationApi.Controllers.AuthorizationController
+  id: AuthorizationController
+  parent: Toems_ApplicationApi.Controllers
+  children:
+  - Toems_ApplicationApi.Controllers.AuthorizationController.#ctor
+  - Toems_ApplicationApi.Controllers.AuthorizationController.IsAuthorized(System.String)
+  langs:
+  - csharp
+  - vb
+  name: AuthorizationController
+  nameWithType: AuthorizationController
+  fullName: Toems_ApplicationApi.Controllers.AuthorizationController
+  type: Class
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: 'public class AuthorizationController : ApiController'
+    content.vb: Public Class AuthorizationController Inherits ApiController
+  inheritance:
+  - System.Object
+- uid: Toems_ApplicationApi.Controllers.AuthorizationController.#ctor
+  commentId: M:Toems_ApplicationApi.Controllers.AuthorizationController.#ctor
+  id: '#ctor'
+  parent: Toems_ApplicationApi.Controllers.AuthorizationController
+  langs:
+  - csharp
+  - vb
+  name: AuthorizationController()
+  nameWithType: AuthorizationController.AuthorizationController()
+  fullName: Toems_ApplicationApi.Controllers.AuthorizationController.AuthorizationController()
+  type: Constructor
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: public AuthorizationController()
+    content.vb: Public Sub New()
+  overload: Toems_ApplicationApi.Controllers.AuthorizationController.#ctor*
+  nameWithType.vb: AuthorizationController.New()
+  fullName.vb: Toems_ApplicationApi.Controllers.AuthorizationController.New()
+  name.vb: New()
+- uid: Toems_ApplicationApi.Controllers.AuthorizationController.IsAuthorized(System.String)
+  commentId: M:Toems_ApplicationApi.Controllers.AuthorizationController.IsAuthorized(System.String)
+  id: IsAuthorized(System.String)
+  parent: Toems_ApplicationApi.Controllers.AuthorizationController
+  langs:
+  - csharp
+  - vb
+  name: IsAuthorized(string)
+  nameWithType: AuthorizationController.IsAuthorized(string)
+  fullName: Toems_ApplicationApi.Controllers.AuthorizationController.IsAuthorized(string)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: public DtoApiBoolResponse IsAuthorized(string requiredRight)
+    parameters:
+    - id: requiredRight
+      type: System.String
+    return:
+      type: Toems_Common.Dto.DtoApiBoolResponse
+    content.vb: Public Function IsAuthorized(requiredRight As String) As DtoApiBoolResponse
+  overload: Toems_ApplicationApi.Controllers.AuthorizationController.IsAuthorized*
+  nameWithType.vb: AuthorizationController.IsAuthorized(String)
+  fullName.vb: Toems_ApplicationApi.Controllers.AuthorizationController.IsAuthorized(String)
+  name.vb: IsAuthorized(String)
+references:
+- uid: Toems_ApplicationApi.Controllers
+  commentId: N:Toems_ApplicationApi.Controllers
+  isExternal: true
+  href: Toems_ApplicationApi.html
+  name: Toems_ApplicationApi.Controllers
+  nameWithType: Toems_ApplicationApi.Controllers
+  fullName: Toems_ApplicationApi.Controllers
+  spec.csharp:
+  - uid: Toems_ApplicationApi
+    name: Toems_ApplicationApi
+    isExternal: true
+    href: Toems_ApplicationApi.html
+  - name: .
+  - uid: Toems_ApplicationApi.Controllers
+    name: Controllers
+    isExternal: true
+    href: Toems_ApplicationApi.Controllers.html
+  spec.vb:
+  - uid: Toems_ApplicationApi
+    name: Toems_ApplicationApi
+    isExternal: true
+    href: Toems_ApplicationApi.html
+  - name: .
+  - uid: Toems_ApplicationApi.Controllers
+    name: Controllers
+    isExternal: true
+    href: Toems_ApplicationApi.Controllers.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Toems_ApplicationApi.Controllers.AuthorizationController.#ctor*
+  commentId: Overload:Toems_ApplicationApi.Controllers.AuthorizationController.#ctor
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.AuthorizationController.html#Toems_ApplicationApi.Controllers.AuthorizationController.#ctor
+  name: AuthorizationController
+  nameWithType: AuthorizationController.AuthorizationController
+  fullName: Toems_ApplicationApi.Controllers.AuthorizationController.AuthorizationController
+  nameWithType.vb: AuthorizationController.New
+  fullName.vb: Toems_ApplicationApi.Controllers.AuthorizationController.New
+  name.vb: New
+- uid: Toems_ApplicationApi.Controllers.AuthorizationController.IsAuthorized*
+  commentId: Overload:Toems_ApplicationApi.Controllers.AuthorizationController.IsAuthorized
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.AuthorizationController.html#Toems_ApplicationApi.Controllers.AuthorizationController.IsAuthorized(System.String)
+  name: IsAuthorized
+  nameWithType: AuthorizationController.IsAuthorized
+  fullName: Toems_ApplicationApi.Controllers.AuthorizationController.IsAuthorized
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Toems_Common.Dto.DtoApiBoolResponse
+  isExternal: true
+  name: DtoApiBoolResponse
+  nameWithType: DtoApiBoolResponse
+  fullName: Toems_Common.Dto.DtoApiBoolResponse

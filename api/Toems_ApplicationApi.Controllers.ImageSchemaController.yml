@@ -1,0 +1,234 @@
+### YamlMime:ManagedReference
+items:
+- uid: Toems_ApplicationApi.Controllers.ImageSchemaController
+  commentId: T:Toems_ApplicationApi.Controllers.ImageSchemaController
+  id: ImageSchemaController
+  parent: Toems_ApplicationApi.Controllers
+  children:
+  - Toems_ApplicationApi.Controllers.ImageSchemaController.#ctor
+  - Toems_ApplicationApi.Controllers.ImageSchemaController.GetHardDrives(Toems_Common.Dto.DtoImageSchemaRequest)
+  - Toems_ApplicationApi.Controllers.ImageSchemaController.GetLogicalVolumes(Toems_Common.Dto.DtoImageSchemaRequest)
+  - Toems_ApplicationApi.Controllers.ImageSchemaController.GetPartitions(Toems_Common.Dto.DtoImageSchemaRequest)
+  - Toems_ApplicationApi.Controllers.ImageSchemaController.GetSchema(Toems_Common.Dto.DtoImageSchemaRequest)
+  langs:
+  - csharp
+  - vb
+  name: ImageSchemaController
+  nameWithType: ImageSchemaController
+  fullName: Toems_ApplicationApi.Controllers.ImageSchemaController
+  type: Class
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: 'public class ImageSchemaController : ApiController'
+    content.vb: Public Class ImageSchemaController Inherits ApiController
+  inheritance:
+  - System.Object
+- uid: Toems_ApplicationApi.Controllers.ImageSchemaController.GetHardDrives(Toems_Common.Dto.DtoImageSchemaRequest)
+  commentId: M:Toems_ApplicationApi.Controllers.ImageSchemaController.GetHardDrives(Toems_Common.Dto.DtoImageSchemaRequest)
+  id: GetHardDrives(Toems_Common.Dto.DtoImageSchemaRequest)
+  parent: Toems_ApplicationApi.Controllers.ImageSchemaController
+  langs:
+  - csharp
+  - vb
+  name: GetHardDrives(DtoImageSchemaRequest)
+  nameWithType: ImageSchemaController.GetHardDrives(DtoImageSchemaRequest)
+  fullName: Toems_ApplicationApi.Controllers.ImageSchemaController.GetHardDrives(Toems_Common.Dto.DtoImageSchemaRequest)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: public DtoApiStringResponse GetHardDrives(DtoImageSchemaRequest schemaRequest)
+    parameters:
+    - id: schemaRequest
+      type: Toems_Common.Dto.DtoImageSchemaRequest
+    return:
+      type: Toems_Common.Dto.DtoApiStringResponse
+    content.vb: Public Function GetHardDrives(schemaRequest As DtoImageSchemaRequest) As DtoApiStringResponse
+  overload: Toems_ApplicationApi.Controllers.ImageSchemaController.GetHardDrives*
+- uid: Toems_ApplicationApi.Controllers.ImageSchemaController.GetLogicalVolumes(Toems_Common.Dto.DtoImageSchemaRequest)
+  commentId: M:Toems_ApplicationApi.Controllers.ImageSchemaController.GetLogicalVolumes(Toems_Common.Dto.DtoImageSchemaRequest)
+  id: GetLogicalVolumes(Toems_Common.Dto.DtoImageSchemaRequest)
+  parent: Toems_ApplicationApi.Controllers.ImageSchemaController
+  langs:
+  - csharp
+  - vb
+  name: GetLogicalVolumes(DtoImageSchemaRequest)
+  nameWithType: ImageSchemaController.GetLogicalVolumes(DtoImageSchemaRequest)
+  fullName: Toems_ApplicationApi.Controllers.ImageSchemaController.GetLogicalVolumes(Toems_Common.Dto.DtoImageSchemaRequest)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: public DtoApiStringResponse GetLogicalVolumes(DtoImageSchemaRequest schemaRequest)
+    parameters:
+    - id: schemaRequest
+      type: Toems_Common.Dto.DtoImageSchemaRequest
+    return:
+      type: Toems_Common.Dto.DtoApiStringResponse
+    content.vb: Public Function GetLogicalVolumes(schemaRequest As DtoImageSchemaRequest) As DtoApiStringResponse
+  overload: Toems_ApplicationApi.Controllers.ImageSchemaController.GetLogicalVolumes*
+- uid: Toems_ApplicationApi.Controllers.ImageSchemaController.GetPartitions(Toems_Common.Dto.DtoImageSchemaRequest)
+  commentId: M:Toems_ApplicationApi.Controllers.ImageSchemaController.GetPartitions(Toems_Common.Dto.DtoImageSchemaRequest)
+  id: GetPartitions(Toems_Common.Dto.DtoImageSchemaRequest)
+  parent: Toems_ApplicationApi.Controllers.ImageSchemaController
+  langs:
+  - csharp
+  - vb
+  name: GetPartitions(DtoImageSchemaRequest)
+  nameWithType: ImageSchemaController.GetPartitions(DtoImageSchemaRequest)
+  fullName: Toems_ApplicationApi.Controllers.ImageSchemaController.GetPartitions(Toems_Common.Dto.DtoImageSchemaRequest)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: public DtoApiStringResponse GetPartitions(DtoImageSchemaRequest schemaRequest)
+    parameters:
+    - id: schemaRequest
+      type: Toems_Common.Dto.DtoImageSchemaRequest
+    return:
+      type: Toems_Common.Dto.DtoApiStringResponse
+    content.vb: Public Function GetPartitions(schemaRequest As DtoImageSchemaRequest) As DtoApiStringResponse
+  overload: Toems_ApplicationApi.Controllers.ImageSchemaController.GetPartitions*
+- uid: Toems_ApplicationApi.Controllers.ImageSchemaController.GetSchema(Toems_Common.Dto.DtoImageSchemaRequest)
+  commentId: M:Toems_ApplicationApi.Controllers.ImageSchemaController.GetSchema(Toems_Common.Dto.DtoImageSchemaRequest)
+  id: GetSchema(Toems_Common.Dto.DtoImageSchemaRequest)
+  parent: Toems_ApplicationApi.Controllers.ImageSchemaController
+  langs:
+  - csharp
+  - vb
+  name: GetSchema(DtoImageSchemaRequest)
+  nameWithType: ImageSchemaController.GetSchema(DtoImageSchemaRequest)
+  fullName: Toems_ApplicationApi.Controllers.ImageSchemaController.GetSchema(Toems_Common.Dto.DtoImageSchemaRequest)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: public DtoApiStringResponse GetSchema(DtoImageSchemaRequest schemaRequest)
+    parameters:
+    - id: schemaRequest
+      type: Toems_Common.Dto.DtoImageSchemaRequest
+    return:
+      type: Toems_Common.Dto.DtoApiStringResponse
+    content.vb: Public Function GetSchema(schemaRequest As DtoImageSchemaRequest) As DtoApiStringResponse
+  overload: Toems_ApplicationApi.Controllers.ImageSchemaController.GetSchema*
+- uid: Toems_ApplicationApi.Controllers.ImageSchemaController.#ctor
+  commentId: M:Toems_ApplicationApi.Controllers.ImageSchemaController.#ctor
+  id: '#ctor'
+  parent: Toems_ApplicationApi.Controllers.ImageSchemaController
+  langs:
+  - csharp
+  - vb
+  name: ImageSchemaController()
+  nameWithType: ImageSchemaController.ImageSchemaController()
+  fullName: Toems_ApplicationApi.Controllers.ImageSchemaController.ImageSchemaController()
+  type: Constructor
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: public ImageSchemaController()
+    content.vb: Public Sub New()
+  overload: Toems_ApplicationApi.Controllers.ImageSchemaController.#ctor*
+  nameWithType.vb: ImageSchemaController.New()
+  fullName.vb: Toems_ApplicationApi.Controllers.ImageSchemaController.New()
+  name.vb: New()
+references:
+- uid: Toems_ApplicationApi.Controllers
+  commentId: N:Toems_ApplicationApi.Controllers
+  isExternal: true
+  href: Toems_ApplicationApi.html
+  name: Toems_ApplicationApi.Controllers
+  nameWithType: Toems_ApplicationApi.Controllers
+  fullName: Toems_ApplicationApi.Controllers
+  spec.csharp:
+  - uid: Toems_ApplicationApi
+    name: Toems_ApplicationApi
+    isExternal: true
+    href: Toems_ApplicationApi.html
+  - name: .
+  - uid: Toems_ApplicationApi.Controllers
+    name: Controllers
+    isExternal: true
+    href: Toems_ApplicationApi.Controllers.html
+  spec.vb:
+  - uid: Toems_ApplicationApi
+    name: Toems_ApplicationApi
+    isExternal: true
+    href: Toems_ApplicationApi.html
+  - name: .
+  - uid: Toems_ApplicationApi.Controllers
+    name: Controllers
+    isExternal: true
+    href: Toems_ApplicationApi.Controllers.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Toems_ApplicationApi.Controllers.ImageSchemaController.GetHardDrives*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ImageSchemaController.GetHardDrives
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ImageSchemaController.html#Toems_ApplicationApi.Controllers.ImageSchemaController.GetHardDrives(Toems_Common.Dto.DtoImageSchemaRequest)
+  name: GetHardDrives
+  nameWithType: ImageSchemaController.GetHardDrives
+  fullName: Toems_ApplicationApi.Controllers.ImageSchemaController.GetHardDrives
+- uid: Toems_Common.Dto.DtoImageSchemaRequest
+  isExternal: true
+  name: DtoImageSchemaRequest
+  nameWithType: DtoImageSchemaRequest
+  fullName: Toems_Common.Dto.DtoImageSchemaRequest
+- uid: Toems_Common.Dto.DtoApiStringResponse
+  isExternal: true
+  name: DtoApiStringResponse
+  nameWithType: DtoApiStringResponse
+  fullName: Toems_Common.Dto.DtoApiStringResponse
+- uid: Toems_ApplicationApi.Controllers.ImageSchemaController.GetLogicalVolumes*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ImageSchemaController.GetLogicalVolumes
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ImageSchemaController.html#Toems_ApplicationApi.Controllers.ImageSchemaController.GetLogicalVolumes(Toems_Common.Dto.DtoImageSchemaRequest)
+  name: GetLogicalVolumes
+  nameWithType: ImageSchemaController.GetLogicalVolumes
+  fullName: Toems_ApplicationApi.Controllers.ImageSchemaController.GetLogicalVolumes
+- uid: Toems_ApplicationApi.Controllers.ImageSchemaController.GetPartitions*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ImageSchemaController.GetPartitions
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ImageSchemaController.html#Toems_ApplicationApi.Controllers.ImageSchemaController.GetPartitions(Toems_Common.Dto.DtoImageSchemaRequest)
+  name: GetPartitions
+  nameWithType: ImageSchemaController.GetPartitions
+  fullName: Toems_ApplicationApi.Controllers.ImageSchemaController.GetPartitions
+- uid: Toems_ApplicationApi.Controllers.ImageSchemaController.GetSchema*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ImageSchemaController.GetSchema
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ImageSchemaController.html#Toems_ApplicationApi.Controllers.ImageSchemaController.GetSchema(Toems_Common.Dto.DtoImageSchemaRequest)
+  name: GetSchema
+  nameWithType: ImageSchemaController.GetSchema
+  fullName: Toems_ApplicationApi.Controllers.ImageSchemaController.GetSchema
+- uid: Toems_ApplicationApi.Controllers.ImageSchemaController.#ctor*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ImageSchemaController.#ctor
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ImageSchemaController.html#Toems_ApplicationApi.Controllers.ImageSchemaController.#ctor
+  name: ImageSchemaController
+  nameWithType: ImageSchemaController.ImageSchemaController
+  fullName: Toems_ApplicationApi.Controllers.ImageSchemaController.ImageSchemaController
+  nameWithType.vb: ImageSchemaController.New
+  fullName.vb: Toems_ApplicationApi.Controllers.ImageSchemaController.New
+  name.vb: New

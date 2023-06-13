@@ -1,0 +1,417 @@
+### YamlMime:ManagedReference
+items:
+- uid: Toems_ApplicationApi.Controllers.SetupCompleteFileController
+  commentId: T:Toems_ApplicationApi.Controllers.SetupCompleteFileController
+  id: SetupCompleteFileController
+  parent: Toems_ApplicationApi.Controllers
+  children:
+  - Toems_ApplicationApi.Controllers.SetupCompleteFileController.#ctor
+  - Toems_ApplicationApi.Controllers.SetupCompleteFileController.Delete(System.Int32)
+  - Toems_ApplicationApi.Controllers.SetupCompleteFileController.Get
+  - Toems_ApplicationApi.Controllers.SetupCompleteFileController.Get(System.Int32)
+  - Toems_ApplicationApi.Controllers.SetupCompleteFileController.Post(Toems_Common.Entity.EntitySetupCompleteFile)
+  - Toems_ApplicationApi.Controllers.SetupCompleteFileController.Put(System.Int32,Toems_Common.Entity.EntitySetupCompleteFile)
+  langs:
+  - csharp
+  - vb
+  name: SetupCompleteFileController
+  nameWithType: SetupCompleteFileController
+  fullName: Toems_ApplicationApi.Controllers.SetupCompleteFileController
+  type: Class
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: 'public class SetupCompleteFileController : ApiController'
+    content.vb: Public Class SetupCompleteFileController Inherits ApiController
+  inheritance:
+  - System.Object
+- uid: Toems_ApplicationApi.Controllers.SetupCompleteFileController.#ctor
+  commentId: M:Toems_ApplicationApi.Controllers.SetupCompleteFileController.#ctor
+  id: '#ctor'
+  parent: Toems_ApplicationApi.Controllers.SetupCompleteFileController
+  langs:
+  - csharp
+  - vb
+  name: SetupCompleteFileController()
+  nameWithType: SetupCompleteFileController.SetupCompleteFileController()
+  fullName: Toems_ApplicationApi.Controllers.SetupCompleteFileController.SetupCompleteFileController()
+  type: Constructor
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: public SetupCompleteFileController()
+    content.vb: Public Sub New()
+  overload: Toems_ApplicationApi.Controllers.SetupCompleteFileController.#ctor*
+  nameWithType.vb: SetupCompleteFileController.New()
+  fullName.vb: Toems_ApplicationApi.Controllers.SetupCompleteFileController.New()
+  name.vb: New()
+- uid: Toems_ApplicationApi.Controllers.SetupCompleteFileController.Delete(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.SetupCompleteFileController.Delete(System.Int32)
+  id: Delete(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.SetupCompleteFileController
+  langs:
+  - csharp
+  - vb
+  name: Delete(int)
+  nameWithType: SetupCompleteFileController.Delete(int)
+  fullName: Toems_ApplicationApi.Controllers.SetupCompleteFileController.Delete(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "Administrator")]
+
+      public DtoActionResult Delete(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Dto.DtoActionResult
+    content.vb: >-
+      <CustomAuth(Permission:="Administrator")>
+
+      Public Function Delete(id As Integer) As DtoActionResult
+  overload: Toems_ApplicationApi.Controllers.SetupCompleteFileController.Delete*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: Administrator
+  nameWithType.vb: SetupCompleteFileController.Delete(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.SetupCompleteFileController.Delete(Integer)
+  name.vb: Delete(Integer)
+- uid: Toems_ApplicationApi.Controllers.SetupCompleteFileController.Get(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.SetupCompleteFileController.Get(System.Int32)
+  id: Get(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.SetupCompleteFileController
+  langs:
+  - csharp
+  - vb
+  name: Get(int)
+  nameWithType: SetupCompleteFileController.Get(int)
+  fullName: Toems_ApplicationApi.Controllers.SetupCompleteFileController.Get(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: public EntitySetupCompleteFile Get(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Entity.EntitySetupCompleteFile
+    content.vb: Public Function [Get](id As Integer) As EntitySetupCompleteFile
+  overload: Toems_ApplicationApi.Controllers.SetupCompleteFileController.Get*
+  nameWithType.vb: SetupCompleteFileController.Get(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.SetupCompleteFileController.Get(Integer)
+  name.vb: Get(Integer)
+- uid: Toems_ApplicationApi.Controllers.SetupCompleteFileController.Get
+  commentId: M:Toems_ApplicationApi.Controllers.SetupCompleteFileController.Get
+  id: Get
+  parent: Toems_ApplicationApi.Controllers.SetupCompleteFileController
+  langs:
+  - csharp
+  - vb
+  name: Get()
+  nameWithType: SetupCompleteFileController.Get()
+  fullName: Toems_ApplicationApi.Controllers.SetupCompleteFileController.Get()
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: public IEnumerable<EntitySetupCompleteFile> Get()
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntitySetupCompleteFile}
+    content.vb: Public Function [Get]() As IEnumerable(Of EntitySetupCompleteFile)
+  overload: Toems_ApplicationApi.Controllers.SetupCompleteFileController.Get*
+- uid: Toems_ApplicationApi.Controllers.SetupCompleteFileController.Post(Toems_Common.Entity.EntitySetupCompleteFile)
+  commentId: M:Toems_ApplicationApi.Controllers.SetupCompleteFileController.Post(Toems_Common.Entity.EntitySetupCompleteFile)
+  id: Post(Toems_Common.Entity.EntitySetupCompleteFile)
+  parent: Toems_ApplicationApi.Controllers.SetupCompleteFileController
+  langs:
+  - csharp
+  - vb
+  name: Post(EntitySetupCompleteFile)
+  nameWithType: SetupCompleteFileController.Post(EntitySetupCompleteFile)
+  fullName: Toems_ApplicationApi.Controllers.SetupCompleteFileController.Post(Toems_Common.Entity.EntitySetupCompleteFile)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "Administrator")]
+
+      public DtoActionResult Post(EntitySetupCompleteFile file)
+    parameters:
+    - id: file
+      type: Toems_Common.Entity.EntitySetupCompleteFile
+    return:
+      type: Toems_Common.Dto.DtoActionResult
+    content.vb: >-
+      <CustomAuth(Permission:="Administrator")>
+
+      Public Function Post(file As EntitySetupCompleteFile) As DtoActionResult
+  overload: Toems_ApplicationApi.Controllers.SetupCompleteFileController.Post*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: Administrator
+- uid: Toems_ApplicationApi.Controllers.SetupCompleteFileController.Put(System.Int32,Toems_Common.Entity.EntitySetupCompleteFile)
+  commentId: M:Toems_ApplicationApi.Controllers.SetupCompleteFileController.Put(System.Int32,Toems_Common.Entity.EntitySetupCompleteFile)
+  id: Put(System.Int32,Toems_Common.Entity.EntitySetupCompleteFile)
+  parent: Toems_ApplicationApi.Controllers.SetupCompleteFileController
+  langs:
+  - csharp
+  - vb
+  name: Put(int, EntitySetupCompleteFile)
+  nameWithType: SetupCompleteFileController.Put(int, EntitySetupCompleteFile)
+  fullName: Toems_ApplicationApi.Controllers.SetupCompleteFileController.Put(int, Toems_Common.Entity.EntitySetupCompleteFile)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "Administrator")]
+
+      public DtoActionResult Put(int id, EntitySetupCompleteFile file)
+    parameters:
+    - id: id
+      type: System.Int32
+    - id: file
+      type: Toems_Common.Entity.EntitySetupCompleteFile
+    return:
+      type: Toems_Common.Dto.DtoActionResult
+    content.vb: >-
+      <CustomAuth(Permission:="Administrator")>
+
+      Public Function Put(id As Integer, file As EntitySetupCompleteFile) As DtoActionResult
+  overload: Toems_ApplicationApi.Controllers.SetupCompleteFileController.Put*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: Administrator
+  nameWithType.vb: SetupCompleteFileController.Put(Integer, EntitySetupCompleteFile)
+  fullName.vb: Toems_ApplicationApi.Controllers.SetupCompleteFileController.Put(Integer, Toems_Common.Entity.EntitySetupCompleteFile)
+  name.vb: Put(Integer, EntitySetupCompleteFile)
+references:
+- uid: Toems_ApplicationApi.Controllers
+  commentId: N:Toems_ApplicationApi.Controllers
+  isExternal: true
+  href: Toems_ApplicationApi.html
+  name: Toems_ApplicationApi.Controllers
+  nameWithType: Toems_ApplicationApi.Controllers
+  fullName: Toems_ApplicationApi.Controllers
+  spec.csharp:
+  - uid: Toems_ApplicationApi
+    name: Toems_ApplicationApi
+    isExternal: true
+    href: Toems_ApplicationApi.html
+  - name: .
+  - uid: Toems_ApplicationApi.Controllers
+    name: Controllers
+    isExternal: true
+    href: Toems_ApplicationApi.Controllers.html
+  spec.vb:
+  - uid: Toems_ApplicationApi
+    name: Toems_ApplicationApi
+    isExternal: true
+    href: Toems_ApplicationApi.html
+  - name: .
+  - uid: Toems_ApplicationApi.Controllers
+    name: Controllers
+    isExternal: true
+    href: Toems_ApplicationApi.Controllers.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Toems_ApplicationApi.Controllers.SetupCompleteFileController.#ctor*
+  commentId: Overload:Toems_ApplicationApi.Controllers.SetupCompleteFileController.#ctor
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.SetupCompleteFileController.html#Toems_ApplicationApi.Controllers.SetupCompleteFileController.#ctor
+  name: SetupCompleteFileController
+  nameWithType: SetupCompleteFileController.SetupCompleteFileController
+  fullName: Toems_ApplicationApi.Controllers.SetupCompleteFileController.SetupCompleteFileController
+  nameWithType.vb: SetupCompleteFileController.New
+  fullName.vb: Toems_ApplicationApi.Controllers.SetupCompleteFileController.New
+  name.vb: New
+- uid: Toems_ApplicationApi.Controllers.SetupCompleteFileController.Delete*
+  commentId: Overload:Toems_ApplicationApi.Controllers.SetupCompleteFileController.Delete
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.SetupCompleteFileController.html#Toems_ApplicationApi.Controllers.SetupCompleteFileController.Delete(System.Int32)
+  name: Delete
+  nameWithType: SetupCompleteFileController.Delete
+  fullName: Toems_ApplicationApi.Controllers.SetupCompleteFileController.Delete
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Toems_Common.Dto.DtoActionResult
+  isExternal: true
+  name: DtoActionResult
+  nameWithType: DtoActionResult
+  fullName: Toems_Common.Dto.DtoActionResult
+- uid: Toems_ApplicationApi.Controllers.SetupCompleteFileController.Get*
+  commentId: Overload:Toems_ApplicationApi.Controllers.SetupCompleteFileController.Get
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.SetupCompleteFileController.html#Toems_ApplicationApi.Controllers.SetupCompleteFileController.Get(System.Int32)
+  name: Get
+  nameWithType: SetupCompleteFileController.Get
+  fullName: Toems_ApplicationApi.Controllers.SetupCompleteFileController.Get
+- uid: Toems_Common.Entity.EntitySetupCompleteFile
+  isExternal: true
+  name: EntitySetupCompleteFile
+  nameWithType: EntitySetupCompleteFile
+  fullName: Toems_Common.Entity.EntitySetupCompleteFile
+- uid: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntitySetupCompleteFile}
+  commentId: T:System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntitySetupCompleteFile}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<EntitySetupCompleteFile>
+  nameWithType: IEnumerable<EntitySetupCompleteFile>
+  fullName: System.Collections.Generic.IEnumerable<Toems_Common.Entity.EntitySetupCompleteFile>
+  nameWithType.vb: IEnumerable(Of EntitySetupCompleteFile)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Toems_Common.Entity.EntitySetupCompleteFile)
+  name.vb: IEnumerable(Of EntitySetupCompleteFile)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Toems_Common.Entity.EntitySetupCompleteFile
+    name: EntitySetupCompleteFile
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Entity.EntitySetupCompleteFile
+    name: EntitySetupCompleteFile
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Toems_ApplicationApi.Controllers.SetupCompleteFileController.Post*
+  commentId: Overload:Toems_ApplicationApi.Controllers.SetupCompleteFileController.Post
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.SetupCompleteFileController.html#Toems_ApplicationApi.Controllers.SetupCompleteFileController.Post(Toems_Common.Entity.EntitySetupCompleteFile)
+  name: Post
+  nameWithType: SetupCompleteFileController.Post
+  fullName: Toems_ApplicationApi.Controllers.SetupCompleteFileController.Post
+- uid: Toems_ApplicationApi.Controllers.SetupCompleteFileController.Put*
+  commentId: Overload:Toems_ApplicationApi.Controllers.SetupCompleteFileController.Put
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.SetupCompleteFileController.html#Toems_ApplicationApi.Controllers.SetupCompleteFileController.Put(System.Int32,Toems_Common.Entity.EntitySetupCompleteFile)
+  name: Put
+  nameWithType: SetupCompleteFileController.Put
+  fullName: Toems_ApplicationApi.Controllers.SetupCompleteFileController.Put

@@ -1,0 +1,719 @@
+### YamlMime:ManagedReference
+items:
+- uid: Toems_ApplicationApi.Controllers.ExternalDownloadController
+  commentId: T:Toems_ApplicationApi.Controllers.ExternalDownloadController
+  id: ExternalDownloadController
+  parent: Toems_ApplicationApi.Controllers
+  children:
+  - Toems_ApplicationApi.Controllers.ExternalDownloadController.#ctor
+  - Toems_ApplicationApi.Controllers.ExternalDownloadController.BatchDownload(System.Collections.Generic.List{Toems_Common.Dto.DtoFileDownload})
+  - Toems_ApplicationApi.Controllers.ExternalDownloadController.Delete(System.Int32)
+  - Toems_ApplicationApi.Controllers.ExternalDownloadController.DownloadFile(Toems_Common.Dto.DtoFileDownload)
+  - Toems_ApplicationApi.Controllers.ExternalDownloadController.Get(System.Int32)
+  - Toems_ApplicationApi.Controllers.ExternalDownloadController.GetCount
+  - Toems_ApplicationApi.Controllers.ExternalDownloadController.GetForModule(System.String)
+  - Toems_ApplicationApi.Controllers.ExternalDownloadController.Post(Toems_Common.Entity.EntityExternalDownload)
+  - Toems_ApplicationApi.Controllers.ExternalDownloadController.Put(System.Int32,Toems_Common.Entity.EntityExternalDownload)
+  langs:
+  - csharp
+  - vb
+  name: ExternalDownloadController
+  nameWithType: ExternalDownloadController
+  fullName: Toems_ApplicationApi.Controllers.ExternalDownloadController
+  type: Class
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: 'public class ExternalDownloadController : ApiController'
+    content.vb: Public Class ExternalDownloadController Inherits ApiController
+  inheritance:
+  - System.Object
+- uid: Toems_ApplicationApi.Controllers.ExternalDownloadController.#ctor
+  commentId: M:Toems_ApplicationApi.Controllers.ExternalDownloadController.#ctor
+  id: '#ctor'
+  parent: Toems_ApplicationApi.Controllers.ExternalDownloadController
+  langs:
+  - csharp
+  - vb
+  name: ExternalDownloadController()
+  nameWithType: ExternalDownloadController.ExternalDownloadController()
+  fullName: Toems_ApplicationApi.Controllers.ExternalDownloadController.ExternalDownloadController()
+  type: Constructor
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: public ExternalDownloadController()
+    content.vb: Public Sub New()
+  overload: Toems_ApplicationApi.Controllers.ExternalDownloadController.#ctor*
+  nameWithType.vb: ExternalDownloadController.New()
+  fullName.vb: Toems_ApplicationApi.Controllers.ExternalDownloadController.New()
+  name.vb: New()
+- uid: Toems_ApplicationApi.Controllers.ExternalDownloadController.Delete(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ExternalDownloadController.Delete(System.Int32)
+  id: Delete(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ExternalDownloadController
+  langs:
+  - csharp
+  - vb
+  name: Delete(int)
+  nameWithType: ExternalDownloadController.Delete(int)
+  fullName: Toems_ApplicationApi.Controllers.ExternalDownloadController.Delete(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "moduleUpdate")]
+
+      public DtoActionResult Delete(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Dto.DtoActionResult
+    content.vb: >-
+      <CustomAuth(Permission:="moduleUpdate")>
+
+      Public Function Delete(id As Integer) As DtoActionResult
+  overload: Toems_ApplicationApi.Controllers.ExternalDownloadController.Delete*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: moduleUpdate
+  nameWithType.vb: ExternalDownloadController.Delete(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ExternalDownloadController.Delete(Integer)
+  name.vb: Delete(Integer)
+- uid: Toems_ApplicationApi.Controllers.ExternalDownloadController.Get(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ExternalDownloadController.Get(System.Int32)
+  id: Get(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ExternalDownloadController
+  langs:
+  - csharp
+  - vb
+  name: Get(int)
+  nameWithType: ExternalDownloadController.Get(int)
+  fullName: Toems_ApplicationApi.Controllers.ExternalDownloadController.Get(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "moduleRead")]
+
+      public EntityExternalDownload Get(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Entity.EntityExternalDownload
+    content.vb: >-
+      <CustomAuth(Permission:="moduleRead")>
+
+      Public Function [Get](id As Integer) As EntityExternalDownload
+  overload: Toems_ApplicationApi.Controllers.ExternalDownloadController.Get*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: moduleRead
+  nameWithType.vb: ExternalDownloadController.Get(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ExternalDownloadController.Get(Integer)
+  name.vb: Get(Integer)
+- uid: Toems_ApplicationApi.Controllers.ExternalDownloadController.GetForModule(System.String)
+  commentId: M:Toems_ApplicationApi.Controllers.ExternalDownloadController.GetForModule(System.String)
+  id: GetForModule(System.String)
+  parent: Toems_ApplicationApi.Controllers.ExternalDownloadController
+  langs:
+  - csharp
+  - vb
+  name: GetForModule(string)
+  nameWithType: ExternalDownloadController.GetForModule(string)
+  fullName: Toems_ApplicationApi.Controllers.ExternalDownloadController.GetForModule(string)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "moduleRead")]
+
+      public IEnumerable<EntityExternalDownload> GetForModule(string moduleGuid)
+    parameters:
+    - id: moduleGuid
+      type: System.String
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityExternalDownload}
+    content.vb: >-
+      <CustomAuth(Permission:="moduleRead")>
+
+      Public Function GetForModule(moduleGuid As String) As IEnumerable(Of EntityExternalDownload)
+  overload: Toems_ApplicationApi.Controllers.ExternalDownloadController.GetForModule*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: moduleRead
+  nameWithType.vb: ExternalDownloadController.GetForModule(String)
+  fullName.vb: Toems_ApplicationApi.Controllers.ExternalDownloadController.GetForModule(String)
+  name.vb: GetForModule(String)
+- uid: Toems_ApplicationApi.Controllers.ExternalDownloadController.BatchDownload(System.Collections.Generic.List{Toems_Common.Dto.DtoFileDownload})
+  commentId: M:Toems_ApplicationApi.Controllers.ExternalDownloadController.BatchDownload(System.Collections.Generic.List{Toems_Common.Dto.DtoFileDownload})
+  id: BatchDownload(System.Collections.Generic.List{Toems_Common.Dto.DtoFileDownload})
+  parent: Toems_ApplicationApi.Controllers.ExternalDownloadController
+  langs:
+  - csharp
+  - vb
+  name: BatchDownload(List<DtoFileDownload>)
+  nameWithType: ExternalDownloadController.BatchDownload(List<DtoFileDownload>)
+  fullName: Toems_ApplicationApi.Controllers.ExternalDownloadController.BatchDownload(System.Collections.Generic.List<Toems_Common.Dto.DtoFileDownload>)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "moduleExternalFiles")]
+
+      public Task BatchDownload(List<DtoFileDownload> downloads)
+    parameters:
+    - id: downloads
+      type: System.Collections.Generic.List{Toems_Common.Dto.DtoFileDownload}
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <CustomAuth(Permission:="moduleExternalFiles")>
+
+      Public Function BatchDownload(downloads As List(Of DtoFileDownload)) As Task
+  overload: Toems_ApplicationApi.Controllers.ExternalDownloadController.BatchDownload*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: moduleExternalFiles
+  nameWithType.vb: ExternalDownloadController.BatchDownload(List(Of DtoFileDownload))
+  fullName.vb: Toems_ApplicationApi.Controllers.ExternalDownloadController.BatchDownload(System.Collections.Generic.List(Of Toems_Common.Dto.DtoFileDownload))
+  name.vb: BatchDownload(List(Of DtoFileDownload))
+- uid: Toems_ApplicationApi.Controllers.ExternalDownloadController.DownloadFile(Toems_Common.Dto.DtoFileDownload)
+  commentId: M:Toems_ApplicationApi.Controllers.ExternalDownloadController.DownloadFile(Toems_Common.Dto.DtoFileDownload)
+  id: DownloadFile(Toems_Common.Dto.DtoFileDownload)
+  parent: Toems_ApplicationApi.Controllers.ExternalDownloadController
+  langs:
+  - csharp
+  - vb
+  name: DownloadFile(DtoFileDownload)
+  nameWithType: ExternalDownloadController.DownloadFile(DtoFileDownload)
+  fullName: Toems_ApplicationApi.Controllers.ExternalDownloadController.DownloadFile(Toems_Common.Dto.DtoFileDownload)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "moduleExternalFiles")]
+
+      public void DownloadFile(DtoFileDownload download)
+    parameters:
+    - id: download
+      type: Toems_Common.Dto.DtoFileDownload
+    content.vb: >-
+      <CustomAuth(Permission:="moduleExternalFiles")>
+
+      Public Sub DownloadFile(download As DtoFileDownload)
+  overload: Toems_ApplicationApi.Controllers.ExternalDownloadController.DownloadFile*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: moduleExternalFiles
+- uid: Toems_ApplicationApi.Controllers.ExternalDownloadController.GetCount
+  commentId: M:Toems_ApplicationApi.Controllers.ExternalDownloadController.GetCount
+  id: GetCount
+  parent: Toems_ApplicationApi.Controllers.ExternalDownloadController
+  langs:
+  - csharp
+  - vb
+  name: GetCount()
+  nameWithType: ExternalDownloadController.GetCount()
+  fullName: Toems_ApplicationApi.Controllers.ExternalDownloadController.GetCount()
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "moduleRead")]
+
+      public DtoApiStringResponse GetCount()
+    return:
+      type: Toems_Common.Dto.DtoApiStringResponse
+    content.vb: >-
+      <CustomAuth(Permission:="moduleRead")>
+
+      Public Function GetCount() As DtoApiStringResponse
+  overload: Toems_ApplicationApi.Controllers.ExternalDownloadController.GetCount*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: moduleRead
+- uid: Toems_ApplicationApi.Controllers.ExternalDownloadController.Post(Toems_Common.Entity.EntityExternalDownload)
+  commentId: M:Toems_ApplicationApi.Controllers.ExternalDownloadController.Post(Toems_Common.Entity.EntityExternalDownload)
+  id: Post(Toems_Common.Entity.EntityExternalDownload)
+  parent: Toems_ApplicationApi.Controllers.ExternalDownloadController
+  langs:
+  - csharp
+  - vb
+  name: Post(EntityExternalDownload)
+  nameWithType: ExternalDownloadController.Post(EntityExternalDownload)
+  fullName: Toems_ApplicationApi.Controllers.ExternalDownloadController.Post(Toems_Common.Entity.EntityExternalDownload)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "moduleUpdate")]
+
+      public DtoActionResult Post(EntityExternalDownload download)
+    parameters:
+    - id: download
+      type: Toems_Common.Entity.EntityExternalDownload
+    return:
+      type: Toems_Common.Dto.DtoActionResult
+    content.vb: >-
+      <CustomAuth(Permission:="moduleUpdate")>
+
+      Public Function Post(download As EntityExternalDownload) As DtoActionResult
+  overload: Toems_ApplicationApi.Controllers.ExternalDownloadController.Post*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: moduleUpdate
+- uid: Toems_ApplicationApi.Controllers.ExternalDownloadController.Put(System.Int32,Toems_Common.Entity.EntityExternalDownload)
+  commentId: M:Toems_ApplicationApi.Controllers.ExternalDownloadController.Put(System.Int32,Toems_Common.Entity.EntityExternalDownload)
+  id: Put(System.Int32,Toems_Common.Entity.EntityExternalDownload)
+  parent: Toems_ApplicationApi.Controllers.ExternalDownloadController
+  langs:
+  - csharp
+  - vb
+  name: Put(int, EntityExternalDownload)
+  nameWithType: ExternalDownloadController.Put(int, EntityExternalDownload)
+  fullName: Toems_ApplicationApi.Controllers.ExternalDownloadController.Put(int, Toems_Common.Entity.EntityExternalDownload)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "moduleUpdate")]
+
+      public DtoActionResult Put(int id, EntityExternalDownload download)
+    parameters:
+    - id: id
+      type: System.Int32
+    - id: download
+      type: Toems_Common.Entity.EntityExternalDownload
+    return:
+      type: Toems_Common.Dto.DtoActionResult
+    content.vb: >-
+      <CustomAuth(Permission:="moduleUpdate")>
+
+      Public Function Put(id As Integer, download As EntityExternalDownload) As DtoActionResult
+  overload: Toems_ApplicationApi.Controllers.ExternalDownloadController.Put*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: moduleUpdate
+  nameWithType.vb: ExternalDownloadController.Put(Integer, EntityExternalDownload)
+  fullName.vb: Toems_ApplicationApi.Controllers.ExternalDownloadController.Put(Integer, Toems_Common.Entity.EntityExternalDownload)
+  name.vb: Put(Integer, EntityExternalDownload)
+references:
+- uid: Toems_ApplicationApi.Controllers
+  commentId: N:Toems_ApplicationApi.Controllers
+  isExternal: true
+  href: Toems_ApplicationApi.html
+  name: Toems_ApplicationApi.Controllers
+  nameWithType: Toems_ApplicationApi.Controllers
+  fullName: Toems_ApplicationApi.Controllers
+  spec.csharp:
+  - uid: Toems_ApplicationApi
+    name: Toems_ApplicationApi
+    isExternal: true
+    href: Toems_ApplicationApi.html
+  - name: .
+  - uid: Toems_ApplicationApi.Controllers
+    name: Controllers
+    isExternal: true
+    href: Toems_ApplicationApi.Controllers.html
+  spec.vb:
+  - uid: Toems_ApplicationApi
+    name: Toems_ApplicationApi
+    isExternal: true
+    href: Toems_ApplicationApi.html
+  - name: .
+  - uid: Toems_ApplicationApi.Controllers
+    name: Controllers
+    isExternal: true
+    href: Toems_ApplicationApi.Controllers.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Toems_ApplicationApi.Controllers.ExternalDownloadController.#ctor*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ExternalDownloadController.#ctor
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ExternalDownloadController.html#Toems_ApplicationApi.Controllers.ExternalDownloadController.#ctor
+  name: ExternalDownloadController
+  nameWithType: ExternalDownloadController.ExternalDownloadController
+  fullName: Toems_ApplicationApi.Controllers.ExternalDownloadController.ExternalDownloadController
+  nameWithType.vb: ExternalDownloadController.New
+  fullName.vb: Toems_ApplicationApi.Controllers.ExternalDownloadController.New
+  name.vb: New
+- uid: Toems_ApplicationApi.Controllers.ExternalDownloadController.Delete*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ExternalDownloadController.Delete
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ExternalDownloadController.html#Toems_ApplicationApi.Controllers.ExternalDownloadController.Delete(System.Int32)
+  name: Delete
+  nameWithType: ExternalDownloadController.Delete
+  fullName: Toems_ApplicationApi.Controllers.ExternalDownloadController.Delete
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Toems_Common.Dto.DtoActionResult
+  isExternal: true
+  name: DtoActionResult
+  nameWithType: DtoActionResult
+  fullName: Toems_Common.Dto.DtoActionResult
+- uid: Toems_ApplicationApi.Controllers.ExternalDownloadController.Get*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ExternalDownloadController.Get
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ExternalDownloadController.html#Toems_ApplicationApi.Controllers.ExternalDownloadController.Get(System.Int32)
+  name: Get
+  nameWithType: ExternalDownloadController.Get
+  fullName: Toems_ApplicationApi.Controllers.ExternalDownloadController.Get
+- uid: Toems_Common.Entity.EntityExternalDownload
+  isExternal: true
+  name: EntityExternalDownload
+  nameWithType: EntityExternalDownload
+  fullName: Toems_Common.Entity.EntityExternalDownload
+- uid: Toems_ApplicationApi.Controllers.ExternalDownloadController.GetForModule*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ExternalDownloadController.GetForModule
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ExternalDownloadController.html#Toems_ApplicationApi.Controllers.ExternalDownloadController.GetForModule(System.String)
+  name: GetForModule
+  nameWithType: ExternalDownloadController.GetForModule
+  fullName: Toems_ApplicationApi.Controllers.ExternalDownloadController.GetForModule
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityExternalDownload}
+  commentId: T:System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityExternalDownload}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<EntityExternalDownload>
+  nameWithType: IEnumerable<EntityExternalDownload>
+  fullName: System.Collections.Generic.IEnumerable<Toems_Common.Entity.EntityExternalDownload>
+  nameWithType.vb: IEnumerable(Of EntityExternalDownload)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Toems_Common.Entity.EntityExternalDownload)
+  name.vb: IEnumerable(Of EntityExternalDownload)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Toems_Common.Entity.EntityExternalDownload
+    name: EntityExternalDownload
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Entity.EntityExternalDownload
+    name: EntityExternalDownload
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Toems_ApplicationApi.Controllers.ExternalDownloadController.BatchDownload*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ExternalDownloadController.BatchDownload
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ExternalDownloadController.html#Toems_ApplicationApi.Controllers.ExternalDownloadController.BatchDownload(System.Collections.Generic.List{Toems_Common.Dto.DtoFileDownload})
+  name: BatchDownload
+  nameWithType: ExternalDownloadController.BatchDownload
+  fullName: Toems_ApplicationApi.Controllers.ExternalDownloadController.BatchDownload
+- uid: System.Collections.Generic.List{Toems_Common.Dto.DtoFileDownload}
+  commentId: T:System.Collections.Generic.List{Toems_Common.Dto.DtoFileDownload}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<DtoFileDownload>
+  nameWithType: List<DtoFileDownload>
+  fullName: System.Collections.Generic.List<Toems_Common.Dto.DtoFileDownload>
+  nameWithType.vb: List(Of DtoFileDownload)
+  fullName.vb: System.Collections.Generic.List(Of Toems_Common.Dto.DtoFileDownload)
+  name.vb: List(Of DtoFileDownload)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Toems_Common.Dto.DtoFileDownload
+    name: DtoFileDownload
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Dto.DtoFileDownload
+    name: DtoFileDownload
+    isExternal: true
+  - name: )
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Toems_ApplicationApi.Controllers.ExternalDownloadController.DownloadFile*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ExternalDownloadController.DownloadFile
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ExternalDownloadController.html#Toems_ApplicationApi.Controllers.ExternalDownloadController.DownloadFile(Toems_Common.Dto.DtoFileDownload)
+  name: DownloadFile
+  nameWithType: ExternalDownloadController.DownloadFile
+  fullName: Toems_ApplicationApi.Controllers.ExternalDownloadController.DownloadFile
+- uid: Toems_Common.Dto.DtoFileDownload
+  commentId: '!:Toems_Common.Dto.DtoFileDownload'
+  isExternal: true
+  name: DtoFileDownload
+  nameWithType: DtoFileDownload
+  fullName: Toems_Common.Dto.DtoFileDownload
+- uid: Toems_ApplicationApi.Controllers.ExternalDownloadController.GetCount*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ExternalDownloadController.GetCount
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ExternalDownloadController.html#Toems_ApplicationApi.Controllers.ExternalDownloadController.GetCount
+  name: GetCount
+  nameWithType: ExternalDownloadController.GetCount
+  fullName: Toems_ApplicationApi.Controllers.ExternalDownloadController.GetCount
+- uid: Toems_Common.Dto.DtoApiStringResponse
+  isExternal: true
+  name: DtoApiStringResponse
+  nameWithType: DtoApiStringResponse
+  fullName: Toems_Common.Dto.DtoApiStringResponse
+- uid: Toems_ApplicationApi.Controllers.ExternalDownloadController.Post*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ExternalDownloadController.Post
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ExternalDownloadController.html#Toems_ApplicationApi.Controllers.ExternalDownloadController.Post(Toems_Common.Entity.EntityExternalDownload)
+  name: Post
+  nameWithType: ExternalDownloadController.Post
+  fullName: Toems_ApplicationApi.Controllers.ExternalDownloadController.Post
+- uid: Toems_ApplicationApi.Controllers.ExternalDownloadController.Put*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ExternalDownloadController.Put
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ExternalDownloadController.html#Toems_ApplicationApi.Controllers.ExternalDownloadController.Put(System.Int32,Toems_Common.Entity.EntityExternalDownload)
+  name: Put
+  nameWithType: ExternalDownloadController.Put
+  fullName: Toems_ApplicationApi.Controllers.ExternalDownloadController.Put

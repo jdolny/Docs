@@ -1,0 +1,575 @@
+### YamlMime:ManagedReference
+items:
+- uid: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController
+  commentId: T:Toems_ApplicationApi.Controllers.ActiveMulticastSessionController
+  id: ActiveMulticastSessionController
+  parent: Toems_ApplicationApi.Controllers
+  children:
+  - Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.#ctor
+  - Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.Delete(System.Int32)
+  - Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.Get
+  - Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.GetComputers(System.Int32)
+  - Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.GetCount
+  - Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.GetMemberStatus(System.Int32)
+  - Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.GetProgress(System.Int32)
+  - Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.StartOnDemandMulticast(System.Int32,System.String,System.String,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: ActiveMulticastSessionController
+  nameWithType: ActiveMulticastSessionController
+  fullName: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController
+  type: Class
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: 'public class ActiveMulticastSessionController : ApiController'
+    content.vb: Public Class ActiveMulticastSessionController Inherits ApiController
+  inheritance:
+  - System.Object
+- uid: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.#ctor
+  commentId: M:Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.#ctor
+  id: '#ctor'
+  parent: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController
+  langs:
+  - csharp
+  - vb
+  name: ActiveMulticastSessionController()
+  nameWithType: ActiveMulticastSessionController.ActiveMulticastSessionController()
+  fullName: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.ActiveMulticastSessionController()
+  type: Constructor
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: public ActiveMulticastSessionController()
+    content.vb: Public Sub New()
+  overload: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.#ctor*
+  nameWithType.vb: ActiveMulticastSessionController.New()
+  fullName.vb: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.New()
+  name.vb: New()
+- uid: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.Delete(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.Delete(System.Int32)
+  id: Delete(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController
+  langs:
+  - csharp
+  - vb
+  name: Delete(int)
+  nameWithType: ActiveMulticastSessionController.Delete(int)
+  fullName: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.Delete(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: public DtoActionResult Delete(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Dto.DtoActionResult
+    content.vb: Public Function Delete(id As Integer) As DtoActionResult
+  overload: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.Delete*
+  nameWithType.vb: ActiveMulticastSessionController.Delete(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.Delete(Integer)
+  name.vb: Delete(Integer)
+- uid: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.Get
+  commentId: M:Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.Get
+  id: Get
+  parent: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController
+  langs:
+  - csharp
+  - vb
+  name: Get()
+  nameWithType: ActiveMulticastSessionController.Get()
+  fullName: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.Get()
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: public IEnumerable<EntityActiveMulticastSession> Get()
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityActiveMulticastSession}
+    content.vb: Public Function [Get]() As IEnumerable(Of EntityActiveMulticastSession)
+  overload: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.Get*
+- uid: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.GetComputers(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.GetComputers(System.Int32)
+  id: GetComputers(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController
+  langs:
+  - csharp
+  - vb
+  name: GetComputers(int)
+  nameWithType: ActiveMulticastSessionController.GetComputers(int)
+  fullName: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.GetComputers(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: public IEnumerable<EntityComputer> GetComputers(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityComputer}
+    content.vb: Public Function GetComputers(id As Integer) As IEnumerable(Of EntityComputer)
+  overload: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.GetComputers*
+  nameWithType.vb: ActiveMulticastSessionController.GetComputers(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.GetComputers(Integer)
+  name.vb: GetComputers(Integer)
+- uid: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.GetCount
+  commentId: M:Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.GetCount
+  id: GetCount
+  parent: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController
+  langs:
+  - csharp
+  - vb
+  name: GetCount()
+  nameWithType: ActiveMulticastSessionController.GetCount()
+  fullName: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.GetCount()
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: public DtoApiStringResponse GetCount()
+    return:
+      type: Toems_Common.Dto.DtoApiStringResponse
+    content.vb: Public Function GetCount() As DtoApiStringResponse
+  overload: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.GetCount*
+- uid: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.GetMemberStatus(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.GetMemberStatus(System.Int32)
+  id: GetMemberStatus(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController
+  langs:
+  - csharp
+  - vb
+  name: GetMemberStatus(int)
+  nameWithType: ActiveMulticastSessionController.GetMemberStatus(int)
+  fullName: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.GetMemberStatus(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: public IEnumerable<TaskWithComputer> GetMemberStatus(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Entity.TaskWithComputer}
+    content.vb: Public Function GetMemberStatus(id As Integer) As IEnumerable(Of TaskWithComputer)
+  overload: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.GetMemberStatus*
+  nameWithType.vb: ActiveMulticastSessionController.GetMemberStatus(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.GetMemberStatus(Integer)
+  name.vb: GetMemberStatus(Integer)
+- uid: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.GetProgress(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.GetProgress(System.Int32)
+  id: GetProgress(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController
+  langs:
+  - csharp
+  - vb
+  name: GetProgress(int)
+  nameWithType: ActiveMulticastSessionController.GetProgress(int)
+  fullName: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.GetProgress(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: public IEnumerable<EntityActiveImagingTask> GetProgress(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityActiveImagingTask}
+    content.vb: Public Function GetProgress(id As Integer) As IEnumerable(Of EntityActiveImagingTask)
+  overload: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.GetProgress*
+  nameWithType.vb: ActiveMulticastSessionController.GetProgress(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.GetProgress(Integer)
+  name.vb: GetProgress(Integer)
+- uid: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.StartOnDemandMulticast(System.Int32,System.String,System.String,System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.StartOnDemandMulticast(System.Int32,System.String,System.String,System.Int32)
+  id: StartOnDemandMulticast(System.Int32,System.String,System.String,System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController
+  langs:
+  - csharp
+  - vb
+  name: StartOnDemandMulticast(int, string, string, int)
+  nameWithType: ActiveMulticastSessionController.StartOnDemandMulticast(int, string, string, int)
+  fullName: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.StartOnDemandMulticast(int, string, string, int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "imageMulticastTask")]
+
+      public DtoApiStringResponse StartOnDemandMulticast(int profileId, string clientCount, string sessionName, int comServerId)
+    parameters:
+    - id: profileId
+      type: System.Int32
+    - id: clientCount
+      type: System.String
+    - id: sessionName
+      type: System.String
+    - id: comServerId
+      type: System.Int32
+    return:
+      type: Toems_Common.Dto.DtoApiStringResponse
+    content.vb: >-
+      <CustomAuth(Permission:="imageMulticastTask")>
+
+      Public Function StartOnDemandMulticast(profileId As Integer, clientCount As String, sessionName As String, comServerId As Integer) As DtoApiStringResponse
+  overload: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.StartOnDemandMulticast*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: imageMulticastTask
+  nameWithType.vb: ActiveMulticastSessionController.StartOnDemandMulticast(Integer, String, String, Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.StartOnDemandMulticast(Integer, String, String, Integer)
+  name.vb: StartOnDemandMulticast(Integer, String, String, Integer)
+references:
+- uid: Toems_ApplicationApi.Controllers
+  commentId: N:Toems_ApplicationApi.Controllers
+  isExternal: true
+  href: Toems_ApplicationApi.html
+  name: Toems_ApplicationApi.Controllers
+  nameWithType: Toems_ApplicationApi.Controllers
+  fullName: Toems_ApplicationApi.Controllers
+  spec.csharp:
+  - uid: Toems_ApplicationApi
+    name: Toems_ApplicationApi
+    isExternal: true
+    href: Toems_ApplicationApi.html
+  - name: .
+  - uid: Toems_ApplicationApi.Controllers
+    name: Controllers
+    isExternal: true
+    href: Toems_ApplicationApi.Controllers.html
+  spec.vb:
+  - uid: Toems_ApplicationApi
+    name: Toems_ApplicationApi
+    isExternal: true
+    href: Toems_ApplicationApi.html
+  - name: .
+  - uid: Toems_ApplicationApi.Controllers
+    name: Controllers
+    isExternal: true
+    href: Toems_ApplicationApi.Controllers.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.#ctor*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.#ctor
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.html#Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.#ctor
+  name: ActiveMulticastSessionController
+  nameWithType: ActiveMulticastSessionController.ActiveMulticastSessionController
+  fullName: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.ActiveMulticastSessionController
+  nameWithType.vb: ActiveMulticastSessionController.New
+  fullName.vb: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.New
+  name.vb: New
+- uid: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.Delete*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.Delete
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.html#Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.Delete(System.Int32)
+  name: Delete
+  nameWithType: ActiveMulticastSessionController.Delete
+  fullName: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.Delete
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Toems_Common.Dto.DtoActionResult
+  isExternal: true
+  name: DtoActionResult
+  nameWithType: DtoActionResult
+  fullName: Toems_Common.Dto.DtoActionResult
+- uid: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.Get*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.Get
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.html#Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.Get
+  name: Get
+  nameWithType: ActiveMulticastSessionController.Get
+  fullName: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.Get
+- uid: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityActiveMulticastSession}
+  commentId: T:System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityActiveMulticastSession}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<EntityActiveMulticastSession>
+  nameWithType: IEnumerable<EntityActiveMulticastSession>
+  fullName: System.Collections.Generic.IEnumerable<Toems_Common.Entity.EntityActiveMulticastSession>
+  nameWithType.vb: IEnumerable(Of EntityActiveMulticastSession)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Toems_Common.Entity.EntityActiveMulticastSession)
+  name.vb: IEnumerable(Of EntityActiveMulticastSession)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Toems_Common.Entity.EntityActiveMulticastSession
+    name: EntityActiveMulticastSession
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Entity.EntityActiveMulticastSession
+    name: EntityActiveMulticastSession
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.GetComputers*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.GetComputers
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.html#Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.GetComputers(System.Int32)
+  name: GetComputers
+  nameWithType: ActiveMulticastSessionController.GetComputers
+  fullName: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.GetComputers
+- uid: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityComputer}
+  commentId: T:System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityComputer}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<EntityComputer>
+  nameWithType: IEnumerable<EntityComputer>
+  fullName: System.Collections.Generic.IEnumerable<Toems_Common.Entity.EntityComputer>
+  nameWithType.vb: IEnumerable(Of EntityComputer)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Toems_Common.Entity.EntityComputer)
+  name.vb: IEnumerable(Of EntityComputer)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Toems_Common.Entity.EntityComputer
+    name: EntityComputer
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Entity.EntityComputer
+    name: EntityComputer
+    isExternal: true
+  - name: )
+- uid: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.GetCount*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.GetCount
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.html#Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.GetCount
+  name: GetCount
+  nameWithType: ActiveMulticastSessionController.GetCount
+  fullName: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.GetCount
+- uid: Toems_Common.Dto.DtoApiStringResponse
+  isExternal: true
+  name: DtoApiStringResponse
+  nameWithType: DtoApiStringResponse
+  fullName: Toems_Common.Dto.DtoApiStringResponse
+- uid: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.GetMemberStatus*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.GetMemberStatus
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.html#Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.GetMemberStatus(System.Int32)
+  name: GetMemberStatus
+  nameWithType: ActiveMulticastSessionController.GetMemberStatus
+  fullName: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.GetMemberStatus
+- uid: System.Collections.Generic.IEnumerable{Toems_Common.Entity.TaskWithComputer}
+  commentId: T:System.Collections.Generic.IEnumerable{Toems_Common.Entity.TaskWithComputer}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<TaskWithComputer>
+  nameWithType: IEnumerable<TaskWithComputer>
+  fullName: System.Collections.Generic.IEnumerable<Toems_Common.Entity.TaskWithComputer>
+  nameWithType.vb: IEnumerable(Of TaskWithComputer)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Toems_Common.Entity.TaskWithComputer)
+  name.vb: IEnumerable(Of TaskWithComputer)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Toems_Common.Entity.TaskWithComputer
+    name: TaskWithComputer
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Entity.TaskWithComputer
+    name: TaskWithComputer
+    isExternal: true
+  - name: )
+- uid: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.GetProgress*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.GetProgress
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.html#Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.GetProgress(System.Int32)
+  name: GetProgress
+  nameWithType: ActiveMulticastSessionController.GetProgress
+  fullName: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.GetProgress
+- uid: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityActiveImagingTask}
+  commentId: T:System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityActiveImagingTask}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<EntityActiveImagingTask>
+  nameWithType: IEnumerable<EntityActiveImagingTask>
+  fullName: System.Collections.Generic.IEnumerable<Toems_Common.Entity.EntityActiveImagingTask>
+  nameWithType.vb: IEnumerable(Of EntityActiveImagingTask)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Toems_Common.Entity.EntityActiveImagingTask)
+  name.vb: IEnumerable(Of EntityActiveImagingTask)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Toems_Common.Entity.EntityActiveImagingTask
+    name: EntityActiveImagingTask
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Entity.EntityActiveImagingTask
+    name: EntityActiveImagingTask
+    isExternal: true
+  - name: )
+- uid: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.StartOnDemandMulticast*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.StartOnDemandMulticast
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.html#Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.StartOnDemandMulticast(System.Int32,System.String,System.String,System.Int32)
+  name: StartOnDemandMulticast
+  nameWithType: ActiveMulticastSessionController.StartOnDemandMulticast
+  fullName: Toems_ApplicationApi.Controllers.ActiveMulticastSessionController.StartOnDemandMulticast
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

@@ -1,0 +1,395 @@
+### YamlMime:ManagedReference
+items:
+- uid: Toems_ApplicationApi.Controllers.SoftwareInventoryController
+  commentId: T:Toems_ApplicationApi.Controllers.SoftwareInventoryController
+  id: SoftwareInventoryController
+  parent: Toems_ApplicationApi.Controllers
+  children:
+  - Toems_ApplicationApi.Controllers.SoftwareInventoryController.#ctor
+  - Toems_ApplicationApi.Controllers.SoftwareInventoryController.Get
+  - Toems_ApplicationApi.Controllers.SoftwareInventoryController.Get(System.Int32)
+  - Toems_ApplicationApi.Controllers.SoftwareInventoryController.GetCount
+  - Toems_ApplicationApi.Controllers.SoftwareInventoryController.Search(Toems_Common.Dto.DtoSearchFilter)
+  langs:
+  - csharp
+  - vb
+  name: SoftwareInventoryController
+  nameWithType: SoftwareInventoryController
+  fullName: Toems_ApplicationApi.Controllers.SoftwareInventoryController
+  type: Class
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: 'public class SoftwareInventoryController : ApiController'
+    content.vb: Public Class SoftwareInventoryController Inherits ApiController
+  inheritance:
+  - System.Object
+- uid: Toems_ApplicationApi.Controllers.SoftwareInventoryController.#ctor
+  commentId: M:Toems_ApplicationApi.Controllers.SoftwareInventoryController.#ctor
+  id: '#ctor'
+  parent: Toems_ApplicationApi.Controllers.SoftwareInventoryController
+  langs:
+  - csharp
+  - vb
+  name: SoftwareInventoryController()
+  nameWithType: SoftwareInventoryController.SoftwareInventoryController()
+  fullName: Toems_ApplicationApi.Controllers.SoftwareInventoryController.SoftwareInventoryController()
+  type: Constructor
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: public SoftwareInventoryController()
+    content.vb: Public Sub New()
+  overload: Toems_ApplicationApi.Controllers.SoftwareInventoryController.#ctor*
+  nameWithType.vb: SoftwareInventoryController.New()
+  fullName.vb: Toems_ApplicationApi.Controllers.SoftwareInventoryController.New()
+  name.vb: New()
+- uid: Toems_ApplicationApi.Controllers.SoftwareInventoryController.Get(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.SoftwareInventoryController.Get(System.Int32)
+  id: Get(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.SoftwareInventoryController
+  langs:
+  - csharp
+  - vb
+  name: Get(int)
+  nameWithType: SoftwareInventoryController.Get(int)
+  fullName: Toems_ApplicationApi.Controllers.SoftwareInventoryController.Get(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "reportRead")]
+
+      public EntitySoftwareInventory Get(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Entity.EntitySoftwareInventory
+    content.vb: >-
+      <CustomAuth(Permission:="reportRead")>
+
+      Public Function [Get](id As Integer) As EntitySoftwareInventory
+  overload: Toems_ApplicationApi.Controllers.SoftwareInventoryController.Get*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: reportRead
+  nameWithType.vb: SoftwareInventoryController.Get(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.SoftwareInventoryController.Get(Integer)
+  name.vb: Get(Integer)
+- uid: Toems_ApplicationApi.Controllers.SoftwareInventoryController.Get
+  commentId: M:Toems_ApplicationApi.Controllers.SoftwareInventoryController.Get
+  id: Get
+  parent: Toems_ApplicationApi.Controllers.SoftwareInventoryController
+  langs:
+  - csharp
+  - vb
+  name: Get()
+  nameWithType: SoftwareInventoryController.Get()
+  fullName: Toems_ApplicationApi.Controllers.SoftwareInventoryController.Get()
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "reportRead")]
+
+      public IEnumerable<EntitySoftwareInventory> Get()
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntitySoftwareInventory}
+    content.vb: >-
+      <CustomAuth(Permission:="reportRead")>
+
+      Public Function [Get]() As IEnumerable(Of EntitySoftwareInventory)
+  overload: Toems_ApplicationApi.Controllers.SoftwareInventoryController.Get*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: reportRead
+- uid: Toems_ApplicationApi.Controllers.SoftwareInventoryController.Search(Toems_Common.Dto.DtoSearchFilter)
+  commentId: M:Toems_ApplicationApi.Controllers.SoftwareInventoryController.Search(Toems_Common.Dto.DtoSearchFilter)
+  id: Search(Toems_Common.Dto.DtoSearchFilter)
+  parent: Toems_ApplicationApi.Controllers.SoftwareInventoryController
+  langs:
+  - csharp
+  - vb
+  name: Search(DtoSearchFilter)
+  nameWithType: SoftwareInventoryController.Search(DtoSearchFilter)
+  fullName: Toems_ApplicationApi.Controllers.SoftwareInventoryController.Search(Toems_Common.Dto.DtoSearchFilter)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "reportRead")]
+
+      public IEnumerable<EntitySoftwareInventory> Search(DtoSearchFilter filter)
+    parameters:
+    - id: filter
+      type: Toems_Common.Dto.DtoSearchFilter
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntitySoftwareInventory}
+    content.vb: >-
+      <CustomAuth(Permission:="reportRead")>
+
+      Public Function Search(filter As DtoSearchFilter) As IEnumerable(Of EntitySoftwareInventory)
+  overload: Toems_ApplicationApi.Controllers.SoftwareInventoryController.Search*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: reportRead
+- uid: Toems_ApplicationApi.Controllers.SoftwareInventoryController.GetCount
+  commentId: M:Toems_ApplicationApi.Controllers.SoftwareInventoryController.GetCount
+  id: GetCount
+  parent: Toems_ApplicationApi.Controllers.SoftwareInventoryController
+  langs:
+  - csharp
+  - vb
+  name: GetCount()
+  nameWithType: SoftwareInventoryController.GetCount()
+  fullName: Toems_ApplicationApi.Controllers.SoftwareInventoryController.GetCount()
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "reportRead")]
+
+      public DtoApiStringResponse GetCount()
+    return:
+      type: Toems_Common.Dto.DtoApiStringResponse
+    content.vb: >-
+      <CustomAuth(Permission:="reportRead")>
+
+      Public Function GetCount() As DtoApiStringResponse
+  overload: Toems_ApplicationApi.Controllers.SoftwareInventoryController.GetCount*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: reportRead
+references:
+- uid: Toems_ApplicationApi.Controllers
+  commentId: N:Toems_ApplicationApi.Controllers
+  isExternal: true
+  href: Toems_ApplicationApi.html
+  name: Toems_ApplicationApi.Controllers
+  nameWithType: Toems_ApplicationApi.Controllers
+  fullName: Toems_ApplicationApi.Controllers
+  spec.csharp:
+  - uid: Toems_ApplicationApi
+    name: Toems_ApplicationApi
+    isExternal: true
+    href: Toems_ApplicationApi.html
+  - name: .
+  - uid: Toems_ApplicationApi.Controllers
+    name: Controllers
+    isExternal: true
+    href: Toems_ApplicationApi.Controllers.html
+  spec.vb:
+  - uid: Toems_ApplicationApi
+    name: Toems_ApplicationApi
+    isExternal: true
+    href: Toems_ApplicationApi.html
+  - name: .
+  - uid: Toems_ApplicationApi.Controllers
+    name: Controllers
+    isExternal: true
+    href: Toems_ApplicationApi.Controllers.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Toems_ApplicationApi.Controllers.SoftwareInventoryController.#ctor*
+  commentId: Overload:Toems_ApplicationApi.Controllers.SoftwareInventoryController.#ctor
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.SoftwareInventoryController.html#Toems_ApplicationApi.Controllers.SoftwareInventoryController.#ctor
+  name: SoftwareInventoryController
+  nameWithType: SoftwareInventoryController.SoftwareInventoryController
+  fullName: Toems_ApplicationApi.Controllers.SoftwareInventoryController.SoftwareInventoryController
+  nameWithType.vb: SoftwareInventoryController.New
+  fullName.vb: Toems_ApplicationApi.Controllers.SoftwareInventoryController.New
+  name.vb: New
+- uid: Toems_ApplicationApi.Controllers.SoftwareInventoryController.Get*
+  commentId: Overload:Toems_ApplicationApi.Controllers.SoftwareInventoryController.Get
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.SoftwareInventoryController.html#Toems_ApplicationApi.Controllers.SoftwareInventoryController.Get(System.Int32)
+  name: Get
+  nameWithType: SoftwareInventoryController.Get
+  fullName: Toems_ApplicationApi.Controllers.SoftwareInventoryController.Get
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Toems_Common.Entity.EntitySoftwareInventory
+  commentId: '!:Toems_Common.Entity.EntitySoftwareInventory'
+  isExternal: true
+  name: EntitySoftwareInventory
+  nameWithType: EntitySoftwareInventory
+  fullName: Toems_Common.Entity.EntitySoftwareInventory
+- uid: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntitySoftwareInventory}
+  commentId: T:System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntitySoftwareInventory}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<EntitySoftwareInventory>
+  nameWithType: IEnumerable<EntitySoftwareInventory>
+  fullName: System.Collections.Generic.IEnumerable<Toems_Common.Entity.EntitySoftwareInventory>
+  nameWithType.vb: IEnumerable(Of EntitySoftwareInventory)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Toems_Common.Entity.EntitySoftwareInventory)
+  name.vb: IEnumerable(Of EntitySoftwareInventory)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Toems_Common.Entity.EntitySoftwareInventory
+    name: EntitySoftwareInventory
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Entity.EntitySoftwareInventory
+    name: EntitySoftwareInventory
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Toems_ApplicationApi.Controllers.SoftwareInventoryController.Search*
+  commentId: Overload:Toems_ApplicationApi.Controllers.SoftwareInventoryController.Search
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.SoftwareInventoryController.html#Toems_ApplicationApi.Controllers.SoftwareInventoryController.Search(Toems_Common.Dto.DtoSearchFilter)
+  name: Search
+  nameWithType: SoftwareInventoryController.Search
+  fullName: Toems_ApplicationApi.Controllers.SoftwareInventoryController.Search
+- uid: Toems_Common.Dto.DtoSearchFilter
+  isExternal: true
+  name: DtoSearchFilter
+  nameWithType: DtoSearchFilter
+  fullName: Toems_Common.Dto.DtoSearchFilter
+- uid: Toems_ApplicationApi.Controllers.SoftwareInventoryController.GetCount*
+  commentId: Overload:Toems_ApplicationApi.Controllers.SoftwareInventoryController.GetCount
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.SoftwareInventoryController.html#Toems_ApplicationApi.Controllers.SoftwareInventoryController.GetCount
+  name: GetCount
+  nameWithType: SoftwareInventoryController.GetCount
+  fullName: Toems_ApplicationApi.Controllers.SoftwareInventoryController.GetCount
+- uid: Toems_Common.Dto.DtoApiStringResponse
+  isExternal: true
+  name: DtoApiStringResponse
+  nameWithType: DtoApiStringResponse
+  fullName: Toems_Common.Dto.DtoApiStringResponse

@@ -1,0 +1,629 @@
+### YamlMime:ManagedReference
+items:
+- uid: Toems_ApplicationApi.Controllers.PrinterModuleController
+  commentId: T:Toems_ApplicationApi.Controllers.PrinterModuleController
+  id: PrinterModuleController
+  parent: Toems_ApplicationApi.Controllers
+  children:
+  - Toems_ApplicationApi.Controllers.PrinterModuleController.#ctor
+  - Toems_ApplicationApi.Controllers.PrinterModuleController.Delete(System.Int32)
+  - Toems_ApplicationApi.Controllers.PrinterModuleController.Get
+  - Toems_ApplicationApi.Controllers.PrinterModuleController.Get(System.Int32)
+  - Toems_ApplicationApi.Controllers.PrinterModuleController.GetArchived(Toems_Common.Dto.DtoSearchFilterCategories)
+  - Toems_ApplicationApi.Controllers.PrinterModuleController.GetArchivedCount
+  - Toems_ApplicationApi.Controllers.PrinterModuleController.GetCount
+  - Toems_ApplicationApi.Controllers.PrinterModuleController.Post(Toems_Common.Entity.EntityPrinterModule)
+  - Toems_ApplicationApi.Controllers.PrinterModuleController.Put(System.Int32,Toems_Common.Entity.EntityPrinterModule)
+  - Toems_ApplicationApi.Controllers.PrinterModuleController.Search(Toems_Common.Dto.DtoSearchFilterCategories)
+  langs:
+  - csharp
+  - vb
+  name: PrinterModuleController
+  nameWithType: PrinterModuleController
+  fullName: Toems_ApplicationApi.Controllers.PrinterModuleController
+  type: Class
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: 'public class PrinterModuleController : ApiController'
+    content.vb: Public Class PrinterModuleController Inherits ApiController
+  inheritance:
+  - System.Object
+- uid: Toems_ApplicationApi.Controllers.PrinterModuleController.#ctor
+  commentId: M:Toems_ApplicationApi.Controllers.PrinterModuleController.#ctor
+  id: '#ctor'
+  parent: Toems_ApplicationApi.Controllers.PrinterModuleController
+  langs:
+  - csharp
+  - vb
+  name: PrinterModuleController()
+  nameWithType: PrinterModuleController.PrinterModuleController()
+  fullName: Toems_ApplicationApi.Controllers.PrinterModuleController.PrinterModuleController()
+  type: Constructor
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: public PrinterModuleController()
+    content.vb: Public Sub New()
+  overload: Toems_ApplicationApi.Controllers.PrinterModuleController.#ctor*
+  nameWithType.vb: PrinterModuleController.New()
+  fullName.vb: Toems_ApplicationApi.Controllers.PrinterModuleController.New()
+  name.vb: New()
+- uid: Toems_ApplicationApi.Controllers.PrinterModuleController.Delete(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.PrinterModuleController.Delete(System.Int32)
+  id: Delete(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.PrinterModuleController
+  langs:
+  - csharp
+  - vb
+  name: Delete(int)
+  nameWithType: PrinterModuleController.Delete(int)
+  fullName: Toems_ApplicationApi.Controllers.PrinterModuleController.Delete(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "moduleDelete")]
+
+      public DtoActionResult Delete(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Dto.DtoActionResult
+    content.vb: >-
+      <CustomAuth(Permission:="moduleDelete")>
+
+      Public Function Delete(id As Integer) As DtoActionResult
+  overload: Toems_ApplicationApi.Controllers.PrinterModuleController.Delete*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: moduleDelete
+  nameWithType.vb: PrinterModuleController.Delete(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.PrinterModuleController.Delete(Integer)
+  name.vb: Delete(Integer)
+- uid: Toems_ApplicationApi.Controllers.PrinterModuleController.Get(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.PrinterModuleController.Get(System.Int32)
+  id: Get(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.PrinterModuleController
+  langs:
+  - csharp
+  - vb
+  name: Get(int)
+  nameWithType: PrinterModuleController.Get(int)
+  fullName: Toems_ApplicationApi.Controllers.PrinterModuleController.Get(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "moduleRead")]
+
+      public EntityPrinterModule Get(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Entity.EntityPrinterModule
+    content.vb: >-
+      <CustomAuth(Permission:="moduleRead")>
+
+      Public Function [Get](id As Integer) As EntityPrinterModule
+  overload: Toems_ApplicationApi.Controllers.PrinterModuleController.Get*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: moduleRead
+  nameWithType.vb: PrinterModuleController.Get(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.PrinterModuleController.Get(Integer)
+  name.vb: Get(Integer)
+- uid: Toems_ApplicationApi.Controllers.PrinterModuleController.Get
+  commentId: M:Toems_ApplicationApi.Controllers.PrinterModuleController.Get
+  id: Get
+  parent: Toems_ApplicationApi.Controllers.PrinterModuleController
+  langs:
+  - csharp
+  - vb
+  name: Get()
+  nameWithType: PrinterModuleController.Get()
+  fullName: Toems_ApplicationApi.Controllers.PrinterModuleController.Get()
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "moduleRead")]
+
+      public IEnumerable<EntityPrinterModule> Get()
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityPrinterModule}
+    content.vb: >-
+      <CustomAuth(Permission:="moduleRead")>
+
+      Public Function [Get]() As IEnumerable(Of EntityPrinterModule)
+  overload: Toems_ApplicationApi.Controllers.PrinterModuleController.Get*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: moduleRead
+- uid: Toems_ApplicationApi.Controllers.PrinterModuleController.Search(Toems_Common.Dto.DtoSearchFilterCategories)
+  commentId: M:Toems_ApplicationApi.Controllers.PrinterModuleController.Search(Toems_Common.Dto.DtoSearchFilterCategories)
+  id: Search(Toems_Common.Dto.DtoSearchFilterCategories)
+  parent: Toems_ApplicationApi.Controllers.PrinterModuleController
+  langs:
+  - csharp
+  - vb
+  name: Search(DtoSearchFilterCategories)
+  nameWithType: PrinterModuleController.Search(DtoSearchFilterCategories)
+  fullName: Toems_ApplicationApi.Controllers.PrinterModuleController.Search(Toems_Common.Dto.DtoSearchFilterCategories)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "moduleRead")]
+
+      public IEnumerable<EntityPrinterModule> Search(DtoSearchFilterCategories filter)
+    parameters:
+    - id: filter
+      type: Toems_Common.Dto.DtoSearchFilterCategories
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityPrinterModule}
+    content.vb: >-
+      <CustomAuth(Permission:="moduleRead")>
+
+      Public Function Search(filter As DtoSearchFilterCategories) As IEnumerable(Of EntityPrinterModule)
+  overload: Toems_ApplicationApi.Controllers.PrinterModuleController.Search*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: moduleRead
+- uid: Toems_ApplicationApi.Controllers.PrinterModuleController.GetArchived(Toems_Common.Dto.DtoSearchFilterCategories)
+  commentId: M:Toems_ApplicationApi.Controllers.PrinterModuleController.GetArchived(Toems_Common.Dto.DtoSearchFilterCategories)
+  id: GetArchived(Toems_Common.Dto.DtoSearchFilterCategories)
+  parent: Toems_ApplicationApi.Controllers.PrinterModuleController
+  langs:
+  - csharp
+  - vb
+  name: GetArchived(DtoSearchFilterCategories)
+  nameWithType: PrinterModuleController.GetArchived(DtoSearchFilterCategories)
+  fullName: Toems_ApplicationApi.Controllers.PrinterModuleController.GetArchived(Toems_Common.Dto.DtoSearchFilterCategories)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "moduleRead")]
+
+      public IEnumerable<EntityPrinterModule> GetArchived(DtoSearchFilterCategories filter)
+    parameters:
+    - id: filter
+      type: Toems_Common.Dto.DtoSearchFilterCategories
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityPrinterModule}
+    content.vb: >-
+      <CustomAuth(Permission:="moduleRead")>
+
+      Public Function GetArchived(filter As DtoSearchFilterCategories) As IEnumerable(Of EntityPrinterModule)
+  overload: Toems_ApplicationApi.Controllers.PrinterModuleController.GetArchived*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: moduleRead
+- uid: Toems_ApplicationApi.Controllers.PrinterModuleController.GetCount
+  commentId: M:Toems_ApplicationApi.Controllers.PrinterModuleController.GetCount
+  id: GetCount
+  parent: Toems_ApplicationApi.Controllers.PrinterModuleController
+  langs:
+  - csharp
+  - vb
+  name: GetCount()
+  nameWithType: PrinterModuleController.GetCount()
+  fullName: Toems_ApplicationApi.Controllers.PrinterModuleController.GetCount()
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "moduleRead")]
+
+      public DtoApiStringResponse GetCount()
+    return:
+      type: Toems_Common.Dto.DtoApiStringResponse
+    content.vb: >-
+      <CustomAuth(Permission:="moduleRead")>
+
+      Public Function GetCount() As DtoApiStringResponse
+  overload: Toems_ApplicationApi.Controllers.PrinterModuleController.GetCount*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: moduleRead
+- uid: Toems_ApplicationApi.Controllers.PrinterModuleController.GetArchivedCount
+  commentId: M:Toems_ApplicationApi.Controllers.PrinterModuleController.GetArchivedCount
+  id: GetArchivedCount
+  parent: Toems_ApplicationApi.Controllers.PrinterModuleController
+  langs:
+  - csharp
+  - vb
+  name: GetArchivedCount()
+  nameWithType: PrinterModuleController.GetArchivedCount()
+  fullName: Toems_ApplicationApi.Controllers.PrinterModuleController.GetArchivedCount()
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "moduleRead")]
+
+      public DtoApiStringResponse GetArchivedCount()
+    return:
+      type: Toems_Common.Dto.DtoApiStringResponse
+    content.vb: >-
+      <CustomAuth(Permission:="moduleRead")>
+
+      Public Function GetArchivedCount() As DtoApiStringResponse
+  overload: Toems_ApplicationApi.Controllers.PrinterModuleController.GetArchivedCount*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: moduleRead
+- uid: Toems_ApplicationApi.Controllers.PrinterModuleController.Post(Toems_Common.Entity.EntityPrinterModule)
+  commentId: M:Toems_ApplicationApi.Controllers.PrinterModuleController.Post(Toems_Common.Entity.EntityPrinterModule)
+  id: Post(Toems_Common.Entity.EntityPrinterModule)
+  parent: Toems_ApplicationApi.Controllers.PrinterModuleController
+  langs:
+  - csharp
+  - vb
+  name: Post(EntityPrinterModule)
+  nameWithType: PrinterModuleController.Post(EntityPrinterModule)
+  fullName: Toems_ApplicationApi.Controllers.PrinterModuleController.Post(Toems_Common.Entity.EntityPrinterModule)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "moduleUpdate")]
+
+      public DtoActionResult Post(EntityPrinterModule module)
+    parameters:
+    - id: module
+      type: Toems_Common.Entity.EntityPrinterModule
+    return:
+      type: Toems_Common.Dto.DtoActionResult
+    content.vb: >-
+      <CustomAuth(Permission:="moduleUpdate")>
+
+      Public Function Post([module] As EntityPrinterModule) As DtoActionResult
+  overload: Toems_ApplicationApi.Controllers.PrinterModuleController.Post*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: moduleUpdate
+- uid: Toems_ApplicationApi.Controllers.PrinterModuleController.Put(System.Int32,Toems_Common.Entity.EntityPrinterModule)
+  commentId: M:Toems_ApplicationApi.Controllers.PrinterModuleController.Put(System.Int32,Toems_Common.Entity.EntityPrinterModule)
+  id: Put(System.Int32,Toems_Common.Entity.EntityPrinterModule)
+  parent: Toems_ApplicationApi.Controllers.PrinterModuleController
+  langs:
+  - csharp
+  - vb
+  name: Put(int, EntityPrinterModule)
+  nameWithType: PrinterModuleController.Put(int, EntityPrinterModule)
+  fullName: Toems_ApplicationApi.Controllers.PrinterModuleController.Put(int, Toems_Common.Entity.EntityPrinterModule)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "moduleUpdate")]
+
+      public DtoActionResult Put(int id, EntityPrinterModule module)
+    parameters:
+    - id: id
+      type: System.Int32
+    - id: module
+      type: Toems_Common.Entity.EntityPrinterModule
+    return:
+      type: Toems_Common.Dto.DtoActionResult
+    content.vb: >-
+      <CustomAuth(Permission:="moduleUpdate")>
+
+      Public Function Put(id As Integer, [module] As EntityPrinterModule) As DtoActionResult
+  overload: Toems_ApplicationApi.Controllers.PrinterModuleController.Put*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: moduleUpdate
+  nameWithType.vb: PrinterModuleController.Put(Integer, EntityPrinterModule)
+  fullName.vb: Toems_ApplicationApi.Controllers.PrinterModuleController.Put(Integer, Toems_Common.Entity.EntityPrinterModule)
+  name.vb: Put(Integer, EntityPrinterModule)
+references:
+- uid: Toems_ApplicationApi.Controllers
+  commentId: N:Toems_ApplicationApi.Controllers
+  isExternal: true
+  href: Toems_ApplicationApi.html
+  name: Toems_ApplicationApi.Controllers
+  nameWithType: Toems_ApplicationApi.Controllers
+  fullName: Toems_ApplicationApi.Controllers
+  spec.csharp:
+  - uid: Toems_ApplicationApi
+    name: Toems_ApplicationApi
+    isExternal: true
+    href: Toems_ApplicationApi.html
+  - name: .
+  - uid: Toems_ApplicationApi.Controllers
+    name: Controllers
+    isExternal: true
+    href: Toems_ApplicationApi.Controllers.html
+  spec.vb:
+  - uid: Toems_ApplicationApi
+    name: Toems_ApplicationApi
+    isExternal: true
+    href: Toems_ApplicationApi.html
+  - name: .
+  - uid: Toems_ApplicationApi.Controllers
+    name: Controllers
+    isExternal: true
+    href: Toems_ApplicationApi.Controllers.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Toems_ApplicationApi.Controllers.PrinterModuleController.#ctor*
+  commentId: Overload:Toems_ApplicationApi.Controllers.PrinterModuleController.#ctor
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.PrinterModuleController.html#Toems_ApplicationApi.Controllers.PrinterModuleController.#ctor
+  name: PrinterModuleController
+  nameWithType: PrinterModuleController.PrinterModuleController
+  fullName: Toems_ApplicationApi.Controllers.PrinterModuleController.PrinterModuleController
+  nameWithType.vb: PrinterModuleController.New
+  fullName.vb: Toems_ApplicationApi.Controllers.PrinterModuleController.New
+  name.vb: New
+- uid: Toems_ApplicationApi.Controllers.PrinterModuleController.Delete*
+  commentId: Overload:Toems_ApplicationApi.Controllers.PrinterModuleController.Delete
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.PrinterModuleController.html#Toems_ApplicationApi.Controllers.PrinterModuleController.Delete(System.Int32)
+  name: Delete
+  nameWithType: PrinterModuleController.Delete
+  fullName: Toems_ApplicationApi.Controllers.PrinterModuleController.Delete
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Toems_Common.Dto.DtoActionResult
+  isExternal: true
+  name: DtoActionResult
+  nameWithType: DtoActionResult
+  fullName: Toems_Common.Dto.DtoActionResult
+- uid: Toems_ApplicationApi.Controllers.PrinterModuleController.Get*
+  commentId: Overload:Toems_ApplicationApi.Controllers.PrinterModuleController.Get
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.PrinterModuleController.html#Toems_ApplicationApi.Controllers.PrinterModuleController.Get(System.Int32)
+  name: Get
+  nameWithType: PrinterModuleController.Get
+  fullName: Toems_ApplicationApi.Controllers.PrinterModuleController.Get
+- uid: Toems_Common.Entity.EntityPrinterModule
+  isExternal: true
+  name: EntityPrinterModule
+  nameWithType: EntityPrinterModule
+  fullName: Toems_Common.Entity.EntityPrinterModule
+- uid: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityPrinterModule}
+  commentId: T:System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityPrinterModule}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<EntityPrinterModule>
+  nameWithType: IEnumerable<EntityPrinterModule>
+  fullName: System.Collections.Generic.IEnumerable<Toems_Common.Entity.EntityPrinterModule>
+  nameWithType.vb: IEnumerable(Of EntityPrinterModule)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Toems_Common.Entity.EntityPrinterModule)
+  name.vb: IEnumerable(Of EntityPrinterModule)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Toems_Common.Entity.EntityPrinterModule
+    name: EntityPrinterModule
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Entity.EntityPrinterModule
+    name: EntityPrinterModule
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Toems_ApplicationApi.Controllers.PrinterModuleController.Search*
+  commentId: Overload:Toems_ApplicationApi.Controllers.PrinterModuleController.Search
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.PrinterModuleController.html#Toems_ApplicationApi.Controllers.PrinterModuleController.Search(Toems_Common.Dto.DtoSearchFilterCategories)
+  name: Search
+  nameWithType: PrinterModuleController.Search
+  fullName: Toems_ApplicationApi.Controllers.PrinterModuleController.Search
+- uid: Toems_Common.Dto.DtoSearchFilterCategories
+  isExternal: true
+  name: DtoSearchFilterCategories
+  nameWithType: DtoSearchFilterCategories
+  fullName: Toems_Common.Dto.DtoSearchFilterCategories
+- uid: Toems_ApplicationApi.Controllers.PrinterModuleController.GetArchived*
+  commentId: Overload:Toems_ApplicationApi.Controllers.PrinterModuleController.GetArchived
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.PrinterModuleController.html#Toems_ApplicationApi.Controllers.PrinterModuleController.GetArchived(Toems_Common.Dto.DtoSearchFilterCategories)
+  name: GetArchived
+  nameWithType: PrinterModuleController.GetArchived
+  fullName: Toems_ApplicationApi.Controllers.PrinterModuleController.GetArchived
+- uid: Toems_ApplicationApi.Controllers.PrinterModuleController.GetCount*
+  commentId: Overload:Toems_ApplicationApi.Controllers.PrinterModuleController.GetCount
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.PrinterModuleController.html#Toems_ApplicationApi.Controllers.PrinterModuleController.GetCount
+  name: GetCount
+  nameWithType: PrinterModuleController.GetCount
+  fullName: Toems_ApplicationApi.Controllers.PrinterModuleController.GetCount
+- uid: Toems_Common.Dto.DtoApiStringResponse
+  isExternal: true
+  name: DtoApiStringResponse
+  nameWithType: DtoApiStringResponse
+  fullName: Toems_Common.Dto.DtoApiStringResponse
+- uid: Toems_ApplicationApi.Controllers.PrinterModuleController.GetArchivedCount*
+  commentId: Overload:Toems_ApplicationApi.Controllers.PrinterModuleController.GetArchivedCount
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.PrinterModuleController.html#Toems_ApplicationApi.Controllers.PrinterModuleController.GetArchivedCount
+  name: GetArchivedCount
+  nameWithType: PrinterModuleController.GetArchivedCount
+  fullName: Toems_ApplicationApi.Controllers.PrinterModuleController.GetArchivedCount
+- uid: Toems_ApplicationApi.Controllers.PrinterModuleController.Post*
+  commentId: Overload:Toems_ApplicationApi.Controllers.PrinterModuleController.Post
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.PrinterModuleController.html#Toems_ApplicationApi.Controllers.PrinterModuleController.Post(Toems_Common.Entity.EntityPrinterModule)
+  name: Post
+  nameWithType: PrinterModuleController.Post
+  fullName: Toems_ApplicationApi.Controllers.PrinterModuleController.Post
+- uid: Toems_ApplicationApi.Controllers.PrinterModuleController.Put*
+  commentId: Overload:Toems_ApplicationApi.Controllers.PrinterModuleController.Put
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.PrinterModuleController.html#Toems_ApplicationApi.Controllers.PrinterModuleController.Put(System.Int32,Toems_Common.Entity.EntityPrinterModule)
+  name: Put
+  nameWithType: PrinterModuleController.Put
+  fullName: Toems_ApplicationApi.Controllers.PrinterModuleController.Put

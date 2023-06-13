@@ -1,0 +1,595 @@
+### YamlMime:ManagedReference
+items:
+- uid: Toems_ApplicationApi.Controllers.ComServerClusterController
+  commentId: T:Toems_ApplicationApi.Controllers.ComServerClusterController
+  id: ComServerClusterController
+  parent: Toems_ApplicationApi.Controllers
+  children:
+  - Toems_ApplicationApi.Controllers.ComServerClusterController.#ctor
+  - Toems_ApplicationApi.Controllers.ComServerClusterController.Delete(System.Int32)
+  - Toems_ApplicationApi.Controllers.ComServerClusterController.Get
+  - Toems_ApplicationApi.Controllers.ComServerClusterController.Get(System.Int32)
+  - Toems_ApplicationApi.Controllers.ComServerClusterController.GetClusterServers(System.Int32)
+  - Toems_ApplicationApi.Controllers.ComServerClusterController.GetCount
+  - Toems_ApplicationApi.Controllers.ComServerClusterController.Post(Toems_Common.Entity.EntityComServerCluster)
+  - Toems_ApplicationApi.Controllers.ComServerClusterController.Put(System.Int32,Toems_Common.Entity.EntityComServerCluster)
+  - Toems_ApplicationApi.Controllers.ComServerClusterController.Search(Toems_Common.Dto.DtoSearchFilter)
+  langs:
+  - csharp
+  - vb
+  name: ComServerClusterController
+  nameWithType: ComServerClusterController
+  fullName: Toems_ApplicationApi.Controllers.ComServerClusterController
+  type: Class
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: 'public class ComServerClusterController : ApiController'
+    content.vb: Public Class ComServerClusterController Inherits ApiController
+  inheritance:
+  - System.Object
+- uid: Toems_ApplicationApi.Controllers.ComServerClusterController.#ctor
+  commentId: M:Toems_ApplicationApi.Controllers.ComServerClusterController.#ctor
+  id: '#ctor'
+  parent: Toems_ApplicationApi.Controllers.ComServerClusterController
+  langs:
+  - csharp
+  - vb
+  name: ComServerClusterController()
+  nameWithType: ComServerClusterController.ComServerClusterController()
+  fullName: Toems_ApplicationApi.Controllers.ComServerClusterController.ComServerClusterController()
+  type: Constructor
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: public ComServerClusterController()
+    content.vb: Public Sub New()
+  overload: Toems_ApplicationApi.Controllers.ComServerClusterController.#ctor*
+  nameWithType.vb: ComServerClusterController.New()
+  fullName.vb: Toems_ApplicationApi.Controllers.ComServerClusterController.New()
+  name.vb: New()
+- uid: Toems_ApplicationApi.Controllers.ComServerClusterController.Delete(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ComServerClusterController.Delete(System.Int32)
+  id: Delete(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ComServerClusterController
+  langs:
+  - csharp
+  - vb
+  name: Delete(int)
+  nameWithType: ComServerClusterController.Delete(int)
+  fullName: Toems_ApplicationApi.Controllers.ComServerClusterController.Delete(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "Administrator")]
+
+      public DtoActionResult Delete(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Dto.DtoActionResult
+    content.vb: >-
+      <CustomAuth(Permission:="Administrator")>
+
+      Public Function Delete(id As Integer) As DtoActionResult
+  overload: Toems_ApplicationApi.Controllers.ComServerClusterController.Delete*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: Administrator
+  nameWithType.vb: ComServerClusterController.Delete(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ComServerClusterController.Delete(Integer)
+  name.vb: Delete(Integer)
+- uid: Toems_ApplicationApi.Controllers.ComServerClusterController.Get(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ComServerClusterController.Get(System.Int32)
+  id: Get(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ComServerClusterController
+  langs:
+  - csharp
+  - vb
+  name: Get(int)
+  nameWithType: ComServerClusterController.Get(int)
+  fullName: Toems_ApplicationApi.Controllers.ComServerClusterController.Get(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: public EntityComServerCluster Get(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Entity.EntityComServerCluster
+    content.vb: Public Function [Get](id As Integer) As EntityComServerCluster
+  overload: Toems_ApplicationApi.Controllers.ComServerClusterController.Get*
+  nameWithType.vb: ComServerClusterController.Get(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ComServerClusterController.Get(Integer)
+  name.vb: Get(Integer)
+- uid: Toems_ApplicationApi.Controllers.ComServerClusterController.Get
+  commentId: M:Toems_ApplicationApi.Controllers.ComServerClusterController.Get
+  id: Get
+  parent: Toems_ApplicationApi.Controllers.ComServerClusterController
+  langs:
+  - csharp
+  - vb
+  name: Get()
+  nameWithType: ComServerClusterController.Get()
+  fullName: Toems_ApplicationApi.Controllers.ComServerClusterController.Get()
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: public IEnumerable<EntityComServerCluster> Get()
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityComServerCluster}
+    content.vb: Public Function [Get]() As IEnumerable(Of EntityComServerCluster)
+  overload: Toems_ApplicationApi.Controllers.ComServerClusterController.Get*
+- uid: Toems_ApplicationApi.Controllers.ComServerClusterController.GetClusterServers(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ComServerClusterController.GetClusterServers(System.Int32)
+  id: GetClusterServers(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ComServerClusterController
+  langs:
+  - csharp
+  - vb
+  name: GetClusterServers(int)
+  nameWithType: ComServerClusterController.GetClusterServers(int)
+  fullName: Toems_ApplicationApi.Controllers.ComServerClusterController.GetClusterServers(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "Administrator")]
+
+      public IEnumerable<EntityComServerClusterServer> GetClusterServers(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityComServerClusterServer}
+    content.vb: >-
+      <CustomAuth(Permission:="Administrator")>
+
+      Public Function GetClusterServers(id As Integer) As IEnumerable(Of EntityComServerClusterServer)
+  overload: Toems_ApplicationApi.Controllers.ComServerClusterController.GetClusterServers*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: Administrator
+  nameWithType.vb: ComServerClusterController.GetClusterServers(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ComServerClusterController.GetClusterServers(Integer)
+  name.vb: GetClusterServers(Integer)
+- uid: Toems_ApplicationApi.Controllers.ComServerClusterController.Search(Toems_Common.Dto.DtoSearchFilter)
+  commentId: M:Toems_ApplicationApi.Controllers.ComServerClusterController.Search(Toems_Common.Dto.DtoSearchFilter)
+  id: Search(Toems_Common.Dto.DtoSearchFilter)
+  parent: Toems_ApplicationApi.Controllers.ComServerClusterController
+  langs:
+  - csharp
+  - vb
+  name: Search(DtoSearchFilter)
+  nameWithType: ComServerClusterController.Search(DtoSearchFilter)
+  fullName: Toems_ApplicationApi.Controllers.ComServerClusterController.Search(Toems_Common.Dto.DtoSearchFilter)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "Administrator")]
+
+      public IEnumerable<EntityComServerCluster> Search(DtoSearchFilter filter)
+    parameters:
+    - id: filter
+      type: Toems_Common.Dto.DtoSearchFilter
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityComServerCluster}
+    content.vb: >-
+      <CustomAuth(Permission:="Administrator")>
+
+      Public Function Search(filter As DtoSearchFilter) As IEnumerable(Of EntityComServerCluster)
+  overload: Toems_ApplicationApi.Controllers.ComServerClusterController.Search*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: Administrator
+- uid: Toems_ApplicationApi.Controllers.ComServerClusterController.GetCount
+  commentId: M:Toems_ApplicationApi.Controllers.ComServerClusterController.GetCount
+  id: GetCount
+  parent: Toems_ApplicationApi.Controllers.ComServerClusterController
+  langs:
+  - csharp
+  - vb
+  name: GetCount()
+  nameWithType: ComServerClusterController.GetCount()
+  fullName: Toems_ApplicationApi.Controllers.ComServerClusterController.GetCount()
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "Administrator")]
+
+      public DtoApiStringResponse GetCount()
+    return:
+      type: Toems_Common.Dto.DtoApiStringResponse
+    content.vb: >-
+      <CustomAuth(Permission:="Administrator")>
+
+      Public Function GetCount() As DtoApiStringResponse
+  overload: Toems_ApplicationApi.Controllers.ComServerClusterController.GetCount*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: Administrator
+- uid: Toems_ApplicationApi.Controllers.ComServerClusterController.Post(Toems_Common.Entity.EntityComServerCluster)
+  commentId: M:Toems_ApplicationApi.Controllers.ComServerClusterController.Post(Toems_Common.Entity.EntityComServerCluster)
+  id: Post(Toems_Common.Entity.EntityComServerCluster)
+  parent: Toems_ApplicationApi.Controllers.ComServerClusterController
+  langs:
+  - csharp
+  - vb
+  name: Post(EntityComServerCluster)
+  nameWithType: ComServerClusterController.Post(EntityComServerCluster)
+  fullName: Toems_ApplicationApi.Controllers.ComServerClusterController.Post(Toems_Common.Entity.EntityComServerCluster)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "Administrator")]
+
+      public DtoActionResult Post(EntityComServerCluster cluster)
+    parameters:
+    - id: cluster
+      type: Toems_Common.Entity.EntityComServerCluster
+    return:
+      type: Toems_Common.Dto.DtoActionResult
+    content.vb: >-
+      <CustomAuth(Permission:="Administrator")>
+
+      Public Function Post(cluster As EntityComServerCluster) As DtoActionResult
+  overload: Toems_ApplicationApi.Controllers.ComServerClusterController.Post*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: Administrator
+- uid: Toems_ApplicationApi.Controllers.ComServerClusterController.Put(System.Int32,Toems_Common.Entity.EntityComServerCluster)
+  commentId: M:Toems_ApplicationApi.Controllers.ComServerClusterController.Put(System.Int32,Toems_Common.Entity.EntityComServerCluster)
+  id: Put(System.Int32,Toems_Common.Entity.EntityComServerCluster)
+  parent: Toems_ApplicationApi.Controllers.ComServerClusterController
+  langs:
+  - csharp
+  - vb
+  name: Put(int, EntityComServerCluster)
+  nameWithType: ComServerClusterController.Put(int, EntityComServerCluster)
+  fullName: Toems_ApplicationApi.Controllers.ComServerClusterController.Put(int, Toems_Common.Entity.EntityComServerCluster)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "Administrator")]
+
+      public DtoActionResult Put(int id, EntityComServerCluster cluster)
+    parameters:
+    - id: id
+      type: System.Int32
+    - id: cluster
+      type: Toems_Common.Entity.EntityComServerCluster
+    return:
+      type: Toems_Common.Dto.DtoActionResult
+    content.vb: >-
+      <CustomAuth(Permission:="Administrator")>
+
+      Public Function Put(id As Integer, cluster As EntityComServerCluster) As DtoActionResult
+  overload: Toems_ApplicationApi.Controllers.ComServerClusterController.Put*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: Administrator
+  nameWithType.vb: ComServerClusterController.Put(Integer, EntityComServerCluster)
+  fullName.vb: Toems_ApplicationApi.Controllers.ComServerClusterController.Put(Integer, Toems_Common.Entity.EntityComServerCluster)
+  name.vb: Put(Integer, EntityComServerCluster)
+references:
+- uid: Toems_ApplicationApi.Controllers
+  commentId: N:Toems_ApplicationApi.Controllers
+  isExternal: true
+  href: Toems_ApplicationApi.html
+  name: Toems_ApplicationApi.Controllers
+  nameWithType: Toems_ApplicationApi.Controllers
+  fullName: Toems_ApplicationApi.Controllers
+  spec.csharp:
+  - uid: Toems_ApplicationApi
+    name: Toems_ApplicationApi
+    isExternal: true
+    href: Toems_ApplicationApi.html
+  - name: .
+  - uid: Toems_ApplicationApi.Controllers
+    name: Controllers
+    isExternal: true
+    href: Toems_ApplicationApi.Controllers.html
+  spec.vb:
+  - uid: Toems_ApplicationApi
+    name: Toems_ApplicationApi
+    isExternal: true
+    href: Toems_ApplicationApi.html
+  - name: .
+  - uid: Toems_ApplicationApi.Controllers
+    name: Controllers
+    isExternal: true
+    href: Toems_ApplicationApi.Controllers.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Toems_ApplicationApi.Controllers.ComServerClusterController.#ctor*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComServerClusterController.#ctor
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComServerClusterController.html#Toems_ApplicationApi.Controllers.ComServerClusterController.#ctor
+  name: ComServerClusterController
+  nameWithType: ComServerClusterController.ComServerClusterController
+  fullName: Toems_ApplicationApi.Controllers.ComServerClusterController.ComServerClusterController
+  nameWithType.vb: ComServerClusterController.New
+  fullName.vb: Toems_ApplicationApi.Controllers.ComServerClusterController.New
+  name.vb: New
+- uid: Toems_ApplicationApi.Controllers.ComServerClusterController.Delete*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComServerClusterController.Delete
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComServerClusterController.html#Toems_ApplicationApi.Controllers.ComServerClusterController.Delete(System.Int32)
+  name: Delete
+  nameWithType: ComServerClusterController.Delete
+  fullName: Toems_ApplicationApi.Controllers.ComServerClusterController.Delete
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Toems_Common.Dto.DtoActionResult
+  isExternal: true
+  name: DtoActionResult
+  nameWithType: DtoActionResult
+  fullName: Toems_Common.Dto.DtoActionResult
+- uid: Toems_ApplicationApi.Controllers.ComServerClusterController.Get*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComServerClusterController.Get
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComServerClusterController.html#Toems_ApplicationApi.Controllers.ComServerClusterController.Get(System.Int32)
+  name: Get
+  nameWithType: ComServerClusterController.Get
+  fullName: Toems_ApplicationApi.Controllers.ComServerClusterController.Get
+- uid: Toems_Common.Entity.EntityComServerCluster
+  isExternal: true
+  name: EntityComServerCluster
+  nameWithType: EntityComServerCluster
+  fullName: Toems_Common.Entity.EntityComServerCluster
+- uid: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityComServerCluster}
+  commentId: T:System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityComServerCluster}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<EntityComServerCluster>
+  nameWithType: IEnumerable<EntityComServerCluster>
+  fullName: System.Collections.Generic.IEnumerable<Toems_Common.Entity.EntityComServerCluster>
+  nameWithType.vb: IEnumerable(Of EntityComServerCluster)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Toems_Common.Entity.EntityComServerCluster)
+  name.vb: IEnumerable(Of EntityComServerCluster)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Toems_Common.Entity.EntityComServerCluster
+    name: EntityComServerCluster
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Entity.EntityComServerCluster
+    name: EntityComServerCluster
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Toems_ApplicationApi.Controllers.ComServerClusterController.GetClusterServers*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComServerClusterController.GetClusterServers
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComServerClusterController.html#Toems_ApplicationApi.Controllers.ComServerClusterController.GetClusterServers(System.Int32)
+  name: GetClusterServers
+  nameWithType: ComServerClusterController.GetClusterServers
+  fullName: Toems_ApplicationApi.Controllers.ComServerClusterController.GetClusterServers
+- uid: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityComServerClusterServer}
+  commentId: T:System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityComServerClusterServer}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<EntityComServerClusterServer>
+  nameWithType: IEnumerable<EntityComServerClusterServer>
+  fullName: System.Collections.Generic.IEnumerable<Toems_Common.Entity.EntityComServerClusterServer>
+  nameWithType.vb: IEnumerable(Of EntityComServerClusterServer)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Toems_Common.Entity.EntityComServerClusterServer)
+  name.vb: IEnumerable(Of EntityComServerClusterServer)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Toems_Common.Entity.EntityComServerClusterServer
+    name: EntityComServerClusterServer
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Entity.EntityComServerClusterServer
+    name: EntityComServerClusterServer
+    isExternal: true
+  - name: )
+- uid: Toems_ApplicationApi.Controllers.ComServerClusterController.Search*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComServerClusterController.Search
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComServerClusterController.html#Toems_ApplicationApi.Controllers.ComServerClusterController.Search(Toems_Common.Dto.DtoSearchFilter)
+  name: Search
+  nameWithType: ComServerClusterController.Search
+  fullName: Toems_ApplicationApi.Controllers.ComServerClusterController.Search
+- uid: Toems_Common.Dto.DtoSearchFilter
+  isExternal: true
+  name: DtoSearchFilter
+  nameWithType: DtoSearchFilter
+  fullName: Toems_Common.Dto.DtoSearchFilter
+- uid: Toems_ApplicationApi.Controllers.ComServerClusterController.GetCount*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComServerClusterController.GetCount
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComServerClusterController.html#Toems_ApplicationApi.Controllers.ComServerClusterController.GetCount
+  name: GetCount
+  nameWithType: ComServerClusterController.GetCount
+  fullName: Toems_ApplicationApi.Controllers.ComServerClusterController.GetCount
+- uid: Toems_Common.Dto.DtoApiStringResponse
+  isExternal: true
+  name: DtoApiStringResponse
+  nameWithType: DtoApiStringResponse
+  fullName: Toems_Common.Dto.DtoApiStringResponse
+- uid: Toems_ApplicationApi.Controllers.ComServerClusterController.Post*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComServerClusterController.Post
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComServerClusterController.html#Toems_ApplicationApi.Controllers.ComServerClusterController.Post(Toems_Common.Entity.EntityComServerCluster)
+  name: Post
+  nameWithType: ComServerClusterController.Post
+  fullName: Toems_ApplicationApi.Controllers.ComServerClusterController.Post
+- uid: Toems_ApplicationApi.Controllers.ComServerClusterController.Put*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComServerClusterController.Put
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComServerClusterController.html#Toems_ApplicationApi.Controllers.ComServerClusterController.Put(System.Int32,Toems_Common.Entity.EntityComServerCluster)
+  name: Put
+  nameWithType: ComServerClusterController.Put
+  fullName: Toems_ApplicationApi.Controllers.ComServerClusterController.Put

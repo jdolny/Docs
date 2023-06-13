@@ -1,0 +1,7 @@
+items: 
+  - name: Server Installation
+    href: server-installation.md
+  - name: Client Installation
+    href: client-installation.md
+  - name: Updates
+    href: updating.md

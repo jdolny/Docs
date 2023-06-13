@@ -1,0 +1,156 @@
+### YamlMime:ManagedReference
+items:
+- uid: Toems_ApplicationApi.Controllers.ImageProfileSysprepController
+  commentId: T:Toems_ApplicationApi.Controllers.ImageProfileSysprepController
+  id: ImageProfileSysprepController
+  parent: Toems_ApplicationApi.Controllers
+  children:
+  - Toems_ApplicationApi.Controllers.ImageProfileSysprepController.#ctor
+  - Toems_ApplicationApi.Controllers.ImageProfileSysprepController.Post(Toems_Common.Entity.EntityImageProfileSysprepTag)
+  langs:
+  - csharp
+  - vb
+  name: ImageProfileSysprepController
+  nameWithType: ImageProfileSysprepController
+  fullName: Toems_ApplicationApi.Controllers.ImageProfileSysprepController
+  type: Class
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: 'public class ImageProfileSysprepController : ApiController'
+    content.vb: Public Class ImageProfileSysprepController Inherits ApiController
+  inheritance:
+  - System.Object
+- uid: Toems_ApplicationApi.Controllers.ImageProfileSysprepController.#ctor
+  commentId: M:Toems_ApplicationApi.Controllers.ImageProfileSysprepController.#ctor
+  id: '#ctor'
+  parent: Toems_ApplicationApi.Controllers.ImageProfileSysprepController
+  langs:
+  - csharp
+  - vb
+  name: ImageProfileSysprepController()
+  nameWithType: ImageProfileSysprepController.ImageProfileSysprepController()
+  fullName: Toems_ApplicationApi.Controllers.ImageProfileSysprepController.ImageProfileSysprepController()
+  type: Constructor
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: public ImageProfileSysprepController()
+    content.vb: Public Sub New()
+  overload: Toems_ApplicationApi.Controllers.ImageProfileSysprepController.#ctor*
+  nameWithType.vb: ImageProfileSysprepController.New()
+  fullName.vb: Toems_ApplicationApi.Controllers.ImageProfileSysprepController.New()
+  name.vb: New()
+- uid: Toems_ApplicationApi.Controllers.ImageProfileSysprepController.Post(Toems_Common.Entity.EntityImageProfileSysprepTag)
+  commentId: M:Toems_ApplicationApi.Controllers.ImageProfileSysprepController.Post(Toems_Common.Entity.EntityImageProfileSysprepTag)
+  id: Post(Toems_Common.Entity.EntityImageProfileSysprepTag)
+  parent: Toems_ApplicationApi.Controllers.ImageProfileSysprepController
+  langs:
+  - csharp
+  - vb
+  name: Post(EntityImageProfileSysprepTag)
+  nameWithType: ImageProfileSysprepController.Post(EntityImageProfileSysprepTag)
+  fullName: Toems_ApplicationApi.Controllers.ImageProfileSysprepController.Post(Toems_Common.Entity.EntityImageProfileSysprepTag)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "imageUpdate")]
+
+      public DtoActionResult Post(EntityImageProfileSysprepTag imageProfileSysprep)
+    parameters:
+    - id: imageProfileSysprep
+      type: Toems_Common.Entity.EntityImageProfileSysprepTag
+    return:
+      type: Toems_Common.Dto.DtoActionResult
+    content.vb: >-
+      <CustomAuth(Permission:="imageUpdate")>
+
+      Public Function Post(imageProfileSysprep As EntityImageProfileSysprepTag) As DtoActionResult
+  overload: Toems_ApplicationApi.Controllers.ImageProfileSysprepController.Post*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: imageUpdate
+references:
+- uid: Toems_ApplicationApi.Controllers
+  commentId: N:Toems_ApplicationApi.Controllers
+  isExternal: true
+  href: Toems_ApplicationApi.html
+  name: Toems_ApplicationApi.Controllers
+  nameWithType: Toems_ApplicationApi.Controllers
+  fullName: Toems_ApplicationApi.Controllers
+  spec.csharp:
+  - uid: Toems_ApplicationApi
+    name: Toems_ApplicationApi
+    isExternal: true
+    href: Toems_ApplicationApi.html
+  - name: .
+  - uid: Toems_ApplicationApi.Controllers
+    name: Controllers
+    isExternal: true
+    href: Toems_ApplicationApi.Controllers.html
+  spec.vb:
+  - uid: Toems_ApplicationApi
+    name: Toems_ApplicationApi
+    isExternal: true
+    href: Toems_ApplicationApi.html
+  - name: .
+  - uid: Toems_ApplicationApi.Controllers
+    name: Controllers
+    isExternal: true
+    href: Toems_ApplicationApi.Controllers.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Toems_ApplicationApi.Controllers.ImageProfileSysprepController.#ctor*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ImageProfileSysprepController.#ctor
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ImageProfileSysprepController.html#Toems_ApplicationApi.Controllers.ImageProfileSysprepController.#ctor
+  name: ImageProfileSysprepController
+  nameWithType: ImageProfileSysprepController.ImageProfileSysprepController
+  fullName: Toems_ApplicationApi.Controllers.ImageProfileSysprepController.ImageProfileSysprepController
+  nameWithType.vb: ImageProfileSysprepController.New
+  fullName.vb: Toems_ApplicationApi.Controllers.ImageProfileSysprepController.New
+  name.vb: New
+- uid: Toems_ApplicationApi.Controllers.ImageProfileSysprepController.Post*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ImageProfileSysprepController.Post
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ImageProfileSysprepController.html#Toems_ApplicationApi.Controllers.ImageProfileSysprepController.Post(Toems_Common.Entity.EntityImageProfileSysprepTag)
+  name: Post
+  nameWithType: ImageProfileSysprepController.Post
+  fullName: Toems_ApplicationApi.Controllers.ImageProfileSysprepController.Post
+- uid: Toems_Common.Entity.EntityImageProfileSysprepTag
+  commentId: '!:Toems_Common.Entity.EntityImageProfileSysprepTag'
+  isExternal: true
+  name: EntityImageProfileSysprepTag
+  nameWithType: EntityImageProfileSysprepTag
+  fullName: Toems_Common.Entity.EntityImageProfileSysprepTag
+- uid: Toems_Common.Dto.DtoActionResult
+  isExternal: true
+  name: DtoActionResult
+  nameWithType: DtoActionResult
+  fullName: Toems_Common.Dto.DtoActionResult

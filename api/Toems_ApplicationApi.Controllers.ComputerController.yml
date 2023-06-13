@@ -1,0 +1,4044 @@
+### YamlMime:ManagedReference
+items:
+- uid: Toems_ApplicationApi.Controllers.ComputerController
+  commentId: T:Toems_ApplicationApi.Controllers.ComputerController
+  id: ComputerController
+  parent: Toems_ApplicationApi.Controllers
+  children:
+  - Toems_ApplicationApi.Controllers.ComputerController.#ctor
+  - Toems_ApplicationApi.Controllers.ComputerController.AddComment(Toems_Common.Dto.DtoComputerComment)
+  - Toems_ApplicationApi.Controllers.ComputerController.Archive(System.Int32)
+  - Toems_ApplicationApi.Controllers.ComputerController.ClearImagingId(System.Int32)
+  - Toems_ApplicationApi.Controllers.ComputerController.ClearLastSocketResult(System.Int32)
+  - Toems_ApplicationApi.Controllers.ComputerController.CollectInventory(System.Int32)
+  - Toems_ApplicationApi.Controllers.ComputerController.ComputerProcess(System.DateTime,System.Int32,System.Int32)
+  - Toems_ApplicationApi.Controllers.ComputerController.ComputerProcessCounts(System.DateTime,System.Int32,System.Int32)
+  - Toems_ApplicationApi.Controllers.ComputerController.ComputerProcessTimes(System.DateTime,System.Int32,System.Int32)
+  - Toems_ApplicationApi.Controllers.ComputerController.Delete(System.Int32)
+  - Toems_ApplicationApi.Controllers.ComputerController.ForceCheckin(System.Int32)
+  - Toems_ApplicationApi.Controllers.ComputerController.Get
+  - Toems_ApplicationApi.Controllers.ComputerController.Get(System.Int32)
+  - Toems_ApplicationApi.Controllers.ComputerController.GetActiveCount
+  - Toems_ApplicationApi.Controllers.ComputerController.GetAllCount
+  - Toems_ApplicationApi.Controllers.ComputerController.GetArchived(Toems_Common.Dto.DtoSearchFilterCategories)
+  - Toems_ApplicationApi.Controllers.ComputerController.GetArchivedCount
+  - Toems_ApplicationApi.Controllers.ComputerController.GetAttachments(System.Int32)
+  - Toems_ApplicationApi.Controllers.ComputerController.GetCertificates(System.Int32,System.String)
+  - Toems_ApplicationApi.Controllers.ComputerController.GetComments(System.Int32)
+  - Toems_ApplicationApi.Controllers.ComputerController.GetComputerEmServers(System.Int32)
+  - Toems_ApplicationApi.Controllers.ComputerController.GetComputerGroups(System.Int32)
+  - Toems_ApplicationApi.Controllers.ComputerController.GetComputerGroupsWithImage(System.Int32)
+  - Toems_ApplicationApi.Controllers.ComputerController.GetComputerImageServers(System.Int32)
+  - Toems_ApplicationApi.Controllers.ComputerController.GetComputerImagingLogs(System.Int32)
+  - Toems_ApplicationApi.Controllers.ComputerController.GetComputerModules(System.Int32)
+  - Toems_ApplicationApi.Controllers.ComputerController.GetComputerPolicies(System.Int32)
+  - Toems_ApplicationApi.Controllers.ComputerController.GetComputerTftpServers(System.Int32)
+  - Toems_ApplicationApi.Controllers.ComputerController.GetCount
+  - Toems_ApplicationApi.Controllers.ComputerController.GetCustomAttributes(System.Int32)
+  - Toems_ApplicationApi.Controllers.ComputerController.GetCustomInventory(System.Int32)
+  - Toems_ApplicationApi.Controllers.ComputerController.GetEffectiveImage(System.Int32)
+  - Toems_ApplicationApi.Controllers.ComputerController.GetEffectivePolicy(System.Int32,Toems_Common.Enum.EnumPolicy.Trigger,System.String)
+  - Toems_ApplicationApi.Controllers.ComputerController.GetEffectiveWinPe(System.Int32)
+  - Toems_ApplicationApi.Controllers.ComputerController.GetImageOnlyCount
+  - Toems_ApplicationApi.Controllers.ComputerController.GetLastSocketResult(System.Int32)
+  - Toems_ApplicationApi.Controllers.ComputerController.GetLoggedInUsers(System.Int32)
+  - Toems_ApplicationApi.Controllers.ComputerController.GetPolicyHistory(System.Int32)
+  - Toems_ApplicationApi.Controllers.ComputerController.GetPreProvisionCount
+  - Toems_ApplicationApi.Controllers.ComputerController.GetServiceLog(System.Int32)
+  - Toems_ApplicationApi.Controllers.ComputerController.GetSoftware(System.Int32,System.String)
+  - Toems_ApplicationApi.Controllers.ComputerController.GetStatus(System.Int32)
+  - Toems_ApplicationApi.Controllers.ComputerController.GetSystemInfo(System.Int32)
+  - Toems_ApplicationApi.Controllers.ComputerController.GetUpdates(System.Int32,System.String)
+  - Toems_ApplicationApi.Controllers.ComputerController.GetUptime(System.Int32)
+  - Toems_ApplicationApi.Controllers.ComputerController.GetUserLogins(System.Int32,System.String)
+  - Toems_ApplicationApi.Controllers.ComputerController.Post(Toems_Common.Entity.EntityComputer)
+  - Toems_ApplicationApi.Controllers.ComputerController.Put(System.Int32,Toems_Common.Entity.EntityComputer)
+  - Toems_ApplicationApi.Controllers.ComputerController.Reboot(System.Int32)
+  - Toems_ApplicationApi.Controllers.ComputerController.Restore(System.Int32)
+  - Toems_ApplicationApi.Controllers.ComputerController.RunModule(System.Int32,System.String)
+  - Toems_ApplicationApi.Controllers.ComputerController.Search(Toems_Common.Dto.DtoSearchFilterCategories)
+  - Toems_ApplicationApi.Controllers.ComputerController.SearchAllComputers(Toems_Common.Dto.DtoSearchFilterAllComputers)
+  - Toems_ApplicationApi.Controllers.ComputerController.SearchForGroup(Toems_Common.Dto.DtoSearchFilter)
+  - Toems_ApplicationApi.Controllers.ComputerController.SearchImageOnlyComputers(Toems_Common.Dto.DtoSearchFilterCategories)
+  - Toems_ApplicationApi.Controllers.ComputerController.SearchPreProvision(Toems_Common.Dto.DtoSearchFilter)
+  - Toems_ApplicationApi.Controllers.ComputerController.SendMessage(System.Int32,Toems_Common.Dto.DtoMessage)
+  - Toems_ApplicationApi.Controllers.ComputerController.Shutdown(System.Int32)
+  - Toems_ApplicationApi.Controllers.ComputerController.StartDeploy(System.Int32)
+  - Toems_ApplicationApi.Controllers.ComputerController.StartDeployWinPe(System.Int32)
+  - Toems_ApplicationApi.Controllers.ComputerController.StartRemoteControl(System.Int32)
+  - Toems_ApplicationApi.Controllers.ComputerController.StartUpload(System.Int32)
+  - Toems_ApplicationApi.Controllers.ComputerController.Wakeup(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: ComputerController
+  nameWithType: ComputerController
+  fullName: Toems_ApplicationApi.Controllers.ComputerController
+  type: Class
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: 'public class ComputerController : ApiController'
+    content.vb: Public Class ComputerController Inherits ApiController
+  inheritance:
+  - System.Object
+- uid: Toems_ApplicationApi.Controllers.ComputerController.#ctor
+  commentId: M:Toems_ApplicationApi.Controllers.ComputerController.#ctor
+  id: '#ctor'
+  parent: Toems_ApplicationApi.Controllers.ComputerController
+  langs:
+  - csharp
+  - vb
+  name: ComputerController()
+  nameWithType: ComputerController.ComputerController()
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.ComputerController()
+  type: Constructor
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: public ComputerController()
+    content.vb: Public Sub New()
+  overload: Toems_ApplicationApi.Controllers.ComputerController.#ctor*
+  nameWithType.vb: ComputerController.New()
+  fullName.vb: Toems_ApplicationApi.Controllers.ComputerController.New()
+  name.vb: New()
+- uid: Toems_ApplicationApi.Controllers.ComputerController.Restore(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ComputerController.Restore(System.Int32)
+  id: Restore(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ComputerController
+  langs:
+  - csharp
+  - vb
+  name: Restore(int)
+  nameWithType: ComputerController.Restore(int)
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.Restore(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "computerArchive")]
+
+      [ComputerAuth]
+
+      public DtoActionResult Restore(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Dto.DtoActionResult
+    content.vb: >-
+      <CustomAuth(Permission:="computerArchive")>
+
+      <ComputerAuth>
+
+      Public Function Restore(id As Integer) As DtoActionResult
+  overload: Toems_ApplicationApi.Controllers.ComputerController.Restore*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: computerArchive
+  - type: Toems_ApplicationApi.Controllers.Authorization.ComputerAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.ComputerAuthAttribute.#ctor
+    arguments: []
+  nameWithType.vb: ComputerController.Restore(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ComputerController.Restore(Integer)
+  name.vb: Restore(Integer)
+- uid: Toems_ApplicationApi.Controllers.ComputerController.Archive(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ComputerController.Archive(System.Int32)
+  id: Archive(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ComputerController
+  langs:
+  - csharp
+  - vb
+  name: Archive(int)
+  nameWithType: ComputerController.Archive(int)
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.Archive(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "computerArchive")]
+
+      [ComputerAuth]
+
+      public DtoActionResult Archive(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Dto.DtoActionResult
+    content.vb: >-
+      <CustomAuth(Permission:="computerArchive")>
+
+      <ComputerAuth>
+
+      Public Function Archive(id As Integer) As DtoActionResult
+  overload: Toems_ApplicationApi.Controllers.ComputerController.Archive*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: computerArchive
+  - type: Toems_ApplicationApi.Controllers.Authorization.ComputerAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.ComputerAuthAttribute.#ctor
+    arguments: []
+  nameWithType.vb: ComputerController.Archive(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ComputerController.Archive(Integer)
+  name.vb: Archive(Integer)
+- uid: Toems_ApplicationApi.Controllers.ComputerController.ClearImagingId(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ComputerController.ClearImagingId(System.Int32)
+  id: ClearImagingId(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ComputerController
+  langs:
+  - csharp
+  - vb
+  name: ClearImagingId(int)
+  nameWithType: ComputerController.ClearImagingId(int)
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.ClearImagingId(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "computerUpdate")]
+
+      public DtoActionResult ClearImagingId(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Dto.DtoActionResult
+    content.vb: >-
+      <CustomAuth(Permission:="computerUpdate")>
+
+      Public Function ClearImagingId(id As Integer) As DtoActionResult
+  overload: Toems_ApplicationApi.Controllers.ComputerController.ClearImagingId*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: computerUpdate
+  nameWithType.vb: ComputerController.ClearImagingId(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ComputerController.ClearImagingId(Integer)
+  name.vb: ClearImagingId(Integer)
+- uid: Toems_ApplicationApi.Controllers.ComputerController.Delete(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ComputerController.Delete(System.Int32)
+  id: Delete(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ComputerController
+  langs:
+  - csharp
+  - vb
+  name: Delete(int)
+  nameWithType: ComputerController.Delete(int)
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.Delete(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "computerDelete")]
+
+      [ComputerAuth]
+
+      public DtoActionResult Delete(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Dto.DtoActionResult
+    content.vb: >-
+      <CustomAuth(Permission:="computerDelete")>
+
+      <ComputerAuth>
+
+      Public Function Delete(id As Integer) As DtoActionResult
+  overload: Toems_ApplicationApi.Controllers.ComputerController.Delete*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: computerDelete
+  - type: Toems_ApplicationApi.Controllers.Authorization.ComputerAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.ComputerAuthAttribute.#ctor
+    arguments: []
+  nameWithType.vb: ComputerController.Delete(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ComputerController.Delete(Integer)
+  name.vb: Delete(Integer)
+- uid: Toems_ApplicationApi.Controllers.ComputerController.Get(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ComputerController.Get(System.Int32)
+  id: Get(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ComputerController
+  langs:
+  - csharp
+  - vb
+  name: Get(int)
+  nameWithType: ComputerController.Get(int)
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.Get(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "computerRead")]
+
+      [ComputerAuth]
+
+      public EntityComputer Get(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Entity.EntityComputer
+    content.vb: >-
+      <CustomAuth(Permission:="computerRead")>
+
+      <ComputerAuth>
+
+      Public Function [Get](id As Integer) As EntityComputer
+  overload: Toems_ApplicationApi.Controllers.ComputerController.Get*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: computerRead
+  - type: Toems_ApplicationApi.Controllers.Authorization.ComputerAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.ComputerAuthAttribute.#ctor
+    arguments: []
+  nameWithType.vb: ComputerController.Get(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ComputerController.Get(Integer)
+  name.vb: Get(Integer)
+- uid: Toems_ApplicationApi.Controllers.ComputerController.Get
+  commentId: M:Toems_ApplicationApi.Controllers.ComputerController.Get
+  id: Get
+  parent: Toems_ApplicationApi.Controllers.ComputerController
+  langs:
+  - csharp
+  - vb
+  name: Get()
+  nameWithType: ComputerController.Get()
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.Get()
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "computerRead")]
+
+      public IEnumerable<EntityComputer> Get()
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityComputer}
+    content.vb: >-
+      <CustomAuth(Permission:="computerRead")>
+
+      Public Function [Get]() As IEnumerable(Of EntityComputer)
+  overload: Toems_ApplicationApi.Controllers.ComputerController.Get*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: computerRead
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetComputerGroups(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ComputerController.GetComputerGroups(System.Int32)
+  id: GetComputerGroups(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ComputerController
+  langs:
+  - csharp
+  - vb
+  name: GetComputerGroups(int)
+  nameWithType: ComputerController.GetComputerGroups(int)
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetComputerGroups(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "computerRead")]
+
+      public IEnumerable<EntityGroup> GetComputerGroups(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityGroup}
+    content.vb: >-
+      <CustomAuth(Permission:="computerRead")>
+
+      Public Function GetComputerGroups(id As Integer) As IEnumerable(Of EntityGroup)
+  overload: Toems_ApplicationApi.Controllers.ComputerController.GetComputerGroups*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: computerRead
+  nameWithType.vb: ComputerController.GetComputerGroups(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ComputerController.GetComputerGroups(Integer)
+  name.vb: GetComputerGroups(Integer)
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetComputerGroupsWithImage(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ComputerController.GetComputerGroupsWithImage(System.Int32)
+  id: GetComputerGroupsWithImage(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ComputerController
+  langs:
+  - csharp
+  - vb
+  name: GetComputerGroupsWithImage(int)
+  nameWithType: ComputerController.GetComputerGroupsWithImage(int)
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetComputerGroupsWithImage(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "computerRead")]
+
+      public IEnumerable<DtoGroupImage> GetComputerGroupsWithImage(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Dto.DtoGroupImage}
+    content.vb: >-
+      <CustomAuth(Permission:="computerRead")>
+
+      Public Function GetComputerGroupsWithImage(id As Integer) As IEnumerable(Of DtoGroupImage)
+  overload: Toems_ApplicationApi.Controllers.ComputerController.GetComputerGroupsWithImage*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: computerRead
+  nameWithType.vb: ComputerController.GetComputerGroupsWithImage(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ComputerController.GetComputerGroupsWithImage(Integer)
+  name.vb: GetComputerGroupsWithImage(Integer)
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetComputerEmServers(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ComputerController.GetComputerEmServers(System.Int32)
+  id: GetComputerEmServers(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ComputerController
+  langs:
+  - csharp
+  - vb
+  name: GetComputerEmServers(int)
+  nameWithType: ComputerController.GetComputerEmServers(int)
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetComputerEmServers(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "computerRead")]
+
+      public IEnumerable<EntityClientComServer> GetComputerEmServers(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityClientComServer}
+    content.vb: >-
+      <CustomAuth(Permission:="computerRead")>
+
+      Public Function GetComputerEmServers(id As Integer) As IEnumerable(Of EntityClientComServer)
+  overload: Toems_ApplicationApi.Controllers.ComputerController.GetComputerEmServers*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: computerRead
+  nameWithType.vb: ComputerController.GetComputerEmServers(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ComputerController.GetComputerEmServers(Integer)
+  name.vb: GetComputerEmServers(Integer)
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetComputerTftpServers(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ComputerController.GetComputerTftpServers(System.Int32)
+  id: GetComputerTftpServers(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ComputerController
+  langs:
+  - csharp
+  - vb
+  name: GetComputerTftpServers(int)
+  nameWithType: ComputerController.GetComputerTftpServers(int)
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetComputerTftpServers(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "computerRead")]
+
+      public IEnumerable<EntityClientComServer> GetComputerTftpServers(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityClientComServer}
+    content.vb: >-
+      <CustomAuth(Permission:="computerRead")>
+
+      Public Function GetComputerTftpServers(id As Integer) As IEnumerable(Of EntityClientComServer)
+  overload: Toems_ApplicationApi.Controllers.ComputerController.GetComputerTftpServers*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: computerRead
+  nameWithType.vb: ComputerController.GetComputerTftpServers(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ComputerController.GetComputerTftpServers(Integer)
+  name.vb: GetComputerTftpServers(Integer)
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetComputerImageServers(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ComputerController.GetComputerImageServers(System.Int32)
+  id: GetComputerImageServers(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ComputerController
+  langs:
+  - csharp
+  - vb
+  name: GetComputerImageServers(int)
+  nameWithType: ComputerController.GetComputerImageServers(int)
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetComputerImageServers(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "computerRead")]
+
+      public IEnumerable<EntityClientComServer> GetComputerImageServers(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityClientComServer}
+    content.vb: >-
+      <CustomAuth(Permission:="computerRead")>
+
+      Public Function GetComputerImageServers(id As Integer) As IEnumerable(Of EntityClientComServer)
+  overload: Toems_ApplicationApi.Controllers.ComputerController.GetComputerImageServers*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: computerRead
+  nameWithType.vb: ComputerController.GetComputerImageServers(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ComputerController.GetComputerImageServers(Integer)
+  name.vb: GetComputerImageServers(Integer)
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetEffectiveImage(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ComputerController.GetEffectiveImage(System.Int32)
+  id: GetEffectiveImage(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ComputerController
+  langs:
+  - csharp
+  - vb
+  name: GetEffectiveImage(int)
+  nameWithType: ComputerController.GetEffectiveImage(int)
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetEffectiveImage(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "computerRead")]
+
+      public ImageProfileWithImage GetEffectiveImage(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Entity.ImageProfileWithImage
+    content.vb: >-
+      <CustomAuth(Permission:="computerRead")>
+
+      Public Function GetEffectiveImage(id As Integer) As ImageProfileWithImage
+  overload: Toems_ApplicationApi.Controllers.ComputerController.GetEffectiveImage*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: computerRead
+  nameWithType.vb: ComputerController.GetEffectiveImage(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ComputerController.GetEffectiveImage(Integer)
+  name.vb: GetEffectiveImage(Integer)
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetEffectiveWinPe(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ComputerController.GetEffectiveWinPe(System.Int32)
+  id: GetEffectiveWinPe(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ComputerController
+  langs:
+  - csharp
+  - vb
+  name: GetEffectiveWinPe(int)
+  nameWithType: ComputerController.GetEffectiveWinPe(int)
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetEffectiveWinPe(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "computerRead")]
+
+      public EntityWinPeModule GetEffectiveWinPe(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Entity.EntityWinPeModule
+    content.vb: >-
+      <CustomAuth(Permission:="computerRead")>
+
+      Public Function GetEffectiveWinPe(id As Integer) As EntityWinPeModule
+  overload: Toems_ApplicationApi.Controllers.ComputerController.GetEffectiveWinPe*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: computerRead
+  nameWithType.vb: ComputerController.GetEffectiveWinPe(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ComputerController.GetEffectiveWinPe(Integer)
+  name.vb: GetEffectiveWinPe(Integer)
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetPolicyHistory(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ComputerController.GetPolicyHistory(System.Int32)
+  id: GetPolicyHistory(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ComputerController
+  langs:
+  - csharp
+  - vb
+  name: GetPolicyHistory(int)
+  nameWithType: ComputerController.GetPolicyHistory(int)
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetPolicyHistory(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "computerRead")]
+
+      public IEnumerable<DtoComputerPolicyHistory> GetPolicyHistory(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Dto.DtoComputerPolicyHistory}
+    content.vb: >-
+      <CustomAuth(Permission:="computerRead")>
+
+      Public Function GetPolicyHistory(id As Integer) As IEnumerable(Of DtoComputerPolicyHistory)
+  overload: Toems_ApplicationApi.Controllers.ComputerController.GetPolicyHistory*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: computerRead
+  nameWithType.vb: ComputerController.GetPolicyHistory(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ComputerController.GetPolicyHistory(Integer)
+  name.vb: GetPolicyHistory(Integer)
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetEffectivePolicy(System.Int32,Toems_Common.Enum.EnumPolicy.Trigger,System.String)
+  commentId: M:Toems_ApplicationApi.Controllers.ComputerController.GetEffectivePolicy(System.Int32,Toems_Common.Enum.EnumPolicy.Trigger,System.String)
+  id: GetEffectivePolicy(System.Int32,Toems_Common.Enum.EnumPolicy.Trigger,System.String)
+  parent: Toems_ApplicationApi.Controllers.ComputerController
+  langs:
+  - csharp
+  - vb
+  name: GetEffectivePolicy(int, Trigger, string)
+  nameWithType: ComputerController.GetEffectivePolicy(int, EnumPolicy.Trigger, string)
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetEffectivePolicy(int, Toems_Common.Enum.EnumPolicy.Trigger, string)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "computerRead")]
+
+      public DtoApiStringResponse GetEffectivePolicy(int id, EnumPolicy.Trigger trigger, string comServerUrl)
+    parameters:
+    - id: id
+      type: System.Int32
+    - id: trigger
+      type: Toems_Common.Enum.EnumPolicy.Trigger
+    - id: comServerUrl
+      type: System.String
+    return:
+      type: Toems_Common.Dto.DtoApiStringResponse
+    content.vb: >-
+      <CustomAuth(Permission:="computerRead")>
+
+      Public Function GetEffectivePolicy(id As Integer, trigger As EnumPolicy.Trigger, comServerUrl As String) As DtoApiStringResponse
+  overload: Toems_ApplicationApi.Controllers.ComputerController.GetEffectivePolicy*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: computerRead
+  nameWithType.vb: ComputerController.GetEffectivePolicy(Integer, EnumPolicy.Trigger, String)
+  fullName.vb: Toems_ApplicationApi.Controllers.ComputerController.GetEffectivePolicy(Integer, Toems_Common.Enum.EnumPolicy.Trigger, String)
+  name.vb: GetEffectivePolicy(Integer, Trigger, String)
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetComputerPolicies(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ComputerController.GetComputerPolicies(System.Int32)
+  id: GetComputerPolicies(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ComputerController
+  langs:
+  - csharp
+  - vb
+  name: GetComputerPolicies(int)
+  nameWithType: ComputerController.GetComputerPolicies(int)
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetComputerPolicies(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "computerRead")]
+
+      public IEnumerable<EntityPolicy> GetComputerPolicies(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityPolicy}
+    content.vb: >-
+      <CustomAuth(Permission:="computerRead")>
+
+      Public Function GetComputerPolicies(id As Integer) As IEnumerable(Of EntityPolicy)
+  overload: Toems_ApplicationApi.Controllers.ComputerController.GetComputerPolicies*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: computerRead
+  nameWithType.vb: ComputerController.GetComputerPolicies(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ComputerController.GetComputerPolicies(Integer)
+  name.vb: GetComputerPolicies(Integer)
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetComputerModules(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ComputerController.GetComputerModules(System.Int32)
+  id: GetComputerModules(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ComputerController
+  langs:
+  - csharp
+  - vb
+  name: GetComputerModules(int)
+  nameWithType: ComputerController.GetComputerModules(int)
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetComputerModules(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "computerRead")]
+
+      public IEnumerable<DtoModule> GetComputerModules(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Dto.DtoModule}
+    content.vb: >-
+      <CustomAuth(Permission:="computerRead")>
+
+      Public Function GetComputerModules(id As Integer) As IEnumerable(Of DtoModule)
+  overload: Toems_ApplicationApi.Controllers.ComputerController.GetComputerModules*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: computerRead
+  nameWithType.vb: ComputerController.GetComputerModules(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ComputerController.GetComputerModules(Integer)
+  name.vb: GetComputerModules(Integer)
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetCustomInventory(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ComputerController.GetCustomInventory(System.Int32)
+  id: GetCustomInventory(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ComputerController
+  langs:
+  - csharp
+  - vb
+  name: GetCustomInventory(int)
+  nameWithType: ComputerController.GetCustomInventory(int)
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetCustomInventory(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "computerRead")]
+
+      public IEnumerable<DtoCustomComputerInventory> GetCustomInventory(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Dto.DtoCustomComputerInventory}
+    content.vb: >-
+      <CustomAuth(Permission:="computerRead")>
+
+      Public Function GetCustomInventory(id As Integer) As IEnumerable(Of DtoCustomComputerInventory)
+  overload: Toems_ApplicationApi.Controllers.ComputerController.GetCustomInventory*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: computerRead
+  nameWithType.vb: ComputerController.GetCustomInventory(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ComputerController.GetCustomInventory(Integer)
+  name.vb: GetCustomInventory(Integer)
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetCustomAttributes(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ComputerController.GetCustomAttributes(System.Int32)
+  id: GetCustomAttributes(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ComputerController
+  langs:
+  - csharp
+  - vb
+  name: GetCustomAttributes(int)
+  nameWithType: ComputerController.GetCustomAttributes(int)
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetCustomAttributes(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "computerRead")]
+
+      public IEnumerable<EntityCustomComputerAttribute> GetCustomAttributes(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityCustomComputerAttribute}
+    content.vb: >-
+      <CustomAuth(Permission:="computerRead")>
+
+      Public Function GetCustomAttributes(id As Integer) As IEnumerable(Of EntityCustomComputerAttribute)
+  overload: Toems_ApplicationApi.Controllers.ComputerController.GetCustomAttributes*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: computerRead
+  nameWithType.vb: ComputerController.GetCustomAttributes(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ComputerController.GetCustomAttributes(Integer)
+  name.vb: GetCustomAttributes(Integer)
+- uid: Toems_ApplicationApi.Controllers.ComputerController.Search(Toems_Common.Dto.DtoSearchFilterCategories)
+  commentId: M:Toems_ApplicationApi.Controllers.ComputerController.Search(Toems_Common.Dto.DtoSearchFilterCategories)
+  id: Search(Toems_Common.Dto.DtoSearchFilterCategories)
+  parent: Toems_ApplicationApi.Controllers.ComputerController
+  langs:
+  - csharp
+  - vb
+  name: Search(DtoSearchFilterCategories)
+  nameWithType: ComputerController.Search(DtoSearchFilterCategories)
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.Search(Toems_Common.Dto.DtoSearchFilterCategories)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "computerRead")]
+
+      public IEnumerable<EntityComputer> Search(DtoSearchFilterCategories filter)
+    parameters:
+    - id: filter
+      type: Toems_Common.Dto.DtoSearchFilterCategories
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityComputer}
+    content.vb: >-
+      <CustomAuth(Permission:="computerRead")>
+
+      Public Function Search(filter As DtoSearchFilterCategories) As IEnumerable(Of EntityComputer)
+  overload: Toems_ApplicationApi.Controllers.ComputerController.Search*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: computerRead
+- uid: Toems_ApplicationApi.Controllers.ComputerController.SearchImageOnlyComputers(Toems_Common.Dto.DtoSearchFilterCategories)
+  commentId: M:Toems_ApplicationApi.Controllers.ComputerController.SearchImageOnlyComputers(Toems_Common.Dto.DtoSearchFilterCategories)
+  id: SearchImageOnlyComputers(Toems_Common.Dto.DtoSearchFilterCategories)
+  parent: Toems_ApplicationApi.Controllers.ComputerController
+  langs:
+  - csharp
+  - vb
+  name: SearchImageOnlyComputers(DtoSearchFilterCategories)
+  nameWithType: ComputerController.SearchImageOnlyComputers(DtoSearchFilterCategories)
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.SearchImageOnlyComputers(Toems_Common.Dto.DtoSearchFilterCategories)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "computerRead")]
+
+      public IEnumerable<EntityComputer> SearchImageOnlyComputers(DtoSearchFilterCategories filter)
+    parameters:
+    - id: filter
+      type: Toems_Common.Dto.DtoSearchFilterCategories
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityComputer}
+    content.vb: >-
+      <CustomAuth(Permission:="computerRead")>
+
+      Public Function SearchImageOnlyComputers(filter As DtoSearchFilterCategories) As IEnumerable(Of EntityComputer)
+  overload: Toems_ApplicationApi.Controllers.ComputerController.SearchImageOnlyComputers*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: computerRead
+- uid: Toems_ApplicationApi.Controllers.ComputerController.SearchAllComputers(Toems_Common.Dto.DtoSearchFilterAllComputers)
+  commentId: M:Toems_ApplicationApi.Controllers.ComputerController.SearchAllComputers(Toems_Common.Dto.DtoSearchFilterAllComputers)
+  id: SearchAllComputers(Toems_Common.Dto.DtoSearchFilterAllComputers)
+  parent: Toems_ApplicationApi.Controllers.ComputerController
+  langs:
+  - csharp
+  - vb
+  name: SearchAllComputers(DtoSearchFilterAllComputers)
+  nameWithType: ComputerController.SearchAllComputers(DtoSearchFilterAllComputers)
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.SearchAllComputers(Toems_Common.Dto.DtoSearchFilterAllComputers)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "computerRead")]
+
+      public IEnumerable<EntityComputer> SearchAllComputers(DtoSearchFilterAllComputers filter)
+    parameters:
+    - id: filter
+      type: Toems_Common.Dto.DtoSearchFilterAllComputers
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityComputer}
+    content.vb: >-
+      <CustomAuth(Permission:="computerRead")>
+
+      Public Function SearchAllComputers(filter As DtoSearchFilterAllComputers) As IEnumerable(Of EntityComputer)
+  overload: Toems_ApplicationApi.Controllers.ComputerController.SearchAllComputers*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: computerRead
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetArchived(Toems_Common.Dto.DtoSearchFilterCategories)
+  commentId: M:Toems_ApplicationApi.Controllers.ComputerController.GetArchived(Toems_Common.Dto.DtoSearchFilterCategories)
+  id: GetArchived(Toems_Common.Dto.DtoSearchFilterCategories)
+  parent: Toems_ApplicationApi.Controllers.ComputerController
+  langs:
+  - csharp
+  - vb
+  name: GetArchived(DtoSearchFilterCategories)
+  nameWithType: ComputerController.GetArchived(DtoSearchFilterCategories)
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetArchived(Toems_Common.Dto.DtoSearchFilterCategories)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "computerRead")]
+
+      public IEnumerable<EntityComputer> GetArchived(DtoSearchFilterCategories filter)
+    parameters:
+    - id: filter
+      type: Toems_Common.Dto.DtoSearchFilterCategories
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityComputer}
+    content.vb: >-
+      <CustomAuth(Permission:="computerRead")>
+
+      Public Function GetArchived(filter As DtoSearchFilterCategories) As IEnumerable(Of EntityComputer)
+  overload: Toems_ApplicationApi.Controllers.ComputerController.GetArchived*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: computerRead
+- uid: Toems_ApplicationApi.Controllers.ComputerController.SearchPreProvision(Toems_Common.Dto.DtoSearchFilter)
+  commentId: M:Toems_ApplicationApi.Controllers.ComputerController.SearchPreProvision(Toems_Common.Dto.DtoSearchFilter)
+  id: SearchPreProvision(Toems_Common.Dto.DtoSearchFilter)
+  parent: Toems_ApplicationApi.Controllers.ComputerController
+  langs:
+  - csharp
+  - vb
+  name: SearchPreProvision(DtoSearchFilter)
+  nameWithType: ComputerController.SearchPreProvision(DtoSearchFilter)
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.SearchPreProvision(Toems_Common.Dto.DtoSearchFilter)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "computerRead")]
+
+      public IEnumerable<EntityComputer> SearchPreProvision(DtoSearchFilter filter)
+    parameters:
+    - id: filter
+      type: Toems_Common.Dto.DtoSearchFilter
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityComputer}
+    content.vb: >-
+      <CustomAuth(Permission:="computerRead")>
+
+      Public Function SearchPreProvision(filter As DtoSearchFilter) As IEnumerable(Of EntityComputer)
+  overload: Toems_ApplicationApi.Controllers.ComputerController.SearchPreProvision*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: computerRead
+- uid: Toems_ApplicationApi.Controllers.ComputerController.SearchForGroup(Toems_Common.Dto.DtoSearchFilter)
+  commentId: M:Toems_ApplicationApi.Controllers.ComputerController.SearchForGroup(Toems_Common.Dto.DtoSearchFilter)
+  id: SearchForGroup(Toems_Common.Dto.DtoSearchFilter)
+  parent: Toems_ApplicationApi.Controllers.ComputerController
+  langs:
+  - csharp
+  - vb
+  name: SearchForGroup(DtoSearchFilter)
+  nameWithType: ComputerController.SearchForGroup(DtoSearchFilter)
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.SearchForGroup(Toems_Common.Dto.DtoSearchFilter)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "computerRead")]
+
+      public IEnumerable<EntityComputer> SearchForGroup(DtoSearchFilter filter)
+    parameters:
+    - id: filter
+      type: Toems_Common.Dto.DtoSearchFilter
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityComputer}
+    content.vb: >-
+      <CustomAuth(Permission:="computerRead")>
+
+      Public Function SearchForGroup(filter As DtoSearchFilter) As IEnumerable(Of EntityComputer)
+  overload: Toems_ApplicationApi.Controllers.ComputerController.SearchForGroup*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: computerRead
+- uid: Toems_ApplicationApi.Controllers.ComputerController.ClearLastSocketResult(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ComputerController.ClearLastSocketResult(System.Int32)
+  id: ClearLastSocketResult(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ComputerController
+  langs:
+  - csharp
+  - vb
+  name: ClearLastSocketResult(int)
+  nameWithType: ComputerController.ClearLastSocketResult(int)
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.ClearLastSocketResult(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "computerRead")]
+
+      public DtoApiStringResponse ClearLastSocketResult(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Dto.DtoApiStringResponse
+    content.vb: >-
+      <CustomAuth(Permission:="computerRead")>
+
+      Public Function ClearLastSocketResult(id As Integer) As DtoApiStringResponse
+  overload: Toems_ApplicationApi.Controllers.ComputerController.ClearLastSocketResult*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: computerRead
+  nameWithType.vb: ComputerController.ClearLastSocketResult(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ComputerController.ClearLastSocketResult(Integer)
+  name.vb: ClearLastSocketResult(Integer)
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetLastSocketResult(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ComputerController.GetLastSocketResult(System.Int32)
+  id: GetLastSocketResult(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ComputerController
+  langs:
+  - csharp
+  - vb
+  name: GetLastSocketResult(int)
+  nameWithType: ComputerController.GetLastSocketResult(int)
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetLastSocketResult(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "computerRead")]
+
+      public DtoApiStringResponse GetLastSocketResult(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Dto.DtoApiStringResponse
+    content.vb: >-
+      <CustomAuth(Permission:="computerRead")>
+
+      Public Function GetLastSocketResult(id As Integer) As DtoApiStringResponse
+  overload: Toems_ApplicationApi.Controllers.ComputerController.GetLastSocketResult*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: computerRead
+  nameWithType.vb: ComputerController.GetLastSocketResult(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ComputerController.GetLastSocketResult(Integer)
+  name.vb: GetLastSocketResult(Integer)
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetActiveCount
+  commentId: M:Toems_ApplicationApi.Controllers.ComputerController.GetActiveCount
+  id: GetActiveCount
+  parent: Toems_ApplicationApi.Controllers.ComputerController
+  langs:
+  - csharp
+  - vb
+  name: GetActiveCount()
+  nameWithType: ComputerController.GetActiveCount()
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetActiveCount()
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "computerRead")]
+
+      public DtoApiStringResponse GetActiveCount()
+    return:
+      type: Toems_Common.Dto.DtoApiStringResponse
+    content.vb: >-
+      <CustomAuth(Permission:="computerRead")>
+
+      Public Function GetActiveCount() As DtoApiStringResponse
+  overload: Toems_ApplicationApi.Controllers.ComputerController.GetActiveCount*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: computerRead
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetAllCount
+  commentId: M:Toems_ApplicationApi.Controllers.ComputerController.GetAllCount
+  id: GetAllCount
+  parent: Toems_ApplicationApi.Controllers.ComputerController
+  langs:
+  - csharp
+  - vb
+  name: GetAllCount()
+  nameWithType: ComputerController.GetAllCount()
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetAllCount()
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "computerRead")]
+
+      public DtoApiStringResponse GetAllCount()
+    return:
+      type: Toems_Common.Dto.DtoApiStringResponse
+    content.vb: >-
+      <CustomAuth(Permission:="computerRead")>
+
+      Public Function GetAllCount() As DtoApiStringResponse
+  overload: Toems_ApplicationApi.Controllers.ComputerController.GetAllCount*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: computerRead
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetCount
+  commentId: M:Toems_ApplicationApi.Controllers.ComputerController.GetCount
+  id: GetCount
+  parent: Toems_ApplicationApi.Controllers.ComputerController
+  langs:
+  - csharp
+  - vb
+  name: GetCount()
+  nameWithType: ComputerController.GetCount()
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetCount()
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "computerRead")]
+
+      public DtoApiStringResponse GetCount()
+    return:
+      type: Toems_Common.Dto.DtoApiStringResponse
+    content.vb: >-
+      <CustomAuth(Permission:="computerRead")>
+
+      Public Function GetCount() As DtoApiStringResponse
+  overload: Toems_ApplicationApi.Controllers.ComputerController.GetCount*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: computerRead
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetArchivedCount
+  commentId: M:Toems_ApplicationApi.Controllers.ComputerController.GetArchivedCount
+  id: GetArchivedCount
+  parent: Toems_ApplicationApi.Controllers.ComputerController
+  langs:
+  - csharp
+  - vb
+  name: GetArchivedCount()
+  nameWithType: ComputerController.GetArchivedCount()
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetArchivedCount()
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "computerRead")]
+
+      public DtoApiStringResponse GetArchivedCount()
+    return:
+      type: Toems_Common.Dto.DtoApiStringResponse
+    content.vb: >-
+      <CustomAuth(Permission:="computerRead")>
+
+      Public Function GetArchivedCount() As DtoApiStringResponse
+  overload: Toems_ApplicationApi.Controllers.ComputerController.GetArchivedCount*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: computerRead
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetImageOnlyCount
+  commentId: M:Toems_ApplicationApi.Controllers.ComputerController.GetImageOnlyCount
+  id: GetImageOnlyCount
+  parent: Toems_ApplicationApi.Controllers.ComputerController
+  langs:
+  - csharp
+  - vb
+  name: GetImageOnlyCount()
+  nameWithType: ComputerController.GetImageOnlyCount()
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetImageOnlyCount()
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "computerRead")]
+
+      public DtoApiStringResponse GetImageOnlyCount()
+    return:
+      type: Toems_Common.Dto.DtoApiStringResponse
+    content.vb: >-
+      <CustomAuth(Permission:="computerRead")>
+
+      Public Function GetImageOnlyCount() As DtoApiStringResponse
+  overload: Toems_ApplicationApi.Controllers.ComputerController.GetImageOnlyCount*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: computerRead
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetPreProvisionCount
+  commentId: M:Toems_ApplicationApi.Controllers.ComputerController.GetPreProvisionCount
+  id: GetPreProvisionCount
+  parent: Toems_ApplicationApi.Controllers.ComputerController
+  langs:
+  - csharp
+  - vb
+  name: GetPreProvisionCount()
+  nameWithType: ComputerController.GetPreProvisionCount()
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetPreProvisionCount()
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "computerRead")]
+
+      public DtoApiStringResponse GetPreProvisionCount()
+    return:
+      type: Toems_Common.Dto.DtoApiStringResponse
+    content.vb: >-
+      <CustomAuth(Permission:="computerRead")>
+
+      Public Function GetPreProvisionCount() As DtoApiStringResponse
+  overload: Toems_ApplicationApi.Controllers.ComputerController.GetPreProvisionCount*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: computerRead
+- uid: Toems_ApplicationApi.Controllers.ComputerController.Post(Toems_Common.Entity.EntityComputer)
+  commentId: M:Toems_ApplicationApi.Controllers.ComputerController.Post(Toems_Common.Entity.EntityComputer)
+  id: Post(Toems_Common.Entity.EntityComputer)
+  parent: Toems_ApplicationApi.Controllers.ComputerController
+  langs:
+  - csharp
+  - vb
+  name: Post(EntityComputer)
+  nameWithType: ComputerController.Post(EntityComputer)
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.Post(Toems_Common.Entity.EntityComputer)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "computerUpdate")]
+
+      public DtoActionResult Post(EntityComputer computer)
+    parameters:
+    - id: computer
+      type: Toems_Common.Entity.EntityComputer
+    return:
+      type: Toems_Common.Dto.DtoActionResult
+    content.vb: >-
+      <CustomAuth(Permission:="computerUpdate")>
+
+      Public Function Post(computer As EntityComputer) As DtoActionResult
+  overload: Toems_ApplicationApi.Controllers.ComputerController.Post*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: computerUpdate
+- uid: Toems_ApplicationApi.Controllers.ComputerController.Put(System.Int32,Toems_Common.Entity.EntityComputer)
+  commentId: M:Toems_ApplicationApi.Controllers.ComputerController.Put(System.Int32,Toems_Common.Entity.EntityComputer)
+  id: Put(System.Int32,Toems_Common.Entity.EntityComputer)
+  parent: Toems_ApplicationApi.Controllers.ComputerController
+  langs:
+  - csharp
+  - vb
+  name: Put(int, EntityComputer)
+  nameWithType: ComputerController.Put(int, EntityComputer)
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.Put(int, Toems_Common.Entity.EntityComputer)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "computerUpdate")]
+
+      [ComputerAuth]
+
+      public DtoActionResult Put(int id, EntityComputer computer)
+    parameters:
+    - id: id
+      type: System.Int32
+    - id: computer
+      type: Toems_Common.Entity.EntityComputer
+    return:
+      type: Toems_Common.Dto.DtoActionResult
+    content.vb: >-
+      <CustomAuth(Permission:="computerUpdate")>
+
+      <ComputerAuth>
+
+      Public Function Put(id As Integer, computer As EntityComputer) As DtoActionResult
+  overload: Toems_ApplicationApi.Controllers.ComputerController.Put*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: computerUpdate
+  - type: Toems_ApplicationApi.Controllers.Authorization.ComputerAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.ComputerAuthAttribute.#ctor
+    arguments: []
+  nameWithType.vb: ComputerController.Put(Integer, EntityComputer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ComputerController.Put(Integer, Toems_Common.Entity.EntityComputer)
+  name.vb: Put(Integer, EntityComputer)
+- uid: Toems_ApplicationApi.Controllers.ComputerController.SendMessage(System.Int32,Toems_Common.Dto.DtoMessage)
+  commentId: M:Toems_ApplicationApi.Controllers.ComputerController.SendMessage(System.Int32,Toems_Common.Dto.DtoMessage)
+  id: SendMessage(System.Int32,Toems_Common.Dto.DtoMessage)
+  parent: Toems_ApplicationApi.Controllers.ComputerController
+  langs:
+  - csharp
+  - vb
+  name: SendMessage(int, DtoMessage)
+  nameWithType: ComputerController.SendMessage(int, DtoMessage)
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.SendMessage(int, Toems_Common.Dto.DtoMessage)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "computerSendMessage")]
+
+      [ComputerAuth]
+
+      public DtoApiBoolResponse SendMessage(int id, DtoMessage message)
+    parameters:
+    - id: id
+      type: System.Int32
+    - id: message
+      type: Toems_Common.Dto.DtoMessage
+    return:
+      type: Toems_Common.Dto.DtoApiBoolResponse
+    content.vb: >-
+      <CustomAuth(Permission:="computerSendMessage")>
+
+      <ComputerAuth>
+
+      Public Function SendMessage(id As Integer, message As DtoMessage) As DtoApiBoolResponse
+  overload: Toems_ApplicationApi.Controllers.ComputerController.SendMessage*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: computerSendMessage
+  - type: Toems_ApplicationApi.Controllers.Authorization.ComputerAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.ComputerAuthAttribute.#ctor
+    arguments: []
+  nameWithType.vb: ComputerController.SendMessage(Integer, DtoMessage)
+  fullName.vb: Toems_ApplicationApi.Controllers.ComputerController.SendMessage(Integer, Toems_Common.Dto.DtoMessage)
+  name.vb: SendMessage(Integer, DtoMessage)
+- uid: Toems_ApplicationApi.Controllers.ComputerController.ForceCheckin(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ComputerController.ForceCheckin(System.Int32)
+  id: ForceCheckin(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ComputerController
+  langs:
+  - csharp
+  - vb
+  name: ForceCheckin(int)
+  nameWithType: ComputerController.ForceCheckin(int)
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.ForceCheckin(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "computerForceCheckin")]
+
+      [ComputerAuth]
+
+      public DtoApiBoolResponse ForceCheckin(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Dto.DtoApiBoolResponse
+    content.vb: >-
+      <CustomAuth(Permission:="computerForceCheckin")>
+
+      <ComputerAuth>
+
+      Public Function ForceCheckin(id As Integer) As DtoApiBoolResponse
+  overload: Toems_ApplicationApi.Controllers.ComputerController.ForceCheckin*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: computerForceCheckin
+  - type: Toems_ApplicationApi.Controllers.Authorization.ComputerAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.ComputerAuthAttribute.#ctor
+    arguments: []
+  nameWithType.vb: ComputerController.ForceCheckin(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ComputerController.ForceCheckin(Integer)
+  name.vb: ForceCheckin(Integer)
+- uid: Toems_ApplicationApi.Controllers.ComputerController.CollectInventory(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ComputerController.CollectInventory(System.Int32)
+  id: CollectInventory(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ComputerController
+  langs:
+  - csharp
+  - vb
+  name: CollectInventory(int)
+  nameWithType: ComputerController.CollectInventory(int)
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.CollectInventory(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "computerForceCheckin")]
+
+      [ComputerAuth]
+
+      public DtoApiBoolResponse CollectInventory(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Dto.DtoApiBoolResponse
+    content.vb: >-
+      <CustomAuth(Permission:="computerForceCheckin")>
+
+      <ComputerAuth>
+
+      Public Function CollectInventory(id As Integer) As DtoApiBoolResponse
+  overload: Toems_ApplicationApi.Controllers.ComputerController.CollectInventory*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: computerForceCheckin
+  - type: Toems_ApplicationApi.Controllers.Authorization.ComputerAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.ComputerAuthAttribute.#ctor
+    arguments: []
+  nameWithType.vb: ComputerController.CollectInventory(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ComputerController.CollectInventory(Integer)
+  name.vb: CollectInventory(Integer)
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetUptime(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ComputerController.GetUptime(System.Int32)
+  id: GetUptime(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ComputerController
+  langs:
+  - csharp
+  - vb
+  name: GetUptime(int)
+  nameWithType: ComputerController.GetUptime(int)
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetUptime(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "computerForceCheckin")]
+
+      [ComputerAuth]
+
+      public DtoApiBoolResponse GetUptime(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Dto.DtoApiBoolResponse
+    content.vb: >-
+      <CustomAuth(Permission:="computerForceCheckin")>
+
+      <ComputerAuth>
+
+      Public Function GetUptime(id As Integer) As DtoApiBoolResponse
+  overload: Toems_ApplicationApi.Controllers.ComputerController.GetUptime*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: computerForceCheckin
+  - type: Toems_ApplicationApi.Controllers.Authorization.ComputerAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.ComputerAuthAttribute.#ctor
+    arguments: []
+  nameWithType.vb: ComputerController.GetUptime(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ComputerController.GetUptime(Integer)
+  name.vb: GetUptime(Integer)
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetLoggedInUsers(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ComputerController.GetLoggedInUsers(System.Int32)
+  id: GetLoggedInUsers(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ComputerController
+  langs:
+  - csharp
+  - vb
+  name: GetLoggedInUsers(int)
+  nameWithType: ComputerController.GetLoggedInUsers(int)
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetLoggedInUsers(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "computerRead")]
+
+      [ComputerAuth]
+
+      public DtoApiBoolResponse GetLoggedInUsers(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Dto.DtoApiBoolResponse
+    content.vb: >-
+      <CustomAuth(Permission:="computerRead")>
+
+      <ComputerAuth>
+
+      Public Function GetLoggedInUsers(id As Integer) As DtoApiBoolResponse
+  overload: Toems_ApplicationApi.Controllers.ComputerController.GetLoggedInUsers*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: computerRead
+  - type: Toems_ApplicationApi.Controllers.Authorization.ComputerAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.ComputerAuthAttribute.#ctor
+    arguments: []
+  nameWithType.vb: ComputerController.GetLoggedInUsers(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ComputerController.GetLoggedInUsers(Integer)
+  name.vb: GetLoggedInUsers(Integer)
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetStatus(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ComputerController.GetStatus(System.Int32)
+  id: GetStatus(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ComputerController
+  langs:
+  - csharp
+  - vb
+  name: GetStatus(int)
+  nameWithType: ComputerController.GetStatus(int)
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetStatus(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "computerRead")]
+
+      [ComputerAuth]
+
+      public DtoApiBoolResponse GetStatus(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Dto.DtoApiBoolResponse
+    content.vb: >-
+      <CustomAuth(Permission:="computerRead")>
+
+      <ComputerAuth>
+
+      Public Function GetStatus(id As Integer) As DtoApiBoolResponse
+  overload: Toems_ApplicationApi.Controllers.ComputerController.GetStatus*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: computerRead
+  - type: Toems_ApplicationApi.Controllers.Authorization.ComputerAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.ComputerAuthAttribute.#ctor
+    arguments: []
+  nameWithType.vb: ComputerController.GetStatus(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ComputerController.GetStatus(Integer)
+  name.vb: GetStatus(Integer)
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetServiceLog(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ComputerController.GetServiceLog(System.Int32)
+  id: GetServiceLog(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ComputerController
+  langs:
+  - csharp
+  - vb
+  name: GetServiceLog(int)
+  nameWithType: ComputerController.GetServiceLog(int)
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetServiceLog(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "computerRead")]
+
+      [ComputerAuth]
+
+      public DtoApiBoolResponse GetServiceLog(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Dto.DtoApiBoolResponse
+    content.vb: >-
+      <CustomAuth(Permission:="computerRead")>
+
+      <ComputerAuth>
+
+      Public Function GetServiceLog(id As Integer) As DtoApiBoolResponse
+  overload: Toems_ApplicationApi.Controllers.ComputerController.GetServiceLog*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: computerRead
+  - type: Toems_ApplicationApi.Controllers.Authorization.ComputerAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.ComputerAuthAttribute.#ctor
+    arguments: []
+  nameWithType.vb: ComputerController.GetServiceLog(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ComputerController.GetServiceLog(Integer)
+  name.vb: GetServiceLog(Integer)
+- uid: Toems_ApplicationApi.Controllers.ComputerController.Reboot(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ComputerController.Reboot(System.Int32)
+  id: Reboot(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ComputerController
+  langs:
+  - csharp
+  - vb
+  name: Reboot(int)
+  nameWithType: ComputerController.Reboot(int)
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.Reboot(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "computerReboot")]
+
+      [ComputerAuth]
+
+      public DtoApiBoolResponse Reboot(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Dto.DtoApiBoolResponse
+    content.vb: >-
+      <CustomAuth(Permission:="computerReboot")>
+
+      <ComputerAuth>
+
+      Public Function Reboot(id As Integer) As DtoApiBoolResponse
+  overload: Toems_ApplicationApi.Controllers.ComputerController.Reboot*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: computerReboot
+  - type: Toems_ApplicationApi.Controllers.Authorization.ComputerAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.ComputerAuthAttribute.#ctor
+    arguments: []
+  nameWithType.vb: ComputerController.Reboot(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ComputerController.Reboot(Integer)
+  name.vb: Reboot(Integer)
+- uid: Toems_ApplicationApi.Controllers.ComputerController.StartRemoteControl(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ComputerController.StartRemoteControl(System.Int32)
+  id: StartRemoteControl(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ComputerController
+  langs:
+  - csharp
+  - vb
+  name: StartRemoteControl(int)
+  nameWithType: ComputerController.StartRemoteControl(int)
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.StartRemoteControl(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "allowRemoteControl")]
+
+      [ComputerAuth]
+
+      public DtoApiBoolResponse StartRemoteControl(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Dto.DtoApiBoolResponse
+    content.vb: >-
+      <CustomAuth(Permission:="allowRemoteControl")>
+
+      <ComputerAuth>
+
+      Public Function StartRemoteControl(id As Integer) As DtoApiBoolResponse
+  overload: Toems_ApplicationApi.Controllers.ComputerController.StartRemoteControl*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: allowRemoteControl
+  - type: Toems_ApplicationApi.Controllers.Authorization.ComputerAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.ComputerAuthAttribute.#ctor
+    arguments: []
+  nameWithType.vb: ComputerController.StartRemoteControl(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ComputerController.StartRemoteControl(Integer)
+  name.vb: StartRemoteControl(Integer)
+- uid: Toems_ApplicationApi.Controllers.ComputerController.Shutdown(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ComputerController.Shutdown(System.Int32)
+  id: Shutdown(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ComputerController
+  langs:
+  - csharp
+  - vb
+  name: Shutdown(int)
+  nameWithType: ComputerController.Shutdown(int)
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.Shutdown(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "computerShutdown")]
+
+      [ComputerAuth]
+
+      public DtoApiBoolResponse Shutdown(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Dto.DtoApiBoolResponse
+    content.vb: >-
+      <CustomAuth(Permission:="computerShutdown")>
+
+      <ComputerAuth>
+
+      Public Function Shutdown(id As Integer) As DtoApiBoolResponse
+  overload: Toems_ApplicationApi.Controllers.ComputerController.Shutdown*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: computerShutdown
+  - type: Toems_ApplicationApi.Controllers.Authorization.ComputerAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.ComputerAuthAttribute.#ctor
+    arguments: []
+  nameWithType.vb: ComputerController.Shutdown(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ComputerController.Shutdown(Integer)
+  name.vb: Shutdown(Integer)
+- uid: Toems_ApplicationApi.Controllers.ComputerController.Wakeup(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ComputerController.Wakeup(System.Int32)
+  id: Wakeup(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ComputerController
+  langs:
+  - csharp
+  - vb
+  name: Wakeup(int)
+  nameWithType: ComputerController.Wakeup(int)
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.Wakeup(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "computerWakeup")]
+
+      [ComputerAuth]
+
+      public DtoApiBoolResponse Wakeup(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Dto.DtoApiBoolResponse
+    content.vb: >-
+      <CustomAuth(Permission:="computerWakeup")>
+
+      <ComputerAuth>
+
+      Public Function Wakeup(id As Integer) As DtoApiBoolResponse
+  overload: Toems_ApplicationApi.Controllers.ComputerController.Wakeup*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: computerWakeup
+  - type: Toems_ApplicationApi.Controllers.Authorization.ComputerAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.ComputerAuthAttribute.#ctor
+    arguments: []
+  nameWithType.vb: ComputerController.Wakeup(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ComputerController.Wakeup(Integer)
+  name.vb: Wakeup(Integer)
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetSystemInfo(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ComputerController.GetSystemInfo(System.Int32)
+  id: GetSystemInfo(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ComputerController
+  langs:
+  - csharp
+  - vb
+  name: GetSystemInfo(int)
+  nameWithType: ComputerController.GetSystemInfo(int)
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetSystemInfo(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "computerRead")]
+
+      [ComputerAuth]
+
+      public DtoInventoryCollection GetSystemInfo(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Dto.DtoInventoryCollection
+    content.vb: >-
+      <CustomAuth(Permission:="computerRead")>
+
+      <ComputerAuth>
+
+      Public Function GetSystemInfo(id As Integer) As DtoInventoryCollection
+  overload: Toems_ApplicationApi.Controllers.ComputerController.GetSystemInfo*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: computerRead
+  - type: Toems_ApplicationApi.Controllers.Authorization.ComputerAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.ComputerAuthAttribute.#ctor
+    arguments: []
+  nameWithType.vb: ComputerController.GetSystemInfo(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ComputerController.GetSystemInfo(Integer)
+  name.vb: GetSystemInfo(Integer)
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetSoftware(System.Int32,System.String)
+  commentId: M:Toems_ApplicationApi.Controllers.ComputerController.GetSoftware(System.Int32,System.String)
+  id: GetSoftware(System.Int32,System.String)
+  parent: Toems_ApplicationApi.Controllers.ComputerController
+  langs:
+  - csharp
+  - vb
+  name: GetSoftware(int, string)
+  nameWithType: ComputerController.GetSoftware(int, string)
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetSoftware(int, string)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "computerRead")]
+
+      [ComputerAuth]
+
+      public IEnumerable<EntitySoftwareInventory> GetSoftware(int id, string searchstring = "")
+    parameters:
+    - id: id
+      type: System.Int32
+    - id: searchstring
+      type: System.String
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntitySoftwareInventory}
+    content.vb: >-
+      <CustomAuth(Permission:="computerRead")>
+
+      <ComputerAuth>
+
+      Public Function GetSoftware(id As Integer, searchstring As String = "") As IEnumerable(Of EntitySoftwareInventory)
+  overload: Toems_ApplicationApi.Controllers.ComputerController.GetSoftware*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: computerRead
+  - type: Toems_ApplicationApi.Controllers.Authorization.ComputerAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.ComputerAuthAttribute.#ctor
+    arguments: []
+  nameWithType.vb: ComputerController.GetSoftware(Integer, String)
+  fullName.vb: Toems_ApplicationApi.Controllers.ComputerController.GetSoftware(Integer, String)
+  name.vb: GetSoftware(Integer, String)
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetCertificates(System.Int32,System.String)
+  commentId: M:Toems_ApplicationApi.Controllers.ComputerController.GetCertificates(System.Int32,System.String)
+  id: GetCertificates(System.Int32,System.String)
+  parent: Toems_ApplicationApi.Controllers.ComputerController
+  langs:
+  - csharp
+  - vb
+  name: GetCertificates(int, string)
+  nameWithType: ComputerController.GetCertificates(int, string)
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetCertificates(int, string)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "computerRead")]
+
+      [ComputerAuth]
+
+      public IEnumerable<EntityCertificateInventory> GetCertificates(int id, string searchstring = "")
+    parameters:
+    - id: id
+      type: System.Int32
+    - id: searchstring
+      type: System.String
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityCertificateInventory}
+    content.vb: >-
+      <CustomAuth(Permission:="computerRead")>
+
+      <ComputerAuth>
+
+      Public Function GetCertificates(id As Integer, searchstring As String = "") As IEnumerable(Of EntityCertificateInventory)
+  overload: Toems_ApplicationApi.Controllers.ComputerController.GetCertificates*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: computerRead
+  - type: Toems_ApplicationApi.Controllers.Authorization.ComputerAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.ComputerAuthAttribute.#ctor
+    arguments: []
+  nameWithType.vb: ComputerController.GetCertificates(Integer, String)
+  fullName.vb: Toems_ApplicationApi.Controllers.ComputerController.GetCertificates(Integer, String)
+  name.vb: GetCertificates(Integer, String)
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetUpdates(System.Int32,System.String)
+  commentId: M:Toems_ApplicationApi.Controllers.ComputerController.GetUpdates(System.Int32,System.String)
+  id: GetUpdates(System.Int32,System.String)
+  parent: Toems_ApplicationApi.Controllers.ComputerController
+  langs:
+  - csharp
+  - vb
+  name: GetUpdates(int, string)
+  nameWithType: ComputerController.GetUpdates(int, string)
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetUpdates(int, string)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "computerRead")]
+
+      [ComputerAuth]
+
+      public IEnumerable<DtoComputerUpdates> GetUpdates(int id, string searchstring = "")
+    parameters:
+    - id: id
+      type: System.Int32
+    - id: searchstring
+      type: System.String
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Dto.DtoComputerUpdates}
+    content.vb: >-
+      <CustomAuth(Permission:="computerRead")>
+
+      <ComputerAuth>
+
+      Public Function GetUpdates(id As Integer, searchstring As String = "") As IEnumerable(Of DtoComputerUpdates)
+  overload: Toems_ApplicationApi.Controllers.ComputerController.GetUpdates*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: computerRead
+  - type: Toems_ApplicationApi.Controllers.Authorization.ComputerAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.ComputerAuthAttribute.#ctor
+    arguments: []
+  nameWithType.vb: ComputerController.GetUpdates(Integer, String)
+  fullName.vb: Toems_ApplicationApi.Controllers.ComputerController.GetUpdates(Integer, String)
+  name.vb: GetUpdates(Integer, String)
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetUserLogins(System.Int32,System.String)
+  commentId: M:Toems_ApplicationApi.Controllers.ComputerController.GetUserLogins(System.Int32,System.String)
+  id: GetUserLogins(System.Int32,System.String)
+  parent: Toems_ApplicationApi.Controllers.ComputerController
+  langs:
+  - csharp
+  - vb
+  name: GetUserLogins(int, string)
+  nameWithType: ComputerController.GetUserLogins(int, string)
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetUserLogins(int, string)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "computerRead")]
+
+      [ComputerAuth]
+
+      public IEnumerable<EntityUserLogin> GetUserLogins(int id, string searchstring = "")
+    parameters:
+    - id: id
+      type: System.Int32
+    - id: searchstring
+      type: System.String
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityUserLogin}
+    content.vb: >-
+      <CustomAuth(Permission:="computerRead")>
+
+      <ComputerAuth>
+
+      Public Function GetUserLogins(id As Integer, searchstring As String = "") As IEnumerable(Of EntityUserLogin)
+  overload: Toems_ApplicationApi.Controllers.ComputerController.GetUserLogins*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: computerRead
+  - type: Toems_ApplicationApi.Controllers.Authorization.ComputerAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.ComputerAuthAttribute.#ctor
+    arguments: []
+  nameWithType.vb: ComputerController.GetUserLogins(Integer, String)
+  fullName.vb: Toems_ApplicationApi.Controllers.ComputerController.GetUserLogins(Integer, String)
+  name.vb: GetUserLogins(Integer, String)
+- uid: Toems_ApplicationApi.Controllers.ComputerController.AddComment(Toems_Common.Dto.DtoComputerComment)
+  commentId: M:Toems_ApplicationApi.Controllers.ComputerController.AddComment(Toems_Common.Dto.DtoComputerComment)
+  id: AddComment(Toems_Common.Dto.DtoComputerComment)
+  parent: Toems_ApplicationApi.Controllers.ComputerController
+  langs:
+  - csharp
+  - vb
+  name: AddComment(DtoComputerComment)
+  nameWithType: ComputerController.AddComment(DtoComputerComment)
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.AddComment(Toems_Common.Dto.DtoComputerComment)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "commentAdd")]
+
+      public DtoActionResult AddComment(DtoComputerComment comment)
+    parameters:
+    - id: comment
+      type: Toems_Common.Dto.DtoComputerComment
+    return:
+      type: Toems_Common.Dto.DtoActionResult
+    content.vb: >-
+      <CustomAuth(Permission:="commentAdd")>
+
+      Public Function AddComment(comment As DtoComputerComment) As DtoActionResult
+  overload: Toems_ApplicationApi.Controllers.ComputerController.AddComment*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: commentAdd
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetComments(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ComputerController.GetComments(System.Int32)
+  id: GetComments(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ComputerController
+  langs:
+  - csharp
+  - vb
+  name: GetComments(int)
+  nameWithType: ComputerController.GetComments(int)
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetComments(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "commentRead")]
+
+      [ComputerAuth]
+
+      public List<DtoComputerComment> GetComments(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.Collections.Generic.List{Toems_Common.Dto.DtoComputerComment}
+    content.vb: >-
+      <CustomAuth(Permission:="commentRead")>
+
+      <ComputerAuth>
+
+      Public Function GetComments(id As Integer) As List(Of DtoComputerComment)
+  overload: Toems_ApplicationApi.Controllers.ComputerController.GetComments*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: commentRead
+  - type: Toems_ApplicationApi.Controllers.Authorization.ComputerAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.ComputerAuthAttribute.#ctor
+    arguments: []
+  nameWithType.vb: ComputerController.GetComments(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ComputerController.GetComments(Integer)
+  name.vb: GetComments(Integer)
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetAttachments(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ComputerController.GetAttachments(System.Int32)
+  id: GetAttachments(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ComputerController
+  langs:
+  - csharp
+  - vb
+  name: GetAttachments(int)
+  nameWithType: ComputerController.GetAttachments(int)
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetAttachments(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "attachmentRead")]
+
+      [ComputerAuth]
+
+      public IEnumerable<EntityAttachment> GetAttachments(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityAttachment}
+    content.vb: >-
+      <CustomAuth(Permission:="attachmentRead")>
+
+      <ComputerAuth>
+
+      Public Function GetAttachments(id As Integer) As IEnumerable(Of EntityAttachment)
+  overload: Toems_ApplicationApi.Controllers.ComputerController.GetAttachments*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: attachmentRead
+  - type: Toems_ApplicationApi.Controllers.Authorization.ComputerAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.ComputerAuthAttribute.#ctor
+    arguments: []
+  nameWithType.vb: ComputerController.GetAttachments(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ComputerController.GetAttachments(Integer)
+  name.vb: GetAttachments(Integer)
+- uid: Toems_ApplicationApi.Controllers.ComputerController.ComputerProcessTimes(System.DateTime,System.Int32,System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ComputerController.ComputerProcessTimes(System.DateTime,System.Int32,System.Int32)
+  id: ComputerProcessTimes(System.DateTime,System.Int32,System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ComputerController
+  langs:
+  - csharp
+  - vb
+  name: ComputerProcessTimes(DateTime, int, int)
+  nameWithType: ComputerController.ComputerProcessTimes(DateTime, int, int)
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.ComputerProcessTimes(System.DateTime, int, int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "reportRead")]
+
+      public List<DtoProcessWithTime> ComputerProcessTimes(DateTime dateCutoff, int limit, int computerId)
+    parameters:
+    - id: dateCutoff
+      type: System.DateTime
+    - id: limit
+      type: System.Int32
+    - id: computerId
+      type: System.Int32
+    return:
+      type: System.Collections.Generic.List{Toems_Common.Dto.DtoProcessWithTime}
+    content.vb: >-
+      <CustomAuth(Permission:="reportRead")>
+
+      Public Function ComputerProcessTimes(dateCutoff As Date, limit As Integer, computerId As Integer) As List(Of DtoProcessWithTime)
+  overload: Toems_ApplicationApi.Controllers.ComputerController.ComputerProcessTimes*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: reportRead
+  nameWithType.vb: ComputerController.ComputerProcessTimes(Date, Integer, Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ComputerController.ComputerProcessTimes(Date, Integer, Integer)
+  name.vb: ComputerProcessTimes(Date, Integer, Integer)
+- uid: Toems_ApplicationApi.Controllers.ComputerController.ComputerProcessCounts(System.DateTime,System.Int32,System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ComputerController.ComputerProcessCounts(System.DateTime,System.Int32,System.Int32)
+  id: ComputerProcessCounts(System.DateTime,System.Int32,System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ComputerController
+  langs:
+  - csharp
+  - vb
+  name: ComputerProcessCounts(DateTime, int, int)
+  nameWithType: ComputerController.ComputerProcessCounts(DateTime, int, int)
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.ComputerProcessCounts(System.DateTime, int, int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "reportRead")]
+
+      public List<DtoProcessWithCount> ComputerProcessCounts(DateTime dateCutoff, int limit, int computerId)
+    parameters:
+    - id: dateCutoff
+      type: System.DateTime
+    - id: limit
+      type: System.Int32
+    - id: computerId
+      type: System.Int32
+    return:
+      type: System.Collections.Generic.List{Toems_Common.Dto.DtoProcessWithCount}
+    content.vb: >-
+      <CustomAuth(Permission:="reportRead")>
+
+      Public Function ComputerProcessCounts(dateCutoff As Date, limit As Integer, computerId As Integer) As List(Of DtoProcessWithCount)
+  overload: Toems_ApplicationApi.Controllers.ComputerController.ComputerProcessCounts*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: reportRead
+  nameWithType.vb: ComputerController.ComputerProcessCounts(Date, Integer, Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ComputerController.ComputerProcessCounts(Date, Integer, Integer)
+  name.vb: ComputerProcessCounts(Date, Integer, Integer)
+- uid: Toems_ApplicationApi.Controllers.ComputerController.ComputerProcess(System.DateTime,System.Int32,System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ComputerController.ComputerProcess(System.DateTime,System.Int32,System.Int32)
+  id: ComputerProcess(System.DateTime,System.Int32,System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ComputerController
+  langs:
+  - csharp
+  - vb
+  name: ComputerProcess(DateTime, int, int)
+  nameWithType: ComputerController.ComputerProcess(DateTime, int, int)
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.ComputerProcess(System.DateTime, int, int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "reportRead")]
+
+      public List<DtoProcessWithUser> ComputerProcess(DateTime dateCutoff, int limit, int computerId)
+    parameters:
+    - id: dateCutoff
+      type: System.DateTime
+    - id: limit
+      type: System.Int32
+    - id: computerId
+      type: System.Int32
+    return:
+      type: System.Collections.Generic.List{Toems_Common.Dto.DtoProcessWithUser}
+    content.vb: >-
+      <CustomAuth(Permission:="reportRead")>
+
+      Public Function ComputerProcess(dateCutoff As Date, limit As Integer, computerId As Integer) As List(Of DtoProcessWithUser)
+  overload: Toems_ApplicationApi.Controllers.ComputerController.ComputerProcess*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: reportRead
+  nameWithType.vb: ComputerController.ComputerProcess(Date, Integer, Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ComputerController.ComputerProcess(Date, Integer, Integer)
+  name.vb: ComputerProcess(Date, Integer, Integer)
+- uid: Toems_ApplicationApi.Controllers.ComputerController.StartDeploy(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ComputerController.StartDeploy(System.Int32)
+  id: StartDeploy(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ComputerController
+  langs:
+  - csharp
+  - vb
+  name: StartDeploy(int)
+  nameWithType: ComputerController.StartDeploy(int)
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.StartDeploy(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "imageDeployTask")]
+
+      [ComputerAuth]
+
+      public DtoApiStringResponse StartDeploy(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Dto.DtoApiStringResponse
+    content.vb: >-
+      <CustomAuth(Permission:="imageDeployTask")>
+
+      <ComputerAuth>
+
+      Public Function StartDeploy(id As Integer) As DtoApiStringResponse
+  overload: Toems_ApplicationApi.Controllers.ComputerController.StartDeploy*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: imageDeployTask
+  - type: Toems_ApplicationApi.Controllers.Authorization.ComputerAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.ComputerAuthAttribute.#ctor
+    arguments: []
+  nameWithType.vb: ComputerController.StartDeploy(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ComputerController.StartDeploy(Integer)
+  name.vb: StartDeploy(Integer)
+- uid: Toems_ApplicationApi.Controllers.ComputerController.StartDeployWinPe(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ComputerController.StartDeployWinPe(System.Int32)
+  id: StartDeployWinPe(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ComputerController
+  langs:
+  - csharp
+  - vb
+  name: StartDeployWinPe(int)
+  nameWithType: ComputerController.StartDeployWinPe(int)
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.StartDeployWinPe(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "imageDeployTask")]
+
+      [ComputerAuth]
+
+      public DtoApiStringResponse StartDeployWinPe(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Dto.DtoApiStringResponse
+    content.vb: >-
+      <CustomAuth(Permission:="imageDeployTask")>
+
+      <ComputerAuth>
+
+      Public Function StartDeployWinPe(id As Integer) As DtoApiStringResponse
+  overload: Toems_ApplicationApi.Controllers.ComputerController.StartDeployWinPe*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: imageDeployTask
+  - type: Toems_ApplicationApi.Controllers.Authorization.ComputerAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.ComputerAuthAttribute.#ctor
+    arguments: []
+  nameWithType.vb: ComputerController.StartDeployWinPe(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ComputerController.StartDeployWinPe(Integer)
+  name.vb: StartDeployWinPe(Integer)
+- uid: Toems_ApplicationApi.Controllers.ComputerController.StartUpload(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ComputerController.StartUpload(System.Int32)
+  id: StartUpload(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ComputerController
+  langs:
+  - csharp
+  - vb
+  name: StartUpload(int)
+  nameWithType: ComputerController.StartUpload(int)
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.StartUpload(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "imageUploadTask")]
+
+      [ComputerAuth]
+
+      public DtoApiStringResponse StartUpload(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Dto.DtoApiStringResponse
+    content.vb: >-
+      <CustomAuth(Permission:="imageUploadTask")>
+
+      <ComputerAuth>
+
+      Public Function StartUpload(id As Integer) As DtoApiStringResponse
+  overload: Toems_ApplicationApi.Controllers.ComputerController.StartUpload*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: imageUploadTask
+  - type: Toems_ApplicationApi.Controllers.Authorization.ComputerAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.ComputerAuthAttribute.#ctor
+    arguments: []
+  nameWithType.vb: ComputerController.StartUpload(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ComputerController.StartUpload(Integer)
+  name.vb: StartUpload(Integer)
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetComputerImagingLogs(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ComputerController.GetComputerImagingLogs(System.Int32)
+  id: GetComputerImagingLogs(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ComputerController
+  langs:
+  - csharp
+  - vb
+  name: GetComputerImagingLogs(int)
+  nameWithType: ComputerController.GetComputerImagingLogs(int)
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetComputerImagingLogs(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "computerRead")]
+
+      [ComputerAuth]
+
+      public IEnumerable<EntityComputerLog> GetComputerImagingLogs(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityComputerLog}
+    content.vb: >-
+      <CustomAuth(Permission:="computerRead")>
+
+      <ComputerAuth>
+
+      Public Function GetComputerImagingLogs(id As Integer) As IEnumerable(Of EntityComputerLog)
+  overload: Toems_ApplicationApi.Controllers.ComputerController.GetComputerImagingLogs*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: computerRead
+  - type: Toems_ApplicationApi.Controllers.Authorization.ComputerAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.ComputerAuthAttribute.#ctor
+    arguments: []
+  nameWithType.vb: ComputerController.GetComputerImagingLogs(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ComputerController.GetComputerImagingLogs(Integer)
+  name.vb: GetComputerImagingLogs(Integer)
+- uid: Toems_ApplicationApi.Controllers.ComputerController.RunModule(System.Int32,System.String)
+  commentId: M:Toems_ApplicationApi.Controllers.ComputerController.RunModule(System.Int32,System.String)
+  id: RunModule(System.Int32,System.String)
+  parent: Toems_ApplicationApi.Controllers.ComputerController
+  langs:
+  - csharp
+  - vb
+  name: RunModule(int, string)
+  nameWithType: ComputerController.RunModule(int, string)
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.RunModule(int, string)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "computerUpdate")]
+
+      public DtoApiBoolResponse RunModule(int computerId, string moduleGuid)
+    parameters:
+    - id: computerId
+      type: System.Int32
+    - id: moduleGuid
+      type: System.String
+    return:
+      type: Toems_Common.Dto.DtoApiBoolResponse
+    content.vb: >-
+      <CustomAuth(Permission:="computerUpdate")>
+
+      Public Function RunModule(computerId As Integer, moduleGuid As String) As DtoApiBoolResponse
+  overload: Toems_ApplicationApi.Controllers.ComputerController.RunModule*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: computerUpdate
+  nameWithType.vb: ComputerController.RunModule(Integer, String)
+  fullName.vb: Toems_ApplicationApi.Controllers.ComputerController.RunModule(Integer, String)
+  name.vb: RunModule(Integer, String)
+references:
+- uid: Toems_ApplicationApi.Controllers
+  commentId: N:Toems_ApplicationApi.Controllers
+  isExternal: true
+  href: Toems_ApplicationApi.html
+  name: Toems_ApplicationApi.Controllers
+  nameWithType: Toems_ApplicationApi.Controllers
+  fullName: Toems_ApplicationApi.Controllers
+  spec.csharp:
+  - uid: Toems_ApplicationApi
+    name: Toems_ApplicationApi
+    isExternal: true
+    href: Toems_ApplicationApi.html
+  - name: .
+  - uid: Toems_ApplicationApi.Controllers
+    name: Controllers
+    isExternal: true
+    href: Toems_ApplicationApi.Controllers.html
+  spec.vb:
+  - uid: Toems_ApplicationApi
+    name: Toems_ApplicationApi
+    isExternal: true
+    href: Toems_ApplicationApi.html
+  - name: .
+  - uid: Toems_ApplicationApi.Controllers
+    name: Controllers
+    isExternal: true
+    href: Toems_ApplicationApi.Controllers.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Toems_ApplicationApi.Controllers.ComputerController.#ctor*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComputerController.#ctor
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComputerController.html#Toems_ApplicationApi.Controllers.ComputerController.#ctor
+  name: ComputerController
+  nameWithType: ComputerController.ComputerController
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.ComputerController
+  nameWithType.vb: ComputerController.New
+  fullName.vb: Toems_ApplicationApi.Controllers.ComputerController.New
+  name.vb: New
+- uid: Toems_ApplicationApi.Controllers.ComputerController.Restore*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComputerController.Restore
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComputerController.html#Toems_ApplicationApi.Controllers.ComputerController.Restore(System.Int32)
+  name: Restore
+  nameWithType: ComputerController.Restore
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.Restore
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Toems_Common.Dto.DtoActionResult
+  isExternal: true
+  name: DtoActionResult
+  nameWithType: DtoActionResult
+  fullName: Toems_Common.Dto.DtoActionResult
+- uid: Toems_ApplicationApi.Controllers.ComputerController.Archive*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComputerController.Archive
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComputerController.html#Toems_ApplicationApi.Controllers.ComputerController.Archive(System.Int32)
+  name: Archive
+  nameWithType: ComputerController.Archive
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.Archive
+- uid: Toems_ApplicationApi.Controllers.ComputerController.ClearImagingId*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComputerController.ClearImagingId
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComputerController.html#Toems_ApplicationApi.Controllers.ComputerController.ClearImagingId(System.Int32)
+  name: ClearImagingId
+  nameWithType: ComputerController.ClearImagingId
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.ClearImagingId
+- uid: Toems_ApplicationApi.Controllers.ComputerController.Delete*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComputerController.Delete
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComputerController.html#Toems_ApplicationApi.Controllers.ComputerController.Delete(System.Int32)
+  name: Delete
+  nameWithType: ComputerController.Delete
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.Delete
+- uid: Toems_ApplicationApi.Controllers.ComputerController.Get*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComputerController.Get
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComputerController.html#Toems_ApplicationApi.Controllers.ComputerController.Get(System.Int32)
+  name: Get
+  nameWithType: ComputerController.Get
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.Get
+- uid: Toems_Common.Entity.EntityComputer
+  isExternal: true
+  name: EntityComputer
+  nameWithType: EntityComputer
+  fullName: Toems_Common.Entity.EntityComputer
+- uid: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityComputer}
+  commentId: T:System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityComputer}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<EntityComputer>
+  nameWithType: IEnumerable<EntityComputer>
+  fullName: System.Collections.Generic.IEnumerable<Toems_Common.Entity.EntityComputer>
+  nameWithType.vb: IEnumerable(Of EntityComputer)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Toems_Common.Entity.EntityComputer)
+  name.vb: IEnumerable(Of EntityComputer)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Toems_Common.Entity.EntityComputer
+    name: EntityComputer
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Entity.EntityComputer
+    name: EntityComputer
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetComputerGroups*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComputerController.GetComputerGroups
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComputerController.html#Toems_ApplicationApi.Controllers.ComputerController.GetComputerGroups(System.Int32)
+  name: GetComputerGroups
+  nameWithType: ComputerController.GetComputerGroups
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetComputerGroups
+- uid: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityGroup}
+  commentId: T:System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityGroup}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<EntityGroup>
+  nameWithType: IEnumerable<EntityGroup>
+  fullName: System.Collections.Generic.IEnumerable<Toems_Common.Entity.EntityGroup>
+  nameWithType.vb: IEnumerable(Of EntityGroup)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Toems_Common.Entity.EntityGroup)
+  name.vb: IEnumerable(Of EntityGroup)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Toems_Common.Entity.EntityGroup
+    name: EntityGroup
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Entity.EntityGroup
+    name: EntityGroup
+    isExternal: true
+  - name: )
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetComputerGroupsWithImage*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComputerController.GetComputerGroupsWithImage
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComputerController.html#Toems_ApplicationApi.Controllers.ComputerController.GetComputerGroupsWithImage(System.Int32)
+  name: GetComputerGroupsWithImage
+  nameWithType: ComputerController.GetComputerGroupsWithImage
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetComputerGroupsWithImage
+- uid: System.Collections.Generic.IEnumerable{Toems_Common.Dto.DtoGroupImage}
+  commentId: T:System.Collections.Generic.IEnumerable{Toems_Common.Dto.DtoGroupImage}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<DtoGroupImage>
+  nameWithType: IEnumerable<DtoGroupImage>
+  fullName: System.Collections.Generic.IEnumerable<Toems_Common.Dto.DtoGroupImage>
+  nameWithType.vb: IEnumerable(Of DtoGroupImage)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Toems_Common.Dto.DtoGroupImage)
+  name.vb: IEnumerable(Of DtoGroupImage)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Toems_Common.Dto.DtoGroupImage
+    name: DtoGroupImage
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Dto.DtoGroupImage
+    name: DtoGroupImage
+    isExternal: true
+  - name: )
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetComputerEmServers*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComputerController.GetComputerEmServers
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComputerController.html#Toems_ApplicationApi.Controllers.ComputerController.GetComputerEmServers(System.Int32)
+  name: GetComputerEmServers
+  nameWithType: ComputerController.GetComputerEmServers
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetComputerEmServers
+- uid: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityClientComServer}
+  commentId: T:System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityClientComServer}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<EntityClientComServer>
+  nameWithType: IEnumerable<EntityClientComServer>
+  fullName: System.Collections.Generic.IEnumerable<Toems_Common.Entity.EntityClientComServer>
+  nameWithType.vb: IEnumerable(Of EntityClientComServer)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Toems_Common.Entity.EntityClientComServer)
+  name.vb: IEnumerable(Of EntityClientComServer)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Toems_Common.Entity.EntityClientComServer
+    name: EntityClientComServer
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Entity.EntityClientComServer
+    name: EntityClientComServer
+    isExternal: true
+  - name: )
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetComputerTftpServers*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComputerController.GetComputerTftpServers
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComputerController.html#Toems_ApplicationApi.Controllers.ComputerController.GetComputerTftpServers(System.Int32)
+  name: GetComputerTftpServers
+  nameWithType: ComputerController.GetComputerTftpServers
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetComputerTftpServers
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetComputerImageServers*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComputerController.GetComputerImageServers
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComputerController.html#Toems_ApplicationApi.Controllers.ComputerController.GetComputerImageServers(System.Int32)
+  name: GetComputerImageServers
+  nameWithType: ComputerController.GetComputerImageServers
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetComputerImageServers
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetEffectiveImage*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComputerController.GetEffectiveImage
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComputerController.html#Toems_ApplicationApi.Controllers.ComputerController.GetEffectiveImage(System.Int32)
+  name: GetEffectiveImage
+  nameWithType: ComputerController.GetEffectiveImage
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetEffectiveImage
+- uid: Toems_Common.Entity.ImageProfileWithImage
+  isExternal: true
+  name: ImageProfileWithImage
+  nameWithType: ImageProfileWithImage
+  fullName: Toems_Common.Entity.ImageProfileWithImage
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetEffectiveWinPe*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComputerController.GetEffectiveWinPe
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComputerController.html#Toems_ApplicationApi.Controllers.ComputerController.GetEffectiveWinPe(System.Int32)
+  name: GetEffectiveWinPe
+  nameWithType: ComputerController.GetEffectiveWinPe
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetEffectiveWinPe
+- uid: Toems_Common.Entity.EntityWinPeModule
+  isExternal: true
+  name: EntityWinPeModule
+  nameWithType: EntityWinPeModule
+  fullName: Toems_Common.Entity.EntityWinPeModule
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetPolicyHistory*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComputerController.GetPolicyHistory
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComputerController.html#Toems_ApplicationApi.Controllers.ComputerController.GetPolicyHistory(System.Int32)
+  name: GetPolicyHistory
+  nameWithType: ComputerController.GetPolicyHistory
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetPolicyHistory
+- uid: System.Collections.Generic.IEnumerable{Toems_Common.Dto.DtoComputerPolicyHistory}
+  commentId: T:System.Collections.Generic.IEnumerable{Toems_Common.Dto.DtoComputerPolicyHistory}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<DtoComputerPolicyHistory>
+  nameWithType: IEnumerable<DtoComputerPolicyHistory>
+  fullName: System.Collections.Generic.IEnumerable<Toems_Common.Dto.DtoComputerPolicyHistory>
+  nameWithType.vb: IEnumerable(Of DtoComputerPolicyHistory)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Toems_Common.Dto.DtoComputerPolicyHistory)
+  name.vb: IEnumerable(Of DtoComputerPolicyHistory)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Toems_Common.Dto.DtoComputerPolicyHistory
+    name: DtoComputerPolicyHistory
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Dto.DtoComputerPolicyHistory
+    name: DtoComputerPolicyHistory
+    isExternal: true
+  - name: )
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetEffectivePolicy*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComputerController.GetEffectivePolicy
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComputerController.html#Toems_ApplicationApi.Controllers.ComputerController.GetEffectivePolicy(System.Int32,Toems_Common.Enum.EnumPolicy.Trigger,System.String)
+  name: GetEffectivePolicy
+  nameWithType: ComputerController.GetEffectivePolicy
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetEffectivePolicy
+- uid: Toems_Common.Enum.EnumPolicy.Trigger
+  commentId: '!:Toems_Common.Enum.EnumPolicy.Trigger'
+  isExternal: true
+  name: Trigger
+  nameWithType: EnumPolicy.Trigger
+  fullName: Toems_Common.Enum.EnumPolicy.Trigger
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Toems_Common.Dto.DtoApiStringResponse
+  isExternal: true
+  name: DtoApiStringResponse
+  nameWithType: DtoApiStringResponse
+  fullName: Toems_Common.Dto.DtoApiStringResponse
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetComputerPolicies*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComputerController.GetComputerPolicies
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComputerController.html#Toems_ApplicationApi.Controllers.ComputerController.GetComputerPolicies(System.Int32)
+  name: GetComputerPolicies
+  nameWithType: ComputerController.GetComputerPolicies
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetComputerPolicies
+- uid: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityPolicy}
+  commentId: T:System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityPolicy}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<EntityPolicy>
+  nameWithType: IEnumerable<EntityPolicy>
+  fullName: System.Collections.Generic.IEnumerable<Toems_Common.Entity.EntityPolicy>
+  nameWithType.vb: IEnumerable(Of EntityPolicy)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Toems_Common.Entity.EntityPolicy)
+  name.vb: IEnumerable(Of EntityPolicy)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Toems_Common.Entity.EntityPolicy
+    name: EntityPolicy
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Entity.EntityPolicy
+    name: EntityPolicy
+    isExternal: true
+  - name: )
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetComputerModules*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComputerController.GetComputerModules
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComputerController.html#Toems_ApplicationApi.Controllers.ComputerController.GetComputerModules(System.Int32)
+  name: GetComputerModules
+  nameWithType: ComputerController.GetComputerModules
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetComputerModules
+- uid: System.Collections.Generic.IEnumerable{Toems_Common.Dto.DtoModule}
+  commentId: T:System.Collections.Generic.IEnumerable{Toems_Common.Dto.DtoModule}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<DtoModule>
+  nameWithType: IEnumerable<DtoModule>
+  fullName: System.Collections.Generic.IEnumerable<Toems_Common.Dto.DtoModule>
+  nameWithType.vb: IEnumerable(Of DtoModule)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Toems_Common.Dto.DtoModule)
+  name.vb: IEnumerable(Of DtoModule)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Toems_Common.Dto.DtoModule
+    name: DtoModule
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Dto.DtoModule
+    name: DtoModule
+    isExternal: true
+  - name: )
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetCustomInventory*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComputerController.GetCustomInventory
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComputerController.html#Toems_ApplicationApi.Controllers.ComputerController.GetCustomInventory(System.Int32)
+  name: GetCustomInventory
+  nameWithType: ComputerController.GetCustomInventory
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetCustomInventory
+- uid: System.Collections.Generic.IEnumerable{Toems_Common.Dto.DtoCustomComputerInventory}
+  commentId: T:System.Collections.Generic.IEnumerable{Toems_Common.Dto.DtoCustomComputerInventory}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<DtoCustomComputerInventory>
+  nameWithType: IEnumerable<DtoCustomComputerInventory>
+  fullName: System.Collections.Generic.IEnumerable<Toems_Common.Dto.DtoCustomComputerInventory>
+  nameWithType.vb: IEnumerable(Of DtoCustomComputerInventory)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Toems_Common.Dto.DtoCustomComputerInventory)
+  name.vb: IEnumerable(Of DtoCustomComputerInventory)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Toems_Common.Dto.DtoCustomComputerInventory
+    name: DtoCustomComputerInventory
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Dto.DtoCustomComputerInventory
+    name: DtoCustomComputerInventory
+    isExternal: true
+  - name: )
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetCustomAttributes*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComputerController.GetCustomAttributes
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComputerController.html#Toems_ApplicationApi.Controllers.ComputerController.GetCustomAttributes(System.Int32)
+  name: GetCustomAttributes
+  nameWithType: ComputerController.GetCustomAttributes
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetCustomAttributes
+- uid: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityCustomComputerAttribute}
+  commentId: T:System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityCustomComputerAttribute}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<EntityCustomComputerAttribute>
+  nameWithType: IEnumerable<EntityCustomComputerAttribute>
+  fullName: System.Collections.Generic.IEnumerable<Toems_Common.Entity.EntityCustomComputerAttribute>
+  nameWithType.vb: IEnumerable(Of EntityCustomComputerAttribute)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Toems_Common.Entity.EntityCustomComputerAttribute)
+  name.vb: IEnumerable(Of EntityCustomComputerAttribute)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Toems_Common.Entity.EntityCustomComputerAttribute
+    name: EntityCustomComputerAttribute
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Entity.EntityCustomComputerAttribute
+    name: EntityCustomComputerAttribute
+    isExternal: true
+  - name: )
+- uid: Toems_ApplicationApi.Controllers.ComputerController.Search*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComputerController.Search
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComputerController.html#Toems_ApplicationApi.Controllers.ComputerController.Search(Toems_Common.Dto.DtoSearchFilterCategories)
+  name: Search
+  nameWithType: ComputerController.Search
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.Search
+- uid: Toems_Common.Dto.DtoSearchFilterCategories
+  isExternal: true
+  name: DtoSearchFilterCategories
+  nameWithType: DtoSearchFilterCategories
+  fullName: Toems_Common.Dto.DtoSearchFilterCategories
+- uid: Toems_ApplicationApi.Controllers.ComputerController.SearchImageOnlyComputers*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComputerController.SearchImageOnlyComputers
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComputerController.html#Toems_ApplicationApi.Controllers.ComputerController.SearchImageOnlyComputers(Toems_Common.Dto.DtoSearchFilterCategories)
+  name: SearchImageOnlyComputers
+  nameWithType: ComputerController.SearchImageOnlyComputers
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.SearchImageOnlyComputers
+- uid: Toems_ApplicationApi.Controllers.ComputerController.SearchAllComputers*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComputerController.SearchAllComputers
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComputerController.html#Toems_ApplicationApi.Controllers.ComputerController.SearchAllComputers(Toems_Common.Dto.DtoSearchFilterAllComputers)
+  name: SearchAllComputers
+  nameWithType: ComputerController.SearchAllComputers
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.SearchAllComputers
+- uid: Toems_Common.Dto.DtoSearchFilterAllComputers
+  commentId: '!:Toems_Common.Dto.DtoSearchFilterAllComputers'
+  isExternal: true
+  name: DtoSearchFilterAllComputers
+  nameWithType: DtoSearchFilterAllComputers
+  fullName: Toems_Common.Dto.DtoSearchFilterAllComputers
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetArchived*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComputerController.GetArchived
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComputerController.html#Toems_ApplicationApi.Controllers.ComputerController.GetArchived(Toems_Common.Dto.DtoSearchFilterCategories)
+  name: GetArchived
+  nameWithType: ComputerController.GetArchived
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetArchived
+- uid: Toems_ApplicationApi.Controllers.ComputerController.SearchPreProvision*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComputerController.SearchPreProvision
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComputerController.html#Toems_ApplicationApi.Controllers.ComputerController.SearchPreProvision(Toems_Common.Dto.DtoSearchFilter)
+  name: SearchPreProvision
+  nameWithType: ComputerController.SearchPreProvision
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.SearchPreProvision
+- uid: Toems_Common.Dto.DtoSearchFilter
+  isExternal: true
+  name: DtoSearchFilter
+  nameWithType: DtoSearchFilter
+  fullName: Toems_Common.Dto.DtoSearchFilter
+- uid: Toems_ApplicationApi.Controllers.ComputerController.SearchForGroup*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComputerController.SearchForGroup
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComputerController.html#Toems_ApplicationApi.Controllers.ComputerController.SearchForGroup(Toems_Common.Dto.DtoSearchFilter)
+  name: SearchForGroup
+  nameWithType: ComputerController.SearchForGroup
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.SearchForGroup
+- uid: Toems_ApplicationApi.Controllers.ComputerController.ClearLastSocketResult*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComputerController.ClearLastSocketResult
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComputerController.html#Toems_ApplicationApi.Controllers.ComputerController.ClearLastSocketResult(System.Int32)
+  name: ClearLastSocketResult
+  nameWithType: ComputerController.ClearLastSocketResult
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.ClearLastSocketResult
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetLastSocketResult*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComputerController.GetLastSocketResult
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComputerController.html#Toems_ApplicationApi.Controllers.ComputerController.GetLastSocketResult(System.Int32)
+  name: GetLastSocketResult
+  nameWithType: ComputerController.GetLastSocketResult
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetLastSocketResult
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetActiveCount*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComputerController.GetActiveCount
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComputerController.html#Toems_ApplicationApi.Controllers.ComputerController.GetActiveCount
+  name: GetActiveCount
+  nameWithType: ComputerController.GetActiveCount
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetActiveCount
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetAllCount*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComputerController.GetAllCount
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComputerController.html#Toems_ApplicationApi.Controllers.ComputerController.GetAllCount
+  name: GetAllCount
+  nameWithType: ComputerController.GetAllCount
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetAllCount
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetCount*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComputerController.GetCount
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComputerController.html#Toems_ApplicationApi.Controllers.ComputerController.GetCount
+  name: GetCount
+  nameWithType: ComputerController.GetCount
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetCount
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetArchivedCount*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComputerController.GetArchivedCount
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComputerController.html#Toems_ApplicationApi.Controllers.ComputerController.GetArchivedCount
+  name: GetArchivedCount
+  nameWithType: ComputerController.GetArchivedCount
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetArchivedCount
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetImageOnlyCount*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComputerController.GetImageOnlyCount
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComputerController.html#Toems_ApplicationApi.Controllers.ComputerController.GetImageOnlyCount
+  name: GetImageOnlyCount
+  nameWithType: ComputerController.GetImageOnlyCount
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetImageOnlyCount
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetPreProvisionCount*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComputerController.GetPreProvisionCount
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComputerController.html#Toems_ApplicationApi.Controllers.ComputerController.GetPreProvisionCount
+  name: GetPreProvisionCount
+  nameWithType: ComputerController.GetPreProvisionCount
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetPreProvisionCount
+- uid: Toems_ApplicationApi.Controllers.ComputerController.Post*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComputerController.Post
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComputerController.html#Toems_ApplicationApi.Controllers.ComputerController.Post(Toems_Common.Entity.EntityComputer)
+  name: Post
+  nameWithType: ComputerController.Post
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.Post
+- uid: Toems_ApplicationApi.Controllers.ComputerController.Put*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComputerController.Put
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComputerController.html#Toems_ApplicationApi.Controllers.ComputerController.Put(System.Int32,Toems_Common.Entity.EntityComputer)
+  name: Put
+  nameWithType: ComputerController.Put
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.Put
+- uid: Toems_ApplicationApi.Controllers.ComputerController.SendMessage*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComputerController.SendMessage
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComputerController.html#Toems_ApplicationApi.Controllers.ComputerController.SendMessage(System.Int32,Toems_Common.Dto.DtoMessage)
+  name: SendMessage
+  nameWithType: ComputerController.SendMessage
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.SendMessage
+- uid: Toems_Common.Dto.DtoMessage
+  isExternal: true
+  name: DtoMessage
+  nameWithType: DtoMessage
+  fullName: Toems_Common.Dto.DtoMessage
+- uid: Toems_Common.Dto.DtoApiBoolResponse
+  isExternal: true
+  name: DtoApiBoolResponse
+  nameWithType: DtoApiBoolResponse
+  fullName: Toems_Common.Dto.DtoApiBoolResponse
+- uid: Toems_ApplicationApi.Controllers.ComputerController.ForceCheckin*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComputerController.ForceCheckin
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComputerController.html#Toems_ApplicationApi.Controllers.ComputerController.ForceCheckin(System.Int32)
+  name: ForceCheckin
+  nameWithType: ComputerController.ForceCheckin
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.ForceCheckin
+- uid: Toems_ApplicationApi.Controllers.ComputerController.CollectInventory*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComputerController.CollectInventory
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComputerController.html#Toems_ApplicationApi.Controllers.ComputerController.CollectInventory(System.Int32)
+  name: CollectInventory
+  nameWithType: ComputerController.CollectInventory
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.CollectInventory
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetUptime*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComputerController.GetUptime
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComputerController.html#Toems_ApplicationApi.Controllers.ComputerController.GetUptime(System.Int32)
+  name: GetUptime
+  nameWithType: ComputerController.GetUptime
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetUptime
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetLoggedInUsers*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComputerController.GetLoggedInUsers
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComputerController.html#Toems_ApplicationApi.Controllers.ComputerController.GetLoggedInUsers(System.Int32)
+  name: GetLoggedInUsers
+  nameWithType: ComputerController.GetLoggedInUsers
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetLoggedInUsers
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetStatus*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComputerController.GetStatus
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComputerController.html#Toems_ApplicationApi.Controllers.ComputerController.GetStatus(System.Int32)
+  name: GetStatus
+  nameWithType: ComputerController.GetStatus
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetStatus
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetServiceLog*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComputerController.GetServiceLog
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComputerController.html#Toems_ApplicationApi.Controllers.ComputerController.GetServiceLog(System.Int32)
+  name: GetServiceLog
+  nameWithType: ComputerController.GetServiceLog
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetServiceLog
+- uid: Toems_ApplicationApi.Controllers.ComputerController.Reboot*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComputerController.Reboot
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComputerController.html#Toems_ApplicationApi.Controllers.ComputerController.Reboot(System.Int32)
+  name: Reboot
+  nameWithType: ComputerController.Reboot
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.Reboot
+- uid: Toems_ApplicationApi.Controllers.ComputerController.StartRemoteControl*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComputerController.StartRemoteControl
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComputerController.html#Toems_ApplicationApi.Controllers.ComputerController.StartRemoteControl(System.Int32)
+  name: StartRemoteControl
+  nameWithType: ComputerController.StartRemoteControl
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.StartRemoteControl
+- uid: Toems_ApplicationApi.Controllers.ComputerController.Shutdown*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComputerController.Shutdown
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComputerController.html#Toems_ApplicationApi.Controllers.ComputerController.Shutdown(System.Int32)
+  name: Shutdown
+  nameWithType: ComputerController.Shutdown
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.Shutdown
+- uid: Toems_ApplicationApi.Controllers.ComputerController.Wakeup*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComputerController.Wakeup
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComputerController.html#Toems_ApplicationApi.Controllers.ComputerController.Wakeup(System.Int32)
+  name: Wakeup
+  nameWithType: ComputerController.Wakeup
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.Wakeup
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetSystemInfo*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComputerController.GetSystemInfo
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComputerController.html#Toems_ApplicationApi.Controllers.ComputerController.GetSystemInfo(System.Int32)
+  name: GetSystemInfo
+  nameWithType: ComputerController.GetSystemInfo
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetSystemInfo
+- uid: Toems_Common.Dto.DtoInventoryCollection
+  commentId: '!:Toems_Common.Dto.DtoInventoryCollection'
+  isExternal: true
+  name: DtoInventoryCollection
+  nameWithType: DtoInventoryCollection
+  fullName: Toems_Common.Dto.DtoInventoryCollection
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetSoftware*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComputerController.GetSoftware
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComputerController.html#Toems_ApplicationApi.Controllers.ComputerController.GetSoftware(System.Int32,System.String)
+  name: GetSoftware
+  nameWithType: ComputerController.GetSoftware
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetSoftware
+- uid: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntitySoftwareInventory}
+  commentId: T:System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntitySoftwareInventory}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<EntitySoftwareInventory>
+  nameWithType: IEnumerable<EntitySoftwareInventory>
+  fullName: System.Collections.Generic.IEnumerable<Toems_Common.Entity.EntitySoftwareInventory>
+  nameWithType.vb: IEnumerable(Of EntitySoftwareInventory)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Toems_Common.Entity.EntitySoftwareInventory)
+  name.vb: IEnumerable(Of EntitySoftwareInventory)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Toems_Common.Entity.EntitySoftwareInventory
+    name: EntitySoftwareInventory
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Entity.EntitySoftwareInventory
+    name: EntitySoftwareInventory
+    isExternal: true
+  - name: )
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetCertificates*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComputerController.GetCertificates
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComputerController.html#Toems_ApplicationApi.Controllers.ComputerController.GetCertificates(System.Int32,System.String)
+  name: GetCertificates
+  nameWithType: ComputerController.GetCertificates
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetCertificates
+- uid: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityCertificateInventory}
+  commentId: T:System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityCertificateInventory}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<EntityCertificateInventory>
+  nameWithType: IEnumerable<EntityCertificateInventory>
+  fullName: System.Collections.Generic.IEnumerable<Toems_Common.Entity.EntityCertificateInventory>
+  nameWithType.vb: IEnumerable(Of EntityCertificateInventory)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Toems_Common.Entity.EntityCertificateInventory)
+  name.vb: IEnumerable(Of EntityCertificateInventory)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Toems_Common.Entity.EntityCertificateInventory
+    name: EntityCertificateInventory
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Entity.EntityCertificateInventory
+    name: EntityCertificateInventory
+    isExternal: true
+  - name: )
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetUpdates*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComputerController.GetUpdates
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComputerController.html#Toems_ApplicationApi.Controllers.ComputerController.GetUpdates(System.Int32,System.String)
+  name: GetUpdates
+  nameWithType: ComputerController.GetUpdates
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetUpdates
+- uid: System.Collections.Generic.IEnumerable{Toems_Common.Dto.DtoComputerUpdates}
+  commentId: T:System.Collections.Generic.IEnumerable{Toems_Common.Dto.DtoComputerUpdates}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<DtoComputerUpdates>
+  nameWithType: IEnumerable<DtoComputerUpdates>
+  fullName: System.Collections.Generic.IEnumerable<Toems_Common.Dto.DtoComputerUpdates>
+  nameWithType.vb: IEnumerable(Of DtoComputerUpdates)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Toems_Common.Dto.DtoComputerUpdates)
+  name.vb: IEnumerable(Of DtoComputerUpdates)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Toems_Common.Dto.DtoComputerUpdates
+    name: DtoComputerUpdates
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Dto.DtoComputerUpdates
+    name: DtoComputerUpdates
+    isExternal: true
+  - name: )
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetUserLogins*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComputerController.GetUserLogins
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComputerController.html#Toems_ApplicationApi.Controllers.ComputerController.GetUserLogins(System.Int32,System.String)
+  name: GetUserLogins
+  nameWithType: ComputerController.GetUserLogins
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetUserLogins
+- uid: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityUserLogin}
+  commentId: T:System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityUserLogin}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<EntityUserLogin>
+  nameWithType: IEnumerable<EntityUserLogin>
+  fullName: System.Collections.Generic.IEnumerable<Toems_Common.Entity.EntityUserLogin>
+  nameWithType.vb: IEnumerable(Of EntityUserLogin)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Toems_Common.Entity.EntityUserLogin)
+  name.vb: IEnumerable(Of EntityUserLogin)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Toems_Common.Entity.EntityUserLogin
+    name: EntityUserLogin
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Entity.EntityUserLogin
+    name: EntityUserLogin
+    isExternal: true
+  - name: )
+- uid: Toems_ApplicationApi.Controllers.ComputerController.AddComment*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComputerController.AddComment
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComputerController.html#Toems_ApplicationApi.Controllers.ComputerController.AddComment(Toems_Common.Dto.DtoComputerComment)
+  name: AddComment
+  nameWithType: ComputerController.AddComment
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.AddComment
+- uid: Toems_Common.Dto.DtoComputerComment
+  commentId: '!:Toems_Common.Dto.DtoComputerComment'
+  isExternal: true
+  name: DtoComputerComment
+  nameWithType: DtoComputerComment
+  fullName: Toems_Common.Dto.DtoComputerComment
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetComments*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComputerController.GetComments
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComputerController.html#Toems_ApplicationApi.Controllers.ComputerController.GetComments(System.Int32)
+  name: GetComments
+  nameWithType: ComputerController.GetComments
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetComments
+- uid: System.Collections.Generic.List{Toems_Common.Dto.DtoComputerComment}
+  commentId: T:System.Collections.Generic.List{Toems_Common.Dto.DtoComputerComment}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<DtoComputerComment>
+  nameWithType: List<DtoComputerComment>
+  fullName: System.Collections.Generic.List<Toems_Common.Dto.DtoComputerComment>
+  nameWithType.vb: List(Of DtoComputerComment)
+  fullName.vb: System.Collections.Generic.List(Of Toems_Common.Dto.DtoComputerComment)
+  name.vb: List(Of DtoComputerComment)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Toems_Common.Dto.DtoComputerComment
+    name: DtoComputerComment
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Dto.DtoComputerComment
+    name: DtoComputerComment
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetAttachments*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComputerController.GetAttachments
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComputerController.html#Toems_ApplicationApi.Controllers.ComputerController.GetAttachments(System.Int32)
+  name: GetAttachments
+  nameWithType: ComputerController.GetAttachments
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetAttachments
+- uid: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityAttachment}
+  commentId: T:System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityAttachment}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<EntityAttachment>
+  nameWithType: IEnumerable<EntityAttachment>
+  fullName: System.Collections.Generic.IEnumerable<Toems_Common.Entity.EntityAttachment>
+  nameWithType.vb: IEnumerable(Of EntityAttachment)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Toems_Common.Entity.EntityAttachment)
+  name.vb: IEnumerable(Of EntityAttachment)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Toems_Common.Entity.EntityAttachment
+    name: EntityAttachment
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Entity.EntityAttachment
+    name: EntityAttachment
+    isExternal: true
+  - name: )
+- uid: Toems_ApplicationApi.Controllers.ComputerController.ComputerProcessTimes*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComputerController.ComputerProcessTimes
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComputerController.html#Toems_ApplicationApi.Controllers.ComputerController.ComputerProcessTimes(System.DateTime,System.Int32,System.Int32)
+  name: ComputerProcessTimes
+  nameWithType: ComputerController.ComputerProcessTimes
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.ComputerProcessTimes
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: System.Collections.Generic.List{Toems_Common.Dto.DtoProcessWithTime}
+  commentId: T:System.Collections.Generic.List{Toems_Common.Dto.DtoProcessWithTime}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<DtoProcessWithTime>
+  nameWithType: List<DtoProcessWithTime>
+  fullName: System.Collections.Generic.List<Toems_Common.Dto.DtoProcessWithTime>
+  nameWithType.vb: List(Of DtoProcessWithTime)
+  fullName.vb: System.Collections.Generic.List(Of Toems_Common.Dto.DtoProcessWithTime)
+  name.vb: List(Of DtoProcessWithTime)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Toems_Common.Dto.DtoProcessWithTime
+    name: DtoProcessWithTime
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Dto.DtoProcessWithTime
+    name: DtoProcessWithTime
+    isExternal: true
+  - name: )
+- uid: Toems_ApplicationApi.Controllers.ComputerController.ComputerProcessCounts*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComputerController.ComputerProcessCounts
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComputerController.html#Toems_ApplicationApi.Controllers.ComputerController.ComputerProcessCounts(System.DateTime,System.Int32,System.Int32)
+  name: ComputerProcessCounts
+  nameWithType: ComputerController.ComputerProcessCounts
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.ComputerProcessCounts
+- uid: System.Collections.Generic.List{Toems_Common.Dto.DtoProcessWithCount}
+  commentId: T:System.Collections.Generic.List{Toems_Common.Dto.DtoProcessWithCount}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<DtoProcessWithCount>
+  nameWithType: List<DtoProcessWithCount>
+  fullName: System.Collections.Generic.List<Toems_Common.Dto.DtoProcessWithCount>
+  nameWithType.vb: List(Of DtoProcessWithCount)
+  fullName.vb: System.Collections.Generic.List(Of Toems_Common.Dto.DtoProcessWithCount)
+  name.vb: List(Of DtoProcessWithCount)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Toems_Common.Dto.DtoProcessWithCount
+    name: DtoProcessWithCount
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Dto.DtoProcessWithCount
+    name: DtoProcessWithCount
+    isExternal: true
+  - name: )
+- uid: Toems_ApplicationApi.Controllers.ComputerController.ComputerProcess*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComputerController.ComputerProcess
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComputerController.html#Toems_ApplicationApi.Controllers.ComputerController.ComputerProcess(System.DateTime,System.Int32,System.Int32)
+  name: ComputerProcess
+  nameWithType: ComputerController.ComputerProcess
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.ComputerProcess
+- uid: System.Collections.Generic.List{Toems_Common.Dto.DtoProcessWithUser}
+  commentId: T:System.Collections.Generic.List{Toems_Common.Dto.DtoProcessWithUser}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<DtoProcessWithUser>
+  nameWithType: List<DtoProcessWithUser>
+  fullName: System.Collections.Generic.List<Toems_Common.Dto.DtoProcessWithUser>
+  nameWithType.vb: List(Of DtoProcessWithUser)
+  fullName.vb: System.Collections.Generic.List(Of Toems_Common.Dto.DtoProcessWithUser)
+  name.vb: List(Of DtoProcessWithUser)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Toems_Common.Dto.DtoProcessWithUser
+    name: DtoProcessWithUser
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Dto.DtoProcessWithUser
+    name: DtoProcessWithUser
+    isExternal: true
+  - name: )
+- uid: Toems_ApplicationApi.Controllers.ComputerController.StartDeploy*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComputerController.StartDeploy
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComputerController.html#Toems_ApplicationApi.Controllers.ComputerController.StartDeploy(System.Int32)
+  name: StartDeploy
+  nameWithType: ComputerController.StartDeploy
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.StartDeploy
+- uid: Toems_ApplicationApi.Controllers.ComputerController.StartDeployWinPe*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComputerController.StartDeployWinPe
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComputerController.html#Toems_ApplicationApi.Controllers.ComputerController.StartDeployWinPe(System.Int32)
+  name: StartDeployWinPe
+  nameWithType: ComputerController.StartDeployWinPe
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.StartDeployWinPe
+- uid: Toems_ApplicationApi.Controllers.ComputerController.StartUpload*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComputerController.StartUpload
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComputerController.html#Toems_ApplicationApi.Controllers.ComputerController.StartUpload(System.Int32)
+  name: StartUpload
+  nameWithType: ComputerController.StartUpload
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.StartUpload
+- uid: Toems_ApplicationApi.Controllers.ComputerController.GetComputerImagingLogs*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComputerController.GetComputerImagingLogs
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComputerController.html#Toems_ApplicationApi.Controllers.ComputerController.GetComputerImagingLogs(System.Int32)
+  name: GetComputerImagingLogs
+  nameWithType: ComputerController.GetComputerImagingLogs
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.GetComputerImagingLogs
+- uid: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityComputerLog}
+  commentId: T:System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityComputerLog}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<EntityComputerLog>
+  nameWithType: IEnumerable<EntityComputerLog>
+  fullName: System.Collections.Generic.IEnumerable<Toems_Common.Entity.EntityComputerLog>
+  nameWithType.vb: IEnumerable(Of EntityComputerLog)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Toems_Common.Entity.EntityComputerLog)
+  name.vb: IEnumerable(Of EntityComputerLog)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Toems_Common.Entity.EntityComputerLog
+    name: EntityComputerLog
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Entity.EntityComputerLog
+    name: EntityComputerLog
+    isExternal: true
+  - name: )
+- uid: Toems_ApplicationApi.Controllers.ComputerController.RunModule*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ComputerController.RunModule
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ComputerController.html#Toems_ApplicationApi.Controllers.ComputerController.RunModule(System.Int32,System.String)
+  name: RunModule
+  nameWithType: ComputerController.RunModule
+  fullName: Toems_ApplicationApi.Controllers.ComputerController.RunModule

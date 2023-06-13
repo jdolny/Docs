@@ -1,0 +1,956 @@
+### YamlMime:ManagedReference
+items:
+- uid: Toems_ApplicationApi.Controllers.ClientComServerController
+  commentId: T:Toems_ApplicationApi.Controllers.ClientComServerController
+  id: ClientComServerController
+  parent: Toems_ApplicationApi.Controllers
+  children:
+  - Toems_ApplicationApi.Controllers.ClientComServerController.#ctor
+  - Toems_ApplicationApi.Controllers.ClientComServerController.Delete(System.Int32)
+  - Toems_ApplicationApi.Controllers.ClientComServerController.EditDefaultBootMenu(Toems_Common.Dto.DtoCoreScript)
+  - Toems_ApplicationApi.Controllers.ClientComServerController.GenerateCert(System.Int32)
+  - Toems_ApplicationApi.Controllers.ClientComServerController.GenerateRemoteAccessCert(System.Int32)
+  - Toems_ApplicationApi.Controllers.ClientComServerController.Get
+  - Toems_ApplicationApi.Controllers.ClientComServerController.Get(System.Int32)
+  - Toems_ApplicationApi.Controllers.ClientComServerController.GetCount
+  - Toems_ApplicationApi.Controllers.ClientComServerController.GetDefaultBootFilePath(System.String,System.Int32)
+  - Toems_ApplicationApi.Controllers.ClientComServerController.GetReplicationProcesses(System.Int32)
+  - Toems_ApplicationApi.Controllers.ClientComServerController.KillReplicationProcess(Toems_Common.Dto.DtoComPid)
+  - Toems_ApplicationApi.Controllers.ClientComServerController.Post(Toems_Common.Entity.EntityClientComServer)
+  - Toems_ApplicationApi.Controllers.ClientComServerController.Put(System.Int32,Toems_Common.Entity.EntityClientComServer)
+  - Toems_ApplicationApi.Controllers.ClientComServerController.ReadFileText(System.String,System.Int32)
+  - Toems_ApplicationApi.Controllers.ClientComServerController.Search(Toems_Common.Dto.DtoSearchFilter)
+  langs:
+  - csharp
+  - vb
+  name: ClientComServerController
+  nameWithType: ClientComServerController
+  fullName: Toems_ApplicationApi.Controllers.ClientComServerController
+  type: Class
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: 'public class ClientComServerController : ApiController'
+    content.vb: Public Class ClientComServerController Inherits ApiController
+  inheritance:
+  - System.Object
+- uid: Toems_ApplicationApi.Controllers.ClientComServerController.#ctor
+  commentId: M:Toems_ApplicationApi.Controllers.ClientComServerController.#ctor
+  id: '#ctor'
+  parent: Toems_ApplicationApi.Controllers.ClientComServerController
+  langs:
+  - csharp
+  - vb
+  name: ClientComServerController()
+  nameWithType: ClientComServerController.ClientComServerController()
+  fullName: Toems_ApplicationApi.Controllers.ClientComServerController.ClientComServerController()
+  type: Constructor
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: public ClientComServerController()
+    content.vb: Public Sub New()
+  overload: Toems_ApplicationApi.Controllers.ClientComServerController.#ctor*
+  nameWithType.vb: ClientComServerController.New()
+  fullName.vb: Toems_ApplicationApi.Controllers.ClientComServerController.New()
+  name.vb: New()
+- uid: Toems_ApplicationApi.Controllers.ClientComServerController.Delete(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ClientComServerController.Delete(System.Int32)
+  id: Delete(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ClientComServerController
+  langs:
+  - csharp
+  - vb
+  name: Delete(int)
+  nameWithType: ClientComServerController.Delete(int)
+  fullName: Toems_ApplicationApi.Controllers.ClientComServerController.Delete(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "Administrator")]
+
+      public DtoActionResult Delete(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Dto.DtoActionResult
+    content.vb: >-
+      <CustomAuth(Permission:="Administrator")>
+
+      Public Function Delete(id As Integer) As DtoActionResult
+  overload: Toems_ApplicationApi.Controllers.ClientComServerController.Delete*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: Administrator
+  nameWithType.vb: ClientComServerController.Delete(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ClientComServerController.Delete(Integer)
+  name.vb: Delete(Integer)
+- uid: Toems_ApplicationApi.Controllers.ClientComServerController.GetDefaultBootFilePath(System.String,System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ClientComServerController.GetDefaultBootFilePath(System.String,System.Int32)
+  id: GetDefaultBootFilePath(System.String,System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ClientComServerController
+  langs:
+  - csharp
+  - vb
+  name: GetDefaultBootFilePath(string, int)
+  nameWithType: ClientComServerController.GetDefaultBootFilePath(string, int)
+  fullName: Toems_ApplicationApi.Controllers.ClientComServerController.GetDefaultBootFilePath(string, int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "Administrator")]
+
+      public DtoApiStringResponse GetDefaultBootFilePath(string type, int id)
+    parameters:
+    - id: type
+      type: System.String
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Dto.DtoApiStringResponse
+    content.vb: >-
+      <CustomAuth(Permission:="Administrator")>
+
+      Public Function GetDefaultBootFilePath(type As String, id As Integer) As DtoApiStringResponse
+  overload: Toems_ApplicationApi.Controllers.ClientComServerController.GetDefaultBootFilePath*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: Administrator
+  nameWithType.vb: ClientComServerController.GetDefaultBootFilePath(String, Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ClientComServerController.GetDefaultBootFilePath(String, Integer)
+  name.vb: GetDefaultBootFilePath(String, Integer)
+- uid: Toems_ApplicationApi.Controllers.ClientComServerController.EditDefaultBootMenu(Toems_Common.Dto.DtoCoreScript)
+  commentId: M:Toems_ApplicationApi.Controllers.ClientComServerController.EditDefaultBootMenu(Toems_Common.Dto.DtoCoreScript)
+  id: EditDefaultBootMenu(Toems_Common.Dto.DtoCoreScript)
+  parent: Toems_ApplicationApi.Controllers.ClientComServerController
+  langs:
+  - csharp
+  - vb
+  name: EditDefaultBootMenu(DtoCoreScript)
+  nameWithType: ClientComServerController.EditDefaultBootMenu(DtoCoreScript)
+  fullName: Toems_ApplicationApi.Controllers.ClientComServerController.EditDefaultBootMenu(Toems_Common.Dto.DtoCoreScript)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "Administrator")]
+
+      public DtoApiBoolResponse EditDefaultBootMenu(DtoCoreScript script)
+    parameters:
+    - id: script
+      type: Toems_Common.Dto.DtoCoreScript
+    return:
+      type: Toems_Common.Dto.DtoApiBoolResponse
+    content.vb: >-
+      <CustomAuth(Permission:="Administrator")>
+
+      Public Function EditDefaultBootMenu(script As DtoCoreScript) As DtoApiBoolResponse
+  overload: Toems_ApplicationApi.Controllers.ClientComServerController.EditDefaultBootMenu*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: Administrator
+- uid: Toems_ApplicationApi.Controllers.ClientComServerController.ReadFileText(System.String,System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ClientComServerController.ReadFileText(System.String,System.Int32)
+  id: ReadFileText(System.String,System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ClientComServerController
+  langs:
+  - csharp
+  - vb
+  name: ReadFileText(string, int)
+  nameWithType: ClientComServerController.ReadFileText(string, int)
+  fullName: Toems_ApplicationApi.Controllers.ClientComServerController.ReadFileText(string, int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "Administrator")]
+
+      public DtoApiStringResponse ReadFileText(string path, int comServerId)
+    parameters:
+    - id: path
+      type: System.String
+    - id: comServerId
+      type: System.Int32
+    return:
+      type: Toems_Common.Dto.DtoApiStringResponse
+    content.vb: >-
+      <CustomAuth(Permission:="Administrator")>
+
+      Public Function ReadFileText(path As String, comServerId As Integer) As DtoApiStringResponse
+  overload: Toems_ApplicationApi.Controllers.ClientComServerController.ReadFileText*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: Administrator
+  nameWithType.vb: ClientComServerController.ReadFileText(String, Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ClientComServerController.ReadFileText(String, Integer)
+  name.vb: ReadFileText(String, Integer)
+- uid: Toems_ApplicationApi.Controllers.ClientComServerController.Get(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ClientComServerController.Get(System.Int32)
+  id: Get(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ClientComServerController
+  langs:
+  - csharp
+  - vb
+  name: Get(int)
+  nameWithType: ClientComServerController.Get(int)
+  fullName: Toems_ApplicationApi.Controllers.ClientComServerController.Get(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "Administrator")]
+
+      public EntityClientComServer Get(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Entity.EntityClientComServer
+    content.vb: >-
+      <CustomAuth(Permission:="Administrator")>
+
+      Public Function [Get](id As Integer) As EntityClientComServer
+  overload: Toems_ApplicationApi.Controllers.ClientComServerController.Get*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: Administrator
+  nameWithType.vb: ClientComServerController.Get(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ClientComServerController.Get(Integer)
+  name.vb: Get(Integer)
+- uid: Toems_ApplicationApi.Controllers.ClientComServerController.Get
+  commentId: M:Toems_ApplicationApi.Controllers.ClientComServerController.Get
+  id: Get
+  parent: Toems_ApplicationApi.Controllers.ClientComServerController
+  langs:
+  - csharp
+  - vb
+  name: Get()
+  nameWithType: ClientComServerController.Get()
+  fullName: Toems_ApplicationApi.Controllers.ClientComServerController.Get()
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: public IEnumerable<EntityClientComServer> Get()
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityClientComServer}
+    content.vb: Public Function [Get]() As IEnumerable(Of EntityClientComServer)
+  overload: Toems_ApplicationApi.Controllers.ClientComServerController.Get*
+- uid: Toems_ApplicationApi.Controllers.ClientComServerController.Search(Toems_Common.Dto.DtoSearchFilter)
+  commentId: M:Toems_ApplicationApi.Controllers.ClientComServerController.Search(Toems_Common.Dto.DtoSearchFilter)
+  id: Search(Toems_Common.Dto.DtoSearchFilter)
+  parent: Toems_ApplicationApi.Controllers.ClientComServerController
+  langs:
+  - csharp
+  - vb
+  name: Search(DtoSearchFilter)
+  nameWithType: ClientComServerController.Search(DtoSearchFilter)
+  fullName: Toems_ApplicationApi.Controllers.ClientComServerController.Search(Toems_Common.Dto.DtoSearchFilter)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "Administrator")]
+
+      public IEnumerable<EntityClientComServer> Search(DtoSearchFilter filter)
+    parameters:
+    - id: filter
+      type: Toems_Common.Dto.DtoSearchFilter
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityClientComServer}
+    content.vb: >-
+      <CustomAuth(Permission:="Administrator")>
+
+      Public Function Search(filter As DtoSearchFilter) As IEnumerable(Of EntityClientComServer)
+  overload: Toems_ApplicationApi.Controllers.ClientComServerController.Search*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: Administrator
+- uid: Toems_ApplicationApi.Controllers.ClientComServerController.GetCount
+  commentId: M:Toems_ApplicationApi.Controllers.ClientComServerController.GetCount
+  id: GetCount
+  parent: Toems_ApplicationApi.Controllers.ClientComServerController
+  langs:
+  - csharp
+  - vb
+  name: GetCount()
+  nameWithType: ClientComServerController.GetCount()
+  fullName: Toems_ApplicationApi.Controllers.ClientComServerController.GetCount()
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "Administrator")]
+
+      public DtoApiStringResponse GetCount()
+    return:
+      type: Toems_Common.Dto.DtoApiStringResponse
+    content.vb: >-
+      <CustomAuth(Permission:="Administrator")>
+
+      Public Function GetCount() As DtoApiStringResponse
+  overload: Toems_ApplicationApi.Controllers.ClientComServerController.GetCount*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: Administrator
+- uid: Toems_ApplicationApi.Controllers.ClientComServerController.GetReplicationProcesses(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ClientComServerController.GetReplicationProcesses(System.Int32)
+  id: GetReplicationProcesses(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ClientComServerController
+  langs:
+  - csharp
+  - vb
+  name: GetReplicationProcesses(int)
+  nameWithType: ClientComServerController.GetReplicationProcesses(int)
+  fullName: Toems_ApplicationApi.Controllers.ClientComServerController.GetReplicationProcesses(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "Administrator")]
+
+      public List<DtoReplicationProcess> GetReplicationProcesses(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.Collections.Generic.List{Toems_Common.Dto.DtoReplicationProcess}
+    content.vb: >-
+      <CustomAuth(Permission:="Administrator")>
+
+      Public Function GetReplicationProcesses(id As Integer) As List(Of DtoReplicationProcess)
+  overload: Toems_ApplicationApi.Controllers.ClientComServerController.GetReplicationProcesses*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: Administrator
+  nameWithType.vb: ClientComServerController.GetReplicationProcesses(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ClientComServerController.GetReplicationProcesses(Integer)
+  name.vb: GetReplicationProcesses(Integer)
+- uid: Toems_ApplicationApi.Controllers.ClientComServerController.KillReplicationProcess(Toems_Common.Dto.DtoComPid)
+  commentId: M:Toems_ApplicationApi.Controllers.ClientComServerController.KillReplicationProcess(Toems_Common.Dto.DtoComPid)
+  id: KillReplicationProcess(Toems_Common.Dto.DtoComPid)
+  parent: Toems_ApplicationApi.Controllers.ClientComServerController
+  langs:
+  - csharp
+  - vb
+  name: KillReplicationProcess(DtoComPid)
+  nameWithType: ClientComServerController.KillReplicationProcess(DtoComPid)
+  fullName: Toems_ApplicationApi.Controllers.ClientComServerController.KillReplicationProcess(Toems_Common.Dto.DtoComPid)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "Administrator")]
+
+      public DtoApiBoolResponse KillReplicationProcess(DtoComPid comPid)
+    parameters:
+    - id: comPid
+      type: Toems_Common.Dto.DtoComPid
+    return:
+      type: Toems_Common.Dto.DtoApiBoolResponse
+    content.vb: >-
+      <CustomAuth(Permission:="Administrator")>
+
+      Public Function KillReplicationProcess(comPid As DtoComPid) As DtoApiBoolResponse
+  overload: Toems_ApplicationApi.Controllers.ClientComServerController.KillReplicationProcess*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: Administrator
+- uid: Toems_ApplicationApi.Controllers.ClientComServerController.Post(Toems_Common.Entity.EntityClientComServer)
+  commentId: M:Toems_ApplicationApi.Controllers.ClientComServerController.Post(Toems_Common.Entity.EntityClientComServer)
+  id: Post(Toems_Common.Entity.EntityClientComServer)
+  parent: Toems_ApplicationApi.Controllers.ClientComServerController
+  langs:
+  - csharp
+  - vb
+  name: Post(EntityClientComServer)
+  nameWithType: ClientComServerController.Post(EntityClientComServer)
+  fullName: Toems_ApplicationApi.Controllers.ClientComServerController.Post(Toems_Common.Entity.EntityClientComServer)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "Administrator")]
+
+      public DtoActionResult Post(EntityClientComServer server)
+    parameters:
+    - id: server
+      type: Toems_Common.Entity.EntityClientComServer
+    return:
+      type: Toems_Common.Dto.DtoActionResult
+    content.vb: >-
+      <CustomAuth(Permission:="Administrator")>
+
+      Public Function Post(server As EntityClientComServer) As DtoActionResult
+  overload: Toems_ApplicationApi.Controllers.ClientComServerController.Post*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: Administrator
+- uid: Toems_ApplicationApi.Controllers.ClientComServerController.Put(System.Int32,Toems_Common.Entity.EntityClientComServer)
+  commentId: M:Toems_ApplicationApi.Controllers.ClientComServerController.Put(System.Int32,Toems_Common.Entity.EntityClientComServer)
+  id: Put(System.Int32,Toems_Common.Entity.EntityClientComServer)
+  parent: Toems_ApplicationApi.Controllers.ClientComServerController
+  langs:
+  - csharp
+  - vb
+  name: Put(int, EntityClientComServer)
+  nameWithType: ClientComServerController.Put(int, EntityClientComServer)
+  fullName: Toems_ApplicationApi.Controllers.ClientComServerController.Put(int, Toems_Common.Entity.EntityClientComServer)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "Administrator")]
+
+      public DtoActionResult Put(int id, EntityClientComServer account)
+    parameters:
+    - id: id
+      type: System.Int32
+    - id: account
+      type: Toems_Common.Entity.EntityClientComServer
+    return:
+      type: Toems_Common.Dto.DtoActionResult
+    content.vb: >-
+      <CustomAuth(Permission:="Administrator")>
+
+      Public Function Put(id As Integer, account As EntityClientComServer) As DtoActionResult
+  overload: Toems_ApplicationApi.Controllers.ClientComServerController.Put*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: Administrator
+  nameWithType.vb: ClientComServerController.Put(Integer, EntityClientComServer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ClientComServerController.Put(Integer, Toems_Common.Entity.EntityClientComServer)
+  name.vb: Put(Integer, EntityClientComServer)
+- uid: Toems_ApplicationApi.Controllers.ClientComServerController.GenerateCert(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ClientComServerController.GenerateCert(System.Int32)
+  id: GenerateCert(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ClientComServerController
+  langs:
+  - csharp
+  - vb
+  name: GenerateCert(int)
+  nameWithType: ClientComServerController.GenerateCert(int)
+  fullName: Toems_ApplicationApi.Controllers.ClientComServerController.GenerateCert(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "Administrator")]
+
+      public HttpResponseMessage GenerateCert(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.Net.Http.HttpResponseMessage
+    content.vb: >-
+      <CustomAuth(Permission:="Administrator")>
+
+      Public Function GenerateCert(id As Integer) As HttpResponseMessage
+  overload: Toems_ApplicationApi.Controllers.ClientComServerController.GenerateCert*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: Administrator
+  nameWithType.vb: ClientComServerController.GenerateCert(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ClientComServerController.GenerateCert(Integer)
+  name.vb: GenerateCert(Integer)
+- uid: Toems_ApplicationApi.Controllers.ClientComServerController.GenerateRemoteAccessCert(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.ClientComServerController.GenerateRemoteAccessCert(System.Int32)
+  id: GenerateRemoteAccessCert(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.ClientComServerController
+  langs:
+  - csharp
+  - vb
+  name: GenerateRemoteAccessCert(int)
+  nameWithType: ClientComServerController.GenerateRemoteAccessCert(int)
+  fullName: Toems_ApplicationApi.Controllers.ClientComServerController.GenerateRemoteAccessCert(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "Administrator")]
+
+      public HttpResponseMessage GenerateRemoteAccessCert(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.Net.Http.HttpResponseMessage
+    content.vb: >-
+      <CustomAuth(Permission:="Administrator")>
+
+      Public Function GenerateRemoteAccessCert(id As Integer) As HttpResponseMessage
+  overload: Toems_ApplicationApi.Controllers.ClientComServerController.GenerateRemoteAccessCert*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: Administrator
+  nameWithType.vb: ClientComServerController.GenerateRemoteAccessCert(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.ClientComServerController.GenerateRemoteAccessCert(Integer)
+  name.vb: GenerateRemoteAccessCert(Integer)
+references:
+- uid: Toems_ApplicationApi.Controllers
+  commentId: N:Toems_ApplicationApi.Controllers
+  isExternal: true
+  href: Toems_ApplicationApi.html
+  name: Toems_ApplicationApi.Controllers
+  nameWithType: Toems_ApplicationApi.Controllers
+  fullName: Toems_ApplicationApi.Controllers
+  spec.csharp:
+  - uid: Toems_ApplicationApi
+    name: Toems_ApplicationApi
+    isExternal: true
+    href: Toems_ApplicationApi.html
+  - name: .
+  - uid: Toems_ApplicationApi.Controllers
+    name: Controllers
+    isExternal: true
+    href: Toems_ApplicationApi.Controllers.html
+  spec.vb:
+  - uid: Toems_ApplicationApi
+    name: Toems_ApplicationApi
+    isExternal: true
+    href: Toems_ApplicationApi.html
+  - name: .
+  - uid: Toems_ApplicationApi.Controllers
+    name: Controllers
+    isExternal: true
+    href: Toems_ApplicationApi.Controllers.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Toems_ApplicationApi.Controllers.ClientComServerController.#ctor*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ClientComServerController.#ctor
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ClientComServerController.html#Toems_ApplicationApi.Controllers.ClientComServerController.#ctor
+  name: ClientComServerController
+  nameWithType: ClientComServerController.ClientComServerController
+  fullName: Toems_ApplicationApi.Controllers.ClientComServerController.ClientComServerController
+  nameWithType.vb: ClientComServerController.New
+  fullName.vb: Toems_ApplicationApi.Controllers.ClientComServerController.New
+  name.vb: New
+- uid: Toems_ApplicationApi.Controllers.ClientComServerController.Delete*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ClientComServerController.Delete
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ClientComServerController.html#Toems_ApplicationApi.Controllers.ClientComServerController.Delete(System.Int32)
+  name: Delete
+  nameWithType: ClientComServerController.Delete
+  fullName: Toems_ApplicationApi.Controllers.ClientComServerController.Delete
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Toems_Common.Dto.DtoActionResult
+  isExternal: true
+  name: DtoActionResult
+  nameWithType: DtoActionResult
+  fullName: Toems_Common.Dto.DtoActionResult
+- uid: Toems_ApplicationApi.Controllers.ClientComServerController.GetDefaultBootFilePath*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ClientComServerController.GetDefaultBootFilePath
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ClientComServerController.html#Toems_ApplicationApi.Controllers.ClientComServerController.GetDefaultBootFilePath(System.String,System.Int32)
+  name: GetDefaultBootFilePath
+  nameWithType: ClientComServerController.GetDefaultBootFilePath
+  fullName: Toems_ApplicationApi.Controllers.ClientComServerController.GetDefaultBootFilePath
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Toems_Common.Dto.DtoApiStringResponse
+  isExternal: true
+  name: DtoApiStringResponse
+  nameWithType: DtoApiStringResponse
+  fullName: Toems_Common.Dto.DtoApiStringResponse
+- uid: Toems_ApplicationApi.Controllers.ClientComServerController.EditDefaultBootMenu*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ClientComServerController.EditDefaultBootMenu
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ClientComServerController.html#Toems_ApplicationApi.Controllers.ClientComServerController.EditDefaultBootMenu(Toems_Common.Dto.DtoCoreScript)
+  name: EditDefaultBootMenu
+  nameWithType: ClientComServerController.EditDefaultBootMenu
+  fullName: Toems_ApplicationApi.Controllers.ClientComServerController.EditDefaultBootMenu
+- uid: Toems_Common.Dto.DtoCoreScript
+  commentId: '!:Toems_Common.Dto.DtoCoreScript'
+  isExternal: true
+  name: DtoCoreScript
+  nameWithType: DtoCoreScript
+  fullName: Toems_Common.Dto.DtoCoreScript
+- uid: Toems_Common.Dto.DtoApiBoolResponse
+  isExternal: true
+  name: DtoApiBoolResponse
+  nameWithType: DtoApiBoolResponse
+  fullName: Toems_Common.Dto.DtoApiBoolResponse
+- uid: Toems_ApplicationApi.Controllers.ClientComServerController.ReadFileText*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ClientComServerController.ReadFileText
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ClientComServerController.html#Toems_ApplicationApi.Controllers.ClientComServerController.ReadFileText(System.String,System.Int32)
+  name: ReadFileText
+  nameWithType: ClientComServerController.ReadFileText
+  fullName: Toems_ApplicationApi.Controllers.ClientComServerController.ReadFileText
+- uid: Toems_ApplicationApi.Controllers.ClientComServerController.Get*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ClientComServerController.Get
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ClientComServerController.html#Toems_ApplicationApi.Controllers.ClientComServerController.Get(System.Int32)
+  name: Get
+  nameWithType: ClientComServerController.Get
+  fullName: Toems_ApplicationApi.Controllers.ClientComServerController.Get
+- uid: Toems_Common.Entity.EntityClientComServer
+  isExternal: true
+  name: EntityClientComServer
+  nameWithType: EntityClientComServer
+  fullName: Toems_Common.Entity.EntityClientComServer
+- uid: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityClientComServer}
+  commentId: T:System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntityClientComServer}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<EntityClientComServer>
+  nameWithType: IEnumerable<EntityClientComServer>
+  fullName: System.Collections.Generic.IEnumerable<Toems_Common.Entity.EntityClientComServer>
+  nameWithType.vb: IEnumerable(Of EntityClientComServer)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Toems_Common.Entity.EntityClientComServer)
+  name.vb: IEnumerable(Of EntityClientComServer)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Toems_Common.Entity.EntityClientComServer
+    name: EntityClientComServer
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Entity.EntityClientComServer
+    name: EntityClientComServer
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Toems_ApplicationApi.Controllers.ClientComServerController.Search*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ClientComServerController.Search
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ClientComServerController.html#Toems_ApplicationApi.Controllers.ClientComServerController.Search(Toems_Common.Dto.DtoSearchFilter)
+  name: Search
+  nameWithType: ClientComServerController.Search
+  fullName: Toems_ApplicationApi.Controllers.ClientComServerController.Search
+- uid: Toems_Common.Dto.DtoSearchFilter
+  isExternal: true
+  name: DtoSearchFilter
+  nameWithType: DtoSearchFilter
+  fullName: Toems_Common.Dto.DtoSearchFilter
+- uid: Toems_ApplicationApi.Controllers.ClientComServerController.GetCount*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ClientComServerController.GetCount
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ClientComServerController.html#Toems_ApplicationApi.Controllers.ClientComServerController.GetCount
+  name: GetCount
+  nameWithType: ClientComServerController.GetCount
+  fullName: Toems_ApplicationApi.Controllers.ClientComServerController.GetCount
+- uid: Toems_ApplicationApi.Controllers.ClientComServerController.GetReplicationProcesses*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ClientComServerController.GetReplicationProcesses
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ClientComServerController.html#Toems_ApplicationApi.Controllers.ClientComServerController.GetReplicationProcesses(System.Int32)
+  name: GetReplicationProcesses
+  nameWithType: ClientComServerController.GetReplicationProcesses
+  fullName: Toems_ApplicationApi.Controllers.ClientComServerController.GetReplicationProcesses
+- uid: System.Collections.Generic.List{Toems_Common.Dto.DtoReplicationProcess}
+  commentId: T:System.Collections.Generic.List{Toems_Common.Dto.DtoReplicationProcess}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<DtoReplicationProcess>
+  nameWithType: List<DtoReplicationProcess>
+  fullName: System.Collections.Generic.List<Toems_Common.Dto.DtoReplicationProcess>
+  nameWithType.vb: List(Of DtoReplicationProcess)
+  fullName.vb: System.Collections.Generic.List(Of Toems_Common.Dto.DtoReplicationProcess)
+  name.vb: List(Of DtoReplicationProcess)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Toems_Common.Dto.DtoReplicationProcess
+    name: DtoReplicationProcess
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Dto.DtoReplicationProcess
+    name: DtoReplicationProcess
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Toems_ApplicationApi.Controllers.ClientComServerController.KillReplicationProcess*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ClientComServerController.KillReplicationProcess
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ClientComServerController.html#Toems_ApplicationApi.Controllers.ClientComServerController.KillReplicationProcess(Toems_Common.Dto.DtoComPid)
+  name: KillReplicationProcess
+  nameWithType: ClientComServerController.KillReplicationProcess
+  fullName: Toems_ApplicationApi.Controllers.ClientComServerController.KillReplicationProcess
+- uid: Toems_Common.Dto.DtoComPid
+  commentId: '!:Toems_Common.Dto.DtoComPid'
+  isExternal: true
+  name: DtoComPid
+  nameWithType: DtoComPid
+  fullName: Toems_Common.Dto.DtoComPid
+- uid: Toems_ApplicationApi.Controllers.ClientComServerController.Post*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ClientComServerController.Post
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ClientComServerController.html#Toems_ApplicationApi.Controllers.ClientComServerController.Post(Toems_Common.Entity.EntityClientComServer)
+  name: Post
+  nameWithType: ClientComServerController.Post
+  fullName: Toems_ApplicationApi.Controllers.ClientComServerController.Post
+- uid: Toems_ApplicationApi.Controllers.ClientComServerController.Put*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ClientComServerController.Put
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ClientComServerController.html#Toems_ApplicationApi.Controllers.ClientComServerController.Put(System.Int32,Toems_Common.Entity.EntityClientComServer)
+  name: Put
+  nameWithType: ClientComServerController.Put
+  fullName: Toems_ApplicationApi.Controllers.ClientComServerController.Put
+- uid: Toems_ApplicationApi.Controllers.ClientComServerController.GenerateCert*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ClientComServerController.GenerateCert
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ClientComServerController.html#Toems_ApplicationApi.Controllers.ClientComServerController.GenerateCert(System.Int32)
+  name: GenerateCert
+  nameWithType: ClientComServerController.GenerateCert
+  fullName: Toems_ApplicationApi.Controllers.ClientComServerController.GenerateCert
+- uid: System.Net.Http.HttpResponseMessage
+  isExternal: true
+  name: HttpResponseMessage
+  nameWithType: HttpResponseMessage
+  fullName: System.Net.Http.HttpResponseMessage
+- uid: Toems_ApplicationApi.Controllers.ClientComServerController.GenerateRemoteAccessCert*
+  commentId: Overload:Toems_ApplicationApi.Controllers.ClientComServerController.GenerateRemoteAccessCert
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.ClientComServerController.html#Toems_ApplicationApi.Controllers.ClientComServerController.GenerateRemoteAccessCert(System.Int32)
+  name: GenerateRemoteAccessCert
+  nameWithType: ClientComServerController.GenerateRemoteAccessCert
+  fullName: Toems_ApplicationApi.Controllers.ClientComServerController.GenerateRemoteAccessCert

@@ -1,0 +1,377 @@
+### YamlMime:ManagedReference
+items:
+- uid: Toems_ApplicationApi.Startup
+  commentId: T:Toems_ApplicationApi.Startup
+  id: Startup
+  parent: Toems_ApplicationApi
+  children:
+  - Toems_ApplicationApi.Startup.#ctor
+  - Toems_ApplicationApi.Startup.Configuration(Owin.IAppBuilder)
+  - Toems_ApplicationApi.Startup.OAuthOptions
+  langs:
+  - csharp
+  - vb
+  name: Startup
+  nameWithType: Startup
+  fullName: Toems_ApplicationApi.Startup
+  type: Class
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi
+  syntax:
+    content: public class Startup
+    content.vb: Public Class Startup
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Toems_ApplicationApi.Startup.Configuration(Owin.IAppBuilder)
+  commentId: M:Toems_ApplicationApi.Startup.Configuration(Owin.IAppBuilder)
+  id: Configuration(Owin.IAppBuilder)
+  parent: Toems_ApplicationApi.Startup
+  langs:
+  - csharp
+  - vb
+  name: Configuration(IAppBuilder)
+  nameWithType: Startup.Configuration(IAppBuilder)
+  fullName: Toems_ApplicationApi.Startup.Configuration(Owin.IAppBuilder)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi
+  syntax:
+    content: public void Configuration(IAppBuilder app)
+    parameters:
+    - id: app
+      type: Owin.IAppBuilder
+    content.vb: Public Sub Configuration(app As IAppBuilder)
+  overload: Toems_ApplicationApi.Startup.Configuration*
+- uid: Toems_ApplicationApi.Startup.#ctor
+  commentId: M:Toems_ApplicationApi.Startup.#ctor
+  id: '#ctor'
+  parent: Toems_ApplicationApi.Startup
+  langs:
+  - csharp
+  - vb
+  name: Startup()
+  nameWithType: Startup.Startup()
+  fullName: Toems_ApplicationApi.Startup.Startup()
+  type: Constructor
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi
+  syntax:
+    content: public Startup()
+    content.vb: Public Sub New()
+  overload: Toems_ApplicationApi.Startup.#ctor*
+  nameWithType.vb: Startup.New()
+  fullName.vb: Toems_ApplicationApi.Startup.New()
+  name.vb: New()
+- uid: Toems_ApplicationApi.Startup.OAuthOptions
+  commentId: P:Toems_ApplicationApi.Startup.OAuthOptions
+  id: OAuthOptions
+  parent: Toems_ApplicationApi.Startup
+  langs:
+  - csharp
+  - vb
+  name: OAuthOptions
+  nameWithType: Startup.OAuthOptions
+  fullName: Toems_ApplicationApi.Startup.OAuthOptions
+  type: Property
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi
+  syntax:
+    content: public static OAuthAuthorizationServerOptions OAuthOptions { get; }
+    parameters: []
+    return:
+      type: Microsoft.Owin.Security.OAuth.OAuthAuthorizationServerOptions
+    content.vb: Public Shared ReadOnly Property OAuthOptions As OAuthAuthorizationServerOptions
+  overload: Toems_ApplicationApi.Startup.OAuthOptions*
+references:
+- uid: Toems_ApplicationApi
+  commentId: N:Toems_ApplicationApi
+  isExternal: true
+  href: Toems_ApplicationApi.html
+  name: Toems_ApplicationApi
+  nameWithType: Toems_ApplicationApi
+  fullName: Toems_ApplicationApi
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Toems_ApplicationApi.Startup.Configuration*
+  commentId: Overload:Toems_ApplicationApi.Startup.Configuration
+  isExternal: true
+  href: Toems_ApplicationApi.Startup.html#Toems_ApplicationApi.Startup.Configuration(Owin.IAppBuilder)
+  name: Configuration
+  nameWithType: Startup.Configuration
+  fullName: Toems_ApplicationApi.Startup.Configuration
+- uid: Owin.IAppBuilder
+  commentId: '!:Owin.IAppBuilder'
+  isExternal: true
+  name: IAppBuilder
+  nameWithType: IAppBuilder
+  fullName: Owin.IAppBuilder
+- uid: Toems_ApplicationApi.Startup.#ctor*
+  commentId: Overload:Toems_ApplicationApi.Startup.#ctor
+  isExternal: true
+  href: Toems_ApplicationApi.Startup.html#Toems_ApplicationApi.Startup.#ctor
+  name: Startup
+  nameWithType: Startup.Startup
+  fullName: Toems_ApplicationApi.Startup.Startup
+  nameWithType.vb: Startup.New
+  fullName.vb: Toems_ApplicationApi.Startup.New
+  name.vb: New
+- uid: Toems_ApplicationApi.Startup.OAuthOptions*
+  commentId: Overload:Toems_ApplicationApi.Startup.OAuthOptions
+  isExternal: true
+  href: Toems_ApplicationApi.Startup.html#Toems_ApplicationApi.Startup.OAuthOptions
+  name: OAuthOptions
+  nameWithType: Startup.OAuthOptions
+  fullName: Toems_ApplicationApi.Startup.OAuthOptions
+- uid: Microsoft.Owin.Security.OAuth.OAuthAuthorizationServerOptions
+  commentId: '!:Microsoft.Owin.Security.OAuth.OAuthAuthorizationServerOptions'
+  isExternal: true
+  name: OAuthAuthorizationServerOptions
+  nameWithType: OAuthAuthorizationServerOptions
+  fullName: Microsoft.Owin.Security.OAuth.OAuthAuthorizationServerOptions

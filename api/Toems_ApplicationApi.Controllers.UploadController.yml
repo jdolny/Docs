@@ -1,0 +1,411 @@
+### YamlMime:ManagedReference
+items:
+- uid: Toems_ApplicationApi.Controllers.UploadController
+  commentId: T:Toems_ApplicationApi.Controllers.UploadController
+  id: UploadController
+  parent: Toems_ApplicationApi.Controllers
+  children:
+  - Toems_ApplicationApi.Controllers.UploadController.#ctor
+  - Toems_ApplicationApi.Controllers.UploadController.AttachmentChunkingComplete
+  - Toems_ApplicationApi.Controllers.UploadController.ChunkingComplete
+  - Toems_ApplicationApi.Controllers.UploadController.Context
+  - Toems_ApplicationApi.Controllers.UploadController.Request
+  - Toems_ApplicationApi.Controllers.UploadController.Response
+  - Toems_ApplicationApi.Controllers.UploadController.UploadAttachment
+  - Toems_ApplicationApi.Controllers.UploadController.UploadClientMsi
+  - Toems_ApplicationApi.Controllers.UploadController.UploadFile
+  langs:
+  - csharp
+  - vb
+  name: UploadController
+  nameWithType: UploadController
+  fullName: Toems_ApplicationApi.Controllers.UploadController
+  type: Class
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: 'public class UploadController : ApiController'
+    content.vb: Public Class UploadController Inherits ApiController
+  inheritance:
+  - System.Object
+- uid: Toems_ApplicationApi.Controllers.UploadController.Context
+  commentId: F:Toems_ApplicationApi.Controllers.UploadController.Context
+  id: Context
+  parent: Toems_ApplicationApi.Controllers.UploadController
+  langs:
+  - csharp
+  - vb
+  name: Context
+  nameWithType: UploadController.Context
+  fullName: Toems_ApplicationApi.Controllers.UploadController.Context
+  type: Field
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: protected HttpContext Context
+    return:
+      type: System.Web.HttpContext
+    content.vb: Protected Context As HttpContext
+- uid: Toems_ApplicationApi.Controllers.UploadController.Response
+  commentId: F:Toems_ApplicationApi.Controllers.UploadController.Response
+  id: Response
+  parent: Toems_ApplicationApi.Controllers.UploadController
+  langs:
+  - csharp
+  - vb
+  name: Response
+  nameWithType: UploadController.Response
+  fullName: Toems_ApplicationApi.Controllers.UploadController.Response
+  type: Field
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: protected HttpResponse Response
+    return:
+      type: System.Web.HttpResponse
+    content.vb: Protected Response As HttpResponse
+- uid: Toems_ApplicationApi.Controllers.UploadController.Request
+  commentId: F:Toems_ApplicationApi.Controllers.UploadController.Request
+  id: Request
+  parent: Toems_ApplicationApi.Controllers.UploadController
+  langs:
+  - csharp
+  - vb
+  name: Request
+  nameWithType: UploadController.Request
+  fullName: Toems_ApplicationApi.Controllers.UploadController.Request
+  type: Field
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: protected HttpRequest Request
+    return:
+      type: System.Web.HttpRequest
+    content.vb: Protected Request As HttpRequest
+- uid: Toems_ApplicationApi.Controllers.UploadController.#ctor
+  commentId: M:Toems_ApplicationApi.Controllers.UploadController.#ctor
+  id: '#ctor'
+  parent: Toems_ApplicationApi.Controllers.UploadController
+  langs:
+  - csharp
+  - vb
+  name: UploadController()
+  nameWithType: UploadController.UploadController()
+  fullName: Toems_ApplicationApi.Controllers.UploadController.UploadController()
+  type: Constructor
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: public UploadController()
+    content.vb: Public Sub New()
+  overload: Toems_ApplicationApi.Controllers.UploadController.#ctor*
+  nameWithType.vb: UploadController.New()
+  fullName.vb: Toems_ApplicationApi.Controllers.UploadController.New()
+  name.vb: New()
+- uid: Toems_ApplicationApi.Controllers.UploadController.ChunkingComplete
+  commentId: M:Toems_ApplicationApi.Controllers.UploadController.ChunkingComplete
+  id: ChunkingComplete
+  parent: Toems_ApplicationApi.Controllers.UploadController
+  langs:
+  - csharp
+  - vb
+  name: ChunkingComplete()
+  nameWithType: UploadController.ChunkingComplete()
+  fullName: Toems_ApplicationApi.Controllers.UploadController.ChunkingComplete()
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "moduleUploadFiles")]
+
+      public void ChunkingComplete()
+    content.vb: >-
+      <CustomAuth(Permission:="moduleUploadFiles")>
+
+      Public Sub ChunkingComplete()
+  overload: Toems_ApplicationApi.Controllers.UploadController.ChunkingComplete*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: moduleUploadFiles
+- uid: Toems_ApplicationApi.Controllers.UploadController.AttachmentChunkingComplete
+  commentId: M:Toems_ApplicationApi.Controllers.UploadController.AttachmentChunkingComplete
+  id: AttachmentChunkingComplete
+  parent: Toems_ApplicationApi.Controllers.UploadController
+  langs:
+  - csharp
+  - vb
+  name: AttachmentChunkingComplete()
+  nameWithType: UploadController.AttachmentChunkingComplete()
+  fullName: Toems_ApplicationApi.Controllers.UploadController.AttachmentChunkingComplete()
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "attachmentAdd")]
+
+      public void AttachmentChunkingComplete()
+    content.vb: >-
+      <CustomAuth(Permission:="attachmentAdd")>
+
+      Public Sub AttachmentChunkingComplete()
+  overload: Toems_ApplicationApi.Controllers.UploadController.AttachmentChunkingComplete*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: attachmentAdd
+- uid: Toems_ApplicationApi.Controllers.UploadController.UploadFile
+  commentId: M:Toems_ApplicationApi.Controllers.UploadController.UploadFile
+  id: UploadFile
+  parent: Toems_ApplicationApi.Controllers.UploadController
+  langs:
+  - csharp
+  - vb
+  name: UploadFile()
+  nameWithType: UploadController.UploadFile()
+  fullName: Toems_ApplicationApi.Controllers.UploadController.UploadFile()
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "moduleUploadFiles")]
+
+      public void UploadFile()
+    content.vb: >-
+      <CustomAuth(Permission:="moduleUploadFiles")>
+
+      Public Sub UploadFile()
+  overload: Toems_ApplicationApi.Controllers.UploadController.UploadFile*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: moduleUploadFiles
+- uid: Toems_ApplicationApi.Controllers.UploadController.UploadClientMsi
+  commentId: M:Toems_ApplicationApi.Controllers.UploadController.UploadClientMsi
+  id: UploadClientMsi
+  parent: Toems_ApplicationApi.Controllers.UploadController
+  langs:
+  - csharp
+  - vb
+  name: UploadClientMsi()
+  nameWithType: UploadController.UploadClientMsi()
+  fullName: Toems_ApplicationApi.Controllers.UploadController.UploadClientMsi()
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "Administrator")]
+
+      public void UploadClientMsi()
+    content.vb: >-
+      <CustomAuth(Permission:="Administrator")>
+
+      Public Sub UploadClientMsi()
+  overload: Toems_ApplicationApi.Controllers.UploadController.UploadClientMsi*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: Administrator
+- uid: Toems_ApplicationApi.Controllers.UploadController.UploadAttachment
+  commentId: M:Toems_ApplicationApi.Controllers.UploadController.UploadAttachment
+  id: UploadAttachment
+  parent: Toems_ApplicationApi.Controllers.UploadController
+  langs:
+  - csharp
+  - vb
+  name: UploadAttachment()
+  nameWithType: UploadController.UploadAttachment()
+  fullName: Toems_ApplicationApi.Controllers.UploadController.UploadAttachment()
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "attachmentAdd")]
+
+      public void UploadAttachment()
+    content.vb: >-
+      <CustomAuth(Permission:="attachmentAdd")>
+
+      Public Sub UploadAttachment()
+  overload: Toems_ApplicationApi.Controllers.UploadController.UploadAttachment*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: attachmentAdd
+references:
+- uid: Toems_ApplicationApi.Controllers
+  commentId: N:Toems_ApplicationApi.Controllers
+  isExternal: true
+  href: Toems_ApplicationApi.html
+  name: Toems_ApplicationApi.Controllers
+  nameWithType: Toems_ApplicationApi.Controllers
+  fullName: Toems_ApplicationApi.Controllers
+  spec.csharp:
+  - uid: Toems_ApplicationApi
+    name: Toems_ApplicationApi
+    isExternal: true
+    href: Toems_ApplicationApi.html
+  - name: .
+  - uid: Toems_ApplicationApi.Controllers
+    name: Controllers
+    isExternal: true
+    href: Toems_ApplicationApi.Controllers.html
+  spec.vb:
+  - uid: Toems_ApplicationApi
+    name: Toems_ApplicationApi
+    isExternal: true
+    href: Toems_ApplicationApi.html
+  - name: .
+  - uid: Toems_ApplicationApi.Controllers
+    name: Controllers
+    isExternal: true
+    href: Toems_ApplicationApi.Controllers.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Web.HttpContext
+  commentId: T:System.Web.HttpContext
+  parent: System.Web
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpcontext
+  name: HttpContext
+  nameWithType: HttpContext
+  fullName: System.Web.HttpContext
+- uid: System.Web
+  commentId: N:System.Web
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Web
+  nameWithType: System.Web
+  fullName: System.Web
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Web
+    name: Web
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Web
+    name: Web
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.web
+- uid: System.Web.HttpResponse
+  commentId: T:System.Web.HttpResponse
+  parent: System.Web
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httpresponse
+  name: HttpResponse
+  nameWithType: HttpResponse
+  fullName: System.Web.HttpResponse
+- uid: System.Web.HttpRequest
+  commentId: T:System.Web.HttpRequest
+  parent: System.Web
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.web.httprequest
+  name: HttpRequest
+  nameWithType: HttpRequest
+  fullName: System.Web.HttpRequest
+- uid: Toems_ApplicationApi.Controllers.UploadController.#ctor*
+  commentId: Overload:Toems_ApplicationApi.Controllers.UploadController.#ctor
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.UploadController.html#Toems_ApplicationApi.Controllers.UploadController.#ctor
+  name: UploadController
+  nameWithType: UploadController.UploadController
+  fullName: Toems_ApplicationApi.Controllers.UploadController.UploadController
+  nameWithType.vb: UploadController.New
+  fullName.vb: Toems_ApplicationApi.Controllers.UploadController.New
+  name.vb: New
+- uid: Toems_ApplicationApi.Controllers.UploadController.ChunkingComplete*
+  commentId: Overload:Toems_ApplicationApi.Controllers.UploadController.ChunkingComplete
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.UploadController.html#Toems_ApplicationApi.Controllers.UploadController.ChunkingComplete
+  name: ChunkingComplete
+  nameWithType: UploadController.ChunkingComplete
+  fullName: Toems_ApplicationApi.Controllers.UploadController.ChunkingComplete
+- uid: Toems_ApplicationApi.Controllers.UploadController.AttachmentChunkingComplete*
+  commentId: Overload:Toems_ApplicationApi.Controllers.UploadController.AttachmentChunkingComplete
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.UploadController.html#Toems_ApplicationApi.Controllers.UploadController.AttachmentChunkingComplete
+  name: AttachmentChunkingComplete
+  nameWithType: UploadController.AttachmentChunkingComplete
+  fullName: Toems_ApplicationApi.Controllers.UploadController.AttachmentChunkingComplete
+- uid: Toems_ApplicationApi.Controllers.UploadController.UploadFile*
+  commentId: Overload:Toems_ApplicationApi.Controllers.UploadController.UploadFile
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.UploadController.html#Toems_ApplicationApi.Controllers.UploadController.UploadFile
+  name: UploadFile
+  nameWithType: UploadController.UploadFile
+  fullName: Toems_ApplicationApi.Controllers.UploadController.UploadFile
+- uid: Toems_ApplicationApi.Controllers.UploadController.UploadClientMsi*
+  commentId: Overload:Toems_ApplicationApi.Controllers.UploadController.UploadClientMsi
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.UploadController.html#Toems_ApplicationApi.Controllers.UploadController.UploadClientMsi
+  name: UploadClientMsi
+  nameWithType: UploadController.UploadClientMsi
+  fullName: Toems_ApplicationApi.Controllers.UploadController.UploadClientMsi
+- uid: Toems_ApplicationApi.Controllers.UploadController.UploadAttachment*
+  commentId: Overload:Toems_ApplicationApi.Controllers.UploadController.UploadAttachment
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.UploadController.html#Toems_ApplicationApi.Controllers.UploadController.UploadAttachment
+  name: UploadAttachment
+  nameWithType: UploadController.UploadAttachment
+  fullName: Toems_ApplicationApi.Controllers.UploadController.UploadAttachment

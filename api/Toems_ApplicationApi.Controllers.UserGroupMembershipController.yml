@@ -1,0 +1,251 @@
+### YamlMime:ManagedReference
+items:
+- uid: Toems_ApplicationApi.Controllers.UserGroupMembershipController
+  commentId: T:Toems_ApplicationApi.Controllers.UserGroupMembershipController
+  id: UserGroupMembershipController
+  parent: Toems_ApplicationApi.Controllers
+  children:
+  - Toems_ApplicationApi.Controllers.UserGroupMembershipController.#ctor
+  - Toems_ApplicationApi.Controllers.UserGroupMembershipController.Post(System.Collections.Generic.List{Toems_Common.Entity.EntityUserGroupMembership})
+  langs:
+  - csharp
+  - vb
+  name: UserGroupMembershipController
+  nameWithType: UserGroupMembershipController
+  fullName: Toems_ApplicationApi.Controllers.UserGroupMembershipController
+  type: Class
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: 'public class UserGroupMembershipController : ApiController'
+    content.vb: Public Class UserGroupMembershipController Inherits ApiController
+  inheritance:
+  - System.Object
+- uid: Toems_ApplicationApi.Controllers.UserGroupMembershipController.#ctor
+  commentId: M:Toems_ApplicationApi.Controllers.UserGroupMembershipController.#ctor
+  id: '#ctor'
+  parent: Toems_ApplicationApi.Controllers.UserGroupMembershipController
+  langs:
+  - csharp
+  - vb
+  name: UserGroupMembershipController()
+  nameWithType: UserGroupMembershipController.UserGroupMembershipController()
+  fullName: Toems_ApplicationApi.Controllers.UserGroupMembershipController.UserGroupMembershipController()
+  type: Constructor
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: public UserGroupMembershipController()
+    content.vb: Public Sub New()
+  overload: Toems_ApplicationApi.Controllers.UserGroupMembershipController.#ctor*
+  nameWithType.vb: UserGroupMembershipController.New()
+  fullName.vb: Toems_ApplicationApi.Controllers.UserGroupMembershipController.New()
+  name.vb: New()
+- uid: Toems_ApplicationApi.Controllers.UserGroupMembershipController.Post(System.Collections.Generic.List{Toems_Common.Entity.EntityUserGroupMembership})
+  commentId: M:Toems_ApplicationApi.Controllers.UserGroupMembershipController.Post(System.Collections.Generic.List{Toems_Common.Entity.EntityUserGroupMembership})
+  id: Post(System.Collections.Generic.List{Toems_Common.Entity.EntityUserGroupMembership})
+  parent: Toems_ApplicationApi.Controllers.UserGroupMembershipController
+  langs:
+  - csharp
+  - vb
+  name: Post(List<EntityUserGroupMembership>)
+  nameWithType: UserGroupMembershipController.Post(List<EntityUserGroupMembership>)
+  fullName: Toems_ApplicationApi.Controllers.UserGroupMembershipController.Post(System.Collections.Generic.List<Toems_Common.Entity.EntityUserGroupMembership>)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "Administrator")]
+
+      public DtoActionResult Post(List<EntityUserGroupMembership> userGroupMemberships)
+    parameters:
+    - id: userGroupMemberships
+      type: System.Collections.Generic.List{Toems_Common.Entity.EntityUserGroupMembership}
+    return:
+      type: Toems_Common.Dto.DtoActionResult
+    content.vb: >-
+      <CustomAuth(Permission:="Administrator")>
+
+      Public Function Post(userGroupMemberships As List(Of EntityUserGroupMembership)) As DtoActionResult
+  overload: Toems_ApplicationApi.Controllers.UserGroupMembershipController.Post*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: Administrator
+  nameWithType.vb: UserGroupMembershipController.Post(List(Of EntityUserGroupMembership))
+  fullName.vb: Toems_ApplicationApi.Controllers.UserGroupMembershipController.Post(System.Collections.Generic.List(Of Toems_Common.Entity.EntityUserGroupMembership))
+  name.vb: Post(List(Of EntityUserGroupMembership))
+references:
+- uid: Toems_ApplicationApi.Controllers
+  commentId: N:Toems_ApplicationApi.Controllers
+  isExternal: true
+  href: Toems_ApplicationApi.html
+  name: Toems_ApplicationApi.Controllers
+  nameWithType: Toems_ApplicationApi.Controllers
+  fullName: Toems_ApplicationApi.Controllers
+  spec.csharp:
+  - uid: Toems_ApplicationApi
+    name: Toems_ApplicationApi
+    isExternal: true
+    href: Toems_ApplicationApi.html
+  - name: .
+  - uid: Toems_ApplicationApi.Controllers
+    name: Controllers
+    isExternal: true
+    href: Toems_ApplicationApi.Controllers.html
+  spec.vb:
+  - uid: Toems_ApplicationApi
+    name: Toems_ApplicationApi
+    isExternal: true
+    href: Toems_ApplicationApi.html
+  - name: .
+  - uid: Toems_ApplicationApi.Controllers
+    name: Controllers
+    isExternal: true
+    href: Toems_ApplicationApi.Controllers.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Toems_ApplicationApi.Controllers.UserGroupMembershipController.#ctor*
+  commentId: Overload:Toems_ApplicationApi.Controllers.UserGroupMembershipController.#ctor
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.UserGroupMembershipController.html#Toems_ApplicationApi.Controllers.UserGroupMembershipController.#ctor
+  name: UserGroupMembershipController
+  nameWithType: UserGroupMembershipController.UserGroupMembershipController
+  fullName: Toems_ApplicationApi.Controllers.UserGroupMembershipController.UserGroupMembershipController
+  nameWithType.vb: UserGroupMembershipController.New
+  fullName.vb: Toems_ApplicationApi.Controllers.UserGroupMembershipController.New
+  name.vb: New
+- uid: Toems_ApplicationApi.Controllers.UserGroupMembershipController.Post*
+  commentId: Overload:Toems_ApplicationApi.Controllers.UserGroupMembershipController.Post
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.UserGroupMembershipController.html#Toems_ApplicationApi.Controllers.UserGroupMembershipController.Post(System.Collections.Generic.List{Toems_Common.Entity.EntityUserGroupMembership})
+  name: Post
+  nameWithType: UserGroupMembershipController.Post
+  fullName: Toems_ApplicationApi.Controllers.UserGroupMembershipController.Post
+- uid: System.Collections.Generic.List{Toems_Common.Entity.EntityUserGroupMembership}
+  commentId: T:System.Collections.Generic.List{Toems_Common.Entity.EntityUserGroupMembership}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<EntityUserGroupMembership>
+  nameWithType: List<EntityUserGroupMembership>
+  fullName: System.Collections.Generic.List<Toems_Common.Entity.EntityUserGroupMembership>
+  nameWithType.vb: List(Of EntityUserGroupMembership)
+  fullName.vb: System.Collections.Generic.List(Of Toems_Common.Entity.EntityUserGroupMembership)
+  name.vb: List(Of EntityUserGroupMembership)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Toems_Common.Entity.EntityUserGroupMembership
+    name: EntityUserGroupMembership
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Entity.EntityUserGroupMembership
+    name: EntityUserGroupMembership
+    isExternal: true
+  - name: )
+- uid: Toems_Common.Dto.DtoActionResult
+  isExternal: true
+  name: DtoActionResult
+  nameWithType: DtoActionResult
+  fullName: Toems_Common.Dto.DtoActionResult
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

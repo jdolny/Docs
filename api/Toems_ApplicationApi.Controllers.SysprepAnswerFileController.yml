@@ -1,0 +1,417 @@
+### YamlMime:ManagedReference
+items:
+- uid: Toems_ApplicationApi.Controllers.SysprepAnswerFileController
+  commentId: T:Toems_ApplicationApi.Controllers.SysprepAnswerFileController
+  id: SysprepAnswerFileController
+  parent: Toems_ApplicationApi.Controllers
+  children:
+  - Toems_ApplicationApi.Controllers.SysprepAnswerFileController.#ctor
+  - Toems_ApplicationApi.Controllers.SysprepAnswerFileController.Delete(System.Int32)
+  - Toems_ApplicationApi.Controllers.SysprepAnswerFileController.Get
+  - Toems_ApplicationApi.Controllers.SysprepAnswerFileController.Get(System.Int32)
+  - Toems_ApplicationApi.Controllers.SysprepAnswerFileController.Post(Toems_Common.Entity.EntitySysprepAnswerfile)
+  - Toems_ApplicationApi.Controllers.SysprepAnswerFileController.Put(System.Int32,Toems_Common.Entity.EntitySysprepAnswerfile)
+  langs:
+  - csharp
+  - vb
+  name: SysprepAnswerFileController
+  nameWithType: SysprepAnswerFileController
+  fullName: Toems_ApplicationApi.Controllers.SysprepAnswerFileController
+  type: Class
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: 'public class SysprepAnswerFileController : ApiController'
+    content.vb: Public Class SysprepAnswerFileController Inherits ApiController
+  inheritance:
+  - System.Object
+- uid: Toems_ApplicationApi.Controllers.SysprepAnswerFileController.#ctor
+  commentId: M:Toems_ApplicationApi.Controllers.SysprepAnswerFileController.#ctor
+  id: '#ctor'
+  parent: Toems_ApplicationApi.Controllers.SysprepAnswerFileController
+  langs:
+  - csharp
+  - vb
+  name: SysprepAnswerFileController()
+  nameWithType: SysprepAnswerFileController.SysprepAnswerFileController()
+  fullName: Toems_ApplicationApi.Controllers.SysprepAnswerFileController.SysprepAnswerFileController()
+  type: Constructor
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: public SysprepAnswerFileController()
+    content.vb: Public Sub New()
+  overload: Toems_ApplicationApi.Controllers.SysprepAnswerFileController.#ctor*
+  nameWithType.vb: SysprepAnswerFileController.New()
+  fullName.vb: Toems_ApplicationApi.Controllers.SysprepAnswerFileController.New()
+  name.vb: New()
+- uid: Toems_ApplicationApi.Controllers.SysprepAnswerFileController.Delete(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.SysprepAnswerFileController.Delete(System.Int32)
+  id: Delete(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.SysprepAnswerFileController
+  langs:
+  - csharp
+  - vb
+  name: Delete(int)
+  nameWithType: SysprepAnswerFileController.Delete(int)
+  fullName: Toems_ApplicationApi.Controllers.SysprepAnswerFileController.Delete(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "Administrator")]
+
+      public DtoActionResult Delete(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Dto.DtoActionResult
+    content.vb: >-
+      <CustomAuth(Permission:="Administrator")>
+
+      Public Function Delete(id As Integer) As DtoActionResult
+  overload: Toems_ApplicationApi.Controllers.SysprepAnswerFileController.Delete*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: Administrator
+  nameWithType.vb: SysprepAnswerFileController.Delete(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.SysprepAnswerFileController.Delete(Integer)
+  name.vb: Delete(Integer)
+- uid: Toems_ApplicationApi.Controllers.SysprepAnswerFileController.Get(System.Int32)
+  commentId: M:Toems_ApplicationApi.Controllers.SysprepAnswerFileController.Get(System.Int32)
+  id: Get(System.Int32)
+  parent: Toems_ApplicationApi.Controllers.SysprepAnswerFileController
+  langs:
+  - csharp
+  - vb
+  name: Get(int)
+  nameWithType: SysprepAnswerFileController.Get(int)
+  fullName: Toems_ApplicationApi.Controllers.SysprepAnswerFileController.Get(int)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: public EntitySysprepAnswerfile Get(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Toems_Common.Entity.EntitySysprepAnswerfile
+    content.vb: Public Function [Get](id As Integer) As EntitySysprepAnswerfile
+  overload: Toems_ApplicationApi.Controllers.SysprepAnswerFileController.Get*
+  nameWithType.vb: SysprepAnswerFileController.Get(Integer)
+  fullName.vb: Toems_ApplicationApi.Controllers.SysprepAnswerFileController.Get(Integer)
+  name.vb: Get(Integer)
+- uid: Toems_ApplicationApi.Controllers.SysprepAnswerFileController.Get
+  commentId: M:Toems_ApplicationApi.Controllers.SysprepAnswerFileController.Get
+  id: Get
+  parent: Toems_ApplicationApi.Controllers.SysprepAnswerFileController
+  langs:
+  - csharp
+  - vb
+  name: Get()
+  nameWithType: SysprepAnswerFileController.Get()
+  fullName: Toems_ApplicationApi.Controllers.SysprepAnswerFileController.Get()
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: public IEnumerable<EntitySysprepAnswerfile> Get()
+    return:
+      type: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntitySysprepAnswerfile}
+    content.vb: Public Function [Get]() As IEnumerable(Of EntitySysprepAnswerfile)
+  overload: Toems_ApplicationApi.Controllers.SysprepAnswerFileController.Get*
+- uid: Toems_ApplicationApi.Controllers.SysprepAnswerFileController.Post(Toems_Common.Entity.EntitySysprepAnswerfile)
+  commentId: M:Toems_ApplicationApi.Controllers.SysprepAnswerFileController.Post(Toems_Common.Entity.EntitySysprepAnswerfile)
+  id: Post(Toems_Common.Entity.EntitySysprepAnswerfile)
+  parent: Toems_ApplicationApi.Controllers.SysprepAnswerFileController
+  langs:
+  - csharp
+  - vb
+  name: Post(EntitySysprepAnswerfile)
+  nameWithType: SysprepAnswerFileController.Post(EntitySysprepAnswerfile)
+  fullName: Toems_ApplicationApi.Controllers.SysprepAnswerFileController.Post(Toems_Common.Entity.EntitySysprepAnswerfile)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "Administrator")]
+
+      public DtoActionResult Post(EntitySysprepAnswerfile answerFile)
+    parameters:
+    - id: answerFile
+      type: Toems_Common.Entity.EntitySysprepAnswerfile
+    return:
+      type: Toems_Common.Dto.DtoActionResult
+    content.vb: >-
+      <CustomAuth(Permission:="Administrator")>
+
+      Public Function Post(answerFile As EntitySysprepAnswerfile) As DtoActionResult
+  overload: Toems_ApplicationApi.Controllers.SysprepAnswerFileController.Post*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: Administrator
+- uid: Toems_ApplicationApi.Controllers.SysprepAnswerFileController.Put(System.Int32,Toems_Common.Entity.EntitySysprepAnswerfile)
+  commentId: M:Toems_ApplicationApi.Controllers.SysprepAnswerFileController.Put(System.Int32,Toems_Common.Entity.EntitySysprepAnswerfile)
+  id: Put(System.Int32,Toems_Common.Entity.EntitySysprepAnswerfile)
+  parent: Toems_ApplicationApi.Controllers.SysprepAnswerFileController
+  langs:
+  - csharp
+  - vb
+  name: Put(int, EntitySysprepAnswerfile)
+  nameWithType: SysprepAnswerFileController.Put(int, EntitySysprepAnswerfile)
+  fullName: Toems_ApplicationApi.Controllers.SysprepAnswerFileController.Put(int, Toems_Common.Entity.EntitySysprepAnswerfile)
+  type: Method
+  assemblies:
+  - Toems-ApplicationApi
+  namespace: Toems_ApplicationApi.Controllers
+  syntax:
+    content: >-
+      [CustomAuth(Permission = "Administrator")]
+
+      public DtoActionResult Put(int id, EntitySysprepAnswerfile answerFile)
+    parameters:
+    - id: id
+      type: System.Int32
+    - id: answerFile
+      type: Toems_Common.Entity.EntitySysprepAnswerfile
+    return:
+      type: Toems_Common.Dto.DtoActionResult
+    content.vb: >-
+      <CustomAuth(Permission:="Administrator")>
+
+      Public Function Put(id As Integer, answerFile As EntitySysprepAnswerfile) As DtoActionResult
+  overload: Toems_ApplicationApi.Controllers.SysprepAnswerFileController.Put*
+  attributes:
+  - type: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute
+    ctor: Toems_ApplicationApi.Controllers.Authorization.CustomAuthAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Permission
+      type: System.String
+      value: Administrator
+  nameWithType.vb: SysprepAnswerFileController.Put(Integer, EntitySysprepAnswerfile)
+  fullName.vb: Toems_ApplicationApi.Controllers.SysprepAnswerFileController.Put(Integer, Toems_Common.Entity.EntitySysprepAnswerfile)
+  name.vb: Put(Integer, EntitySysprepAnswerfile)
+references:
+- uid: Toems_ApplicationApi.Controllers
+  commentId: N:Toems_ApplicationApi.Controllers
+  isExternal: true
+  href: Toems_ApplicationApi.html
+  name: Toems_ApplicationApi.Controllers
+  nameWithType: Toems_ApplicationApi.Controllers
+  fullName: Toems_ApplicationApi.Controllers
+  spec.csharp:
+  - uid: Toems_ApplicationApi
+    name: Toems_ApplicationApi
+    isExternal: true
+    href: Toems_ApplicationApi.html
+  - name: .
+  - uid: Toems_ApplicationApi.Controllers
+    name: Controllers
+    isExternal: true
+    href: Toems_ApplicationApi.Controllers.html
+  spec.vb:
+  - uid: Toems_ApplicationApi
+    name: Toems_ApplicationApi
+    isExternal: true
+    href: Toems_ApplicationApi.html
+  - name: .
+  - uid: Toems_ApplicationApi.Controllers
+    name: Controllers
+    isExternal: true
+    href: Toems_ApplicationApi.Controllers.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Toems_ApplicationApi.Controllers.SysprepAnswerFileController.#ctor*
+  commentId: Overload:Toems_ApplicationApi.Controllers.SysprepAnswerFileController.#ctor
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.SysprepAnswerFileController.html#Toems_ApplicationApi.Controllers.SysprepAnswerFileController.#ctor
+  name: SysprepAnswerFileController
+  nameWithType: SysprepAnswerFileController.SysprepAnswerFileController
+  fullName: Toems_ApplicationApi.Controllers.SysprepAnswerFileController.SysprepAnswerFileController
+  nameWithType.vb: SysprepAnswerFileController.New
+  fullName.vb: Toems_ApplicationApi.Controllers.SysprepAnswerFileController.New
+  name.vb: New
+- uid: Toems_ApplicationApi.Controllers.SysprepAnswerFileController.Delete*
+  commentId: Overload:Toems_ApplicationApi.Controllers.SysprepAnswerFileController.Delete
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.SysprepAnswerFileController.html#Toems_ApplicationApi.Controllers.SysprepAnswerFileController.Delete(System.Int32)
+  name: Delete
+  nameWithType: SysprepAnswerFileController.Delete
+  fullName: Toems_ApplicationApi.Controllers.SysprepAnswerFileController.Delete
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Toems_Common.Dto.DtoActionResult
+  isExternal: true
+  name: DtoActionResult
+  nameWithType: DtoActionResult
+  fullName: Toems_Common.Dto.DtoActionResult
+- uid: Toems_ApplicationApi.Controllers.SysprepAnswerFileController.Get*
+  commentId: Overload:Toems_ApplicationApi.Controllers.SysprepAnswerFileController.Get
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.SysprepAnswerFileController.html#Toems_ApplicationApi.Controllers.SysprepAnswerFileController.Get(System.Int32)
+  name: Get
+  nameWithType: SysprepAnswerFileController.Get
+  fullName: Toems_ApplicationApi.Controllers.SysprepAnswerFileController.Get
+- uid: Toems_Common.Entity.EntitySysprepAnswerfile
+  isExternal: true
+  name: EntitySysprepAnswerfile
+  nameWithType: EntitySysprepAnswerfile
+  fullName: Toems_Common.Entity.EntitySysprepAnswerfile
+- uid: System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntitySysprepAnswerfile}
+  commentId: T:System.Collections.Generic.IEnumerable{Toems_Common.Entity.EntitySysprepAnswerfile}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<EntitySysprepAnswerfile>
+  nameWithType: IEnumerable<EntitySysprepAnswerfile>
+  fullName: System.Collections.Generic.IEnumerable<Toems_Common.Entity.EntitySysprepAnswerfile>
+  nameWithType.vb: IEnumerable(Of EntitySysprepAnswerfile)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Toems_Common.Entity.EntitySysprepAnswerfile)
+  name.vb: IEnumerable(Of EntitySysprepAnswerfile)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Toems_Common.Entity.EntitySysprepAnswerfile
+    name: EntitySysprepAnswerfile
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Toems_Common.Entity.EntitySysprepAnswerfile
+    name: EntitySysprepAnswerfile
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Toems_ApplicationApi.Controllers.SysprepAnswerFileController.Post*
+  commentId: Overload:Toems_ApplicationApi.Controllers.SysprepAnswerFileController.Post
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.SysprepAnswerFileController.html#Toems_ApplicationApi.Controllers.SysprepAnswerFileController.Post(Toems_Common.Entity.EntitySysprepAnswerfile)
+  name: Post
+  nameWithType: SysprepAnswerFileController.Post
+  fullName: Toems_ApplicationApi.Controllers.SysprepAnswerFileController.Post
+- uid: Toems_ApplicationApi.Controllers.SysprepAnswerFileController.Put*
+  commentId: Overload:Toems_ApplicationApi.Controllers.SysprepAnswerFileController.Put
+  isExternal: true
+  href: Toems_ApplicationApi.Controllers.SysprepAnswerFileController.html#Toems_ApplicationApi.Controllers.SysprepAnswerFileController.Put(System.Int32,Toems_Common.Entity.EntitySysprepAnswerfile)
+  name: Put
+  nameWithType: SysprepAnswerFileController.Put
+  fullName: Toems_ApplicationApi.Controllers.SysprepAnswerFileController.Put
