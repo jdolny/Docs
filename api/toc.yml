@@ -48,14 +48,14 @@ items:
     name: ClientComServerController
   - uid: Toems_ApplicationApi.Controllers.ComClusterServerController
     name: ComClusterServerController
+  - uid: Toems_ApplicationApi.Controllers.ComServerClusterController
+    name: ComServerClusterController
   - uid: Toems_ApplicationApi.Controllers.CommandModuleController
     name: CommandModuleController
   - uid: Toems_ApplicationApi.Controllers.ComputerController
     name: ComputerController
   - uid: Toems_ApplicationApi.Controllers.ComputerLogController
     name: ComputerLogController
-  - uid: Toems_ApplicationApi.Controllers.ComServerClusterController
-    name: ComServerClusterController
   - uid: Toems_ApplicationApi.Controllers.CustomAssetTypeController
     name: CustomAssetTypeController
   - uid: Toems_ApplicationApi.Controllers.CustomAttributeController

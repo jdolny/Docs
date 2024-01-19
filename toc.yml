@@ -71,6 +71,8 @@
       href: ui/modules/sysprep/sysprep.md
     - name: WinPE
       href: ui/modules/winpe/winpe.md
+    - name: Winget
+      href: ui/modules/winget/winget.md
     - name: All Modules
       href: ui/modules/all/all.md
   - name: Policies
@@ -84,21 +86,15 @@
   - name: Imaging Tasks
     href: ui/imagingtasks/imagingtasks.md
   - name: Assets
-    items:
-    - name: Asset Types
-      href: ui/assets/assettypes.md
-    - name: Custom Assets
-      href: ui/assets/customassets.md
-    - name: Asset Groups
-      href: ui/assets/assetgroups.md
-    - name: Custom Attributes
-      href: ui/assets/customattributes.md
+    href: ui/assets/assets.md
   - name: Global Properties
     items:
     - name: Schedules
       href: ui/globalproperties/schedules.md
     - name: Categories
       href: ui/globalproperties/categories.md
+    - name: Custom Attributes
+      href: ui/globalproperties/customattributes.md
   - name: Reports
     items:
     - name: Computer Reports

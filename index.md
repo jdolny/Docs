@@ -1,6 +1,3 @@
-> [!WARNING]
-> Starting June 8th 2023, These documents are currently being migrated / updated to provide a better experience / SEO.  You will find documents that are not yet complete.  We are working to get this done ASAP.
-<br/><br/>
 
 ## Welcome
 Welcome to The Open Endpoint Manager, a solution that provides a full suite of Windows management capabilities as well as computer imaging, computer inventory, custom asset management, 
