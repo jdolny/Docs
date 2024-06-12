@@ -13,6 +13,13 @@ As of Theopenem 1.5.4, the WIE can be built directly from the Toems UI.  It requ
 2. During installation, select all default options until you reach the **Features Page**.  On the features page select ***Deployment Tools***, uncheck everything else.<br />
 ![ wie-build-1.png ]( /images/wie-build-1.png )
 
+> [!NOTE]
+> Theopenem expects to find the Windows Kit in the default location (like "C:\Program Files\Windows Kits").
+> If you installed it on another drive (like E:\Windows Kits) you can try to use a "junction" (link) in the filesystem.<br />
+> Open CMD as Administrator and run:  <br />
+> mklink /J "%Programfiles%\Windows Kits" "E:\Windows Kits"  <br />
+> (change last path to the path where you installed the Windows Kit)
+
 3. Once again navigate to the [Windows ADK](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit).  This time click the link that says **Download the Windows PE add-on for the Windows ADK, version xxxx**
 
 4. Install the Windows PE add-on will all the default options
