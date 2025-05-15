@@ -1,7 +1,3 @@
-> [!WARNING]
-> Starting June 8th 2023, These documents are currently being migrated / updated to provide a better experience / SEO.  You will find documents that are not yet complete.  We are working to get this done ASAP.
-<br/><br/>
-
 ## Welcome
 Welcome to The Open Endpoint Manager, a solution that provides a full suite of Windows management capabilities as well as computer imaging, computer inventory, custom asset management, 
 and reporting.  Theopenem is an on-premises solution, all servers and data remain within your organization.  In terms of features and capabilities, it resembles products 
@@ -42,7 +38,7 @@ The following operating systems are supported:
 - **Server 2022**
 
 > [!CAUTION]
-> Windows 10,11 only supports 20 concurrent TCP/IP connections.  If you plan on imaging / managing more than 20 computers, you will need to use a Server OS.
+> Windows 10,11 only supports 10 concurrent TCP/IP connections.  If you plan on imaging / managing more than 10 computers, you will need to use a Server OS.
 
 > [!WARNING]
 > Toems requires a 64-bit Windows OS with .NET Framework 4.8 or newer installed.
@@ -75,6 +71,10 @@ There are no specific CPU, Hard Drive, or Memory requirements.
 <br/>
 
 ## Client Imaging Requirements (WIE or LIE)
+
+> [!CAUTION]
+> ARM devices are not supported.
+
 When deploying / uploading computer images.  The following OS's can be captured / deployed.
 
 - **Windows XP**

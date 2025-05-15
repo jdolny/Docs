@@ -39,7 +39,7 @@ The following operating systems are supported:
 - **Server 2022**
 
 > [!CAUTION]
-> Windows 10,11 only supports 20 concurrent TCP/IP connections.  If you plan on imaging / managing more than 20 computers, you will need to use a Server OS.
+> Windows 10,11 only supports 10 concurrent TCP/IP connections.  If you plan on imaging / managing more than 10 computers, you will need to use a Server OS.
 
 > [!WARNING]
 > Toems requires a 64-bit Windows OS with .NET Framework 4.8 or newer installed.
@@ -72,6 +72,10 @@ There are no specific CPU, Hard Drive, or Memory requirements.
 <br/>
 
 ## Client Imaging Requirements (WIE or LIE)
+
+> [!CAUTION]
+> ARM devices are not supported.
+
 When deploying / uploading computer images.  The following OS's can be captured / deployed.
 
 - **Windows XP**

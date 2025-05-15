@@ -3,9 +3,7 @@
     {
       "src": [
         {
-          "files": [
-            "bin/**/*.dll"
-          ]
+        
         }
       ],
       "dest": "api",
@@ -24,7 +22,8 @@
         "files": [
           "**.md",
 		  "toc.yml",
-		  "api/**.yml",
+		  "**.yml"
+		  
         ]
       }
     ],
@@ -47,7 +46,7 @@
 	  "_appTitle": "Theopenem Documentation",
 	  "_appLogoPath": "images/Untitled.png",
 	  "_appFaviconPath": "images/LOGO-200-blue.png",
-      "_appFooter": "Theopenem (c) 2019 1.5.5",
+      "_appFooter": "Theopenem (c) 2019 1.5.7",
       "_enableSearch": true,
     },
 	"sitemap": {

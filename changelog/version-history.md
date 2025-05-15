@@ -1,4 +1,18 @@
 # Version History
+## 1.5.7 (5-15-25)
+* Fixes an issue where the Toec client was being detected as a virus due to the runas code used for winget(Note, this update breaks the ability to run a WinGet module with the RunAs option, or impersonation.)
+
+## 1.5.6 (1-21-24)
+* Adds Winget integration (Currently only supports the default(system) run as user.  Impersonation does not work unless Winget has manually been run at least once with that user on that endpoint)
+* Adds option to configure LIE sleep time between each step of imaging
+* Move custom attributes to Global Properties section as Assets will be removed in a future version
+* Breaks up policies into multiple UI pages for better organization
+* Fixes bugs related to session expiration
+* Fixes a bug where UI would crash if session expiration was set to 0
+* Fixes a bug where MFA screen would appear if login was unsuccessful the first time
+* Fixes a bug where the admin user cannot login to the imaging client on new installs
+* Fixes datepicker css
+* Fixes a bug when searching computers with custom attributes
 
 ## 1.5.5 (6-12-23)
 * Fixes a bug when imaging where the same user can only login 1 time, additional logins will cause the other imaging processes to fail

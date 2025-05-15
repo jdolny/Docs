@@ -3,12 +3,7 @@
 Theopenem typically has 2 major updates per year.  This page displays the list of upcoming features / plans.
 <br/><br/>
 
-First on the list, is updating the documentation and adding a few new videos highlighting new features.  This should be complete by the end of June 2023.
-
-**Theopenem 1.5.6 (December 2023)**
-* Add WinGet management to Toec.  This has some great potential for easily distributing and updating apps.
-
-**Theopenem 1.5.7 (May 2024)**
+**Theopenem 1.5.7 (June 2024)**
 * Add ability for each com server to utilize an SMB share.  This will provide the ability to use SMB Imaging with multiple com servers, instead of a centralized share.
 * Find a way to replicate storage among com servers, without the need for an SMB share.
 

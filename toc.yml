@@ -162,12 +162,6 @@
   href: remoteaccess/remote-access.md
 - name: Multiple Com Servers
   href: comservers/multiple.md
-- name: Using The API
-  items:
-  - name: API Overview
-    href: api/apioverview.md
-  - name: Controllers
-    href: api/Toems_ApplicationApi.Controllers.yml
 - name: Video Tutorials
   href: video/youtube.md 
 - name: Troubleshooting
