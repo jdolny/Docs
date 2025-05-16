@@ -6,8 +6,7 @@
         
         }
       ],
-      "dest": "api",
-      "includePrivateMembers": false,
+     
       "disableGitFeatures": true,
       "disableDefaultFilter": false,
       "noRestore": false,
@@ -21,17 +20,17 @@
       {
         "files": [
           "**.md",
+		  "**.yml",
 		  "toc.yml",
-		  "**.yml"
-		  
         ]
       }
     ],
     "resource": [
       {
         "files": [
-          "images/**"
-        ]
+          "latest/images/**"
+        ],
+		"exclude": [ "_site/**", "obj/**" ]
       }
     ],
     "output": "_site",
@@ -44,8 +43,8 @@
     "postProcessors": [ "ExtractSearchIndex" ],
 	 "globalMetadata": {
 	  "_appTitle": "Theopenem Documentation",
-	  "_appLogoPath": "images/Untitled.png",
-	  "_appFaviconPath": "images/LOGO-200-blue.png",
+	  "_appLogoPath": "latest/images/Untitled.png",
+	  "_appFaviconPath": "latest/images/LOGO-200-blue.png",
       "_appFooter": "Theopenem (c) 2019 1.5.7",
       "_enableSearch": true,
     },
